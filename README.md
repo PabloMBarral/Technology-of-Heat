@@ -1,5 +1,4 @@
 # TecnoCalor
-Esto es un archivo léeme.
+Bienvenidos/as a mi repositorio personal.
 
-Estoy probando la funcionalidad.
-Los mini archivos que suba son únicamente con la finalidad de aprender a codear, y pueden contener errores.
+El objetivo es contar con un repositorio de código con utilidades para un ingeniero termomecánico, y se irá construyendo con el tiempo.
