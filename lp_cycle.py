@@ -92,3 +92,16 @@ results = df_results_for_conns[['denomination',
                                 'm','m_unit']]
 
 results = results.drop(results.index[0])
+
+results = results.round(3)
+
+import os
+
+directorio_actual = os.path.dirname(os.path.abspath(__file__))
+
+archivo_texto = os.path.join(directorio_actual, 'archivo.txt')
+
+texto_formateado = results.to_string(index=False, justify='left')
+
+with open(archivo_texto, 'w') as file:
+    file.write(texto_formateado)
