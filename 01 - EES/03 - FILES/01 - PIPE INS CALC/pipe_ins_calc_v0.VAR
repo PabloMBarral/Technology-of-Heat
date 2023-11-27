@@ -1,0 +1,41 @@
+//C:\Users\Barral Pablo\Desktop\Calculo de aislacion v1.EES
+A_I	3,227542E-02	-infinity	infinity	A3	0	m^2	0
+C_P_H2O	4,186800E+00	-infinity	infinity	A3	0	kJ/kg-C	0
+EPSILON_RAD	9,300000E-01	-infinity	infinity	A3	1		0
+H_BAR_CONV_EXT	3,593367E+00	-infinity	infinity	A0	1	W/m^2-K	0
+H_EXT	9,285596E+00	-infinity	infinity	A0	1	W/m^2-K	0
+H_RAD	5,692229E+00	-infinity	infinity	A0	1	W/m^2-K	0
+H_T	9,979976E+03	-infinity	infinity	A0	4	W/m^2-K	0
+ID	2,027174E-01	-infinity	infinity	A3	1	m	0
+K_INS	4,384891E-02	-infinity	infinity	A3	4	W/m-K	0
+K_INS_0	3,420950E-02	-infinity	infinity	A3	1	W/m-K	0
+K_STEEL	5,495264E+01	-infinity	infinity	A3	1	W/m-K	0
+L	1,000000E+03	-infinity	infinity	A3	0	m	0
+M_DOT_H2O	4,706363E+01	-infinity	infinity	A3	0	kg/s	0
+OD	2,190750E-01	-infinity	infinity	A3	0	m	0
+P_AMB	1,013250E+00	-infinity	infinity	A0	0	bar	0
+P_BAR	5,000000E+00	-infinity	infinity	A0	1	bar	0
+Q_DOT	9,894884E+01	-infinity	infinity	A1	1	kW	0
+Q_DOT_ESPECIF	9,894884E-02	-infinity	infinity	A1	24	kW/m	0
+R_T_COND	2,247503E-07	-infinity	infinity	E3	1	K/W	0
+R_T_CONV_I	1,573365E-07	-infinity	infinity	E3	1	K/W	0
+R_T_E	1,376291E-04	-infinity	infinity	E3	1	K/W	0
+R_T_INS	4,658253E-04	-infinity	infinity	E3	1	K/W	0
+RELROUGH	7,399463E-04	-infinity	infinity	A3	0		0
+RHO_H2O	9,721254E+02	-infinity	infinity	A3	0	kg/m^3	0
+SCHEDULE$	40	-infinity	infinity	S0	0		0
+SIZE	2,000000E+02	-infinity	infinity	A3	0	mm	0
+T	8,178800E-03	-infinity	infinity	A1	0	m	0
+T_BAR	7,974892E+01	-infinity	infinity	A1	0	C	0
+T_BAR_K	3,528989E+02	-infinity	infinity	A1	0	K	0
+T_H_I	8,000000E+01	-infinity	infinity	A1	1	C	0
+T_H_O	7,949784E+01	-infinity	infinity	A1	4	C	0
+T_INFINITY	2,000000E+01	-infinity	infinity	A1	0	C	0
+T_INFINITY_K	2,931500E+02	-infinity	infinity	A1	0	K	0
+T_INS	1,500000E-02	-infinity	infinity	A1	4	m	0
+T_PT	7,971111E+01	-infinity	infinity	A1	1	C	0
+T_PT_K	3,528611E+02	-infinity	infinity	A1	0	K	0
+T_S	3,361824E+01	-infinity	infinity	A1	1	C	0
+T_S_K	3,067682E+02	-infinity	infinity	A1	0	K	0
+U_H2O	1,500000E+00	-infinity	infinity	A3	4	m/s	0
+V_DOT_H2O	4,841313E-02	-infinity	infinity	A3	4	m^3/s	0
