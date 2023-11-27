@@ -1,4 +1,4 @@
-# Tecnology of Heat
+# Technology of Heat
 
 Please be welcome.
 
