@@ -1,5 +1,7 @@
-# TecnoCalor
+# Tecnology of Heat
 
-Bienvenidos/as a mi repositorio personal.
+Please be welcome.
 
-El objetivo es contar con un repositorio de código con utilidades para un ingeniero termomecánico.
+The goal is to set a repo with utilities for a thermomechanical engineer.
+
+Feel free to reach out at pbarral@fi.uba.ar.
