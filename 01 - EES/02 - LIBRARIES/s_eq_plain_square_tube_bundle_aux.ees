@@ -1,0 +1,177 @@
+Function s_eq_plain_square_tube_bundle(L; S_T; S_L; D; Method$)
+ 
+    {This function returns the mean beam length in a bundle of square-arranged tubes.} 
+ 
+    {Inputs:}
+        {L [m or ft] - Tube height}
+        {S_T [m or ft] - Transverse pitch}
+        {S_L [m or ft] - Longitudinal pitch}
+        {D [m or ft] - Tube diameter}
+        {Method$ [str] - 'Ferrer',
+                            Interpolation based in the sources gathered by Jorge Martín Ferrer - Ingeniería Agrest.
+                        'Ganapathy', 
+                            Steam Generators and Waste Heat Boilers (2015) - eq. D.5.
+                        'Epple&Walter' 
+                            Numerical Simulation of Power Plants and Firing Systems (2017) - eq. 4.27.
+        }
+    
+    {Outputs:}
+        {s_eq [m or ft] - Equivalent layer or mean beam length or Schichtdicke or espesor de capa}
+ 
+    If (unitsystem('SI')=1) Then
+	    L$ = 'm'	"L$ is the length units EES is set to"
+    Endif
+ 
+    If (unitsystem('ENG')=1) Then
+	    L$ = 'ft'	"L$ is the length units EES is set to"
+    Endif
+ 
+    If (Method$ = 'Ferrer') Then
+ 
+        t_m = convert(L$;mm) * average(S_T;S_L)
+ 
+        D_SI = convert(L$;mm) * D
+        L_SI = convert(L$;mm) * L
+ 
+        x = t_m / D_SI
+	
+        y = L_SI / t_m
+ 
+        If (y<=2) Then
+ 
+	        Z = 3,300213764845 * x^3 - 56,123732616004 * x^2 + 333,849253711851 * x - 400,767597297687	{Y = 2}
+ 
+        Endif
+ 
+        If (y=4) Then
+ 
+	        Z = 4,002506185605 * x^3 - 70,377338514471 * x^2 + 425,830606236004 * x + 67,884628172955	{Y = 4}
+ 
+        Endif
+ 
+        If (y=6) Then
+ 
+	        Z = 7,795257466117 * x^3 - 134,080015190510 * x^2 + 776,112348120654 * x - 130,940974293799	{Y = 6}
+ 
+        Endif
+ 
+        If (y=8) Then
+ 
+	        Z = 10,156841797226 * x^3 - 173,377765516904 * x^2 + 993,323715920167 * x - 257,125964235273	{Y = 8}
+ 
+        Endif
+ 
+        If (y=10) Then
+ 
+	        Z = 11,657860384165 * x^3 - 201,530108728095 * x^2 + 1180,477699377720 * x - 427,819041482804	{Y = 10}
+ 
+        Endif
+ 
+        If (y=15) Then
+ 
+	         = 13,829065985692 * x^3 - 240,496842832312 * x^2 + 1416,746614030110 * x - 694,852031299922	{Y = 15}
+ 
+        Endif
+ 
+        If (y>=20) Then
+ 
+	        Z = 12,008848336631 * x^3 - 219,152619585500 * x^2 + 1389,083629879440 * x - 702,176509307965	{Y = 20}
+ 
+        Endif
+ 
+        If (2<y) and (y<4) Then
+ 
+	        Z_2 = 3,300213764845 * x^3 - 56,123732616004 * x^2 + 333,849253711851 * x - 400,767597297687	{Y = 2}
+ 
+	        Z_4 = 4,002506185605 * x^3 - 70,377338514471 * x^2 + 425,830606236004 * x + 67,884628172955	{Y = 4}
+ 
+	        Z = (Z_4 - Z_2) / (4 - 2) * (y - 2) + Z_2
+ 
+        Endif
+ 
+        If (4<y) and (y<6) Then
+ 
+	        Z_4 = 4,002506185605 * x^3 - 70,377338514471 * x^2 + 425,830606236004 * x + 67,884628172955	{Y = 4}
+ 
+	        Z_6 = 7,795257466117 * x^3 - 134,080015190510 * x^2 + 776,112348120654 * x - 130,940974293799	{Y = 6}
+ 
+	        Z = (Z_6 - Z_4) / (6 - 4) * (y - 4) + Z_4
+ 
+        Endif
+ 
+        If (6<y) and (y<8) Then
+ 
+	        Z_6 = 7,795257466117 * x^3 - 134,080015190510 * x^2 + 776,112348120654 * x - 130,940974293799	{Y = 6}
+ 
+	        Z_8 = 10,156841797226 * x^3 - 173,377765516904 * x^2 + 993,323715920167 * x - 257,125964235273	{Y = 8}
+ 
+	        Z = (Z_8 - Z_6) / (8 - 6) * (y - 6) + Z_6
+ 
+        Endif
+ 
+        If (8<y) and (y<10) Then
+ 
+	        Z_8 = 10,156841797226 * x^3 - 173,377765516904 * x^2 + 993,323715920167 * x - 257,125964235273	{Y = 8}
+ 
+	        Z_10 = 11,657860384165 * x^3 - 201,530108728095 * x^2 + 1180,477699377720 * x - 427,819041482804	{Y = 10}
+ 
+	        Z = (Z_10 - Z_8) / (10 - 8) * (y - 8) + Z_8
+ 
+        Endif
+ 
+        If (10<y) and (y<15) Then
+ 
+	        Z_10 = 11,657860384165 * x^3 - 201,530108728095 * x^2 + 1180,477699377720 * x - 427,819041482804	{Y = 10}
+ 
+	        Z_15 = 13,829065985692 * x^3 - 240,496842832312 * x^2 + 1416,746614030110 * x - 694,852031299922	{Y = 15}
+ 
+	        Z = (Z_15 - Z_10) / (15 - 10) * (y - 10) + Z_10
+ 
+        Endif
+ 
+        If (15<y) and (y<20) Then
+ 
+            Z_15 = 13,829065985692 * x^3 - 240,496842832312 * x^2 + 1416,746614030110 * x - 694,852031299922	{Y = 15}
+ 
+	        Z_20 = 12,008848336631 * x^3 - 219,152619585500 * x^2 + 1389,083629879440 * x - 702,176509307965	{Y = 20}
+ 
+	        Z = (Z_20 - Z_15) / (20 - 15) * (y - 15) + Z_15
+ 
+        Endif
+ 
+        b = 539,130872369902 * ln(t_m * 1 [1/mm]) - 2749,955078326720
+ 
+        w = b + 0,4371 * Z
+ 
+        s_m = 0,100731885679 [m] * exp(0,001843976672 * w)
+ 
+        s_eq = s_m * convert(m;L$)
+ 
+        s_eq_plain_square_tube_bundle = s_eq
+ 
+    Endif
+ 
+    If (Method$ = 'Ganapathy') Then
+ 
+        D_SI = convert(L$;m) * D
+        S_T_SI = convert(L$;m) * S_T
+        S_L_SI = convert(L$;m) * S_L
+        L_SI = convert(L$;m) * L
+ 
+        s_eq = (1,08 * (S_T_SI * S_L_SI - 0,785 * D_SI^2) / D_SI) * convert(m;L$)
+ 
+        s_eq_plain_square_tube_bundle = s_eq
+ 
+    Endif
+ 
+    If (Method$ = 'Epple&Walter') Then
+        
+        t_m = sqrt(S_T * S_L)
+        
+        s_eq = 0,85 * (4 / pi * t_m / D - D / t_m) * t_m / (1 + t_m / (2 * L) * (4 / pi * t_m / D - D / t_m))
+ 
+        s_eq_plain_square_tube_bundle = s_eq
+ 
+    Endif
+ 
+End
