@@ -1,60 +1,60 @@
-methane;1
-ethane;0
-propane;0
-n-butane;0
-2-methylpropane;0
-n-pentane;0
-2-methylbutane;0
-2_2-dimethylpropane;0
-n-hexane;0
-2-methylpentane;0
-3-methylpentane;0
-2_2-dimethylbutane;0
-2_3-dimethylbutane;0
-n-heptane;0
-n-octane;0
-n-nonane;0
-n-decane;0
-ethene;0
-propene;0
-1-butene;0
-cis-2-butene;0
-trans-2-butene;0
-2-methylpropene;0
-1-pentene;0
-propadiene;0
-1_2-butadiene;0
-1_3-butadiene;0
-ethyne;0
-cyclopentane;0
-methylcyclopentane;0
-ethylcyclopentane;0
-cyclohexane;0
-methylcyclohexane;0
-ethylcyclohexane;0
-benzene;0
-toluene;0
-ethylbenzene;0
-o-xylene;0
-methanol;0
-methanethiol;0
-hydrogen;0
-water;0
-hydrogen sulfide;0
-ammonia;0
-hydrogen cyanide;0
-carbon monoxide;0
-carbonyl sulfide;0
-carbon disulfide;0
-helium;0
-neon;0
-argon;0
-nitrogen;0
-oxygen;0
-carbon dioxide;0
-sulfur dioxide;0
-n-undecane;0
-n-dodecane;0
-n-tridecane;0
-n-tetradecane;0
-n-pentadecane;0
+methane;1;4;0;0;0
+ethane;2;6;0;0;0
+propane;3;8;0;0;0
+n-butane;4;10;0;0;0
+2-methylpropane;4;10;0;0;0
+n-pentane;5;12;0;0;0
+2-methylbutane;5;12;0;0;0
+2_2-dimethylpropane;5;12;0;0;0
+n-hexane;6;14;0;0;0
+2-methylpentane;6;14;0;0;0
+3-methylpentane;6;14;0;0;0
+2_2-dimethylbutane;6;14;0;0;0
+2_3-dimethylbutane;6;14;0;0;0
+n-heptane;7;16;0;0;0
+n-octane;8;18;0;0;0
+n-nonane;9;20;0;0;0
+n-decane;10;22;0;0;0
+ethene;2;4;0;0;0
+propene;3;6;0;0;0
+1-butene;4;8;0;0;0
+cis-2-butene;4;8;0;0;0
+trans-2-butene;4;8;0;0;0
+2-methylpropene;4;8;0;0;0
+1-pentene;5;10;0;0;0
+propadiene;3;4;0;0;0
+1_2-butadiene;4;6;0;0;0
+1_3-butadiene;4;6;0;0;0
+ethyne;2;2;0;0;0
+cyclopentane;5;10;0;0;0
+methylcyclopentane;6;12;0;0;0
+ethylcyclopentane;7;14;0;0;0
+cyclohexane;6;12;0;0;0
+methylcyclohexane;7;14;0;0;0
+ethylcyclohexane;8;16;0;0;0
+benzene;6;6;0;0;0
+toluene;7;8;0;0;0
+ethylbenzene;8;10;0;0;0
+o-xylene;8;10;0;0;0
+methanol;1;4;0;1;0
+methanethiol;1;4;0;0;1
+hydrogen;0;2;0;0;0
+water;0;2;0;1;0
+hydrogen sulfide;0;2;0;0;1
+ammonia;0;3;1;0;0
+hydrogen cyanide;1;1;1;0;0
+carbon monoxide;1;0;0;1;0
+carbonyl sulfide;1;0;0;1;1
+carbon disulfide;1;0;0;0;2
+helium;0;0;0;0;0
+neon;0;0;0;0;0
+argon;0;0;0;0;0
+nitrogen;0;0;2;0;0
+oxygen;0;0;0;2;0
+carbon dioxide;1;0;0;2;0
+sulfur dioxide;0;0;0;2;1
+n-undecane;10;24;0;0;0
+n-dodecane;10;26;0;0;0
+n-tridecane;10;28;0;0;0
+n-tetradecane;10;30;0;0;0
+n-pentadecane;10;32;0;0;0
