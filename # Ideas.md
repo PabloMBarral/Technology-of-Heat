@@ -23,3 +23,5 @@
 21. hacerme cv en latex y colgarlo aca
 22. poner la lista de paquetes que me genera pip
 23. poner los archivos latex que me gusten aca, limpiar overleaf, editar latex en vs code y compilar con overleaf
+24. Tener una lista de los paquetes de vscode que me instale.
+25. 
