@@ -20,3 +20,6 @@
 18. Ver cómo proteger ante commits.
 19. Armarme los archivos que necesito para calor en python.
 20. Ver si puedo encapsular fsolve en una función. Ver si puedo encapsular tespy en una función.
+21. hacerme cv en latex y colgarlo aca
+22. poner la lista de paquetes que me genera pip
+23. poner los archivos latex que me gusten aca, limpiar overleaf, editar latex en vs code y compilar con overleaf
