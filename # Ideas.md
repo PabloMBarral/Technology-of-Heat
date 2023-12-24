@@ -17,3 +17,6 @@
 15. En algún momento, armar una página web.
 16. Subir un ejemplo de integración Excel - EES.
 17. Armar un Index por carpeta en .md, explicando qué es cada archivo. Hacer todo siempre en inglés.
+18. Ver cómo proteger ante commits.
+19. Armarme los archivos que necesito para calor en python.
+20. Ver si puedo encapsular fsolve en una función. Ver si puedo encapsular tespy en una función.
