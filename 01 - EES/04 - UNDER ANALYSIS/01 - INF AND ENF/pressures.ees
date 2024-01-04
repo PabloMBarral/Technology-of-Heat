@@ -1,0 +1,577 @@
+$UnitSystem SI C kPa kg
+$TABSTOPS 1 2 3 4 5 cm
+ 
+{Q_ij  is the flow from the i-th room to the j-th room}
+{Q is an antisymmetric matrix: Q^T = -Q; Q_ij = -Q_ji; Q_ii = 0}
+
+Function area(opening$) 
+    {Expects: a string, detailing which door or window is being considered.}
+    {Returns: the flow area}
+    {The areas could be calculated here with some formula.}
+
+    If (opening$='Vi3') Then
+	    area:= 0 [cm^2] * convert(cm^2;m^2)
+    Endif
+ 
+    If (opening$='Vi9') Then
+	    area:= 0 [cm^2] * convert(cm^2;m^2)
+    Endif
+
+    If (opening$='Vi9-R') Then
+	    area:= 0 [cm^2] * convert(cm^2;m^2)
+    Endif
+
+    If (opening$='Vi10') Then
+	    area:= 0 [cm^2] * convert(cm^2;m^2)
+    Endif
+
+    If (opening$='P4 chica') Then
+	    area:= 80 [cm^2] * convert(cm^2;m^2)
+    Endif
+
+    If (opening$='P4') Then
+	    area:= 80 [cm^2] * convert(cm^2;m^2)
+    Endif
+
+    If (opening$='P5') Then
+	    area:= 80 [cm^2] * convert(cm^2;m^2)
+    Endif
+
+    If (opening$='P6') Then
+	    area:= 120 [cm^2] * convert(cm^2;m^2)
+    Endif
+
+    If (opening$='P17') Then
+	    area:= 138 [cm^2] * convert(cm^2;m^2)
+    Endif    
+
+    If (opening$='P21') Then
+	    area:= 198 [cm^2] * convert(cm^2;m^2)
+    Endif
+
+    If (opening$='P22') Then
+	    area:= 138 [cm^2] * convert(cm^2;m^2)
+    Endif
+
+    If (opening$='P46') Then
+	    area:= 120 [cm^2] * convert(cm^2;m^2)
+    Endif
+
+    If (opening$='Parm') Then
+	    area:= 80 [cm^2] * convert(cm^2;m^2)
+    Endif
+
+    If (opening$='P6am') Then
+	    area:= 92 [cm^2] * convert(cm^2;m^2)
+    Endif
+
+    If (opening$='P10am') Then
+	    area:= 92 [cm^2] * convert(cm^2;m^2)
+    Endif
+
+    If (opening$='P11am') Then
+	    area:= 92 [cm^2] * convert(cm^2;m^2)
+    Endif
+
+    If (opening$='Pp6') Then
+	    area:= 92 [cm^2] * convert(cm^2;m^2)
+    Endif
+
+    If (opening$='Pp7') Then
+	    area:= 190 [cm^2] * convert(cm^2;m^2)
+    Endif
+
+    If (opening$='Pp10') Then
+	    area:= 92 [cm^2] * convert(cm^2;m^2)
+    Endif
+
+    If (opening$='Pp11') Then
+	    area:= 100 [cm^2] * convert(cm^2;m^2)
+    Endif
+
+    If (opening$='P7m') Then
+	    area:= 104 [cm^2] * convert(cm^2;m^2)
+    Endif
+
+    If (opening$='P9m') Then
+	    area:= 92 [cm^2] * convert(cm^2;m^2)
+    Endif
+
+    If (opening$='P10m') Then
+	    area:= 92 [cm^2] * convert(cm^2;m^2)
+    Endif
+
+    If (opening$='P12m') Then
+	    area:= 80 [cm^2] * convert(cm^2;m^2)
+    Endif
+
+    If (opening$='P20m') Then
+	    area:= 104 [cm^2] * convert(cm^2;m^2)
+    Endif
+
+    If (opening$='P21m') Then
+	    area:= 112 [cm^2] * convert(cm^2;m^2)
+    Endif
+
+    If (opening$='P29') Then
+	    area:= 80 [cm^2] * convert(cm^2;m^2)
+    Endif
+
+    If (opening$='Pp8') Then
+	    area:= 90 [cm^2] * convert(cm^2;m^2)
+    Endif
+
+    If (opening$='ducha seca') Then
+	    area:= 80 [cm^2] * convert(cm^2;m^2)
+    Endif
+
+End
+
+Function i(room$)
+    {Expects: a string, detailing which room is being considered.}
+    {Returns: the index of the room}
+    {Not quite sure if this function is strictly necessary for the program, though it can be useful sometimes.}
+
+    If (room$='2-00') Then
+	    i:= 0
+    Endif
+
+    If (room$='2-01') Then
+	    i:= 1
+    Endif
+
+    If (room$='2-02') Then
+	    i:= 2
+    Endif
+
+    If (room$='2-03') Then
+	    i:= 3
+    Endif
+
+    If (room$='2-04') Then
+	    i:= 4
+    Endif
+
+    If (room$='2-05') Then
+	    i:= 5
+    Endif
+
+    If (room$='2-06') Then
+	    i:= 6
+    Endif
+
+    If (room$='2-07') Then
+	    i:= 7
+    Endif
+
+    If (room$='2-08') Then
+	    i:= 8
+    Endif
+
+    If (room$='2-09') Then
+	    i:= 9
+    Endif
+
+    If (room$='2-10') Then
+	    i:= 10
+    Endif
+
+    If (room$='2-11') Then
+	    i:= 11
+    Endif
+
+    If (room$='2-12') Then
+	    i:= 12
+    Endif
+
+    If (room$='2-13') Then
+	    i:= 13
+    Endif
+
+    If (room$='2-14') Then
+	    i:= 14
+    Endif
+
+    If (room$='2-14-1') Then
+	    i:= 15
+    Endif
+
+    If (room$='2-15') Then
+	    i:= 16
+    Endif
+
+    If (room$='2-16') Then
+	    i:= 17
+    Endif
+
+    If (room$='2-17') Then
+	    i:= 18
+    Endif
+
+    If (room$='2-18') Then
+	    i:= 19
+    Endif
+
+    If (room$='2-19') Then
+	    i:= 20
+    Endif
+
+    If (room$='2-20') Then
+	    i:= 21
+    Endif
+
+    If (room$='2-21') Then
+	    i:= 22
+    Endif
+
+    If (room$='2-22') Then
+	    i:= 23
+    Endif
+
+    If (room$='2-23') Then
+	    i:= 24
+    Endif
+
+    If (room$='2-24') Then
+	    i:= 25
+    Endif
+
+    If (room$='2-25') Then
+	    i:= 26
+    Endif
+
+    If (room$='2-26') Then
+	    i:= 27
+    Endif
+
+    If (room$='2-27') Then
+	    i:= 28
+    Endif
+
+    If (room$='2-28') Then
+	    i:= 29
+    Endif
+
+    If (room$='2-29') Then
+	    i:= 30
+    Endif
+
+    If (room$='2-30') Then
+	    i:= 31
+    Endif
+
+    If (room$='2-31') Then
+	    i:= 32
+    Endif
+
+    If (room$='2-32') Then
+	    i:= 33
+    Endif
+
+    If (room$='2-33') Then
+	    i:= 34
+    Endif
+
+    If (room$='2-34') Then
+	    i:= 35
+    Endif
+
+    If (room$='2-35') Then
+	    i:= 36
+    Endif
+
+    If (room$='2-36') Then
+	    i:= 37
+    Endif
+
+    If (room$='2-38') Then
+	    i:= 38
+    Endif
+
+    If (room$='2-39') Then
+	    i:= 39
+    Endif
+
+    If (room$='2-40') Then
+	    i:= 40
+    Endif
+
+    If (room$='2-41') Then
+	    i:= 41
+    Endif
+
+    If (room$='2-42') Then
+	    i:= 42
+    Endif
+
+    If (room$='2-46') Then
+	    i:= 43
+    Endif
+
+    If (room$='2-47 (A)') Then
+	    i:= 44
+    Endif
+
+    If (room$='2-47 (B)') Then
+	    i:= 45
+    Endif
+
+    If (room$='2-48') Then
+	    i:= 46
+    Endif
+
+End
+
+"General parameters"
+    C_d = 0,65
+    rho = 1,0757 [kg/m^3]
+
+"!Room number"
+	N_room = nlookuprows('room')
+ 
+"!Room tags"
+    {The lookup table can be filled with values directly from MS Excel.}
+ 
+	path$ = concat$(EESFILEDIR$; 'room.LKT')
+ 
+	$OPENLOOKUP path$
+ 
+    Duplicate i=1; N_room
+   	    tag$[i] = lookup$('room'; i; 'tag')
+	    {tag$[i] = lookup$(path$; i; 'tag')}
+	    denom$[i] = lookup$('room'; i; 'denom')
+    End
+ 
+    tag$[0] = '2-00'
+    denom$[0] = 'EXTERIOR'
+
+"!Flows" 
+    
+    {2-14-1 to 2-23}
+        Q[15; 24] = area('P20m') * C_d * sqrt(2 * (p[15] - p[24]) / rho) * convert(m^3/s;m^3/h)
+
+    {2-14-1 to 2-28}
+        Q[15; 29] = area('P20m') * C_d * sqrt(2 * (p[15] - p[29]) / rho) * convert(m^3/s;m^3/h)
+
+
+
+
+
+
+
+{
+    {2-23 to 2-27}
+        Q[15; 24] = area('P20m') * C_d * sqrt(2 * (p[15] - p[24]) / rho) * convert(m^3/s;m^3/h) + Q_grid[15;24]
+        Q_grid[15; 24] = 0 [m^3/h]
+
+    {2-24 to 2-23}
+        Q[15; 24] = area('P20m') * C_d * sqrt(2 * (p[15] - p[24]) / rho) * convert(m^3/s;m^3/h) + Q_grid[15;24]
+        Q_grid[15; 24] = 0 [m^3/h]
+
+    {2-26 to 2-23}
+        Q[15; 24] = area('P20m') * C_d * sqrt(2 * (p[15] - p[24]) / rho) * convert(m^3/s;m^3/h) + Q_grid[15;24]
+        Q_grid[15; 24] = 0 [m^3/h]
+
+    {2-28 to 2-39}
+        Q[15; 24] = area('P20m') * C_d * sqrt(2 * (p[15] - p[24]) / rho) * convert(m^3/s;m^3/h) + Q_grid[15;24]
+        Q_grid[15; 24] = 0 [m^3/h]
+
+    {2-28 to 47 (B)}
+        Q[15; 24] = area('P20m') * C_d * sqrt(2 * (p[15] - p[24]) / rho) * convert(m^3/s;m^3/h) + Q_grid[15;24]
+        Q_grid[15; 24] = 0 [m^3/h]
+
+    {2-28 to 2-40}
+        Q[15; 24] = area('P20m') * C_d * sqrt(2 * (p[15] - p[24]) / rho) * convert(m^3/s;m^3/h) + Q_grid[15;24]
+        Q_grid[15; 24] = 0 [m^3/h]
+
+    {2-28 to 41}
+        Q[15; 24] = area('P20m') * C_d * sqrt(2 * (p[15] - p[24]) / rho) * convert(m^3/s;m^3/h) + Q_grid[15;24]
+        Q_grid[15; 24] = 0 [m^3/h]
+
+    {2-28 to 42}
+        Q[15; 24] = area('P20m') * C_d * sqrt(2 * (p[15] - p[24]) / rho) * convert(m^3/s;m^3/h) + Q_grid[15;24]
+        Q_grid[15; 24] = 0 [m^3/h]
+
+    {2-28 to 00}
+        Q[15; 24] = area('P20m') * C_d * sqrt(2 * (p[15] - p[24]) / rho) * convert(m^3/s;m^3/h) + Q_grid[15;24]
+        Q_grid[15; 24] = 0 [m^3/h]
+
+    {2-29 to 31}
+        Q[15; 24] = area('P20m') * C_d * sqrt(2 * (p[15] - p[24]) / rho) * convert(m^3/s;m^3/h) + Q_grid[15;24]
+        Q_grid[15; 24] = 0 [m^3/h]
+
+    {2-30 to 28}
+        Q[15; 24] = area('P20m') * C_d * sqrt(2 * (p[15] - p[24]) / rho) * convert(m^3/s;m^3/h) + Q_grid[15;24]
+        Q_grid[15; 24] = 0 [m^3/h]
+
+    {2-31 to 30}
+        Q[15; 24] = area('P20m') * C_d * sqrt(2 * (p[15] - p[24]) / rho) * convert(m^3/s;m^3/h) + Q_grid[15;24]
+        Q_grid[15; 24] = 0 [m^3/h]
+
+    {2-31 to 28}
+        Q[15; 24] = area('P20m') * C_d * sqrt(2 * (p[15] - p[24]) / rho) * convert(m^3/s;m^3/h) + Q_grid[15;24]
+        Q_grid[15; 24] = 0 [m^3/h]
+
+    {2-32 to 31}
+        Q[15; 24] = area('P20m') * C_d * sqrt(2 * (p[15] - p[24]) / rho) * convert(m^3/s;m^3/h) + Q_grid[15;24]
+        Q_grid[15; 24] = 0 [m^3/h]
+
+    {2-34 to 28}
+        Q[15; 24] = area('P20m') * C_d * sqrt(2 * (p[15] - p[24]) / rho) * convert(m^3/s;m^3/h) + Q_grid[15;24]
+        Q_grid[15; 24] = 0 [m^3/h]
+
+    {2-35 to 31}
+        Q[15; 24] = area('P20m') * C_d * sqrt(2 * (p[15] - p[24]) / rho) * convert(m^3/s;m^3/h) + Q_grid[15;24]
+        Q_grid[15; 24] = 0 [m^3/h]
+
+    {2-36 to 31}
+        Q[15; 24] = area('P20m') * C_d * sqrt(2 * (p[15] - p[24]) / rho) * convert(m^3/s;m^3/h) + Q_grid[15;24]
+        Q_grid[15; 24] = 0 [m^3/h]
+
+    {2-46 to 28}
+        Q[15; 24] = area('P20m') * C_d * sqrt(2 * (p[15] - p[24]) / rho) * convert(m^3/s;m^3/h) + Q_grid[15;24]
+        Q_grid[15; 24] = 0 [m^3/h]
+
+    {2-47 (A) to 28}
+        Q[15; 24] = area('P20m') * C_d * sqrt(2 * (p[15] - p[24]) / rho) * convert(m^3/s;m^3/h) + Q_grid[15;24]
+        Q_grid[15; 24] = 0 [m^3/h]
+
+    {2-23 to 2-21}
+        Q[15; 24] = area('P20m') * C_d * sqrt(2 * (p[15] - p[24]) / rho) * convert(m^3/s;m^3/h) + Q_grid[15;24]
+        Q_grid[15; 24] = 0 [m^3/h]
+
+    {2-22 to 2-23}
+        Q[15; 24] = area('P20m') * C_d * sqrt(2 * (p[15] - p[24]) / rho) * convert(m^3/s;m^3/h) + Q_grid[15;24]
+        Q_grid[15; 24] = 0 [m^3/h]
+
+    {2-14 to 2-20}
+        Q[15; 24] = area('P20m') * C_d * sqrt(2 * (p[15] - p[24]) / rho) * convert(m^3/s;m^3/h) + Q_grid[15;24]
+        Q_grid[15; 24] = 0 [m^3/h]
+
+    {2-19 to 2-14}
+        Q[15; 24] = area('P20m') * C_d * sqrt(2 * (p[15] - p[24]) / rho) * convert(m^3/s;m^3/h) + Q_grid[15;24]
+        Q_grid[15; 24] = 0 [m^3/h]
+
+    {2-14 to 2-15}
+        Q[15; 24] = area('P20m') * C_d * sqrt(2 * (p[15] - p[24]) / rho) * convert(m^3/s;m^3/h) + Q_grid[15;24]
+        Q_grid[15; 24] = 0 [m^3/h]
+
+    {2-14 to 2-16}
+        Q[15; 24] = area('P20m') * C_d * sqrt(2 * (p[15] - p[24]) / rho) * convert(m^3/s;m^3/h) + Q_grid[15;24]
+        Q_grid[15; 24] = 0 [m^3/h]
+
+    {2-14 to 2-17}
+        Q[15; 24] = area('P20m') * C_d * sqrt(2 * (p[15] - p[24]) / rho) * convert(m^3/s;m^3/h) + Q_grid[15;24]
+        Q_grid[15; 24] = 0 [m^3/h]
+
+    {2-14 to 2-18}
+        Q[15; 24] = area('P20m') * C_d * sqrt(2 * (p[15] - p[24]) / rho) * convert(m^3/s;m^3/h) + Q_grid[15;24]
+        Q_grid[15; 24] = 0 [m^3/h]
+
+    {2-14 to 2-14-1}
+        Q[15; 24] = area('P20m') * C_d * sqrt(2 * (p[15] - p[24]) / rho) * convert(m^3/s;m^3/h) + Q_grid[15;24]
+        Q_grid[15; 24] = 0 [m^3/h]
+
+    {2-14 to 2-13}
+        Q[15; 24] = area('P20m') * C_d * sqrt(2 * (p[15] - p[24]) / rho) * convert(m^3/s;m^3/h) + Q_grid[15;24]
+        Q_grid[15; 24] = 0 [m^3/h]
+
+    {2-14 to 2-12}
+        Q[15; 24] = area('P20m') * C_d * sqrt(2 * (p[15] - p[24]) / rho) * convert(m^3/s;m^3/h) + Q_grid[15;24]
+        Q_grid[15; 24] = 0 [m^3/h]
+
+    {2-14 to 2-10}
+        Q[15; 24] = area('P20m') * C_d * sqrt(2 * (p[15] - p[24]) / rho) * convert(m^3/s;m^3/h) + Q_grid[15;24]
+        Q_grid[15; 24] = 0 [m^3/h]
+
+    {2-9 to 2-10}
+        Q[15; 24] = area('P20m') * C_d * sqrt(2 * (p[15] - p[24]) / rho) * convert(m^3/s;m^3/h) + Q_grid[15;24]
+        Q_grid[15; 24] = 0 [m^3/h]
+
+    {2-11 to 2-4}
+        Q[15; 24] = area('P20m') * C_d * sqrt(2 * (p[15] - p[24]) / rho) * convert(m^3/s;m^3/h) + Q_grid[15;24]
+        Q_grid[15; 24] = 0 [m^3/h]
+
+    {2-9 to 2-4}
+        Q[15; 24] = area('P20m') * C_d * sqrt(2 * (p[15] - p[24]) / rho) * convert(m^3/s;m^3/h) + Q_grid[15;24]
+        Q_grid[15; 24] = 0 [m^3/h]
+
+    {2-14 to 2-7}
+        Q[15; 24] = area('P20m') * C_d * sqrt(2 * (p[15] - p[24]) / rho) * convert(m^3/s;m^3/h) + Q_grid[15;24]
+        Q_grid[15; 24] = 0 [m^3/h]
+
+    {2-14 to 2-8}
+        Q[15; 24] = area('P20m') * C_d * sqrt(2 * (p[15] - p[24]) / rho) * convert(m^3/s;m^3/h) + Q_grid[15;24]
+        Q_grid[15; 24] = 0 [m^3/h]
+
+    {2-7 to 2-4}
+        Q[15; 24] = area('P20m') * C_d * sqrt(2 * (p[15] - p[24]) / rho) * convert(m^3/s;m^3/h) + Q_grid[15;24]
+        Q_grid[15; 24] = 0 [m^3/h]
+
+    {2-8 to 2-4}
+        Q[15; 24] = area('P20m') * C_d * sqrt(2 * (p[15] - p[24]) / rho) * convert(m^3/s;m^3/h) + Q_grid[15;24]
+        Q_grid[15; 24] = 0 [m^3/h]
+
+    {2-14-1 to 2-6}
+        Q[15; 24] = area('P20m') * C_d * sqrt(2 * (p[15] - p[24]) / rho) * convert(m^3/s;m^3/h) + Q_grid[15;24]
+        Q_grid[15; 24] = 0 [m^3/h]
+
+    {2-6 to 2-4}
+        Q[15; 24] = area('P20m') * C_d * sqrt(2 * (p[15] - p[24]) / rho) * convert(m^3/s;m^3/h) + Q_grid[15;24]
+        Q_grid[15; 24] = 0 [m^3/h]
+
+    {2-14-1 to 2-3}
+        Q[15; 24] = area('P20m') * C_d * sqrt(2 * (p[15] - p[24]) / rho) * convert(m^3/s;m^3/h) + Q_grid[15;24]
+        Q_grid[15; 24] = 0 [m^3/h]
+
+    {2-1 to 2-28}
+        Q[15; 24] = area('P20m') * C_d * sqrt(2 * (p[15] - p[24]) / rho) * convert(m^3/s;m^3/h) + Q_grid[15;24]
+        Q_grid[15; 24] = 0 [m^3/h]
+
+    {2-2 to 2-4}
+        Q[15; 24] = area('P20m') * C_d * sqrt(2 * (p[15] - p[24]) / rho) * convert(m^3/s;m^3/h) + Q_grid[15;24]
+        Q_grid[15; 24] = 0 [m^3/h]
+
+    {2-28 to 2-4}
+        Q[15; 24] = area('P20m') * C_d * sqrt(2 * (p[15] - p[24]) / rho) * convert(m^3/s;m^3/h) + Q_grid[15;24]
+        Q_grid[15; 24] = 0 [m^3/h]
+
+    {2-28 to 2-5}
+        Q[15; 24] = area('P20m') * C_d * sqrt(2 * (p[15] - p[24]) / rho) * convert(m^3/s;m^3/h) + Q_grid[15;24]
+        Q_grid[15; 24] = 0 [m^3/h]
+
+    {2-5 to 2-4}
+        Q[15; 24] = area('P20m') * C_d * sqrt(2 * (p[15] - p[24]) / rho) * convert(m^3/s;m^3/h) + Q_grid[15;24]
+        Q_grid[15; 24] = 0 [m^3/h]
+}
+
+
+
+
+
+
+
+
+"Room (gauge) pressures"
+    {Here the pressures are assigned from design values.}
+    {They can be neglected, though, and can be calculated from flows.}
+
+    p[0] = 0 [Pa]
+    Duplicate i=1; N_room
+   	    p[i] = lookup('room'; i; 'p_design')
+    End
+
+
+
+
+{Quiero que resuelva, y luego ponerle una macro para que en una segunda etapa me complete la matriz para los valores
+que falten, y que me sume los positivos en filas y columnas, o algo así}
+
+{
+duplicate i=1,5
+    duplicate j=1,6
+        x[i,j]=i*j
+    end
+end
+}
+{Q_in[1] = sum(Q[1;j]; j=1; N_room) {or s=SUM(X[1..5])}}
