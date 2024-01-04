@@ -349,208 +349,195 @@ End
     
     {2-14-1 to 2-23}
         Q[15; 24] = area('P20m') * C_d * sqrt(2 * (p[15] - p[24]) / rho) * convert(m^3/s;m^3/h)
+        {Q_grid[15; 24] = 0 [m^3/h]}
 
     {2-14-1 to 2-28}
         Q[15; 29] = area('P20m') * C_d * sqrt(2 * (p[15] - p[29]) / rho) * convert(m^3/s;m^3/h)
+        {Q_grid[15; 29] = 0 [m^3/h]}
 
-
-
-
-
-
-
-{
     {2-23 to 2-27}
-        Q[15; 24] = area('P20m') * C_d * sqrt(2 * (p[15] - p[24]) / rho) * convert(m^3/s;m^3/h) + Q_grid[15;24]
-        Q_grid[15; 24] = 0 [m^3/h]
+        Q[24; 28] = area('P9m') * C_d * sqrt(2 * (p[24] - p[28]) / rho) * convert(m^3/s;m^3/h)
+        {Q_grid[24; 28] = 0 [m^3/h]}
 
     {2-24 to 2-23}
-        Q[15; 24] = area('P20m') * C_d * sqrt(2 * (p[15] - p[24]) / rho) * convert(m^3/s;m^3/h) + Q_grid[15;24]
-        Q_grid[15; 24] = 0 [m^3/h]
+        Q[25; 24] = area('Pp7') * C_d * sqrt(2 * (p[25] - p[24]) / rho) * convert(m^3/s;m^3/h)
+        {Q_grid[25; 24] = 0 [m^3/h]}
 
     {2-26 to 2-23}
-        Q[15; 24] = area('P20m') * C_d * sqrt(2 * (p[15] - p[24]) / rho) * convert(m^3/s;m^3/h) + Q_grid[15;24]
-        Q_grid[15; 24] = 0 [m^3/h]
+        Q[27; 24] = area('Pp8') * C_d * sqrt(2 * (p[27] - p[24]) / rho) * convert(m^3/s;m^3/h)
+        {Q_grid[27; 24] = 0 [m^3/h]}
 
     {2-28 to 2-39}
-        Q[15; 24] = area('P20m') * C_d * sqrt(2 * (p[15] - p[24]) / rho) * convert(m^3/s;m^3/h) + Q_grid[15;24]
-        Q_grid[15; 24] = 0 [m^3/h]
+        Q[29; 39] = area('P4') * C_d * sqrt(2 * (p[29] - p[39]) / rho) * convert(m^3/s;m^3/h)
+        {Q_grid[29; 39] = 0 [m^3/h]}
 
-    {2-28 to 47 (B)}
-        Q[15; 24] = area('P20m') * C_d * sqrt(2 * (p[15] - p[24]) / rho) * convert(m^3/s;m^3/h) + Q_grid[15;24]
-        Q_grid[15; 24] = 0 [m^3/h]
+    {2-28 to 2-47 (B)}
+        Q[29; 45] = area('P4') * C_d * sqrt(2 * (p[29] - p[45]) / rho) * convert(m^3/s;m^3/h)
+        {Q_grid[29; 45] = 0 [m^3/h]}
 
     {2-28 to 2-40}
-        Q[15; 24] = area('P20m') * C_d * sqrt(2 * (p[15] - p[24]) / rho) * convert(m^3/s;m^3/h) + Q_grid[15;24]
-        Q_grid[15; 24] = 0 [m^3/h]
+        Q[29; 40] = area('P4') * C_d * sqrt(2 * (p[29] - p[40]) / rho) * convert(m^3/s;m^3/h)
+        {Q_grid[29; 40] = 0 [m^3/h]}
 
-    {2-28 to 41}
-        Q[15; 24] = area('P20m') * C_d * sqrt(2 * (p[15] - p[24]) / rho) * convert(m^3/s;m^3/h) + Q_grid[15;24]
-        Q_grid[15; 24] = 0 [m^3/h]
+    {2-28 to 2-41}
+        Q[29; 41] = area('P5') * C_d * sqrt(2 * (p[29] - p[41]) / rho) * convert(m^3/s;m^3/h)
+        {Q_grid[29; 41] = 0 [m^3/h]}
 
-    {2-28 to 42}
-        Q[15; 24] = area('P20m') * C_d * sqrt(2 * (p[15] - p[24]) / rho) * convert(m^3/s;m^3/h) + Q_grid[15;24]
-        Q_grid[15; 24] = 0 [m^3/h]
+    {2-28 to 2-42}
+        Q[29; 42] = area('P4') * C_d * sqrt(2 * (p[29] - p[42]) / rho) * convert(m^3/s;m^3/h)
+        {Q_grid[29; 42] = 0 [m^3/h]}
 
-    {2-28 to 00}
-        Q[15; 24] = area('P20m') * C_d * sqrt(2 * (p[15] - p[24]) / rho) * convert(m^3/s;m^3/h) + Q_grid[15;24]
-        Q_grid[15; 24] = 0 [m^3/h]
+    {2-28 to 2-00}
+        Q[29; 0] = 605 [m^3/h]
+        {Q_grid[29; 0] = 0 [m^3/h]}
 
-    {2-29 to 31}
-        Q[15; 24] = area('P20m') * C_d * sqrt(2 * (p[15] - p[24]) / rho) * convert(m^3/s;m^3/h) + Q_grid[15;24]
-        Q_grid[15; 24] = 0 [m^3/h]
+    {2-29 to 2-31}
+        Q[30; 32] = area('P9m') * C_d * sqrt(2 * (p[30] - p[32]) / rho) * convert(m^3/s;m^3/h)
+        {Q_grid[30; 32] = 0 [m^3/h]}
 
-    {2-30 to 28}
-        Q[15; 24] = area('P20m') * C_d * sqrt(2 * (p[15] - p[24]) / rho) * convert(m^3/s;m^3/h) + Q_grid[15;24]
-        Q_grid[15; 24] = 0 [m^3/h]
+    {2-30 to 2-28}
+        Q[31; 29] = area('P6am') * C_d * sqrt(2 * (p[31] - p[29]) / rho) * convert(m^3/s;m^3/h)
+        {Q_grid[31; 29] = 0 [m^3/h]}
 
-    {2-31 to 30}
-        Q[15; 24] = area('P20m') * C_d * sqrt(2 * (p[15] - p[24]) / rho) * convert(m^3/s;m^3/h) + Q_grid[15;24]
-        Q_grid[15; 24] = 0 [m^3/h]
+    {2-31 to 2-30}
+        Q[32; 31] = area('P6am') * C_d * sqrt(2 * (p[32] - p[31]) / rho) * convert(m^3/s;m^3/h)
+        {Q_grid[32; 31] = 0 [m^3/h]}
 
-    {2-31 to 28}
-        Q[15; 24] = area('P20m') * C_d * sqrt(2 * (p[15] - p[24]) / rho) * convert(m^3/s;m^3/h) + Q_grid[15;24]
-        Q_grid[15; 24] = 0 [m^3/h]
+    {2-31 to 2-28}
+        Q[32; 29] = area('P7m') * C_d * sqrt(2 * (p[32] - p[29]) / rho) * convert(m^3/s;m^3/h)
+        {Q_grid[32; 29] = 0 [m^3/h]}
 
-    {2-32 to 31}
-        Q[15; 24] = area('P20m') * C_d * sqrt(2 * (p[15] - p[24]) / rho) * convert(m^3/s;m^3/h) + Q_grid[15;24]
-        Q_grid[15; 24] = 0 [m^3/h]
+    {2-32 to 2-31}
+        Q[33; 32] = area('P6am') * C_d * sqrt(2 * (p[33] - p[32]) / rho) * convert(m^3/s;m^3/h)
+        {Q_grid[33; 32] = 0 [m^3/h]}
 
-    {2-34 to 28}
-        Q[15; 24] = area('P20m') * C_d * sqrt(2 * (p[15] - p[24]) / rho) * convert(m^3/s;m^3/h) + Q_grid[15;24]
-        Q_grid[15; 24] = 0 [m^3/h]
+    {2-34 to 2-28}
+        Q[35; 29] = area('P20m') * C_d * sqrt(2 * (p[35] - p[29]) / rho) * convert(m^3/s;m^3/h)
+        {Q_grid[35; 29] = 0 [m^3/h]}
 
-    {2-35 to 31}
-        Q[15; 24] = area('P20m') * C_d * sqrt(2 * (p[15] - p[24]) / rho) * convert(m^3/s;m^3/h) + Q_grid[15;24]
-        Q_grid[15; 24] = 0 [m^3/h]
+    {2-35 to 2-31}
+        Q[36; 32] = area('P6am') * C_d * sqrt(2 * (p[36] - p[32]) / rho) * convert(m^3/s;m^3/h)
+        {Q_grid[36; 32] = 0 [m^3/h]}
 
-    {2-36 to 31}
-        Q[15; 24] = area('P20m') * C_d * sqrt(2 * (p[15] - p[24]) / rho) * convert(m^3/s;m^3/h) + Q_grid[15;24]
-        Q_grid[15; 24] = 0 [m^3/h]
+    {2-36 to 2-31}
+        Q[37; 32] = area('P9m') * C_d * sqrt(2 * (p[37] - p[32]) / rho) * convert(m^3/s;m^3/h)
+        {Q_grid[37; 32] = 0 [m^3/h]}
 
-    {2-46 to 28}
-        Q[15; 24] = area('P20m') * C_d * sqrt(2 * (p[15] - p[24]) / rho) * convert(m^3/s;m^3/h) + Q_grid[15;24]
-        Q_grid[15; 24] = 0 [m^3/h]
+    {2-46 to 2-28}
+        Q[43; 29] = area('P21') * C_d * sqrt(2 * (p[43] - p[29]) / rho) * convert(m^3/s;m^3/h)
+        {Q_grid[43; 29] = 0 [m^3/h]}
 
-    {2-47 (A) to 28}
-        Q[15; 24] = area('P20m') * C_d * sqrt(2 * (p[15] - p[24]) / rho) * convert(m^3/s;m^3/h) + Q_grid[15;24]
-        Q_grid[15; 24] = 0 [m^3/h]
+    {2-47 (A) to 2-28}
+        Q[44; 29] = area('P21') * C_d * sqrt(2 * (p[44] - p[29]) / rho) * convert(m^3/s;m^3/h)
+        {Q_grid[44; 29] = 0 [m^3/h]}
 
     {2-23 to 2-21}
-        Q[15; 24] = area('P20m') * C_d * sqrt(2 * (p[15] - p[24]) / rho) * convert(m^3/s;m^3/h) + Q_grid[15;24]
-        Q_grid[15; 24] = 0 [m^3/h]
+        Q[24; 22] = area('Pp11') * C_d * sqrt(2 * (p[24] - p[22]) / rho) * convert(m^3/s;m^3/h)
+        {Q_grid[24; 22] = 0 [m^3/h]}
 
     {2-22 to 2-23}
-        Q[15; 24] = area('P20m') * C_d * sqrt(2 * (p[15] - p[24]) / rho) * convert(m^3/s;m^3/h) + Q_grid[15;24]
-        Q_grid[15; 24] = 0 [m^3/h]
+        Q[23; 24] = area('Pp6') * C_d * sqrt(2 * (p[23] - p[24]) / rho) * convert(m^3/s;m^3/h)
+        {Q_grid[23; 24] = 0 [m^3/h]}
 
     {2-14 to 2-20}
-        Q[15; 24] = area('P20m') * C_d * sqrt(2 * (p[15] - p[24]) / rho) * convert(m^3/s;m^3/h) + Q_grid[15;24]
-        Q_grid[15; 24] = 0 [m^3/h]
+        Q[14; 21] = area('Pp6') * C_d * sqrt(2 * (p[14] - p[21]) / rho) * convert(m^3/s;m^3/h)
+        {Q_grid[14; 21] = 0 [m^3/h]}
 
     {2-19 to 2-14}
-        Q[15; 24] = area('P20m') * C_d * sqrt(2 * (p[15] - p[24]) / rho) * convert(m^3/s;m^3/h) + Q_grid[15;24]
-        Q_grid[15; 24] = 0 [m^3/h]
+        Q[20; 14] = area('P10m') * C_d * sqrt(2 * (p[20] - p[14]) / rho) * convert(m^3/s;m^3/h)
+        {Q_grid[20; 14] = 0 [m^3/h]}
 
     {2-14 to 2-15}
-        Q[15; 24] = area('P20m') * C_d * sqrt(2 * (p[15] - p[24]) / rho) * convert(m^3/s;m^3/h) + Q_grid[15;24]
-        Q_grid[15; 24] = 0 [m^3/h]
+        Q[14; 16] = area('P4') * C_d * sqrt(2 * (p[14] - p[16]) / rho) * convert(m^3/s;m^3/h)
+        {Q_grid[14; 16] = 0 [m^3/h]}
 
     {2-14 to 2-16}
-        Q[15; 24] = area('P20m') * C_d * sqrt(2 * (p[15] - p[24]) / rho) * convert(m^3/s;m^3/h) + Q_grid[15;24]
-        Q_grid[15; 24] = 0 [m^3/h]
+        Q[14; 17] = area('P9m') * C_d * sqrt(2 * (p[14] - p[17]) / rho) * convert(m^3/s;m^3/h)
+        {Q_grid[14; 17] = 0 [m^3/h]}
 
     {2-14 to 2-17}
-        Q[15; 24] = area('P20m') * C_d * sqrt(2 * (p[15] - p[24]) / rho) * convert(m^3/s;m^3/h) + Q_grid[15;24]
-        Q_grid[15; 24] = 0 [m^3/h]
+        Q[14; 18] = area('P9m') * C_d * sqrt(2 * (p[14] - p[18]) / rho) * convert(m^3/s;m^3/h)
+        {Q_grid[14; 18] = 0 [m^3/h]}
 
     {2-14 to 2-18}
-        Q[15; 24] = area('P20m') * C_d * sqrt(2 * (p[15] - p[24]) / rho) * convert(m^3/s;m^3/h) + Q_grid[15;24]
-        Q_grid[15; 24] = 0 [m^3/h]
+        Q[14; 19] = area('P9m') * C_d * sqrt(2 * (p[14] - p[19]) / rho) * convert(m^3/s;m^3/h)
+        {Q_grid[14; 19] = 0 [m^3/h]}
 
     {2-14 to 2-14-1}
-        Q[15; 24] = area('P20m') * C_d * sqrt(2 * (p[15] - p[24]) / rho) * convert(m^3/s;m^3/h) + Q_grid[15;24]
-        Q_grid[15; 24] = 0 [m^3/h]
+        Q[14; 15] = 213 [m^3/h]
+        {Q_grid[14; 15] = 0 [m^3/h]}
 
     {2-14 to 2-13}
-        Q[15; 24] = area('P20m') * C_d * sqrt(2 * (p[15] - p[24]) / rho) * convert(m^3/s;m^3/h) + Q_grid[15;24]
-        Q_grid[15; 24] = 0 [m^3/h]
+        Q[14; 13] = area('P6am') * C_d * sqrt(2 * (p[14] - p[13]) / rho) * convert(m^3/s;m^3/h)
+        {Q_grid[14; 13] = 0 [m^3/h]}
 
     {2-14 to 2-12}
-        Q[15; 24] = area('P20m') * C_d * sqrt(2 * (p[15] - p[24]) / rho) * convert(m^3/s;m^3/h) + Q_grid[15;24]
-        Q_grid[15; 24] = 0 [m^3/h]
+        Q[14; 12] = area('P12m') * C_d * sqrt(2 * (p[14] - p[12]) / rho) * convert(m^3/s;m^3/h)
+        {Q_grid[14; 12] = 0 [m^3/h]}
 
     {2-14 to 2-10}
-        Q[15; 24] = area('P20m') * C_d * sqrt(2 * (p[15] - p[24]) / rho) * convert(m^3/s;m^3/h) + Q_grid[15;24]
-        Q_grid[15; 24] = 0 [m^3/h]
+        Q[14; 10] = area('P6am') * C_d * sqrt(2 * (p[14] - p[10]) / rho) * convert(m^3/s;m^3/h)
+        {Q_grid[14; 10] = 0 [m^3/h]}
 
-    {2-9 to 2-10}
-        Q[15; 24] = area('P20m') * C_d * sqrt(2 * (p[15] - p[24]) / rho) * convert(m^3/s;m^3/h) + Q_grid[15;24]
-        Q_grid[15; 24] = 0 [m^3/h]
+    {2-09 to 2-10}
+        Q[9; 10] = area('P11am') * C_d * sqrt(2 * (p[9] - p[10]) / rho) * convert(m^3/s;m^3/h)
+        {Q_grid[9; 10] = 0 [m^3/h]}
 
-    {2-11 to 2-4}
-        Q[15; 24] = area('P20m') * C_d * sqrt(2 * (p[15] - p[24]) / rho) * convert(m^3/s;m^3/h) + Q_grid[15;24]
-        Q_grid[15; 24] = 0 [m^3/h]
+    {2-11 to 2-04}
+        Q[11; 4] = area('P7m') * C_d * sqrt(2 * (p[11] - p[4]) / rho) * convert(m^3/s;m^3/h)
+        {Q_grid[11; 4] = 0 [m^3/h]}
 
-    {2-9 to 2-4}
-        Q[15; 24] = area('P20m') * C_d * sqrt(2 * (p[15] - p[24]) / rho) * convert(m^3/s;m^3/h) + Q_grid[15;24]
-        Q_grid[15; 24] = 0 [m^3/h]
+    {2-09 to 2-04}
+        Q[9; 4] = area('P11am') * C_d * sqrt(2 * (p[9] - p[4]) / rho) * convert(m^3/s;m^3/h)
+        {Q_grid[9; 4] = 0 [m^3/h]}
 
-    {2-14 to 2-7}
-        Q[15; 24] = area('P20m') * C_d * sqrt(2 * (p[15] - p[24]) / rho) * convert(m^3/s;m^3/h) + Q_grid[15;24]
-        Q_grid[15; 24] = 0 [m^3/h]
+    {2-14 to 2-07}
+        Q[14; 7] = area('P21m') * C_d * sqrt(2 * (p[14] - p[7]) / rho) * convert(m^3/s;m^3/h)
+        {Q_grid[14; 7] = 0 [m^3/h]}
 
-    {2-14 to 2-8}
-        Q[15; 24] = area('P20m') * C_d * sqrt(2 * (p[15] - p[24]) / rho) * convert(m^3/s;m^3/h) + Q_grid[15;24]
-        Q_grid[15; 24] = 0 [m^3/h]
+    {2-14 to 2-08}
+        Q[14; 8] = area('P21m') * C_d * sqrt(2 * (p[14] - p[8]) / rho) * convert(m^3/s;m^3/h)
+        {Q_grid[14; 8] = 0 [m^3/h]}
 
-    {2-7 to 2-4}
-        Q[15; 24] = area('P20m') * C_d * sqrt(2 * (p[15] - p[24]) / rho) * convert(m^3/s;m^3/h) + Q_grid[15;24]
-        Q_grid[15; 24] = 0 [m^3/h]
+    {2-07 to 2-04}
+        Q[7; 4] = area('P11am') * C_d * sqrt(2 * (p[7] - p[4]) / rho) * convert(m^3/s;m^3/h)
+        {Q_grid[7; 4] = 0 [m^3/h]}
 
-    {2-8 to 2-4}
-        Q[15; 24] = area('P20m') * C_d * sqrt(2 * (p[15] - p[24]) / rho) * convert(m^3/s;m^3/h) + Q_grid[15;24]
-        Q_grid[15; 24] = 0 [m^3/h]
+    {2-08 to 2-04}
+        Q[8; 4] = area('P11am') * C_d * sqrt(2 * (p[8] - p[4]) / rho) * convert(m^3/s;m^3/h)
+        {Q_grid[8; 4] = 0 [m^3/h]}
 
-    {2-14-1 to 2-6}
-        Q[15; 24] = area('P20m') * C_d * sqrt(2 * (p[15] - p[24]) / rho) * convert(m^3/s;m^3/h) + Q_grid[15;24]
-        Q_grid[15; 24] = 0 [m^3/h]
+    {2-14-1 to 2-06}
+        Q[15; 6] = area('Pp7') * C_d * sqrt(2 * (p[15] - p[6]) / rho) * convert(m^3/s;m^3/h)
+        {Q_grid[15; 6] = 0 [m^3/h]}
 
-    {2-6 to 2-4}
-        Q[15; 24] = area('P20m') * C_d * sqrt(2 * (p[15] - p[24]) / rho) * convert(m^3/s;m^3/h) + Q_grid[15;24]
-        Q_grid[15; 24] = 0 [m^3/h]
+    {2-06 to 2-04}
+        Q[6; 4] = area('Pp10') * C_d * sqrt(2 * (p[6] - p[4]) / rho) * convert(m^3/s;m^3/h)
+        {Q_grid[6; 4] = 0 [m^3/h]}
 
-    {2-14-1 to 2-3}
-        Q[15; 24] = area('P20m') * C_d * sqrt(2 * (p[15] - p[24]) / rho) * convert(m^3/s;m^3/h) + Q_grid[15;24]
-        Q_grid[15; 24] = 0 [m^3/h]
+    {2-14-1 to 2-03}
+        Q[15; 3] = 100 [m^3/h]
+        {Q_grid[15; 3] = 0 [m^3/h]}
 
-    {2-1 to 2-28}
-        Q[15; 24] = area('P20m') * C_d * sqrt(2 * (p[15] - p[24]) / rho) * convert(m^3/s;m^3/h) + Q_grid[15;24]
-        Q_grid[15; 24] = 0 [m^3/h]
+    {2-01 to 2-28}
+        Q[1; 29] = area('P12m') * C_d * sqrt(2 * (p[1] - p[29]) / rho) * convert(m^3/s;m^3/h)
+        {Q_grid[1; 29] = 0 [m^3/h]}
 
-    {2-2 to 2-4}
-        Q[15; 24] = area('P20m') * C_d * sqrt(2 * (p[15] - p[24]) / rho) * convert(m^3/s;m^3/h) + Q_grid[15;24]
-        Q_grid[15; 24] = 0 [m^3/h]
+    {2-02 to 2-04}
+        Q[2; 4] = area('P12m') * C_d * sqrt(2 * (p[2] - p[4]) / rho) * convert(m^3/s;m^3/h)
+        {Q_grid[2; 4] = 0 [m^3/h]}
 
-    {2-28 to 2-4}
-        Q[15; 24] = area('P20m') * C_d * sqrt(2 * (p[15] - p[24]) / rho) * convert(m^3/s;m^3/h) + Q_grid[15;24]
-        Q_grid[15; 24] = 0 [m^3/h]
+    {2-28 to 2-04}
+        Q[29; 4] = area('P20m') * C_d * sqrt(2 * (p[29] - p[4]) / rho) * convert(m^3/s;m^3/h)
+        {Q_grid[29; 4] = 0 [m^3/h]}
 
-    {2-28 to 2-5}
-        Q[15; 24] = area('P20m') * C_d * sqrt(2 * (p[15] - p[24]) / rho) * convert(m^3/s;m^3/h) + Q_grid[15;24]
-        Q_grid[15; 24] = 0 [m^3/h]
+    {2-28 to 2-05}
+        Q[29; 5] = area('P7m') * C_d * sqrt(2 * (p[29] - p[5]) / rho) * convert(m^3/s;m^3/h)
+        {Q_grid[29; 5] = 0 [m^3/h]}
 
-    {2-5 to 2-4}
-        Q[15; 24] = area('P20m') * C_d * sqrt(2 * (p[15] - p[24]) / rho) * convert(m^3/s;m^3/h) + Q_grid[15;24]
-        Q_grid[15; 24] = 0 [m^3/h]
-}
-
-
-
-
-
-
-
+    {2-05 to 2-04}
+        Q[5; 4] = area('P10am') * C_d * sqrt(2 * (p[5] - p[4]) / rho) * convert(m^3/s;m^3/h)
+        {Q_grid[5; 4] = 0 [m^3/h]}
 
 "Room (gauge) pressures"
     {Here the pressures are assigned from design values.}
