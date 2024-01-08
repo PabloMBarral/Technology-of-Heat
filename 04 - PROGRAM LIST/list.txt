@@ -1,0 +1,34 @@
+- Office suite
+- FlowLauncher
+- ShareX
+- SumatraPDF
+- PDFSam Basic
+- AutoCAD
+- EES
+- VSCode
+- Navisworks Freedom
+- Espanso
+- Everything
+- Notion
+- MarkText
+- Inskcape
+- Drawio
+- LibreOffice
+- HAP
+- GitHub Desktop
+- SpeedCrunch
+- FoxitReader
+- Notepad++
+- Python
+- Zoom
+- JistiMeet
+- OBS
+- VLCPlayer
+- qBitTorrent
+- TelegramDesktop
+- SmathStudio
+- ImageGlass
+- Peazip
+- EnergyPlus
+- OpenStudio
+- TexLive

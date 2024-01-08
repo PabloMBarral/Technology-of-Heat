@@ -102,3 +102,12 @@ eqs = string_gen(df, inf_list)
 
 for equation in eqs:
     print(equation)
+    
+    
+""" Nota"""
+""" Que el script me haga todas las ecuaciones. Es decir, que me complete con cero donde no hay interaccion, que me sume todas las filas y las columnas"""
+""" que me haga el vector de infiltracines y exfiltraciones"""
+
+""" tres partes: acomodo con puertas y ventanas, hago la diagonal, hago la parte antisimetrica, y luego completo con ceros para todos los valores que no estan ahi"""
+""" que me separe las secciones"""
+""" podria incluso hacer una directiva de include, para que no sea tan verboso"""
