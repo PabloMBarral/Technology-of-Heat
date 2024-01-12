@@ -26,103 +26,207 @@ Function area(opening$)
     Endif
 
     If (opening$='P4 chica') Then
-	    area:= 80 [cm^2] * convert(cm^2;m^2)
+	    h = 2 [m] * convert(m;cm)       {heigth}
+        w_p1 = 0,8 [m] * convert(m;cm)  {panel #1 width}
+        n_p1 = 1                        {panel #1 number}
+        g = 2 [mm] * convert(mm;cm)     {gap}
+        area := ((n_p1 + 1)  * h * g + 2 * n_p1 * w_p1 * g) * convert(cm^2;m^2)
     Endif
 
     If (opening$='P4') Then
-	    area:= 80 [cm^2] * convert(cm^2;m^2)
+	    h = 2 [m] * convert(m;cm)       {heigth}
+        w_p1 = 0,86 [m] * convert(m;cm) {panel #1 width}
+        n_p1 = 1                        {panel #1 number}
+        g = 2 [mm] * convert(mm;cm)     {gap}
+        area := ((n_p1 + 1)  * h * g + 2 * n_p1 * w_p1 * g) * convert(cm^2;m^2)
     Endif
 
     If (opening$='P5') Then
-	    area:= 80 [cm^2] * convert(cm^2;m^2)
+	    h = 2 [m] * convert(m;cm)       {heigth}
+        w_p1 = 1,04 [m] * convert(m;cm) {panel #1 width}
+        n_p1 = 1                        {panel #1 number} 
+        g = 2 [mm] * convert(mm;cm)     {gap}
+        area := ((n_p1 + 1)  * h * g + 2 * n_p1 * w_p1 * g) * convert(cm^2;m^2)
     Endif
 
     If (opening$='P6') Then
-	    area:= 120 [cm^2] * convert(cm^2;m^2)
+	    h = 2 [m] * convert(m;cm)       {heigth}
+        w_p1 = 0,65 [m] * convert(m;cm) {panel #1 width}
+        n_p1 = 2                        {panel #1 number}
+        g = 2 [mm] * convert(mm;cm)     {gap}
+        area := ((n_p1 + 1)  * h * g + 2 * n_p1 * w_p1 * g) * convert(cm^2;m^2)
     Endif
 
     If (opening$='P17') Then
-	    area:= 138 [cm^2] * convert(cm^2;m^2)
+	    h = 2,3 [m] * convert(m;cm)     {heigth}
+        w_p1 = 0,83 [m] * convert(m;cm) {panel #1 width}
+        n_p1 = 2                        {panel #1 number}
+        g = 2 [mm] * convert(mm;cm)     {gap}
+        area := ((n_p1 + 1)  * h * g + 2 * n_p1 * w_p1 * g) * convert(cm^2;m^2)
     Endif    
 
     If (opening$='P21') Then
-	    area:= 198 [cm^2] * convert(cm^2;m^2)
+	    h = 2,3 [m] * convert(m;cm)     {heigth}
+        w_p1 = 0,9 [m] * convert(m;cm)  {panel #1 width}
+        n_p1 = 1                        {panel #1 number}
+        w_p2 = 0,6 [m] * convert(m;cm)  {panel #2 width}
+        n_p2 = 1                        {panel #2 number}
+        g = 2 [mm] * convert(mm;cm)     {gap}
+        area := ((n_p1 + n_p2 + 1)  * h * g + 2 * (n_p1 + n_p2) * w_p1 * g) * convert(cm^2;m^2)
     Endif
 
     If (opening$='P22') Then
-	    area:= 138 [cm^2] * convert(cm^2;m^2)
+	    h = 2,3 [m] * convert(m;cm)     {heigth}
+        w_p1 = 1,1 [m] * convert(m;cm)  {panel #1 width}
+        n_p1 = 2                        {panel #1 number}
+        g = 2 [mm] * convert(mm;cm)     {gap}
+        area := ((n_p1 + 1)  * h * g + 2 * n_p1 * w_p1 * g) * convert(cm^2;m^2)
     Endif
 
     If (opening$='P46') Then
-	    area:= 120 [cm^2] * convert(cm^2;m^2)
+	    h = 2 [m] * convert(m;cm)       {heigth}
+        w_p1 = 0,65 [m] * convert(m;cm) {panel #1 width}
+        n_p1 = 2                        {panel #1 number}
+        g = 2 [mm] * convert(mm;cm)     {gap}
+        area := ((n_p1 + 1)  * h * g + 2 * n_p1 * w_p1 * g) * convert(cm^2;m^2)
     Endif
 
     If (opening$='Parm') Then
-	    area:= 80 [cm^2] * convert(cm^2;m^2)
+	    h = 2 [m] * convert(m;cm)       {heigth}
+        w_p1 = 0,80 [m] * convert(m;cm) {panel #1 width}
+        n_p1 = 1                        {panel #1 number}
+        g = 2 [mm] * convert(mm;cm)     {gap}
+        area := ((n_p1 + 1)  * h * g + 2 * n_p1 * w_p1 * g) * convert(cm^2;m^2)
     Endif
 
     If (opening$='P6am') Then
-	    area:= 92 [cm^2] * convert(cm^2;m^2)
+	    h = 2,3 [m] * convert(m;cm)     {heigth}
+        w_p1 = 1,04 [m] * convert(m;cm) {panel #1 width}
+        n_p1 = 1                        {panel #1 number}
+        g = 2 [mm] * convert(mm;cm)     {gap}
+        area := ((n_p1 + 1)  * h * g + 2 * n_p1 * w_p1 * g) * convert(cm^2;m^2)
     Endif
 
     If (opening$='P10am') Then
-	    area:= 92 [cm^2] * convert(cm^2;m^2)
+	    h = 2,3 [m] * convert(m;cm)     {heigth}
+        w_p1 = 1,1 [m] * convert(m;cm)  {panel #1 width}
+        n_p1 = 1                        {panel #1 number}
+        g = 2 [mm] * convert(mm;cm)     {gap}
+        area := ((n_p1 + 1)  * h * g + 2 * n_p1 * w_p1 * g) * convert(cm^2;m^2)
     Endif
 
     If (opening$='P11am') Then
-	    area:= 92 [cm^2] * convert(cm^2;m^2)
+	    h = 2,3 [m] * convert(m;cm)     {heigth}
+        w_p1 = 1,04 [m] * convert(m;cm) {panel #1 width}
+        n_p1 = 1                        {panel #1 number}
+        g = 2 [mm] * convert(mm;cm)     {gap}
+        area := ((n_p1 + 1)  * h * g + 2 * n_p1 * w_p1 * g) * convert(cm^2;m^2)
     Endif
 
     If (opening$='Pp6') Then
-	    area:= 92 [cm^2] * convert(cm^2;m^2)
+	    h = 2,3 [m] * convert(m;cm)     {heigth}
+        w_p1 = 1,04 [m] * convert(m;cm) {panel #1 width}
+        n_p1 = 1                        {panel #1 number}
+        g = 2 [mm] * convert(mm;cm)     {gap}
+        area := ((n_p1 + 1)  * h * g + 2 * n_p1 * w_p1 * g) * convert(cm^2;m^2)
     Endif
 
     If (opening$='Pp7') Then
-	    area:= 190 [cm^2] * convert(cm^2;m^2)
+	    h = 2,3 [m] * convert(m;cm)     {heigth}
+        w_p1 = 0,9 [m] * convert(m;cm)  {panel #1 width}
+        n_p1 = 1                        {panel #1 number}
+        w_p2 = 0,4 [m] * convert(m;cm)  {panel #2 width}
+        n_p2 = 1                        {panel #2 number}
+        g = 2 [mm] * convert(mm;cm)     {gap}
+        area := ((n_p1 + n_p2 + 1)  * h * g + 2 * (n_p1 + n_p2) * w_p1 * g) * convert(cm^2;m^2)
     Endif
 
     If (opening$='Pp10') Then
-	    area:= 92 [cm^2] * convert(cm^2;m^2)
+	    h = 2,3 [m] * convert(m;cm)     {heigth}
+        w_p1 = 1,04 [m] * convert(m;cm) {panel #1 width}
+        n_p1 = 1                        {panel #1 number}
+        g = 2 [mm] * convert(mm;cm)     {gap}
+        area := ((n_p1 + 1)  * h * g + 2 * n_p1 * w_p1 * g) * convert(cm^2;m^2)
     Endif
 
     If (opening$='Pp11') Then
-	    area:= 100 [cm^2] * convert(cm^2;m^2)
+	    h = 2,3 [m] * convert(m;cm)     {heigth}
+        w_p1 = 0,9 [m] * convert(m;cm)  {panel #1 width}
+        n_p1 = 1                        {panel #1 number}
+        g = 2 [mm] * convert(mm;cm)     {gap}
+        area := ((n_p1 + 1)  * h * g + 2 * n_p1 * w_p1 * g) * convert(cm^2;m^2)
     Endif
 
     If (opening$='P7m') Then
-	    area:= 104 [cm^2] * convert(cm^2;m^2)
+	    h = 2,3 [m] * convert(m;cm)     {heigth}
+        w_p1 = 0,9 [m] * convert(m;cm)  {panel #1 width}
+        n_p1 = 1                        {panel #1 number}
+        g = 2 [mm] * convert(mm;cm)     {gap}
+        area := ((n_p1 + 1)  * h * g + 2 * n_p1 * w_p1 * g) * convert(cm^2;m^2)
     Endif
 
     If (opening$='P9m') Then
-	    area:= 92 [cm^2] * convert(cm^2;m^2)
+	    h = 2,3 [m] * convert(m;cm)     {heigth}
+        w_p1 = 0,9 [m] * convert(m;cm)  {panel #1 width}
+        n_p1 = 1                        {panel #1 number}
+        g = 2 [mm] * convert(mm;cm)     {gap}
+        area := ((n_p1 + 1)  * h * g + 2 * n_p1 * w_p1 * g) * convert(cm^2;m^2)
     Endif
 
     If (opening$='P10m') Then
-	    area:= 92 [cm^2] * convert(cm^2;m^2)
+	    h = 2,3 [m] * convert(m;cm)     {heigth}
+        w_p1 = 1 [m] * convert(m;cm)    {panel #1 width}
+        n_p1 = 1                        {panel #1 number}
+        g = 2 [mm] * convert(mm;cm)     {gap}
+        area := ((n_p1 + 1)  * h * g + 2 * n_p1 * w_p1 * g) * convert(cm^2;m^2)
     Endif
 
     If (opening$='P12m') Then
-	    area:= 80 [cm^2] * convert(cm^2;m^2)
+	    h = 2 [m] * convert(m;cm)       {heigth}
+        w_p1 = 0,9 [m] * convert(m;cm)  {panel #1 width}
+        n_p1 = 1                        {panel #1 number}
+        g = 2 [mm] * convert(mm;cm)     {gap}
+        area := ((n_p1 + 1)  * h * g + 2 * n_p1 * w_p1 * g) * convert(cm^2;m^2)
     Endif
 
     If (opening$='P20m') Then
-	    area:= 104 [cm^2] * convert(cm^2;m^2)
+	    h = 2,3 [m] * convert(m;cm)     {heigth}
+        w_p1 = 0,9 [m] * convert(m;cm)  {panel #1 width}
+        n_p1 = 1                        {panel #1 number}
+        g = 2 [mm] * convert(mm;cm)     {gap}
+        area := ((n_p1 + 1)  * h * g + 2 * n_p1 * w_p1 * g) * convert(cm^2;m^2)
     Endif
 
     If (opening$='P21m') Then
-	    area:= 112 [cm^2] * convert(cm^2;m^2)
+	    h = 2,3 [m] * convert(m;cm)     {heigth}
+        w_p1 = 0,9 [m] * convert(m;cm)  {panel #1 width}
+        n_p1 = 1                        {panel #1 number}
+        g = 2 [mm] * convert(mm;cm)     {gap}
+        area := ((n_p1 + 1)  * h * g + 2 * n_p1 * w_p1 * g) * convert(cm^2;m^2)
     Endif
 
     If (opening$='P29') Then
-	    area:= 80 [cm^2] * convert(cm^2;m^2)
+	    h = 2 [m] * convert(m;cm)       {heigth}
+        w_p1 = 1,4 [m] * convert(m;cm)  {panel #1 width}
+        n_p1 = 1                        {panel #1 number}
+        g = 2 [mm] * convert(mm;cm)     {gap}
+        area := ((n_p1 + 1)  * h * g + 2 * n_p1 * w_p1 * g) * convert(cm^2;m^2)
     Endif
 
     If (opening$='Pp8') Then
-	    area:= 90 [cm^2] * convert(cm^2;m^2)
+	    h = 2,25 [m] * convert(m;cm)    {heigth}
+        w_p1 = 1,4 [m] * convert(m;cm)  {panel #1 width}
+        n_p1 = 1                        {panel #1 number}
+        g = 2 [mm] * convert(mm;cm)     {gap}
+        area := ((n_p1 + 1)  * h * g + 2 * n_p1 * w_p1 * g) * convert(cm^2;m^2)
     Endif
 
     If (opening$='ducha seca') Then
-	    area:= 80 [cm^2] * convert(cm^2;m^2)
+	    h = 2 [m] * convert(m;cm)       {heigth}
+        w_p1 = 1,3 [m] * convert(m;cm)  {panel #1 width}
+        n_p1 = 1                        {panel #1 number}
+        g = 2 [mm] * convert(mm;cm)     {gap}
+        area := ((n_p1 + 1)  * h * g + 2 * n_p1 * w_p1 * g) * convert(cm^2;m^2)
     Endif
 
 End
