@@ -1,0 +1,14 @@
+denomination       p     p_unit  T      T_unit  h       h_unit   s    s_unit    x     m       m_unit
+    boiler outlet 13.000 bar    191.605 C      2786.457 kJ / kg 6.494 kJ / kgK  1.00  109.501 t / h 
+    process steam 13.000 bar    191.605 C      2786.457 kJ / kg 6.494 kJ / kgK  1.00  100.000 t / h 
+         tk steam 13.000 bar    191.605 C      2786.457 kJ / kg 6.494 kJ / kgK  1.00    9.501 t / h 
+     vlp tk steam  1.209 bar    155.701 C      2786.457 kJ / kg 7.551 kJ / kgK -1.00    9.501 t / h 
+        tk outlet  1.209 bar    105.000 C       440.274 kJ / kg 1.363 kJ / kgK  0.00  115.265 t / h 
+        boiler fw 13.000 bar    105.211 C       442.038 kJ / kg 1.365 kJ / kgK -1.00  115.265 t / h 
+     makeup water  1.209 bar     25.000 C       104.938 kJ / kg 0.367 kJ / kgK -1.00   35.763 t / h 
+condensate return  1.209 bar     70.000 C       293.139 kJ / kg 0.955 kJ / kgK -1.00   70.000 t / h 
+economizer outlet 13.000 bar    141.605 C       596.641 kJ / kg 1.755 kJ / kgK -1.00  115.265 t / h 
+drum water outlet 13.000 bar    191.605 C       814.595 kJ / kg 2.251 kJ / kgK  0.00 2450.601 t / h 
+            riser 13.000 bar    191.605 C       913.188 kJ / kg 2.463 kJ / kgK  0.05 2444.838 t / h 
+         blowdown 13.000 bar    191.605 C       814.595 kJ / kg 2.251 kJ / kgK  0.00    5.763 t / h 
+        downcomer 13.000 bar    191.605 C       814.595 kJ / kg 2.251 kJ / kgK  0.00 2444.838 t / h 
