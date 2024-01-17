@@ -29,11 +29,7 @@ def remove_header_from_page(page, header_height):
     # Update the media box with the new upper right corner
     media_box.upper_right = new_upper_right
 
-
 # Function to remove header from a PDF file
-from PyPDF2 import PdfReader, PdfWriter
-
-from PyPDF2 import PdfReader, PdfWriter
 
 def remove_header_from_pdf(input_path: str, output_path: str, header_height: int) -> None:
     """
