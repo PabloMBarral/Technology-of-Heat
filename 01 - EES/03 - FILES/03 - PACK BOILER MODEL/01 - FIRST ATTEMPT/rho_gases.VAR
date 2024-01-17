@@ -1,0 +1,10 @@
+//C:\Users\Barral Pablo\Documents\GitHub\Technology-of-Heat\01 - EES\03 - FILES\03 - PACK BOILER MODEL\Caldera MOLINOS - 35.EES
+RHO_GASES/P				A4	1	kPa
+RHO_GASES/RHO_GASES				A4	1	kg/m^3
+RHO_GASES/T				A4	1	C
+RHO_GASES/V_GASES				A4	1	m^3/kg
+RHO_GASES/X_AR				A4	1	
+RHO_GASES/X_CO2				A4	1	
+RHO_GASES/X_H2O				A4	1	
+RHO_GASES/X_N2				A4	1	
+RHO_GASES/X_O2				A4	1	

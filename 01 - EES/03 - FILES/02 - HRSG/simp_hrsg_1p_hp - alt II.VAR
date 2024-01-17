@@ -1,0 +1,96 @@
+//C:\Users\Barral Pablo\Documents\GitHub\Technology-of-Heat\01 - EES\03 - FILES\02 - HRSG\simp_hrsg_1p_hp - alt II.EES
+APPROACH	5,000000E+00	-infinity	infinity	A3	4	C	0
+E_X[0]	0,000000E+00	-infinity	infinity	A3	1	kJ/kg	0
+E_X[1]	2,651594E+02	-infinity	infinity	A3	1	kJ/kg	0
+E_X[2]	2,697761E+02	-infinity	infinity	A3	1	kJ/kg	0
+E_X[3]	2,135584E+02	-infinity	infinity	A3	1	kJ/kg	0
+E_X[4]	8,405751E+01	-infinity	infinity	A3	1	kJ/kg	0
+E_X[5]	3,487070E+01	-infinity	infinity	A3	1	kJ/kg	0
+E_X[6]	0,000000E+00	-infinity	infinity	A3	1	kJ/kg	0
+E_X_A	4,471108E+01	-infinity	infinity	A3	1	kJ/kg	0
+E_X_Q_DOT_GH	3,622077E+04	-infinity	infinity	A3	1	kW	0
+E_X_Q_DOT_PC	9,769200E+02	-infinity	infinity	A3	1	kW	0
+E_X_V	1,354337E+03	-infinity	infinity	A3	1	kJ/kg	0
+ETA_EX_HRSG	7,234755E-01	-infinity	infinity	A3	1	dim	0
+ETA_HRSG	7,127500E-01	-infinity	infinity	A3	1	dim	0
+ETA_TG	4,013378E+01	-infinity	infinity	A3	1	%	0
+ETA_TRANSF	9,950000E-01	-infinity	infinity	A3	1	dim	0
+G_DOT_A	2,075666E+01	-infinity	infinity	A3	1	kg/s	0
+G_DOT_GH	1,366000E+02	-infinity	infinity	A3	1	kg/s	0
+G_DOT_P	2,075666E-01	-infinity	infinity	A3	1	kg/s	0
+G_DOT_V	2,054910E+01	-infinity	infinity	A3	4	kg/s	0
+H[0]	-1,588014E+03	-infinity	infinity	A0	1	kJ/kg	0
+H[1]	-9,783098E+02	-infinity	infinity	A0	1	kJ/kg	0
+H[2]	-9,711581E+02	-infinity	infinity	A0	1	kJ/kg	0
+H[3]	-1,060372E+03	-infinity	infinity	A0	1	kJ/kg	0
+H[4]	-1,295845E+03	-infinity	infinity	A0	1	kJ/kg	0
+H[5]	-1,414255E+03	-infinity	infinity	A0	1	kJ/kg	0
+H[6]	-1,588014E+03	-infinity	infinity	A0	1	kJ/kg	0
+H_0	1,049201E+02	-infinity	infinity	A0	1	kJ/kg	0
+H_A	4,450741E+02	-infinity	infinity	A0	1	kJ/kg	0
+H_A_SAL_ECO	1,220436E+03	-infinity	infinity	A0	1	kJ/kg	0
+H_P	1,246604E+03	-infinity	infinity	A0	1	kJ/kg	0
+H_V	3,367737E+03	-infinity	infinity	A0	1	kJ/kg	0
+H_VS	2,777655E+03	-infinity	infinity	A0	1	kJ/kg	0
+HR	8,970000E+03	-infinity	infinity	A0	1	kJ/kWh	0
+N_TG	5,700000E+01	-infinity	infinity	A3	1	MW	0
+P_0	1,013250E+00	-infinity	infinity	A0	1	bar	0
+P_A	6,601325E+01	-infinity	infinity	A0	1	bar	0
+P_P	6,601325E+01	-infinity	infinity	A0	1	bar	0
+P_V	6,601325E+01	-infinity	infinity	A0	1	bar	0
+PINCH	1,000000E+01	-infinity	infinity	A0	4	C	0
+PURGA	1,000000E-02	-infinity	infinity	A0	1		0
+Q_DIB[1]	0,000000E+00	-infinity	infinity	A1	1	MW	0
+Q_DIB[2]	0,000000E+00	-infinity	infinity	A1	1	MW	0
+Q_DIB[3]	1,218659E+01	-infinity	infinity	A1	1	MW	0
+Q_DIB[4]	4,435229E+01	-infinity	infinity	A1	1	MW	0
+Q_DIB[5]	6,052708E+01	-infinity	infinity	A1	1	MW	0
+Q_DIB[6]	8,438174E+01	-infinity	infinity	A1	1	MW	0
+Q_DOT_EC	1,609392E+04	-infinity	infinity	A1	1	kW	0
+Q_DOT_EV	3,200487E+04	-infinity	infinity	A1	1	kW	0
+Q_DOT_GH	8,328554E+04	-infinity	infinity	A1	1	kW	0
+Q_DOT_PC	9,769200E+02	-infinity	infinity	A1	1	kW	0
+Q_DOT_PERD_TG	1,739458E+03	-infinity	infinity	A1	1	kW	0
+Q_DOT_SH	1,212565E+04	-infinity	infinity	A1	1	kW	0
+Q_DOT_STACK	2,373539E+04	-infinity	infinity	A1	1	kW	0
+Q_DOT_TG	1,420250E+05	-infinity	infinity	A1	1	kW	0
+S[0]	7,173855E+00	-infinity	infinity	A3	1	kJ/kg-K	0
+S[1]	8,329463E+00	-infinity	infinity	A3	1	kJ/kg-K	0
+S[2]	8,337965E+00	-infinity	infinity	A3	1	kJ/kg-K	0
+S[3]	8,227296E+00	-infinity	infinity	A3	1	kJ/kg-K	0
+S[4]	7,871862E+00	-infinity	infinity	A3	1	kJ/kg-K	0
+S[5]	7,639686E+00	-infinity	infinity	A3	1	kJ/kg-K	0
+S[6]	7,173855E+00	-infinity	infinity	A3	1	kJ/kg-K	0
+S_0	3,671996E-01	-infinity	infinity	A3	1	kJ/kg-K	0
+S_A	1,358120E+00	-infinity	infinity	A3	1	kJ/kg-K	0
+S_V	6,768273E+00	-infinity	infinity	A3	1	kJ/kg-K	0
+T[0]	2,500000E+01	-infinity	infinity	A1	1	C	0
+T[1]	5,650000E+02	-infinity	infinity	A1	1	C	0
+T[2]	5,709613E+02	-infinity	infinity	A1	1	C	0
+T[3]	4,960356E+02	-infinity	infinity	A1	1	C	0
+T[4]	2,918881E+02	-infinity	infinity	A1	1	C	0
+T[5]	1,854482E+02	-infinity	infinity	A1	1	C	0
+T[6]	2,500000E+01	-infinity	infinity	A1	1	C	0
+T_0	2,500000E+01	-infinity	infinity	A1	1	C	0
+T_A	1,050000E+02	-infinity	infinity	A1	1	C	0
+T_A[4]	2,768881E+02	-infinity	infinity	A1	1	C	0
+T_A[5]	1,050000E+02	-infinity	infinity	A1	1	C	0
+T_A_SAL_ECO	2,768881E+02	-infinity	infinity	A1	1	C	0
+T_G	5,650000E+02	-infinity	infinity	A1	1	C	0
+T_V	4,800000E+02	-infinity	infinity	A1	4	C	0
+T_V[2]	4,800000E+02	-infinity	infinity	A1	1	C	0
+T_V[3]	2,818881E+02	-infinity	infinity	A1	1	C	0
+T_V[4]	2,818881E+02	-infinity	infinity	A1	1	C	0
+T_VS	2,818881E+02	-infinity	infinity	A1	1	C	0
+V_DOT_GN	2,777778E-02	-infinity	infinity	A3	4	m^3/s	0
+X$	CO2+H2O+N2+O2+Ar	-infinity	infinity	S0	1		0
+X_GH[1]	6,100000E-02	-infinity	infinity	A3	1		0
+X_GH[2]	7,768000E-02	-infinity	infinity	A3	1		0
+X_GH[3]	7,364000E-01	-infinity	infinity	A3	1		0
+X_GH[4]	1,126000E-01	-infinity	infinity	A3	1		0
+X_GH[5]	1,232000E-02	-infinity	infinity	A3	1		0
+X_GH_AR	1,232000E-02	-infinity	infinity	A3	1	dim	0
+X_GH_CO2	6,100000E-02	-infinity	infinity	A3	1	dim	0
+X_GH_H2O	7,768000E-02	-infinity	infinity	A3	1	dim	0
+X_GH_N2	7,364000E-01	-infinity	infinity	A3	1	dim	0
+X_GH_O2	1,126000E-01	-infinity	infinity	A3	1	dim	0

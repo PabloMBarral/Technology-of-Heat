@@ -1,0 +1,24 @@
+//C:\Users\Barral Pablo\Documents\GitHub\Technology-of-Heat\01 - EES\03 - FILES\03 - PACK BOILER MODEL\Caldera MOLINOS - 35.EES
+MU_GASES/MU_AR				A4	1	kg/m-s
+MU_GASES/MU_CO2				A4	1	kg/m-s
+MU_GASES/MU_GASES				A4	1	kg/m-s
+MU_GASES/MU_H2O				A4	1	kg/m-s
+MU_GASES/MU_N2				A4	1	kg/m-s
+MU_GASES/MU_O2				A4	1	kg/m-s
+MU_GASES/MW_AR				A4	1	kg/kmol
+MU_GASES/MW_CO2				A4	1	kg/kmol
+MU_GASES/MW_GASES				A4	1	kg/kmol
+MU_GASES/MW_H2O				A4	1	kg/kmol
+MU_GASES/MW_N2				A4	1	kg/kmol
+MU_GASES/MW_O2				A4	1	kg/kmol
+MU_GASES/T				A4	1	C
+MU_GASES/X_AR				A4	1	
+MU_GASES/X_CO2				A4	1	
+MU_GASES/X_H2O				A4	1	
+MU_GASES/X_N2				A4	1	
+MU_GASES/X_O2				A4	1	
+MU_GASES/Y_AR				A4	1	
+MU_GASES/Y_CO2				A4	1	
+MU_GASES/Y_H2O				A4	1	
+MU_GASES/Y_N2				A4	1	
+MU_GASES/Y_O2				A4	1	

@@ -1,0 +1,1252 @@
+//C:\Users\Barral Pablo\Documents\GitHub\Technology-of-Heat\01 - EES\03 - FILES\03 - PACK BOILER MODEL\Caldera MOLINOS - 35.EES
+A_HOGAR	2,027103E+02	-infinity	infinity	A3	1	m^2	0
+APPROACH	9,685946E+01	-infinity	infinity	A3	1	C	0
+C_P_GASES/C_P_GASES				A4	1	kJ/kg-C
+C_P_GASES/T				A4	1	C
+C_P_GASES/X_AR				A4	1	
+C_P_GASES/X_CO2				A4	1	
+C_P_GASES/X_H2O				A4	1	
+C_P_GASES/X_N2				A4	1	
+C_P_GASES/X_O2				A4	1	
+CHIMENEA/C_DOT_H	5,092802E+01	-infinity	infinity	A3	1	kW/C	0
+CHIMENEA/C_P_GASES	1,110767E+00	-infinity	infinity	A3	1	kJ/kg-C	0
+CHIMENEA/G_DOT_GASES	4,583024E+01	-infinity	infinity	A3	1	kg/s	0
+CHIMENEA/H_H_I	-2,693840E+03	-infinity	infinity	A0	1	kJ/kg	0
+CHIMENEA/H_H_O	-2,832470E+03	-infinity	infinity	A0	1	kJ/kg	0
+CHIMENEA/MW_GASES	2,778456E+01	-infinity	infinity	A3	1	kg/kmol	0
+CHIMENEA/Q_DOT	6,353457E+03	-infinity	infinity	A1	1	kW	0
+CHIMENEA/T_BAR_H	8,237683E+01	-infinity	infinity	A1	1	C	0
+CHIMENEA/T_H_I	1,447537E+02	-infinity	infinity	A1	1	C	0
+CHIMENEA/T_H_O	2,000000E+01	-infinity	infinity	A1	1	C	0
+CHIMENEA/X_AR	1,204907E-02	-infinity	infinity	A3	1		0
+CHIMENEA/X_CO2	1,399360E-01	-infinity	infinity	A3	1		0
+CHIMENEA/X_H2O	1,174065E-01	-infinity	infinity	A3	1		0
+CHIMENEA/X_N2	7,108431E-01	-infinity	infinity	A3	1		0
+CHIMENEA/X_O2	1,976529E-02	-infinity	infinity	A3	1		0
+DELTAP_EXT_1	3,538624E-02	-infinity	infinity	A3	4	kPa	0
+DELTAP_EXT_2	3,792409E-01	-infinity	infinity	A3	4	kPa	0
+DELTAP_EXT_3	1,771503E-01	-infinity	infinity	A3	4	kPa	0
+DELTAP_EXT_4	9,597733E-01	-infinity	infinity	A3	4	kPa	0
+DELTAP_EXT_5	5,092158E-01	-infinity	infinity	A3	4	kPa	0
+DELTAP_EXT_TOT	2,060767E+00	-infinity	infinity	A3	1	kPa	0
+ECONOMIZADOR/A	4,114143E+03	-infinity	infinity	A3	1	m^2	0
+ECONOMIZADOR/A_0	5,477775E+02	-infinity	infinity	A3	1	m^2	0
+ECONOMIZADOR/A_D	1,085850E+01	-infinity	infinity	A3	1	m^2	0
+ECONOMIZADOR/A_F	3,645245E+03	-infinity	infinity	A3	1	m^2	0
+ECONOMIZADOR/A_FACTOR	-3,534662E-03	-infinity	infinity	A3	1	dim	0
+ECONOMIZADOR/A_FACTOR_2	-2,976931E-05	-infinity	infinity	A3	1	dim	0
+ECONOMIZADOR/A_FIN	7,133333E-03	-infinity	infinity	A3	1	m	0
+ECONOMIZADOR/A_INT	4,325514E+02	-infinity	infinity	A3	1	m^2	0
+ECONOMIZADOR/A_N	5,747424E+00	-infinity	infinity	A3	1	m^2	0
+ECONOMIZADOR/A_N_INT	1,142487E-03	-infinity	infinity	A3	1	m^2	0
+ECONOMIZADOR/BETA	5,293018E-01	-infinity	infinity	A3	1	dim	0
+ECONOMIZADOR/C_1_FACTOR	1,012040E-02	-infinity	infinity	A3	1	dim	0
+ECONOMIZADOR/C_2_FACTOR	1,399166E-01	-infinity	infinity	A3	1	dim	0
+ECONOMIZADOR/C_2_FACTOR_2	1,757055E-01	-infinity	infinity	A3	1	dim	0
+ECONOMIZADOR/C_3_FACTOR	5,328127E-01	-infinity	infinity	A3	1	dim	0
+ECONOMIZADOR/C_4_FACTOR	2,996780E-01	-infinity	infinity	A3	1	dim	0
+ECONOMIZADOR/C_5_FACTOR	9,984985E-01	-infinity	infinity	A3	1	dim	0
+ECONOMIZADOR/C_6_FACTOR	9,859519E-01	-infinity	infinity	A3	1	dim	0
+ECONOMIZADOR/C_6_FACTOR_2	9,859519E-01	-infinity	infinity	A3	1	dim	0
+ECONOMIZADOR/C_DOT_C	1,467627E+02	0,000000E+00	infinity	A3	1	kW/C	0
+ECONOMIZADOR/C_DOT_H	5,307613E+01	0,000000E+00	infinity	A3	1	kW/C	0
+ECONOMIZADOR/C_DOT_MIN	5,307613E+01	0,000000E+00	infinity	A3	1	kW/C	0
+ECONOMIZADOR/C_P_GASES	1,157729E+00	0,000000E+00	infinity	A3	1	kJ/kg-C	0
+ECONOMIZADOR/C_P_VAPOR	4,281315E+00	0,000000E+00	infinity	A3	1	kJ/kg-C	0
+ECONOMIZADOR/D	4,830000E-02	-infinity	infinity	A3	1	m	0
+ECONOMIZADOR/D_EXT	8,650000E-02	-infinity	infinity	A3	1	m	0
+ECONOMIZADOR/D_INT	3,814000E-02	-infinity	infinity	A3	1	m	0
+ECONOMIZADOR/DELTA_F	1,200000E-03	-infinity	infinity	A3	1	m	0
+ECONOMIZADOR/DELTAP_EXT	5,092158E-01	-infinity	infinity	A3	1	kPa	0
+ECONOMIZADOR/DELTAP_INT	3,692682E+01	-infinity	infinity	A3	1	kPa	0
+ECONOMIZADOR/DELTAP_INT_TOT	3,902882E+01	-infinity	infinity	A3	1	kPa	0
+ECONOMIZADOR/DELTAT_M_L	9,332632E+01	-infinity	infinity	A3	1	C	0
+ECONOMIZADOR/E_F	6,389803E-01	-infinity	infinity	A3	1		0
+ECONOMIZADOR/EPSILON_G	1,088338E-01	-infinity	infinity	A3	1		0
+ECONOMIZADOR/EPSILON_G_2	1,074175E-01	-infinity	infinity	A3	1		0
+ECONOMIZADOR/EPSILON_HX	8,481072E-01	-infinity	infinity	A3	1		0
+ECONOMIZADOR/EPSILON_W	4,000000E-01	-infinity	infinity	A3	1		0
+ECONOMIZADOR/ETA_F	7,977072E-01	-infinity	infinity	A3	1	dim	0
+ECONOMIZADOR/F	2,171546E-02	-infinity	infinity	A3	1	dim	0
+ECONOMIZADOR/F_FACTOR	7,099668E-02	-infinity	infinity	A3	1	dim	0
+ECONOMIZADOR/F_FACTOR_2	9,297473E-02	-infinity	infinity	A3	1		0
+ECONOMIZADOR/F_HX	1,000004E+00	-infinity	infinity	A3	1		0
+ECONOMIZADOR/G_DOT_A	3,422436E+01	-infinity	infinity	A3	1	kg/s	0
+ECONOMIZADOR/G_DOT_A_U	1,140812E+00	-infinity	infinity	A3	1	kg/s	0
+ECONOMIZADOR/G_DOT_GASES	4,583024E+01	-infinity	infinity	A3	1	kg/s	0
+ECONOMIZADOR/H_BAR_C	3,247601E+01	-infinity	infinity	A0	1	W/m^2-K	0
+ECONOMIZADOR/H_BAR_C_2	8,762847E+01	-infinity	infinity	A0	1	W/m^2-C	0
+ECONOMIZADOR/H_BAR_H	1,058310E+04	-infinity	infinity	A0	1	W/m^2-K	0
+ECONOMIZADOR/H_BAR_M	3,782551E+01	-infinity	infinity	A0	1	W/m^2-K	0
+ECONOMIZADOR/H_BAR_R	1,742565E+00	-infinity	infinity	A0	1	W/m^2-K	0
+ECONOMIZADOR/H_BAR_R_2	2,657412E+00	-infinity	infinity	A0	1	W/m^2-K	0
+ECONOMIZADOR/H_BAR_T	1,058309E+04	-infinity	infinity	A0	1	W/m^2-K	0
+ECONOMIZADOR/H_F	1,910000E-02	-infinity	infinity	A0	1	m	0
+ECONOMIZADOR/H_H_I	-2,436778E+03	-infinity	infinity	A0	1	kJ/kg	0
+ECONOMIZADOR/H_H_O	-2,693840E+03	-infinity	infinity	A0	1	kJ/kg	0
+ECONOMIZADOR/K_3	4,140323E-02	-infinity	infinity	A3	1	W/m-K	0
+ECONOMIZADOR/K_EG_BRUSCO	1,000000E+00	-infinity	infinity	A3	1		0
+ECONOMIZADOR/K_EPSILON_G	1,639774E+00	-infinity	infinity	A3	1	1/m	0
+ECONOMIZADOR/K_F	4,164528E+01	3,000000E+01	infinity	A3	1	W/m-K	0
+ECONOMIZADOR/K_GASES	3,962762E-02	-infinity	infinity	A3	1	W/m-K	0
+ECONOMIZADOR/K_ING_BRUSCO	5,000000E-01	-infinity	infinity	A3	1		0
+ECONOMIZADOR/K_L_180	3,000000E-01	-infinity	infinity	A3	1		0
+ECONOMIZADOR/K_L_90	3,000000E-01	-infinity	infinity	A3	1		0
+ECONOMIZADOR/L	3,166667E+00	-infinity	infinity	A3	1	m	0
+ECONOMIZADOR/L_TOT	1,203333E+02	-infinity	infinity	A3	1	m	0
+ECONOMIZADOR/M_F	3,890755E+01	-infinity	infinity	A3	1	1/m	0
+ECONOMIZADOR/M_F_2	1,000000E+00	-infinity	infinity	A3	1	1/m	0
+ECONOMIZADOR/MU_3	2,780163E-05	-infinity	infinity	A3	1	kg/m-s	0
+ECONOMIZADOR/MU_GASES	2,570912E-05	0,000000E+00	infinity	A3	1	kg/m-s	0
+ECONOMIZADOR/MW_GASES	2,778456E+01	-infinity	infinity	A3	1	kg/kmol	0
+ECONOMIZADOR/N_90	8,000000E+00	-infinity	infinity	A3	1		0
+ECONOMIZADOR/N_EG_BRUSCO	1,000000E+00	-infinity	infinity	A3	1		0
+ECONOMIZADOR/N_F	3,800000E+02	-infinity	infinity	A3	1		0
+ECONOMIZADOR/N_ING_BRUSCO	1,000000E+00	-infinity	infinity	A3	1		0
+ECONOMIZADOR/N_L	3,800000E+01	-infinity	infinity	A3	1		0
+ECONOMIZADOR/N_T	3,000000E+01	-infinity	infinity	A3	1		0
+ECONOMIZADOR/N_U_F	1,200000E+02	-infinity	infinity	A3	1	1/m	0
+ECONOMIZADOR/NTU	2,378400E+00	0,000000E+00	infinity	A3	1		0
+ECONOMIZADOR/NUSSELT_BAR_D	4,610351E+01	-infinity	infinity	A3	1	dim	0
+ECONOMIZADOR/NUSSELT_BAR_T	5,999990E+02	-infinity	infinity	A3	1		0
+ECONOMIZADOR/P	1,013250E+02	-infinity	infinity	A0	1	kPa	0
+ECONOMIZADOR/P_BAR_C	6,641636E+03	-infinity	infinity	A0	1	kPa	0
+ECONOMIZADOR/P_C	8,951552E+00	-infinity	infinity	A0	1	kPa	0
+ECONOMIZADOR/P_C_I	6,661150E+03	-infinity	infinity	A0	1	kPa	0
+ECONOMIZADOR/P_C_O	6,622121E+03	-infinity	infinity	A0	1	kPa	0
+ECONOMIZADOR/P_W	1,834653E+01	-infinity	infinity	A0	1	kPa	0
+ECONOMIZADOR/PHI	9,521919E-01	-infinity	infinity	A0	1		0
+ECONOMIZADOR/PR_BAR_H	6,950528E-01	-infinity	infinity	A0	1		0
+ECONOMIZADOR/PRUEBA	6,801265E-01	-infinity	infinity	A0	1		0
+ECONOMIZADOR/Q_DOT	1,178121E+04	-infinity	infinity	A1	1	kW	0
+ECONOMIZADOR/R_ENSUC	9,000000E-04	-infinity	infinity	A3	1	m^2-K/W	0
+ECONOMIZADOR/RE_D	1,498093E+04	-infinity	infinity	A3	1		0
+ECONOMIZADOR/RE_D_INT	1,997058E+05	-infinity	infinity	A3	1		0
+ECONOMIZADOR/RELROUGH	1,179864E-03	-infinity	infinity	A3	1		0
+ECONOMIZADOR/RHO_B	6,402194E-01	-infinity	infinity	A3	1	kg/m^3	0
+ECONOMIZADOR/RHO_H_I	5,291751E-01	-infinity	infinity	A3	1	kg/m^3	0
+ECONOMIZADOR/RHO_H_O	8,102446E-01	-infinity	infinity	A3	1	kg/m^3	0
+ECONOMIZADOR/S_EQ	7,750957E-02	-infinity	infinity	A3	1		0
+ECONOMIZADOR/S_F	8,333333E-03	-infinity	infinity	A3	1	m	0
+ECONOMIZADOR/S_L	1,143000E-01	-infinity	infinity	A3	1	m	0
+ECONOMIZADOR/S_T	1,143000E-01	-infinity	infinity	A3	1	m	0
+ECONOMIZADOR/T	5,080000E-03	-infinity	infinity	A1	1	m	0
+ECONOMIZADOR/T_BAR_C	1,451369E+02	-infinity	infinity	A1	1	C	0
+ECONOMIZADOR/T_BAR_FIN	1,740686E+02	-infinity	infinity	A1	1	C	0
+ECONOMIZADOR/T_BAR_H	2,557377E+02	0,000000E+00	infinity	A1	1	C	0
+ECONOMIZADOR/T_BAR_W	1,451369E+02	-infinity	infinity	A1	1	C	0
+ECONOMIZADOR/T_C_I	1,050000E+02	0,000000E+00	infinity	A1	1	C	0
+ECONOMIZADOR/T_C_O	1,852739E+02	0,000000E+00	infinity	A1	1	C	0
+ECONOMIZADOR/T_H_I	3,667218E+02	-infinity	infinity	A1	1	C	0
+ECONOMIZADOR/T_H_O	1,447537E+02	0,000000E+00	infinity	A1	1	C	0
+ECONOMIZADOR/U	3,068350E-02	-infinity	infinity	A3	1	kW/m^2-C	0
+ECONOMIZADOR/U_INF	7,975960E+00	-infinity	infinity	A3	1	m/s	0
+ECONOMIZADOR/U_INF_0	3,404799E+00	-infinity	infinity	A3	1	m/s	0
+ECONOMIZADOR/U_INT	1,079530E+00	-infinity	infinity	A3	1	m/s	0
+ECONOMIZADOR/U_REAL	1,245518E+01	-infinity	infinity	A3	1	m/s	0
+ECONOMIZADOR/U_REAL_0	6,432623E+00	-infinity	infinity	A3	1	m/s	0
+ECONOMIZADOR/V_DOT_N_GASES	1,330955E+05	-infinity	infinity	A3	1	m^3/h	0
+ECONOMIZADOR/X	8,946961E-01	-infinity	infinity	A3	1	dim	0
+ECONOMIZADOR/X_AR	1,204907E-02	-infinity	infinity	A3	1		0
+ECONOMIZADOR/X_CO2	1,399360E-01	-infinity	infinity	A3	1		0
+ECONOMIZADOR/X_H2O	1,174065E-01	-infinity	infinity	A3	1		0
+ECONOMIZADOR/X_N2	7,108431E-01	-infinity	infinity	A3	1		0
+ECONOMIZADOR/X_O2	1,976529E-02	-infinity	infinity	A3	1		0
+EPSILON_W	4,000000E-01	-infinity	infinity	A3	0		0
+ETA_CALDERA	9,267805E+01	-infinity	infinity	A3	4	%	0
+G_DOT_AGUA_ALIMENTACION	3,422436E+01	-infinity	infinity	A3	1	kg/s	1
+G_DOT_AGUA_ATEMPERACION	2,228994E+00	-infinity	infinity	A3	1	kg/s	1
+G_DOT_GASES	4,583024E+01	-infinity	infinity	A3	1	kg/s	0
+G_DOT_PURGA	3,422436E-01	-infinity	infinity	A3	1	kg/s	1
+G_DOT_V_2	3,611111E+01	-infinity	infinity	A3	1	kg/s	1
+G_DOT_V_3	3,388212E+01	-infinity	infinity	A3	1	kg/s	1
+H_GASES/H_GASES				A4	1	kJ/kg
+H_GASES/T				A4	1	C
+H_GASES/X_AR				A4	1	
+H_GASES/X_CO2				A4	1	
+H_GASES/X_H2O				A4	1	
+H_GASES/X_N2				A4	1	
+H_GASES/X_O2				A4	1	
+HAZ_CONVECTIVO/A	8,262897E+02	-infinity	infinity	A3	1	m^2	0
+HAZ_CONVECTIVO/A_D	8,468678E+00	-infinity	infinity	A3	1	m^2	0
+HAZ_CONVECTIVO/A_N	4,363632E+00	-infinity	infinity	A3	1	m^2	0
+HAZ_CONVECTIVO/C_DOT_C	5,744496E+08	-infinity	infinity	A3	1	kW/C	0
+HAZ_CONVECTIVO/C_DOT_H	5,744496E+01	-infinity	infinity	A3	1	kW/C	0
+HAZ_CONVECTIVO/C_DOT_MIN	5,744496E+01	-infinity	infinity	A3	1	kW/C	0
+HAZ_CONVECTIVO/C_P_GASES	1,254407E+00	-infinity	infinity	A3	1	kJ/kg-C	0
+HAZ_CONVECTIVO/D	5,080000E-02	-infinity	infinity	A3	1	m	0
+HAZ_CONVECTIVO/D_INT	4,394000E-02	-infinity	infinity	A3	1	m	0
+HAZ_CONVECTIVO/DELTAP_EXT	9,597733E-01	-infinity	infinity	A3	1	kPa	0
+HAZ_CONVECTIVO/DELTAP_EXT_2	1,082946E+01	-infinity	infinity	A3	1	kPa	0
+HAZ_CONVECTIVO/DELTAT_M_L	2,339502E+02	0,000000E+00	infinity	A3	1	C	0
+HAZ_CONVECTIVO/EPSILON_G	1,492766E-01	0,000000E+00	infinity	A3	1		0
+HAZ_CONVECTIVO/EPSILON_G_2	1,375542E-01	-infinity	infinity	A3	1		0
+HAZ_CONVECTIVO/EPSILON_HX	8,309968E-01	-infinity	infinity	A3	1		0
+HAZ_CONVECTIVO/EPSILON_W	4,000000E-01	-infinity	infinity	A3	1		0
+HAZ_CONVECTIVO/F_EXT	2,895747E-02	-infinity	infinity	A3	1		0
+HAZ_CONVECTIVO/F_HX	1,000000E+00	-infinity	infinity	A3	1		0
+HAZ_CONVECTIVO/G_DOT_GASES	4,583024E+01	-infinity	infinity	A3	1	kg/s	0
+HAZ_CONVECTIVO/H_BAR_C	1,358629E+02	-infinity	infinity	A0	1	W/m^2-K	0
+HAZ_CONVECTIVO/H_BAR_H	4,652000E+03	-infinity	infinity	A0	1	W/m^2-K	0
+HAZ_CONVECTIVO/H_BAR_R	8,183263E+00	-infinity	infinity	A0	1	W/m^2-K	0
+HAZ_CONVECTIVO/H_BAR_R_2	1,219771E+01	-infinity	infinity	A0	1	W/m^2-K	0
+HAZ_CONVECTIVO/H_H_I	-1,915445E+03	-infinity	infinity	A0	1	kJ/kg	0
+HAZ_CONVECTIVO/H_H_O	-2,436778E+03	-infinity	infinity	A0	1	kJ/kg	0
+HAZ_CONVECTIVO/K_EPSILON_G	9,042473E-01	-infinity	infinity	A3	1	1/m	0
+HAZ_CONVECTIVO/L	5,772000E+00	-infinity	infinity	A3	1	m	0
+HAZ_CONVECTIVO/MW_GASES	2,778456E+01	-infinity	infinity	A3	1	kg/kmol	0
+HAZ_CONVECTIVO/N_L	6,000000E+01	-infinity	infinity	A3	1		0
+HAZ_CONVECTIVO/N_T	1,400000E+01	-infinity	infinity	A3	1		0
+HAZ_CONVECTIVO/NTU	1,777838E+00	0,000000E+00	infinity	A3	1		0
+HAZ_CONVECTIVO/P	1,013250E+02	-infinity	infinity	A0	1	kPa	0
+HAZ_CONVECTIVO/P_C	8,951552E+00	-infinity	infinity	A0	1	kPa	0
+HAZ_CONVECTIVO/P_W	1,834653E+01	-infinity	infinity	A0	1	kPa	0
+HAZ_CONVECTIVO/Q_DOT	2,389282E+04	-infinity	infinity	A1	1	kW	0
+HAZ_CONVECTIVO/R_ENSUC	9,000000E-04	-infinity	infinity	A3	1	m^2-K/W	0
+HAZ_CONVECTIVO/RE	1,157120E+02	-infinity	infinity	A3	1		0
+HAZ_CONVECTIVO/RELROUGH	1,024124E-03	-infinity	infinity	A3	1		0
+HAZ_CONVECTIVO/S_EQ	1,834269E-01	-infinity	infinity	A3	1	m	0
+HAZ_CONVECTIVO/S_EQ_2	1,832998E-01	-infinity	infinity	A3	1	m	0
+HAZ_CONVECTIVO/S_L	1,016000E-01	-infinity	infinity	A3	1	m	0
+HAZ_CONVECTIVO/S_T	1,048000E-01	-infinity	infinity	A3	1	m	0
+HAZ_CONVECTIVO/T	3,430000E-03	-infinity	infinity	A1	1	m	0
+HAZ_CONVECTIVO/T_BAR_H	5,746845E+02	0,000000E+00	infinity	A1	1	C	0
+HAZ_CONVECTIVO/T_BAR_W	2,821333E+02	-infinity	infinity	A1	1	C	0
+HAZ_CONVECTIVO/T_C_I	2,821333E+02	0,000000E+00	infinity	A1	1	C	0
+HAZ_CONVECTIVO/T_C_O	2,821334E+02	0,000000E+00	infinity	A1	1	C	0
+HAZ_CONVECTIVO/T_DOMO	2,821333E+02	-infinity	infinity	A1	1	C	0
+HAZ_CONVECTIVO/T_H_I	7,826472E+02	-infinity	infinity	A1	1	C	0
+HAZ_CONVECTIVO/T_H_O	3,667218E+02	0,000000E+00	infinity	A1	1	C	0
+HAZ_CONVECTIVO/U	1,235981E-01	0,000000E+00	infinity	A3	1	kW/m^2-C	0
+HAZ_CONVECTIVO/U_INF	1,687426E+01	-infinity	infinity	A3	1	m/s	0
+HAZ_CONVECTIVO/U_INF_0	4,365617E+00	-infinity	infinity	A3	1	m/s	0
+HAZ_CONVECTIVO/U_REAL	2,629800E+01	-infinity	infinity	A3	1	m/s	0
+HAZ_CONVECTIVO/U_REAL_0	8,472532E+00	-infinity	infinity	A3	1	m/s	0
+HAZ_CONVECTIVO/V_DOT_N_GASES	1,330955E+05	-infinity	infinity	A3	1	m^3/h	0
+HAZ_CONVECTIVO/X_AR	1,204907E-02	-infinity	infinity	A3	1		0
+HAZ_CONVECTIVO/X_CO2	1,399360E-01	-infinity	infinity	A3	1		0
+HAZ_CONVECTIVO/X_H2O	1,174065E-01	-infinity	infinity	A3	1		0
+HAZ_CONVECTIVO/X_N2	7,108431E-01	-infinity	infinity	A3	1		0
+HAZ_CONVECTIVO/X_O2	1,976529E-02	-infinity	infinity	A3	1		0
+HOGAR/A[0]	1,056300E+00	-infinity	infinity	A3	0		0
+HOGAR/A[1]	1,000000E+00	-infinity	infinity	A3	0		0
+HOGAR/A[10]	4,000000E+00	-infinity	infinity	A3	1		0
+HOGAR/A[11]	4,000000E+00	-infinity	infinity	A3	1		0
+HOGAR/A[12]	6,000000E+00	-infinity	infinity	A3	1		0
+HOGAR/A[13]	5,000000E+00	-infinity	infinity	A3	1		0
+HOGAR/A[14]	6,000000E+00	-infinity	infinity	A3	1		0
+HOGAR/A[15]	0,000000E+00	-infinity	infinity	A3	1		0
+HOGAR/A[16]	0,000000E+00	-infinity	infinity	A3	1		0
+HOGAR/A[17]	0,000000E+00	-infinity	infinity	A3	1		0
+HOGAR/A[18]	1,000000E+00	-infinity	infinity	A3	1		0
+HOGAR/A[19]	1,000000E+00	-infinity	infinity	A3	1		0
+HOGAR/A[2]	2,000000E+00	-infinity	infinity	A3	1		0
+HOGAR/A[20]	0,000000E+00	-infinity	infinity	A3	1		0
+HOGAR/A[3]	3,000000E+00	-infinity	infinity	A3	1		0
+HOGAR/A[4]	2,000000E+00	-infinity	infinity	A3	1		0
+HOGAR/A[5]	4,000000E+00	-infinity	infinity	A3	1		0
+HOGAR/A[6]	3,000000E+00	-infinity	infinity	A3	1		0
+HOGAR/A[7]	4,000000E+00	-infinity	infinity	A3	1		0
+HOGAR/A[8]	4,000000E+00	-infinity	infinity	A3	1		0
+HOGAR/A[9]	4,000000E+00	-infinity	infinity	A3	1		0
+HOGAR/A_HOGAR	2,027103E+02	-infinity	infinity	A3	1	m^2	0
+HOGAR/B[0]	4,043600E+00	-infinity	infinity	A3	1		0
+HOGAR/B[1]	4,000000E+00	-infinity	infinity	A3	1		0
+HOGAR/B[10]	8,000000E+00	-infinity	infinity	A3	1		0
+HOGAR/B[11]	1,000000E+01	-infinity	infinity	A3	1		0
+HOGAR/B[12]	1,400000E+01	-infinity	infinity	A3	1		0
+HOGAR/B[13]	1,200000E+01	-infinity	infinity	A3	1		0
+HOGAR/B[14]	1,400000E+01	-infinity	infinity	A3	1		0
+HOGAR/B[15]	0,000000E+00	-infinity	infinity	A3	1		0
+HOGAR/B[16]	2,000000E+00	-infinity	infinity	A3	1		0
+HOGAR/B[17]	0,000000E+00	-infinity	infinity	A3	1		0
+HOGAR/B[18]	0,000000E+00	-infinity	infinity	A3	1		0
+HOGAR/B[19]	0,000000E+00	-infinity	infinity	A3	1		0
+HOGAR/B[2]	6,000000E+00	-infinity	infinity	A3	1		0
+HOGAR/B[20]	2,000000E+00	-infinity	infinity	A3	1		0
+HOGAR/B[3]	8,000000E+00	-infinity	infinity	A3	1		0
+HOGAR/B[4]	4,000000E+00	-infinity	infinity	A3	1		0
+HOGAR/B[5]	1,000000E+01	-infinity	infinity	A3	1		0
+HOGAR/B[6]	6,000000E+00	-infinity	infinity	A3	1		0
+HOGAR/B[7]	8,000000E+00	-infinity	infinity	A3	1		0
+HOGAR/B[8]	8,000000E+00	-infinity	infinity	A3	1		0
+HOGAR/B[9]	8,000000E+00	-infinity	infinity	A3	1		0
+HOGAR/C[0]	3,500000E-02	-infinity	infinity	A3	1		0
+HOGAR/C[1]	0,000000E+00	-infinity	infinity	A3	1		0
+HOGAR/C[10]	0,000000E+00	-infinity	infinity	A3	1		0
+HOGAR/C[11]	0,000000E+00	-infinity	infinity	A3	1		0
+HOGAR/C[12]	0,000000E+00	-infinity	infinity	A3	1		0
+HOGAR/C[13]	0,000000E+00	-infinity	infinity	A3	1		0
+HOGAR/C[14]	0,000000E+00	-infinity	infinity	A3	1		0
+HOGAR/C[15]	0,000000E+00	-infinity	infinity	A3	1		0
+HOGAR/C[16]	0,000000E+00	-infinity	infinity	A3	1		0
+HOGAR/C[17]	2,000000E+00	-infinity	infinity	A3	1		0
+HOGAR/C[18]	0,000000E+00	-infinity	infinity	A3	1		0
+HOGAR/C[19]	0,000000E+00	-infinity	infinity	A3	1		0
+HOGAR/C[2]	0,000000E+00	-infinity	infinity	A3	1		0
+HOGAR/C[20]	0,000000E+00	-infinity	infinity	A3	1		0
+HOGAR/C[3]	0,000000E+00	-infinity	infinity	A3	1		0
+HOGAR/C[4]	0,000000E+00	-infinity	infinity	A3	1		0
+HOGAR/C[5]	0,000000E+00	-infinity	infinity	A3	1		0
+HOGAR/C[6]	0,000000E+00	-infinity	infinity	A3	1		0
+HOGAR/C[7]	0,000000E+00	-infinity	infinity	A3	1		0
+HOGAR/C[8]	0,000000E+00	-infinity	infinity	A3	1		0
+HOGAR/C[9]	0,000000E+00	-infinity	infinity	A3	1		0
+HOGAR/COMP[0]	1,000000E+02	-infinity	infinity	A3	1	%	0
+HOGAR/COMP[1]	9,247000E+01	-infinity	infinity	A3	1	%	0
+HOGAR/COMP[10]	3,400000E-01	-infinity	infinity	A3	1	%	0
+HOGAR/COMP[11]	2,200000E-01	-infinity	infinity	A3	1	%	0
+HOGAR/COMP[12]	0,000000E+00	-infinity	infinity	A3	1	%	0
+HOGAR/COMP[13]	6,000000E-02	-infinity	infinity	A3	1	%	0
+HOGAR/COMP[14]	0,000000E+00	-infinity	infinity	A3	1	%	0
+HOGAR/COMP[15]	0,000000E+00	-infinity	infinity	A3	1	%	0
+HOGAR/COMP[16]	0,000000E+00	-infinity	infinity	A3	1	%	0
+HOGAR/COMP[17]	1,750000E+00	-infinity	infinity	A3	1	%	0
+HOGAR/COMP[18]	6,800000E-01	-infinity	infinity	A3	1	%	0
+HOGAR/COMP[19]	0,000000E+00	-infinity	infinity	A3	1	%	0
+HOGAR/COMP[2]	3,500000E+00	-infinity	infinity	A3	1	%	0
+HOGAR/COMP[20]	0,000000E+00	-infinity	infinity	A3	1	%	0
+HOGAR/COMP[3]	9,800000E-01	-infinity	infinity	A3	1	%	0
+HOGAR/COMP[30]	1,000000E+02	-infinity	infinity	A3	1	%	0
+HOGAR/COMP[31]	2,065974E+01	-infinity	infinity	A3	1	%	0
+HOGAR/COMP[32]	7,699820E+01	-infinity	infinity	A3	1	%	0
+HOGAR/COMP[33]	3,944580E-02	-infinity	infinity	A3	1	%	0
+HOGAR/COMP[34]	9,171148E-01	-infinity	infinity	A3	1	%	0
+HOGAR/COMP[35]	1,385505E+00	-infinity	infinity	A3	1	%	0
+HOGAR/COMP[4]	0,000000E+00	-infinity	infinity	A3	1	%	0
+HOGAR/COMP[40]	1,000000E+02	-infinity	infinity	A3	1	%	0
+HOGAR/COMP[41]	8,834495E+00	-infinity	infinity	A3	1	%	0
+HOGAR/COMP[42]	1,810662E+01	-infinity	infinity	A3	1	%	0
+HOGAR/COMP[43]	7,050464E+01	-infinity	infinity	A3	1	%	0
+HOGAR/COMP[44]	1,716210E+00	-infinity	infinity	A3	1	%	0
+HOGAR/COMP[45]	0,000000E+00	-infinity	infinity	A3	1	%	0
+HOGAR/COMP[46]	8,380348E-01	-infinity	infinity	A3	1	%	0
+HOGAR/COMP[5]	0,000000E+00	-infinity	infinity	A3	1	%	0
+HOGAR/COMP[6]	0,000000E+00	-infinity	infinity	A3	1	%	0
+HOGAR/COMP[7]	0,000000E+00	-infinity	infinity	A3	1	%	0
+HOGAR/COMP[8]	0,000000E+00	-infinity	infinity	A3	1	%	0
+HOGAR/COMP[9]	0,000000E+00	-infinity	infinity	A3	1	%	0
+HOGAR/COMP_S[41]	9,631292E+00	-infinity	infinity	A3	1	%	0
+HOGAR/COMP_S[42]	1,962149E+01	-infinity	infinity	A3	1	%	0
+HOGAR/COMP_S[43]	6,991635E+01	-infinity	infinity	A3	1	%	0
+HOGAR/COMP_S[44]	0,000000E+00	-infinity	infinity	A3	1	%	0
+HOGAR/COMP_S[45]	0,000000E+00	-infinity	infinity	A3	1	%	0
+HOGAR/COMP_S[46]	8,308704E-01	-infinity	infinity	A3	1	%	0
+HOGAR/COMPONENT$[0]	Fuel Gas	-infinity	infinity	S0	1		0
+HOGAR/COMPONENT$[1]	CH4	-infinity	infinity	S0	1		0
+HOGAR/COMPONENT$[10]	C4H8,isobutene	-infinity	infinity	S0	1		0
+HOGAR/COMPONENT$[11]	C4H10	-infinity	infinity	S0	1		0
+HOGAR/COMPONENT$[12]	C5H12	-infinity	infinity	S0	1		0
+HOGAR/COMPONENT$[13]	C5H12	-infinity	infinity	S0	1		0
+HOGAR/COMPONENT$[14]	C6H14	-infinity	infinity	S0	1		0
+HOGAR/COMPONENT$[15]	O2	-infinity	infinity	S0	1		0
+HOGAR/COMPONENT$[16]	H2	-infinity	infinity	S0	1		0
+HOGAR/COMPONENT$[17]	N2	-infinity	infinity	S0	1		0
+HOGAR/COMPONENT$[18]	CO2	-infinity	infinity	S0	1		0
+HOGAR/COMPONENT$[19]	CO	-infinity	infinity	S0	1		0
+HOGAR/COMPONENT$[2]	C2H6	-infinity	infinity	S0	1		0
+HOGAR/COMPONENT$[20]	h2o	-infinity	infinity	S0	1		0
+HOGAR/COMPONENT$[3]	C3H8	-infinity	infinity	S0	1		0
+HOGAR/COMPONENT$[30]	Wet Air	-infinity	infinity	S0	1		0
+HOGAR/COMPONENT$[31]	O2	-infinity	infinity	S0	1		0
+HOGAR/COMPONENT$[32]	N2	-infinity	infinity	S0	1		0
+HOGAR/COMPONENT$[33]	CO2	-infinity	infinity	S0	1		0
+HOGAR/COMPONENT$[34]	Ar	-infinity	infinity	S0	1		0
+HOGAR/COMPONENT$[35]	h2o	-infinity	infinity	S0	1		0
+HOGAR/COMPONENT$[4]	C2H4	-infinity	infinity	S0	1		0
+HOGAR/COMPONENT$[40]	Wet Gases	-infinity	infinity	S0	1		0
+HOGAR/COMPONENT$[41]	CO2	-infinity	infinity	S0	1		0
+HOGAR/COMPONENT$[42]	h2o	-infinity	infinity	S0	1		0
+HOGAR/COMPONENT$[43]	N2	-infinity	infinity	S0	1		0
+HOGAR/COMPONENT$[44]	O2	-infinity	infinity	S0	1		0
+HOGAR/COMPONENT$[45]	SO2	-infinity	infinity	S0	1		0
+HOGAR/COMPONENT$[46]	Ar	-infinity	infinity	S0	1		0
+HOGAR/COMPONENT$[5]	C4H10	-infinity	infinity	S0	1		0
+HOGAR/COMPONENT$[6]	C3H6,propylene	-infinity	infinity	S0	1		0
+HOGAR/COMPONENT$[7]	C4H8,1-butene	-infinity	infinity	S0	1		0
+HOGAR/COMPONENT$[8]	C4H8,cis2-buten	-infinity	infinity	S0	1		0
+HOGAR/COMPONENT$[9]	C4H8,tr2-butene	-infinity	infinity	S0	1		0
+HOGAR/D[0]	1,360000E-02	-infinity	infinity	A3	1		0
+HOGAR/D[1]	0,000000E+00	-infinity	infinity	A3	1		0
+HOGAR/D[10]	0,000000E+00	-infinity	infinity	A3	1		0
+HOGAR/D[11]	0,000000E+00	-infinity	infinity	A3	1		0
+HOGAR/D[12]	0,000000E+00	-infinity	infinity	A3	1		0
+HOGAR/D[13]	0,000000E+00	-infinity	infinity	A3	1		0
+HOGAR/D[14]	0,000000E+00	-infinity	infinity	A3	1		0
+HOGAR/D[15]	2,000000E+00	-infinity	infinity	A3	1		0
+HOGAR/D[16]	0,000000E+00	-infinity	infinity	A3	1		0
+HOGAR/D[17]	0,000000E+00	-infinity	infinity	A3	1		0
+HOGAR/D[18]	2,000000E+00	-infinity	infinity	A3	1		0
+HOGAR/D[19]	1,000000E+00	-infinity	infinity	A3	1		0
+HOGAR/D[2]	0,000000E+00	-infinity	infinity	A3	1		0
+HOGAR/D[20]	2,000000E+00	-infinity	infinity	A3	1		0
+HOGAR/D[3]	0,000000E+00	-infinity	infinity	A3	1		0
+HOGAR/D[4]	0,000000E+00	-infinity	infinity	A3	1		0
+HOGAR/D[5]	0,000000E+00	-infinity	infinity	A3	1		0
+HOGAR/D[6]	0,000000E+00	-infinity	infinity	A3	1		0
+HOGAR/D[7]	0,000000E+00	-infinity	infinity	A3	1		0
+HOGAR/D[8]	0,000000E+00	-infinity	infinity	A3	1		0
+HOGAR/D[9]	0,000000E+00	-infinity	infinity	A3	1		0
+HOGAR/E[0]	0,000000E+00	-infinity	infinity	A3	1		0
+HOGAR/E[1]	0,000000E+00	-infinity	infinity	A3	1		0
+HOGAR/E[10]	0,000000E+00	-infinity	infinity	A3	1		0
+HOGAR/E[11]	0,000000E+00	-infinity	infinity	A3	1		0
+HOGAR/E[12]	0,000000E+00	-infinity	infinity	A3	1		0
+HOGAR/E[13]	0,000000E+00	-infinity	infinity	A3	1		0
+HOGAR/E[14]	0,000000E+00	-infinity	infinity	A3	1		0
+HOGAR/E[15]	0,000000E+00	-infinity	infinity	A3	1		0
+HOGAR/E[16]	0,000000E+00	-infinity	infinity	A3	1		0
+HOGAR/E[17]	0,000000E+00	-infinity	infinity	A3	1		0
+HOGAR/E[18]	0,000000E+00	-infinity	infinity	A3	1		0
+HOGAR/E[19]	0,000000E+00	-infinity	infinity	A3	1		0
+HOGAR/E[2]	0,000000E+00	-infinity	infinity	A3	1		0
+HOGAR/E[20]	0,000000E+00	-infinity	infinity	A3	1		0
+HOGAR/E[3]	0,000000E+00	-infinity	infinity	A3	1		0
+HOGAR/E[4]	0,000000E+00	-infinity	infinity	A3	1		0
+HOGAR/E[5]	0,000000E+00	-infinity	infinity	A3	1		0
+HOGAR/E[6]	0,000000E+00	-infinity	infinity	A3	1		0
+HOGAR/E[7]	0,000000E+00	-infinity	infinity	A3	1		0
+HOGAR/E[8]	0,000000E+00	-infinity	infinity	A3	1		0
+HOGAR/E[9]	0,000000E+00	-infinity	infinity	A3	1		0
+HOGAR/EPSILON_FLAME	7,000000E-01	-infinity	infinity	A3	1		0
+HOGAR/GF_RATIO	1,488238E+01	-infinity	infinity	A3	1	kg/m^3	0
+HOGAR/GF_RATIO_S	1,364609E+01	-infinity	infinity	A3	1	kg/m^3	0
+HOGAR/H_BAR_FORM[1]	-7,452000E+04	-infinity	infinity	A0	1	kJ/kmol	0
+HOGAR/H_BAR_FORM[10]	-1,710000E+04	-infinity	infinity	A0	1	kJ/kmol	0
+HOGAR/H_BAR_FORM[11]	-1,257900E+05	-infinity	infinity	A0	1	kJ/kmol	0
+HOGAR/H_BAR_FORM[12]	-1,745500E+05	-infinity	infinity	A0	1	kJ/kmol	0
+HOGAR/H_BAR_FORM[13]	-1,467600E+05	-infinity	infinity	A0	1	kJ/kmol	0
+HOGAR/H_BAR_FORM[14]	-1,669400E+05	-infinity	infinity	A0	1	kJ/kmol	0
+HOGAR/H_BAR_FORM[15]	0,000000E+00	-infinity	infinity	A0	1	kJ/kmol	0
+HOGAR/H_BAR_FORM[16]	0,000000E+00	-infinity	infinity	A0	1	kJ/kmol	0
+HOGAR/H_BAR_FORM[17]	0,000000E+00	-infinity	infinity	A0	1	kJ/kmol	0
+HOGAR/H_BAR_FORM[18]	-3,935100E+05	-infinity	infinity	A0	1	kJ/kmol	0
+HOGAR/H_BAR_FORM[19]	-1,105300E+05	-infinity	infinity	A0	1	kJ/kmol	0
+HOGAR/H_BAR_FORM[2]	-8,382000E+04	-infinity	infinity	A0	1	kJ/kmol	0
+HOGAR/H_BAR_FORM[20]	-2,418140E+05	-infinity	infinity	A0	1	kJ/kmol	0
+HOGAR/H_BAR_FORM[3]	-1,046800E+05	-infinity	infinity	A0	1	kJ/kmol	0
+HOGAR/H_BAR_FORM[31]	0,000000E+00	-infinity	infinity	A0	1	kJ/kmol	0
+HOGAR/H_BAR_FORM[32]	0,000000E+00	-infinity	infinity	A0	1	kJ/kmol	0
+HOGAR/H_BAR_FORM[33]	-3,935100E+05	-infinity	infinity	A0	1	kJ/kmol	0
+HOGAR/H_BAR_FORM[34]	0,000000E+00	-infinity	infinity	A0	1	kJ/kmol	0
+HOGAR/H_BAR_FORM[35]	-2,418140E+05	-infinity	infinity	A0	1	kJ/kmol	0
+HOGAR/H_BAR_FORM[4]	5,251000E+04	-infinity	infinity	A0	1	kJ/kmol	0
+HOGAR/H_BAR_FORM[41]	-3,935100E+05	-infinity	infinity	A0	1	kJ/kmol	0
+HOGAR/H_BAR_FORM[42]	-2,418140E+05	-infinity	infinity	A0	1	kJ/kmol	0
+HOGAR/H_BAR_FORM[43]	0,000000E+00	-infinity	infinity	A0	1	kJ/kmol	0
+HOGAR/H_BAR_FORM[44]	0,000000E+00	-infinity	infinity	A0	1	kJ/kmol	0
+HOGAR/H_BAR_FORM[45]	-2,968400E+05	-infinity	infinity	A0	1	kJ/kmol	0
+HOGAR/H_BAR_FORM[46]	0,000000E+00	-infinity	infinity	A0	1	kJ/kmol	0
+HOGAR/H_BAR_FORM[5]	-1,341800E+05	-infinity	infinity	A0	1	kJ/kmol	0
+HOGAR/H_BAR_FORM[6]	1,971000E+04	-infinity	infinity	A0	1	kJ/kmol	0
+HOGAR/H_BAR_FORM[7]	-5,400000E+02	-infinity	infinity	A0	1	kJ/kmol	0
+HOGAR/H_BAR_FORM[8]	-7,400000E+03	-infinity	infinity	A0	1	kJ/kmol	0
+HOGAR/H_BAR_FORM[9]	-1,100000E+04	-infinity	infinity	A0	1	kJ/kmol	0
+HOGAR/H_BAR_STD[1]	-7,469856E+04	-infinity	infinity	A0	1	kJ/kmol	0
+HOGAR/H_BAR_STD[10]	-1,755469E+04	-infinity	infinity	A0	1	kJ/kmol	0
+HOGAR/H_BAR_STD[11]	-1,262914E+05	-infinity	infinity	A0	1	kJ/kmol	0
+HOGAR/H_BAR_STD[12]	-1,753614E+05	-infinity	infinity	A0	1	kJ/kmol	0
+HOGAR/H_BAR_STD[13]	-1,475914E+05	-infinity	infinity	A0	1	kJ/kmol	0
+HOGAR/H_BAR_STD[14]	-1,679579E+05	-infinity	infinity	A0	1	kJ/kmol	0
+HOGAR/H_BAR_STD[15]	-1,469843E+02	-infinity	infinity	A0	1	kJ/kmol	0
+HOGAR/H_BAR_STD[16]	-1,441049E+02	-infinity	infinity	A0	1	kJ/kmol	0
+HOGAR/H_BAR_STD[17]	-1,458566E+02	-infinity	infinity	A0	1	kJ/kmol	0
+HOGAR/H_BAR_STD[18]	-3,936967E+05	-infinity	infinity	A0	1	kJ/kmol	0
+HOGAR/H_BAR_STD[19]	-1,106756E+05	-infinity	infinity	A0	1	kJ/kmol	0
+HOGAR/H_BAR_STD[2]	-8,408271E+04	-infinity	infinity	A0	1	kJ/kmol	0
+HOGAR/H_BAR_STD[20]	-2,421908E+05	-infinity	infinity	A0	1	kJ/kmol	0
+HOGAR/H_BAR_STD[3]	-1,050505E+05	-infinity	infinity	A0	1	kJ/kmol	0
+HOGAR/H_BAR_STD[31]	-1,469843E+02	-infinity	infinity	A0	1	kJ/kmol	0
+HOGAR/H_BAR_STD[32]	-1,458566E+02	-infinity	infinity	A0	1	kJ/kmol	0
+HOGAR/H_BAR_STD[33]	-3,936967E+05	-infinity	infinity	A0	1	kJ/kmol	0
+HOGAR/H_BAR_STD[34]	-1,041842E+02	-infinity	infinity	A0	1	kJ/kmol	0
+HOGAR/H_BAR_STD[35]	-2,421908E+05	-infinity	infinity	A0	1	kJ/kmol	0
+HOGAR/H_BAR_STD[4]	5,229558E+04	-infinity	infinity	A0	1	kJ/kmol	0
+HOGAR/H_BAR_STD[5]	-1,346692E+05	-infinity	infinity	A0	1	kJ/kmol	0
+HOGAR/H_BAR_STD[6]	1,938572E+04	-infinity	infinity	A0	1	kJ/kmol	0
+HOGAR/H_BAR_STD[7]	-9,755638E+02	-infinity	infinity	A0	1	kJ/kmol	0
+HOGAR/H_BAR_STD[8]	-7,816484E+03	-infinity	infinity	A0	1	kJ/kmol	0
+HOGAR/H_BAR_STD[9]	-1,144982E+04	-infinity	infinity	A0	1	kJ/kmol	0
+HOGAR/H_BAR_STD_AD_FLAME[41]	-2,922343E+05	-infinity	infinity	A0	1	kJ/kmol	0
+HOGAR/H_BAR_STD_AD_FLAME[42]	-1,603264E+05	-infinity	infinity	A0	1	kJ/kmol	0
+HOGAR/H_BAR_STD_AD_FLAME[43]	6,200675E+04	-infinity	infinity	A0	1	kJ/kmol	0
+HOGAR/H_BAR_STD_AD_FLAME[44]	6,539765E+04	-infinity	infinity	A0	1	kJ/kmol	0
+HOGAR/H_BAR_STD_AD_FLAME[45]	-1,965095E+05	-infinity	infinity	A0	1	kJ/kmol	0
+HOGAR/H_BAR_STD_AD_FLAME[46]	3,874220E+04	-infinity	infinity	A0	1	kJ/kmol	0
+HOGAR/H_BAR_STD_AD_FLAME_S[41]	-2,839399E+05	-infinity	infinity	A0	1	kJ/kmol	0
+HOGAR/H_BAR_STD_AD_FLAME_S[42]	-1,530833E+05	-infinity	infinity	A0	1	kJ/kmol	0
+HOGAR/H_BAR_STD_AD_FLAME_S[43]	6,695197E+04	-infinity	infinity	A0	1	kJ/kmol	0
+HOGAR/H_BAR_STD_AD_FLAME_S[44]	7,061629E+04	-infinity	infinity	A0	1	kJ/kmol	0
+HOGAR/H_BAR_STD_AD_FLAME_S[45]	-1,885848E+05	-infinity	infinity	A0	1	kJ/kmol	0
+HOGAR/H_BAR_STD_AD_FLAME_S[46]	4,156822E+04	-infinity	infinity	A0	1	kJ/kmol	0
+HOGAR/H_BAR_STD_FLAME[41]	-3,304532E+05	-infinity	infinity	A0	1	kJ/kmol	0
+HOGAR/H_BAR_STD_FLAME[42]	-1,924652E+05	-infinity	infinity	A0	1	kJ/kmol	0
+HOGAR/H_BAR_STD_FLAME[43]	3,920213E+04	-infinity	infinity	A0	1	kJ/kmol	0
+HOGAR/H_BAR_STD_FLAME[44]	4,144794E+04	-infinity	infinity	A0	1	kJ/kmol	0
+HOGAR/H_BAR_STD_FLAME[45]	-2,333065E+05	-infinity	infinity	A0	1	kJ/kmol	0
+HOGAR/H_BAR_STD_FLAME[46]	2,547582E+04	-infinity	infinity	A0	1	kJ/kmol	0
+HOGAR/H_BAR_STD_FLAME_S[41]	-3,251186E+05	-infinity	infinity	A0	1	kJ/kmol	0
+HOGAR/H_BAR_STD_FLAME_S[42]	-1,881136E+05	-infinity	infinity	A0	1	kJ/kmol	0
+HOGAR/H_BAR_STD_FLAME_S[43]	4,238586E+04	-infinity	infinity	A0	1	kJ/kmol	0
+HOGAR/H_BAR_STD_FLAME_S[44]	4,479107E+04	-infinity	infinity	A0	1	kJ/kmol	0
+HOGAR/H_BAR_STD_FLAME_S[45]	-2,281294E+05	-infinity	infinity	A0	1	kJ/kmol	0
+HOGAR/H_BAR_STD_FLAME_S[46]	2,736232E+04	-infinity	infinity	A0	1	kJ/kmol	0
+HOGAR/H_BAR_STD_LHV[1]	-7,487625E+04	-infinity	infinity	A0	1	kJ/kmol	0
+HOGAR/H_BAR_STD_LHV[10]	-1,800514E+04	-infinity	infinity	A0	1	kJ/kmol	0
+HOGAR/H_BAR_STD_LHV[11]	-1,267877E+05	-infinity	infinity	A0	1	kJ/kmol	0
+HOGAR/H_BAR_STD_LHV[12]	-1,761635E+05	-infinity	infinity	A0	1	kJ/kmol	0
+HOGAR/H_BAR_STD_LHV[13]	-1,484147E+05	-infinity	infinity	A0	1	kJ/kmol	0
+HOGAR/H_BAR_STD_LHV[14]	-1,689812E+05	-infinity	infinity	A0	1	kJ/kmol	0
+HOGAR/H_BAR_STD_LHV[15]	-2,938715E+02	-infinity	infinity	A0	1	kJ/kmol	0
+HOGAR/H_BAR_STD_LHV[16]	-2,880149E+02	-infinity	infinity	A0	1	kJ/kmol	0
+HOGAR/H_BAR_STD_LHV[17]	-2,917158E+02	-infinity	infinity	A0	1	kJ/kmol	0
+HOGAR/H_BAR_STD_LHV[18]	-3,938823E+05	-infinity	infinity	A0	1	kJ/kmol	0
+HOGAR/H_BAR_STD_LHV[19]	-1,108213E+05	-infinity	infinity	A0	1	kJ/kmol	0
+HOGAR/H_BAR_STD_LHV[2]	-8,434256E+04	-infinity	infinity	A0	1	kJ/kmol	0
+HOGAR/H_BAR_STD_LHV[20]	-2,425678E+05	-infinity	infinity	A0	1	kJ/kmol	0
+HOGAR/H_BAR_STD_LHV[3]	-1,054165E+05	-infinity	infinity	A0	1	kJ/kmol	0
+HOGAR/H_BAR_STD_LHV[31]	-2,938715E+02	-infinity	infinity	A0	1	kJ/kmol	0
+HOGAR/H_BAR_STD_LHV[32]	-2,917158E+02	-infinity	infinity	A0	1	kJ/kmol	0
+HOGAR/H_BAR_STD_LHV[33]	-3,938823E+05	-infinity	infinity	A0	1	kJ/kmol	0
+HOGAR/H_BAR_STD_LHV[34]	-2,083832E+02	-infinity	infinity	A0	1	kJ/kmol	0
+HOGAR/H_BAR_STD_LHV[35]	-2,425676E+05	-infinity	infinity	A0	1	kJ/kmol	0
+HOGAR/H_BAR_STD_LHV[4]	5,208340E+04	-infinity	infinity	A0	1	kJ/kmol	0
+HOGAR/H_BAR_STD_LHV[41]	-3,938780E+05	-infinity	infinity	A0	1	kJ/kmol	0
+HOGAR/H_BAR_STD_LHV[42]	-2,421504E+05	-infinity	infinity	A0	1	kJ/kmol	0
+HOGAR/H_BAR_STD_LHV[43]	-2,906924E+02	-infinity	infinity	A0	1	kJ/kmol	0
+HOGAR/H_BAR_STD_LHV[44]	-2,920330E+02	-infinity	infinity	A0	1	kJ/kmol	0
+HOGAR/H_BAR_STD_LHV[45]	-2,972352E+05	-infinity	infinity	A0	1	kJ/kmol	0
+HOGAR/H_BAR_STD_LHV[46]	-2,078600E+02	-infinity	infinity	A0	1	kJ/kmol	0
+HOGAR/H_BAR_STD_LHV[5]	-1,351526E+05	-infinity	infinity	A0	1	kJ/kmol	0
+HOGAR/H_BAR_STD_LHV[6]	1,906507E+04	-infinity	infinity	A0	1	kJ/kmol	0
+HOGAR/H_BAR_STD_LHV[7]	-1,407034E+03	-infinity	infinity	A0	1	kJ/kmol	0
+HOGAR/H_BAR_STD_LHV[8]	-8,229383E+03	-infinity	infinity	A0	1	kJ/kmol	0
+HOGAR/H_BAR_STD_LHV[9]	-1,189615E+04	-infinity	infinity	A0	1	kJ/kmol	0
+HOGAR/LAMBDA	1,100000E+00	-infinity	infinity	A3	1		0
+HOGAR/LAMBDA_PERC	1,100000E+02	-infinity	infinity	A3	1	%	0
+HOGAR/LHV	-4,742902E+04	-infinity	infinity	A3	1	kJ/kg	0
+HOGAR/LHV_BAR	-8,286311E+05	-infinity	infinity	A3	1	kJ/kmol	0
+HOGAR/LHV_VOL	-8,830121E+03	-infinity	infinity	A3	1	kcal/m^3	0
+HOGAR/M_DOT[0]	8,641459E+03	-infinity	infinity	A3	1	kg/h	0
+HOGAR/M_DOT[1]	7,337640E+03	-infinity	infinity	A3	1	kg/h	0
+HOGAR/M_DOT[10]	9,435522E+01	-infinity	infinity	A3	1	kg/h	0
+HOGAR/M_DOT[11]	6,324624E+01	-infinity	infinity	A3	1	kg/h	0
+HOGAR/M_DOT[12]	0,000000E+00	-infinity	infinity	A3	1	kg/h	0
+HOGAR/M_DOT[13]	2,141113E+01	-infinity	infinity	A3	1	kg/h	0
+HOGAR/M_DOT[14]	0,000000E+00	-infinity	infinity	A3	1	kg/h	0
+HOGAR/M_DOT[15]	0,000000E+00	-infinity	infinity	A3	1	kg/h	0
+HOGAR/M_DOT[16]	0,000000E+00	-infinity	infinity	A3	1	kg/h	0
+HOGAR/M_DOT[17]	2,424788E+02	-infinity	infinity	A3	1	kg/h	0
+HOGAR/M_DOT[18]	1,480234E+02	-infinity	infinity	A3	1	kg/h	0
+HOGAR/M_DOT[19]	0,000000E+00	-infinity	infinity	A3	1	kg/h	0
+HOGAR/M_DOT[2]	5,205608E+02	-infinity	infinity	A3	1	kg/h	0
+HOGAR/M_DOT[20]	0,000000E+00	-infinity	infinity	A3	1	kg/h	0
+HOGAR/M_DOT[3]	2,137428E+02	-infinity	infinity	A3	1	kg/h	0
+HOGAR/M_DOT[30]	1,563483E+05	-infinity	infinity	A3	1	kg/h	0
+HOGAR/M_DOT[31]	3,587136E+04	-infinity	infinity	A3	1	kg/h	0
+HOGAR/M_DOT[32]	1,170404E+05	-infinity	infinity	A3	1	kg/h	0
+HOGAR/M_DOT[33]	9,419797E+01	-infinity	infinity	A3	1	kg/h	0
+HOGAR/M_DOT[34]	1,987962E+03	-infinity	infinity	A3	1	kg/h	0
+HOGAR/M_DOT[35]	1,354373E+03	-infinity	infinity	A3	1	kg/h	0
+HOGAR/M_DOT[4]	0,000000E+00	-infinity	infinity	A3	1	kg/h	0
+HOGAR/M_DOT[40]	1,649889E+05	-infinity	infinity	A3	1	kg/h	0
+HOGAR/M_DOT[41]	2,308789E+04	-infinity	infinity	A3	1	kg/h	0
+HOGAR/M_DOT[42]	1,937077E+04	-infinity	infinity	A3	1	kg/h	0
+HOGAR/M_DOT[43]	1,172812E+05	-infinity	infinity	A3	1	kg/h	0
+HOGAR/M_DOT[44]	3,261054E+03	-infinity	infinity	A3	1	kg/h	0
+HOGAR/M_DOT[45]	0,000000E+00	-infinity	infinity	A3	1	kg/h	0
+HOGAR/M_DOT[46]	1,987962E+03	-infinity	infinity	A3	1	kg/h	0
+HOGAR/M_DOT[5]	0,000000E+00	-infinity	infinity	A3	1	kg/h	0
+HOGAR/M_DOT[6]	0,000000E+00	-infinity	infinity	A3	1	kg/h	0
+HOGAR/M_DOT[7]	0,000000E+00	-infinity	infinity	A3	1	kg/h	0
+HOGAR/M_DOT[8]	0,000000E+00	-infinity	infinity	A3	1	kg/h	0
+HOGAR/M_DOT[9]	0,000000E+00	-infinity	infinity	A3	1	kg/h	0
+HOGAR/M_DOT_S[30]	1,421348E+05	-infinity	infinity	A3	1	kg/h	0
+HOGAR/M_DOT_S[31]	3,261033E+04	-infinity	infinity	A3	1	kg/h	0
+HOGAR/M_DOT_S[32]	1,064004E+05	-infinity	infinity	A3	1	kg/h	0
+HOGAR/M_DOT_S[33]	8,563452E+01	-infinity	infinity	A3	1	kg/h	0
+HOGAR/M_DOT_S[34]	1,807239E+03	-infinity	infinity	A3	1	kg/h	0
+HOGAR/M_DOT_S[35]	1,231248E+03	-infinity	infinity	A3	1	kg/h	0
+HOGAR/M_DOT_S[40]	1,512832E+05	-infinity	infinity	A3	1	kg/h	0
+HOGAR/M_DOT_S[41]	2,307932E+04	-infinity	infinity	A3	1	kg/h	0
+HOGAR/M_DOT_S[42]	1,924764E+04	-infinity	infinity	A3	1	kg/h	0
+HOGAR/M_DOT_S[43]	1,066413E+05	-infinity	infinity	A3	1	kg/h	0
+HOGAR/M_DOT_S[44]	0,000000E+00	-infinity	infinity	A3	1	kg/h	0
+HOGAR/M_DOT_S[45]	0,000000E+00	-infinity	infinity	A3	1	kg/h	0
+HOGAR/M_DOT_S[46]	1,807239E+03	-infinity	infinity	A3	1	kg/h	0
+HOGAR/MOLARTOFUEL[30]	1,097032E+01	-infinity	infinity	A3	1		0
+HOGAR/MOLARTOFUEL[31]	2,266440E+00	-infinity	infinity	A3	1		0
+HOGAR/MOLARTOFUEL[32]	8,446952E+00	-infinity	infinity	A3	1		0
+HOGAR/MOLARTOFUEL[33]	4,327332E-03	-infinity	infinity	A3	1		0
+HOGAR/MOLARTOFUEL[34]	1,006105E-01	-infinity	infinity	A3	1		0
+HOGAR/MOLARTOFUEL[35]	1,519943E-01	-infinity	infinity	A3	1		0
+HOGAR/MOLARTOFUEL[40]	1,200552E+01	-infinity	infinity	A3	1		0
+HOGAR/MOLARTOFUEL[41]	1,060627E+00	-infinity	infinity	A3	1		0
+HOGAR/MOLARTOFUEL[42]	2,173794E+00	-infinity	infinity	A3	1		0
+HOGAR/MOLARTOFUEL[43]	8,464452E+00	-infinity	infinity	A3	1		0
+HOGAR/MOLARTOFUEL[44]	2,060400E-01	-infinity	infinity	A3	1		0
+HOGAR/MOLARTOFUEL[45]	0,000000E+00	-infinity	infinity	A3	1		0
+HOGAR/MOLARTOFUEL[46]	1,006105E-01	-infinity	infinity	A3	1		0
+HOGAR/MOLARTOFUEL_S[30]	9,973022E+00	-infinity	infinity	A3	1		0
+HOGAR/MOLARTOFUEL_S[31]	2,060400E+00	-infinity	infinity	A3	1		0
+HOGAR/MOLARTOFUEL_S[32]	7,679047E+00	-infinity	infinity	A3	1		0
+HOGAR/MOLARTOFUEL_S[33]	3,933938E-03	-infinity	infinity	A3	1		0
+HOGAR/MOLARTOFUEL_S[34]	9,146406E-02	-infinity	infinity	A3	1		0
+HOGAR/MOLARTOFUEL_S[35]	1,381767E-01	-infinity	infinity	A3	1		0
+HOGAR/MOLARTOFUEL_S[40]	1,100822E+01	-infinity	infinity	A3	1		0
+HOGAR/MOLARTOFUEL_S[41]	1,060234E+00	-infinity	infinity	A3	1		0
+HOGAR/MOLARTOFUEL_S[42]	2,159977E+00	-infinity	infinity	A3	1		0
+HOGAR/MOLARTOFUEL_S[43]	7,696547E+00	-infinity	infinity	A3	1		0
+HOGAR/MOLARTOFUEL_S[44]	0,000000E+00	-infinity	infinity	A3	1		0
+HOGAR/MOLARTOFUEL_S[45]	0,000000E+00	-infinity	infinity	A3	1		0
+HOGAR/MOLARTOFUEL_S[46]	9,146406E-02	-infinity	infinity	A3	1		0
+HOGAR/MOLARTOOXYGEN[30]	4,840333E+00	-infinity	infinity	A3	1		0
+HOGAR/MOLARTOOXYGEN[31]	1,000000E+00	-infinity	infinity	A3	1		0
+HOGAR/MOLARTOOXYGEN[32]	3,726969E+00	-infinity	infinity	A3	1		0
+HOGAR/MOLARTOOXYGEN[33]	1,909308E-03	-infinity	infinity	A3	1		0
+HOGAR/MOLARTOOXYGEN[34]	4,439141E-02	-infinity	infinity	A3	1		0
+HOGAR/MOLARTOOXYGEN[35]	6,706304E-02	-infinity	infinity	A3	1		0
+HOGAR/MW[0]	1,747097E+01	-infinity	infinity	A3	1	kg/kmol	0
+HOGAR/MW[1]	1,604300E+01	-infinity	infinity	A3	1	kg/kmol	0
+HOGAR/MW[10]	5,610700E+01	-infinity	infinity	A3	1	kg/kmol	0
+HOGAR/MW[11]	5,812220E+01	-infinity	infinity	A3	1	kg/kmol	0
+HOGAR/MW[12]	7,215100E+01	-infinity	infinity	A3	1	kg/kmol	0
+HOGAR/MW[13]	7,214700E+01	-infinity	infinity	A3	1	kg/kmol	0
+HOGAR/MW[14]	8,617200E+01	-infinity	infinity	A3	1	kg/kmol	0
+HOGAR/MW[15]	3,199880E+01	-infinity	infinity	A3	1	kg/kmol	0
+HOGAR/MW[16]	2,015940E+00	-infinity	infinity	A3	1	kg/kmol	0
+HOGAR/MW[17]	2,801340E+01	-infinity	infinity	A3	1	kg/kmol	0
+HOGAR/MW[18]	4,401000E+01	-infinity	infinity	A3	1	kg/kmol	0
+HOGAR/MW[19]	2,800100E+01	-infinity	infinity	A3	1	kg/kmol	0
+HOGAR/MW[2]	3,007000E+01	-infinity	infinity	A3	1	kg/kmol	0
+HOGAR/MW[20]	1,801527E+01	-infinity	infinity	A3	1	kg/kmol	0
+HOGAR/MW[3]	4,409562E+01	-infinity	infinity	A3	1	kg/kmol	0
+HOGAR/MW[30]	2,881401E+01	-infinity	infinity	A3	1	kg/kmol	0
+HOGAR/MW[31]	3,199880E+01	-infinity	infinity	A3	1	kg/kmol	0
+HOGAR/MW[32]	2,801340E+01	-infinity	infinity	A3	1	kg/kmol	0
+HOGAR/MW[33]	4,401000E+01	-infinity	infinity	A3	1	kg/kmol	0
+HOGAR/MW[34]	3,994800E+01	-infinity	infinity	A3	1	kg/kmol	0
+HOGAR/MW[35]	1,801527E+01	-infinity	infinity	A3	1	kg/kmol	0
+HOGAR/MW[4]	2,805400E+01	-infinity	infinity	A3	1	kg/kmol	0
+HOGAR/MW[40]	2,778456E+01	-infinity	infinity	A3	1	kg/kmol	0
+HOGAR/MW[41]	4,401000E+01	-infinity	infinity	A3	1	kg/kmol	0
+HOGAR/MW[42]	1,801600E+01	-infinity	infinity	A3	1	kg/kmol	0
+HOGAR/MW[43]	2,801300E+01	-infinity	infinity	A3	1	kg/kmol	0
+HOGAR/MW[44]	3,199900E+01	-infinity	infinity	A3	1	kg/kmol	0
+HOGAR/MW[45]	6,406300E+01	-infinity	infinity	A3	1	kg/kmol	0
+HOGAR/MW[46]	3,994800E+01	-infinity	infinity	A3	1	kg/kmol	0
+HOGAR/MW[5]	5,812220E+01	-infinity	infinity	A3	1	kg/kmol	0
+HOGAR/MW[6]	4,208040E+01	-infinity	infinity	A3	1	kg/kmol	0
+HOGAR/MW[7]	5,610700E+01	-infinity	infinity	A3	1	kg/kmol	0
+HOGAR/MW[8]	5,610700E+01	-infinity	infinity	A3	1	kg/kmol	0
+HOGAR/MW[9]	5,610700E+01	-infinity	infinity	A3	1	kg/kmol	0
+HOGAR/MW_S[40]	2,769132E+01	-infinity	infinity	A3	1	kg/kmol	0
+HOGAR/N_DOT[0]	4,946181E+02	-infinity	infinity	A3	1	kmol/h	0
+HOGAR/N_DOT[1]	4,573733E+02	-infinity	infinity	A3	1	kmol/h	0
+HOGAR/N_DOT[10]	1,681701E+00	-infinity	infinity	A3	1	kmol/h	0
+HOGAR/N_DOT[11]	1,088160E+00	-infinity	infinity	A3	1	kmol/h	0
+HOGAR/N_DOT[12]	0,000000E+00	-infinity	infinity	A3	1	kmol/h	0
+HOGAR/N_DOT[13]	2,967708E-01	-infinity	infinity	A3	1	kmol/h	0
+HOGAR/N_DOT[14]	0,000000E+00	-infinity	infinity	A3	1	kmol/h	0
+HOGAR/N_DOT[15]	0,000000E+00	-infinity	infinity	A3	1	kmol/h	0
+HOGAR/N_DOT[16]	0,000000E+00	-infinity	infinity	A3	1	kmol/h	0
+HOGAR/N_DOT[17]	8,655816E+00	-infinity	infinity	A3	1	kmol/h	0
+HOGAR/N_DOT[18]	3,363403E+00	-infinity	infinity	A3	1	kmol/h	0
+HOGAR/N_DOT[19]	0,000000E+00	-infinity	infinity	A3	1	kmol/h	0
+HOGAR/N_DOT[2]	1,731163E+01	-infinity	infinity	A3	1	kmol/h	0
+HOGAR/N_DOT[20]	0,000000E+00	-infinity	infinity	A3	1	kmol/h	0
+HOGAR/N_DOT[3]	4,847257E+00	-infinity	infinity	A3	1	kmol/h	0
+HOGAR/N_DOT[30]	5,426120E+03	-infinity	infinity	A3	1	kmol/h	0
+HOGAR/N_DOT[31]	1,121022E+03	-infinity	infinity	A3	1	kmol/h	0
+HOGAR/N_DOT[32]	4,178015E+03	-infinity	infinity	A3	1	kmol/h	0
+HOGAR/N_DOT[33]	2,140376E+00	-infinity	infinity	A3	1	kmol/h	0
+HOGAR/N_DOT[34]	4,976375E+01	-infinity	infinity	A3	1	kmol/h	0
+HOGAR/N_DOT[35]	7,517915E+01	-infinity	infinity	A3	1	kmol/h	0
+HOGAR/N_DOT[4]	0,000000E+00	-infinity	infinity	A3	1	kmol/h	0
+HOGAR/N_DOT[40]	5,938149E+03	-infinity	infinity	A3	1	kmol/h	0
+HOGAR/N_DOT[41]	5,246054E+02	-infinity	infinity	A3	1	kmol/h	0
+HOGAR/N_DOT[42]	1,075198E+03	-infinity	infinity	A3	1	kmol/h	0
+HOGAR/N_DOT[43]	4,186671E+03	-infinity	infinity	A3	1	kmol/h	0
+HOGAR/N_DOT[44]	1,019111E+02	-infinity	infinity	A3	1	kmol/h	0
+HOGAR/N_DOT[45]	0,000000E+00	-infinity	infinity	A3	1	kmol/h	0
+HOGAR/N_DOT[46]	4,976375E+01	-infinity	infinity	A3	1	kmol/h	0
+HOGAR/N_DOT[5]	0,000000E+00	-infinity	infinity	A3	1	kmol/h	0
+HOGAR/N_DOT[6]	0,000000E+00	-infinity	infinity	A3	1	kmol/h	0
+HOGAR/N_DOT[7]	0,000000E+00	-infinity	infinity	A3	1	kmol/h	0
+HOGAR/N_DOT[8]	0,000000E+00	-infinity	infinity	A3	1	kmol/h	0
+HOGAR/N_DOT[9]	0,000000E+00	-infinity	infinity	A3	1	kmol/h	0
+HOGAR/N_DOT_S[30]	4,932837E+03	-infinity	infinity	A3	1	kmol/h	0
+HOGAR/N_DOT_S[31]	1,019111E+03	-infinity	infinity	A3	1	kmol/h	0
+HOGAR/N_DOT_S[32]	3,798195E+03	-infinity	infinity	A3	1	kmol/h	0
+HOGAR/N_DOT_S[33]	1,945797E+00	-infinity	infinity	A3	1	kmol/h	0
+HOGAR/N_DOT_S[34]	4,523978E+01	-infinity	infinity	A3	1	kmol/h	0
+HOGAR/N_DOT_S[35]	6,834468E+01	-infinity	infinity	A3	1	kmol/h	0
+HOGAR/N_DOT_S[40]	5,444865E+03	-infinity	infinity	A3	1	kmol/h	0
+HOGAR/N_DOT_S[41]	5,244109E+02	-infinity	infinity	A3	1	kmol/h	0
+HOGAR/N_DOT_S[42]	1,068364E+03	-infinity	infinity	A3	1	kmol/h	0
+HOGAR/N_DOT_S[43]	3,806851E+03	-infinity	infinity	A3	1	kmol/h	0
+HOGAR/N_DOT_S[44]	0,000000E+00	-infinity	infinity	A3	1	kmol/h	0
+HOGAR/N_DOT_S[45]	0,000000E+00	-infinity	infinity	A3	1	kmol/h	0
+HOGAR/N_DOT_S[46]	4,523978E+01	-infinity	infinity	A3	1	kmol/h	0
+HOGAR/OMEGA_BAR	1,404971E-02	-infinity	infinity	A3	1		0
+HOGAR/P_AIR	1,013000E+02	-infinity	infinity	A0	1	kPa	0
+HOGAR/P_FLAME	1,013000E+02	-infinity	infinity	A0	1	kPa	0
+HOGAR/P_FUEL	1,013000E+02	-infinity	infinity	A0	1	kPa	0
+HOGAR/P_LHV	1,013250E+02	-infinity	infinity	A0	1	kPa	0
+HOGAR/P_NORMAL	1,013250E+02	-infinity	infinity	A0	1	kPa	0
+HOGAR/P_REF	1,013250E+02	-infinity	infinity	A0	1	kPa	0
+HOGAR/PSI_AIR	6,000000E-01	-infinity	infinity	A0	1		0
+HOGAR/PU	1,000000E-02	-infinity	infinity	A0	1	1/%	0
+HOGAR/Q_DOT_AD_FLAME	0,000000E+00	-infinity	infinity	A1	1	kJ/h	0
+HOGAR/Q_DOT_AD_FLAME_S	0,000000E+00	-infinity	infinity	A1	1	kJ/h	0
+HOGAR/Q_DOT_FLAME	-1,531818E+08	-infinity	infinity	A1	1	kJ/h	0
+HOGAR/Q_DOT_FLAME_S	-1,531818E+08	-infinity	infinity	A1	1	kJ/h	0
+HOGAR/Q_DOT_HOGAR	1,531818E+08	-infinity	infinity	A1	1	kJ/h	0
+HOGAR/Q_DOT_LHV	-4,098559E+08	-infinity	infinity	A1	1	kJ/h	0
+HOGAR/R_P[0]	4,758945E-01	-infinity	infinity	A3	1	kJ/kg-K	0
+HOGAR/R_P[1]	5,182534E-01	-infinity	infinity	A3	1	kJ/kg-K	0
+HOGAR/R_P[10]	1,481872E-01	-infinity	infinity	A3	1	kJ/kg-K	0
+HOGAR/R_P[11]	1,430493E-01	-infinity	infinity	A3	1	kJ/kg-K	0
+HOGAR/R_P[12]	1,152353E-01	-infinity	infinity	A3	1	kJ/kg-K	0
+HOGAR/R_P[13]	1,152417E-01	-infinity	infinity	A3	1	kJ/kg-K	0
+HOGAR/R_P[14]	9,648540E-02	-infinity	infinity	A3	1	kJ/kg-K	0
+HOGAR/R_P[15]	2,598329E-01	-infinity	infinity	A3	1	kJ/kg-K	0
+HOGAR/R_P[16]	4,124299E+00	-infinity	infinity	A3	1	kJ/kg-K	0
+HOGAR/R_P[17]	2,967987E-01	-infinity	infinity	A3	1	kJ/kg-K	0
+HOGAR/R_P[18]	1,889193E-01	-infinity	infinity	A3	1	kJ/kg-K	0
+HOGAR/R_P[19]	2,969301E-01	-infinity	infinity	A3	1	kJ/kg-K	0
+HOGAR/R_P[2]	2,764995E-01	-infinity	infinity	A3	1	kJ/kg-K	0
+HOGAR/R_P[20]	4,615163E-01	-infinity	infinity	A3	1	kJ/kg-K	0
+HOGAR/R_P[3]	1,885525E-01	-infinity	infinity	A3	1	kJ/kg-K	0
+HOGAR/R_P[30]	2,885520E-01	-infinity	infinity	A3	1	kJ/kg-K	0
+HOGAR/R_P[31]	2,598329E-01	-infinity	infinity	A3	1	kJ/kg-K	0
+HOGAR/R_P[32]	2,967987E-01	-infinity	infinity	A3	1	kJ/kg-K	0
+HOGAR/R_P[33]	1,889193E-01	-infinity	infinity	A3	1	kJ/kg-K	0
+HOGAR/R_P[34]	2,081291E-01	-infinity	infinity	A3	1	kJ/kg-K	0
+HOGAR/R_P[35]	4,615163E-01	-infinity	infinity	A3	1	kJ/kg-K	0
+HOGAR/R_P[4]	2,963691E-01	-infinity	infinity	A3	1	kJ/kg-K	0
+HOGAR/R_P[40]	2,992431E-01	-infinity	infinity	A3	1	kJ/kg-K	0
+HOGAR/R_P[41]	1,889193E-01	-infinity	infinity	A3	1	kJ/kg-K	0
+HOGAR/R_P[42]	4,614976E-01	-infinity	infinity	A3	1	kJ/kg-K	0
+HOGAR/R_P[43]	2,968029E-01	-infinity	infinity	A3	1	kJ/kg-K	0
+HOGAR/R_P[44]	2,598312E-01	-infinity	infinity	A3	1	kJ/kg-K	0
+HOGAR/R_P[45]	1,297838E-01	-infinity	infinity	A3	1	kJ/kg-K	0
+HOGAR/R_P[46]	2,081291E-01	-infinity	infinity	A3	1	kJ/kg-K	0
+HOGAR/R_P[5]	1,430493E-01	-infinity	infinity	A3	1	kJ/kg-K	0
+HOGAR/R_P[6]	1,975822E-01	-infinity	infinity	A3	1	kJ/kg-K	0
+HOGAR/R_P[7]	1,481872E-01	-infinity	infinity	A3	1	kJ/kg-K	0
+HOGAR/R_P[8]	1,481872E-01	-infinity	infinity	A3	1	kJ/kg-K	0
+HOGAR/R_P[9]	1,481872E-01	-infinity	infinity	A3	1	kJ/kg-K	0
+HOGAR/R_P_S[40]	3,002507E-01	-infinity	infinity	A3	1	kJ/kg-K	0
+HOGAR/R_U	8,314340E+00	-infinity	infinity	A3	1	kJ/kmol-K	0
+HOGAR/RHO_N[0]	7,794795E-01	-infinity	infinity	A3	1	kg/m^3	0
+HOGAR/RHO_N[30]	1,285557E+00	-infinity	infinity	A3	1	kg/m^3	0
+HOGAR/RHO_N[40]	1,239627E+00	-infinity	infinity	A3	1	kg/m^3	0
+HOGAR/RHO_N_S[40]	1,235467E+00	-infinity	infinity	A3	1	kg/m^3	0
+HOGAR/T_AD_FLAME	1,888860E+03	-infinity	infinity	A1	1	C	0
+HOGAR/T_AD_FLAME_S	2,024818E+03	-infinity	infinity	A1	1	C	0
+HOGAR/T_AIR	2,000000E+01	-infinity	infinity	A1	1	C	0
+HOGAR/T_FLAME	1,250624E+03	-infinity	infinity	A1	1	C	0
+HOGAR/T_FLAME_S	1,341382E+03	-infinity	infinity	A1	1	C	0
+HOGAR/T_FUEL	2,000000E+01	-infinity	infinity	A1	1	C	0
+HOGAR/T_LHV	1,500000E+01	-infinity	infinity	A1	1	C	0
+HOGAR/T_NORMAL	0,000000E+00	-infinity	infinity	A1	1	C	0
+HOGAR/T_PIEL_TUBO	2,921333E+02	-infinity	infinity	A1	1	C	0
+HOGAR/T_REF	2,500000E+01	-infinity	infinity	A1	1	C	0
+HOGAR/V_DOT_FUEL	1,108619E+04	-infinity	infinity	A3	1	m^3/h	0
+HOGAR/V_DOT_N[0]	1,108619E+04	-infinity	infinity	A3	1	m^3/h	0
+HOGAR/V_DOT_N[30]	1,216191E+05	-infinity	infinity	A3	1	m^3/h	0
+HOGAR/V_DOT_N[40]	1,330955E+05	-infinity	infinity	A3	1	m^3/h	0
+HOGAR/V_DOT_N_S[30]	1,105628E+05	-infinity	infinity	A3	1	m^3/h	0
+HOGAR/V_DOT_N_S[40]	1,224502E+05	-infinity	infinity	A3	1	m^3/h	0
+HOGAR/V_N[0]	1,282907E+00	-infinity	infinity	A3	1	m^3/kg	0
+HOGAR/V_N[30]	7,778729E-01	-infinity	infinity	A3	1	m^3/kg	0
+HOGAR/V_N[40]	8,066940E-01	-infinity	infinity	A3	1	m^3/kg	0
+HOGAR/V_N_S[40]	8,094102E-01	-infinity	infinity	A3	1	m^3/kg	0
+HOGAR/W_I_VOL	-1,133992E+04	-infinity	infinity	A1	1	kcal/m^3	0
+HOGAR/X[0]	1,000000E+00	-infinity	infinity	A3	1		0
+HOGAR/X[1]	8,491206E-01	-infinity	infinity	A3	1		0
+HOGAR/X[10]	1,091890E-02	-infinity	infinity	A3	1		0
+HOGAR/X[11]	7,318931E-03	-infinity	infinity	A3	1		0
+HOGAR/X[12]	0,000000E+00	-infinity	infinity	A3	1		0
+HOGAR/X[13]	2,477721E-03	-infinity	infinity	A3	1		0
+HOGAR/X[14]	0,000000E+00	-infinity	infinity	A3	1		0
+HOGAR/X[15]	0,000000E+00	-infinity	infinity	A3	1		0
+HOGAR/X[16]	0,000000E+00	-infinity	infinity	A3	1		0
+HOGAR/X[17]	2,805994E-02	-infinity	infinity	A3	1		0
+HOGAR/X[18]	1,712944E-02	-infinity	infinity	A3	1		0
+HOGAR/X[19]	0,000000E+00	-infinity	infinity	A3	1		0
+HOGAR/X[2]	6,023992E-02	-infinity	infinity	A3	1		0
+HOGAR/X[20]	0,000000E+00	-infinity	infinity	A3	1		0
+HOGAR/X[3]	2,473457E-02	-infinity	infinity	A3	1		0
+HOGAR/X[30]	1,000000E+00	-infinity	infinity	A3	1		0
+HOGAR/X[31]	2,294324E-01	-infinity	infinity	A3	1		0
+HOGAR/X[32]	7,485876E-01	-infinity	infinity	A3	1		0
+HOGAR/X[33]	6,024880E-04	-infinity	infinity	A3	1		0
+HOGAR/X[34]	1,271496E-02	-infinity	infinity	A3	1		0
+HOGAR/X[35]	8,662535E-03	-infinity	infinity	A3	1		0
+HOGAR/X[4]	0,000000E+00	-infinity	infinity	A3	1		0
+HOGAR/X[40]	1,000000E+00	-infinity	infinity	A3	1		0
+HOGAR/X[41]	1,399360E-01	-infinity	infinity	A3	1		0
+HOGAR/X[42]	1,174065E-01	-infinity	infinity	A3	1		0
+HOGAR/X[43]	7,108431E-01	-infinity	infinity	A3	1		0
+HOGAR/X[44]	1,976529E-02	-infinity	infinity	A3	1		0
+HOGAR/X[45]	0,000000E+00	-infinity	infinity	A3	1		0
+HOGAR/X[46]	1,204907E-02	-infinity	infinity	A3	1		0
+HOGAR/X[5]	0,000000E+00	-infinity	infinity	A3	1		0
+HOGAR/X[6]	0,000000E+00	-infinity	infinity	A3	1		0
+HOGAR/X[7]	0,000000E+00	-infinity	infinity	A3	1		0
+HOGAR/X[8]	0,000000E+00	-infinity	infinity	A3	1		0
+HOGAR/X[9]	0,000000E+00	-infinity	infinity	A3	1		0
+HOGAR/X_S[40]	1,000000E+00	-infinity	infinity	A3	1		0
+HOGAR/X_S[41]	1,530708E-01	-infinity	infinity	A3	1		0
+HOGAR/X_S[42]	1,276576E-01	-infinity	infinity	A3	1		0
+HOGAR/X_S[43]	7,072854E-01	-infinity	infinity	A3	1		0
+HOGAR/X_S[44]	0,000000E+00	-infinity	infinity	A3	1		0
+HOGAR/X_S[45]	0,000000E+00	-infinity	infinity	A3	1		0
+HOGAR/X_S[46]	1,198629E-02	-infinity	infinity	A3	1		0
+HOGAR/Y[0]	1,000000E+00	-infinity	infinity	A3	1		0
+HOGAR/Y[1]	9,247000E-01	-infinity	infinity	A3	1		0
+HOGAR/Y[10]	3,400000E-03	-infinity	infinity	A3	1		0
+HOGAR/Y[11]	2,200000E-03	-infinity	infinity	A3	1		0
+HOGAR/Y[12]	0,000000E+00	-infinity	infinity	A3	1		0
+HOGAR/Y[13]	6,000000E-04	-infinity	infinity	A3	1		0
+HOGAR/Y[14]	0,000000E+00	-infinity	infinity	A3	1		0
+HOGAR/Y[15]	0,000000E+00	-infinity	infinity	A3	1		0
+HOGAR/Y[16]	0,000000E+00	-infinity	infinity	A3	1		0
+HOGAR/Y[17]	1,750000E-02	-infinity	infinity	A3	1		0
+HOGAR/Y[18]	6,800000E-03	-infinity	infinity	A3	1		0
+HOGAR/Y[19]	0,000000E+00	-infinity	infinity	A3	1		0
+HOGAR/Y[2]	3,500000E-02	-infinity	infinity	A3	1		0
+HOGAR/Y[20]	0,000000E+00	-infinity	infinity	A3	1		0
+HOGAR/Y[3]	9,800000E-03	-infinity	infinity	A3	1		0
+HOGAR/Y[30]	1,000000E+00	-infinity	infinity	A3	1		0
+HOGAR/Y[31]	2,065974E-01	-infinity	infinity	A3	1		0
+HOGAR/Y[32]	7,699820E-01	-infinity	infinity	A3	1		0
+HOGAR/Y[33]	3,944580E-04	-infinity	infinity	A3	1		0
+HOGAR/Y[34]	9,171148E-03	-infinity	infinity	A3	1		0
+HOGAR/Y[35]	1,385505E-02	-infinity	infinity	A3	1		0
+HOGAR/Y[4]	0,000000E+00	-infinity	infinity	A3	1		0
+HOGAR/Y[40]	1,000000E+00	-infinity	infinity	A3	1		0
+HOGAR/Y[41]	8,834495E-02	-infinity	infinity	A3	1		0
+HOGAR/Y[42]	1,810662E-01	-infinity	infinity	A3	1		0
+HOGAR/Y[43]	7,050464E-01	-infinity	infinity	A3	1		0
+HOGAR/Y[44]	1,716210E-02	-infinity	infinity	A3	1		0
+HOGAR/Y[45]	0,000000E+00	-infinity	infinity	A3	1		0
+HOGAR/Y[46]	8,380348E-03	-infinity	infinity	A3	1		0
+HOGAR/Y[5]	0,000000E+00	-infinity	infinity	A3	1		0
+HOGAR/Y[6]	0,000000E+00	-infinity	infinity	A3	1		0
+HOGAR/Y[7]	0,000000E+00	-infinity	infinity	A3	1		0
+HOGAR/Y[8]	0,000000E+00	-infinity	infinity	A3	1		0
+HOGAR/Y[9]	0,000000E+00	-infinity	infinity	A3	1		0
+HOGAR/Y_DRY_AIR_31	2,095000E-01	-infinity	infinity	A3	1		0
+HOGAR/Y_DRY_AIR_32	7,808000E-01	-infinity	infinity	A3	1		0
+HOGAR/Y_DRY_AIR_33	4,000000E-04	-infinity	infinity	A3	1		0
+HOGAR/Y_DRY_AIR_34	9,300000E-03	-infinity	infinity	A3	1		0
+HOGAR/Y_DRY_GASES_40_PERC	1,000000E+02	-infinity	infinity	A3	1	%	0
+HOGAR/Y_DRY_GASES_40_PERC_S	1,000000E+02	-infinity	infinity	A3	1	%	0
+HOGAR/Y_DRY_GASES_41_PERC	1,078780E+01	-infinity	infinity	A3	1	%	0
+HOGAR/Y_DRY_GASES_41_PERC_S	1,198242E+01	-infinity	infinity	A3	1	%	0
+HOGAR/Y_DRY_GASES_42_PERC	0,000000E+00	-infinity	infinity	A3	1	%	0
+HOGAR/Y_DRY_GASES_42_PERC_S	0,000000E+00	-infinity	infinity	A3	1	%	0
+HOGAR/Y_DRY_GASES_43_PERC	8,609321E+01	-infinity	infinity	A3	1	%	0
+HOGAR/Y_DRY_GASES_43_PERC_S	8,698388E+01	-infinity	infinity	A3	1	%	0
+HOGAR/Y_DRY_GASES_44_PERC	2,095664E+00	-infinity	infinity	A3	1	%	0
+HOGAR/Y_DRY_GASES_44_PERC_S	0,000000E+00	-infinity	infinity	A3	1	%	0
+HOGAR/Y_DRY_GASES_45_PERC	0,000000E+00	-infinity	infinity	A3	1	%	0
+HOGAR/Y_DRY_GASES_45_PERC_S	0,000000E+00	-infinity	infinity	A3	1	%	0
+HOGAR/Y_DRY_GASES_46_PERC	1,023324E+00	-infinity	infinity	A3	1	%	0
+HOGAR/Y_DRY_GASES_46_PERC_S	1,033697E+00	-infinity	infinity	A3	1	%	0
+HOGAR/Y_S[40]	1,000000E+00	-infinity	infinity	A3	1		0
+HOGAR/Y_S[41]	9,631292E-02	-infinity	infinity	A3	1		0
+HOGAR/Y_S[42]	1,962149E-01	-infinity	infinity	A3	1		0
+HOGAR/Y_S[43]	6,991635E-01	-infinity	infinity	A3	1		0
+HOGAR/Y_S[44]	0,000000E+00	-infinity	infinity	A3	1		0
+HOGAR/Y_S[45]	0,000000E+00	-infinity	infinity	A3	1		0
+HOGAR/Y_S[46]	8,308704E-03	-infinity	infinity	A3	1		0
+K_GASES/K_AR				A4	1	W/m-K
+K_GASES/K_CO2				A4	1	W/m-K
+K_GASES/K_GASES				A4	1	W/m-K
+K_GASES/K_H2O				A4	1	W/m-K
+K_GASES/K_N2				A4	1	W/m-K
+K_GASES/K_O2				A4	1	W/m-K
+K_GASES/MW_AR				A4	1	kg/kmol
+K_GASES/MW_CO2				A4	1	kg/kmol
+K_GASES/MW_GASES				A4	1	kg/kmol
+K_GASES/MW_H2O				A4	1	kg/kmol
+K_GASES/MW_N2				A4	1	kg/kmol
+K_GASES/MW_O2				A4	1	kg/kmol
+K_GASES/T				A4	1	C
+K_GASES/X_AR				A4	1	
+K_GASES/X_CO2				A4	1	
+K_GASES/X_H2O				A4	1	
+K_GASES/X_N2				A4	1	
+K_GASES/X_O2				A4	1	
+K_GASES/Y_AR				A4	1	
+K_GASES/Y_CO2				A4	1	
+K_GASES/Y_H2O				A4	1	
+K_GASES/Y_N2				A4	1	
+K_GASES/Y_O2				A4	1	
+LHV_VOL	-8,830121E+03	-infinity	infinity	A3	1	kcal/m^3	0
+MU_GASES/MU_AR				A4	1	kg/m-s
+MU_GASES/MU_CO2				A4	1	kg/m-s
+MU_GASES/MU_GASES				A4	1	kg/m-s
+MU_GASES/MU_H2O				A4	1	kg/m-s
+MU_GASES/MU_N2				A4	1	kg/m-s
+MU_GASES/MU_O2				A4	1	kg/m-s
+MU_GASES/MW_AR				A4	1	kg/kmol
+MU_GASES/MW_CO2				A4	1	kg/kmol
+MU_GASES/MW_GASES				A4	1	kg/kmol
+MU_GASES/MW_H2O				A4	1	kg/kmol
+MU_GASES/MW_N2				A4	1	kg/kmol
+MU_GASES/MW_O2				A4	1	kg/kmol
+MU_GASES/T				A4	1	C
+MU_GASES/X_AR				A4	1	
+MU_GASES/X_CO2				A4	1	
+MU_GASES/X_H2O				A4	1	
+MU_GASES/X_N2				A4	1	
+MU_GASES/X_O2				A4	1	
+MU_GASES/Y_AR				A4	1	
+MU_GASES/Y_CO2				A4	1	
+MU_GASES/Y_H2O				A4	1	
+MU_GASES/Y_N2				A4	1	
+MU_GASES/Y_O2				A4	1	
+MW_GASES	2,778456E+01	-infinity	infinity	A3	1	kg/kmol	0
+P	1,013250E+02	-infinity	infinity	A0	0	kPa	0
+P_AGUA_ALIMENTACION	6,661150E+03	-infinity	infinity	A0	1	kPa	0
+P_AGUA_ATEMPERACION	6,661150E+03	-infinity	infinity	A0	1	kPa	0
+P_C	8,951552E+00	-infinity	infinity	A0	0	kPa	0
+P_CALDERA	6,600000E+03	-infinity	infinity	A0	1	kPa	0
+P_DOMO	6,622121E+03	-infinity	infinity	A0	1	kPa	0
+P_INTERMEDIA	6,606761E+03	-infinity	infinity	A0	1	kPa	0
+P_W	1,834653E+01	-infinity	infinity	A0	0	kPa	0
+PINCH	3,975365E+01	-infinity	infinity	A0	1	C	0
+Q_DOT_1	2,757246E+03	-infinity	infinity	A1	1	kW	1
+Q_DOT_2	1,864784E+04	-infinity	infinity	A1	1	kW	1
+Q_DOT_3	7,863025E+03	-infinity	infinity	A1	1	kW	1
+Q_DOT_4	2,389282E+04	-infinity	infinity	A1	1	kW	1
+Q_DOT_5	1,178121E+04	-infinity	infinity	A1	1	kW	1
+Q_DOT_6	6,353457E+03	-infinity	infinity	A1	1	kW	1
+Q_DOT_HOGAR	4,255049E+04	-infinity	infinity	A1	1	kW	1
+Q_DOT_LIBERADO	1,138489E+05	-infinity	infinity	A1	1	kW	1
+Q_DOT_PERDIDA_HOGAR	1,707733E+03	-infinity	infinity	A1	1	kW	1
+Q_DOT_PURGA	2,745583E+02	-infinity	infinity	A1	1	kW	1
+Q_DOT_VAPOR	1,055103E+05	-infinity	infinity	A1	1	kW	0
+Q_G[0]	0,000000E+00	-infinity	infinity	A1	1	kW	0
+Q_G[1]	4,084276E+04	-infinity	infinity	A1	1	kW	0
+Q_G[2]	4,360000E+04	-infinity	infinity	A1	1	kW	0
+Q_G[3]	6,224784E+04	-infinity	infinity	A1	1	kW	0
+Q_G[4]	7,011087E+04	-infinity	infinity	A1	1	kW	0
+Q_G[5]	9,400368E+04	-infinity	infinity	A1	1	kW	0
+Q_G[6]	1,057849E+05	-infinity	infinity	A1	1	kW	0
+Q_G[7]	1,121383E+05	-infinity	infinity	A1	1	kW	0
+Q_V[0]	0,000000E+00	-infinity	infinity	A1	1	kW	0
+Q_V[1]	4,084276E+04	-infinity	infinity	A1	1	kW	0
+Q_V[10]	1,057849E+05	-infinity	infinity	A1	1	kW	0
+Q_V[2]	4,360000E+04	-infinity	infinity	A1	1	kW	0
+Q_V[3]	4,360000E+04	-infinity	infinity	A1	1	kW	0
+Q_V[4]	6,224784E+04	-infinity	infinity	A1	1	kW	0
+Q_V[5]	6,224784E+04	-infinity	infinity	A1	1	kW	0
+Q_V[6]	7,011087E+04	-infinity	infinity	A1	1	kW	0
+Q_V[7]	7,011087E+04	-infinity	infinity	A1	1	kW	0
+Q_V[8]	9,400368E+04	-infinity	infinity	A1	1	kW	0
+Q_V[9]	9,400368E+04	-infinity	infinity	A1	1	kW	0
+RHO_GASES/P				A4	1	kPa
+RHO_GASES/RHO_GASES				A4	1	kg/m^3
+RHO_GASES/T				A4	1	C
+RHO_GASES/V_GASES				A4	1	m^3/kg
+RHO_GASES/X_AR				A4	1	
+RHO_GASES/X_CO2				A4	1	
+RHO_GASES/X_H2O				A4	1	
+RHO_GASES/X_N2				A4	1	
+RHO_GASES/X_O2				A4	1	
+SOBRECALENTADOR_01/A	1,217694E+02	-infinity	infinity	A3	1	m^2	0
+SOBRECALENTADOR_01/A_D	8,517000E+00	-infinity	infinity	A3	1	m^2	0
+SOBRECALENTADOR_01/A_N	4,889880E+00	-infinity	infinity	A3	1	m^2	0
+SOBRECALENTADOR_01/A_N_INT	1,516387E-03	-infinity	infinity	A3	1	m^2	0
+SOBRECALENTADOR_01/C_DOT_C	1,265097E+02	-infinity	infinity	A3	1	kW/C	0
+SOBRECALENTADOR_01/C_DOT_H	6,084047E+01	-infinity	infinity	A3	1	kW/C	0
+SOBRECALENTADOR_01/C_DOT_MIN	6,084047E+01	-infinity	infinity	A3	1	kW/C	0
+SOBRECALENTADOR_01/C_P_GASES	1,327648E+00	-infinity	infinity	A3	1	kJ/kg-C	0
+SOBRECALENTADOR_01/C_P_VAPOR	3,598645E+00	-infinity	infinity	A3	1	kJ/kg-C	0
+SOBRECALENTADOR_01/D	5,080000E-02	-infinity	infinity	A3	1	m	0
+SOBRECALENTADOR_01/D_INT	4,394000E-02	-infinity	infinity	A3	1	m	0
+SOBRECALENTADOR_01/DELTAP_EXT	1,771503E-01	-infinity	infinity	A3	1	kPa	0
+SOBRECALENTADOR_01/DELTAP_EXT_2	1,594401E+00	-infinity	infinity	A3	1	kPa	0
+SOBRECALENTADOR_01/DELTAP_INT	8,698125E+00	-infinity	infinity	A3	1	kPa	0
+SOBRECALENTADOR_01/DELTAP_INT_TOT	1,536084E+01	-infinity	infinity	A3	1	kPa	0
+SOBRECALENTADOR_01/DELTAT_M_L	5,333541E+02	-infinity	infinity	A3	1	C	0
+SOBRECALENTADOR_01/EPSILON_G	1,271231E-01	-infinity	infinity	A3	1		0
+SOBRECALENTADOR_01/EPSILON_G_2	1,214771E-01	-infinity	infinity	A3	1		0
+SOBRECALENTADOR_01/EPSILON_HX	2,052231E-01	-infinity	infinity	A3	1		0
+SOBRECALENTADOR_01/EPSILON_W	4,000000E-01	-infinity	infinity	A3	1		0
+SOBRECALENTADOR_01/F	2,052451E-02	-infinity	infinity	A3	1		0
+SOBRECALENTADOR_01/F_EXT	3,047310E-02	-infinity	infinity	A3	1		0
+SOBRECALENTADOR_01/F_HX	1,000000E+00	-infinity	infinity	A3	1		0
+SOBRECALENTADOR_01/G_DOT_GASES	4,583024E+01	-infinity	infinity	A3	1	kg/s	0
+SOBRECALENTADOR_01/G_DOT_V	3,388212E+01	-infinity	infinity	A3	1	kg/s	0
+SOBRECALENTADOR_01/G_DOT_V_U	4,840302E-01	-infinity	infinity	A3	1	kg/s	0
+SOBRECALENTADOR_01/H_BAR_C	1,310441E+02	-infinity	infinity	A0	1	W/m^2-K	0
+SOBRECALENTADOR_01/H_BAR_H	2,636393E+03	-infinity	infinity	A0	1	W/m^2-K	0
+SOBRECALENTADOR_01/H_BAR_R	1,344012E+01	-infinity	infinity	A0	1	W/m^2-K	0
+SOBRECALENTADOR_01/H_BAR_R_2	1,967183E+01	-infinity	infinity	A0	1	W/m^2-K	0
+SOBRECALENTADOR_01/H_BAR_T	2,636393E+03	-infinity	infinity	A0	1	W/m^2-K	0
+SOBRECALENTADOR_01/H_H_I	-1,743877E+03	-infinity	infinity	A0	1	kJ/kg	0
+SOBRECALENTADOR_01/H_H_O	-1,915445E+03	-infinity	infinity	A0	1	kJ/kg	0
+SOBRECALENTADOR_01/K_EG_BRUSCO	1,000000E+00	-infinity	infinity	A3	1		0
+SOBRECALENTADOR_01/K_EPSILON_G	7,423988E-01	-infinity	infinity	A3	1	1/m	0
+SOBRECALENTADOR_01/K_ING_BRUSCO	5,000000E-01	-infinity	infinity	A3	1		0
+SOBRECALENTADOR_01/K_L_180	3,000000E-01	-infinity	infinity	A3	1		0
+SOBRECALENTADOR_01/K_L_90	3,000000E-01	-infinity	infinity	A3	1		0
+SOBRECALENTADOR_01/L	5,100000E+00	-infinity	infinity	A3	1	m	0
+SOBRECALENTADOR_01/L_TOT	1,090000E+01	-infinity	infinity	A3	1	m	0
+SOBRECALENTADOR_01/MW_GASES	2,778456E+01	-infinity	infinity	A3	1	kg/kmol	0
+SOBRECALENTADOR_01/N_90	8,000000E+00	-infinity	infinity	A3	1		0
+SOBRECALENTADOR_01/N_EG_BRUSCO	1,000000E+00	-infinity	infinity	A3	1		0
+SOBRECALENTADOR_01/N_ING_BRUSCO	1,000000E+00	-infinity	infinity	A3	1		0
+SOBRECALENTADOR_01/N_L	1,000000E+01	-infinity	infinity	A3	1		0
+SOBRECALENTADOR_01/N_T	1,400000E+01	-infinity	infinity	A3	1		0
+SOBRECALENTADOR_01/NTU	2,423156E-01	0,000000E+00	infinity	A3	1		0
+SOBRECALENTADOR_01/NUSSELT_BAR_T	2,034813E+03	-infinity	infinity	A3	1		0
+SOBRECALENTADOR_01/P	1,013250E+02	-infinity	infinity	A0	1	kPa	0
+SOBRECALENTADOR_01/P_BAR_C	6,614441E+03	-infinity	infinity	A0	1	kPa	0
+SOBRECALENTADOR_01/P_C	8,951552E+00	-infinity	infinity	A0	1	kPa	0
+SOBRECALENTADOR_01/P_C_I	6,622121E+03	-infinity	infinity	A0	1	kPa	0
+SOBRECALENTADOR_01/P_C_O	6,606761E+03	-infinity	infinity	A0	1	kPa	0
+SOBRECALENTADOR_01/P_W	1,834653E+01	-infinity	infinity	A0	1	kPa	0
+SOBRECALENTADOR_01/Q_DOT	7,863025E+03	-infinity	infinity	A1	1	kW	0
+SOBRECALENTADOR_01/R_ENSUC	9,000000E-04	-infinity	infinity	A3	1	m^2-K/W	0
+SOBRECALENTADOR_01/RE	9,191383E+01	-infinity	infinity	A3	1		0
+SOBRECALENTADOR_01/RE_D_INT	6,894334E+05	-infinity	infinity	A3	1		0
+SOBRECALENTADOR_01/RELROUGH	1,024124E-03	-infinity	infinity	A3	1		0
+SOBRECALENTADOR_01/S_EQ	1,953078E-01	-infinity	infinity	A3	1	m	0
+SOBRECALENTADOR_01/S_EQ_2	1,975592E-01	-infinity	infinity	A3	1	m	0
+SOBRECALENTADOR_01/S_L	1,080000E-01	-infinity	infinity	A3	1	m	0
+SOBRECALENTADOR_01/S_T	1,048000E-01	-infinity	infinity	A3	1	m	0
+SOBRECALENTADOR_01/T	3,430000E-03	-infinity	infinity	A1	1	m	0
+SOBRECALENTADOR_01/T_BAR_C	3,132101E+02	-infinity	infinity	A1	1	C	0
+SOBRECALENTADOR_01/T_BAR_H	8,472672E+02	-infinity	infinity	A1	1	C	0
+SOBRECALENTADOR_01/T_BAR_W	3,132101E+02	-infinity	infinity	A1	1	C	0
+SOBRECALENTADOR_01/T_C_I	2,821333E+02	-infinity	infinity	A1	1	C	0
+SOBRECALENTADOR_01/T_C_O	3,442869E+02	-infinity	infinity	A1	1	C	0
+SOBRECALENTADOR_01/T_H_I	9,118872E+02	-infinity	infinity	A1	1	C	0
+SOBRECALENTADOR_01/T_H_O	7,826472E+02	-infinity	infinity	A1	1	C	0
+SOBRECALENTADOR_01/U	1,210698E-01	-infinity	infinity	A3	1	kW/m^2-C	0
+SOBRECALENTADOR_01/U_INF	1,883238E+01	-infinity	infinity	A3	1	m/s	0
+SOBRECALENTADOR_01/U_INF_0	4,340849E+00	-infinity	infinity	A3	1	m/s	0
+SOBRECALENTADOR_01/U_INT	1,070419E+01	-infinity	infinity	A3	1	m/s	0
+SOBRECALENTADOR_01/U_REAL	3,101283E+01	-infinity	infinity	A3	1	m/s	0
+SOBRECALENTADOR_01/U_REAL_0	7,560719E+00	-infinity	infinity	A3	1	m/s	0
+SOBRECALENTADOR_01/V_DOT_N_GASES	1,330955E+05	-infinity	infinity	A3	1	m^3/h	0
+SOBRECALENTADOR_01/X_AR	1,204907E-02	-infinity	infinity	A3	1		0
+SOBRECALENTADOR_01/X_CO2	1,399360E-01	-infinity	infinity	A3	1		0
+SOBRECALENTADOR_01/X_H2O	1,174065E-01	-infinity	infinity	A3	1		0
+SOBRECALENTADOR_01/X_N2	7,108431E-01	-infinity	infinity	A3	1		0
+SOBRECALENTADOR_01/X_O2	1,976529E-02	-infinity	infinity	A3	1		0
+SOBRECALENTADOR_02/A	2,191849E+02	-infinity	infinity	A3	1	m^2	0
+SOBRECALENTADOR_02/A_D	8,517000E+00	-infinity	infinity	A3	1	m^2	0
+SOBRECALENTADOR_02/A_N	4,889880E+00	-infinity	infinity	A3	1	m^2	0
+SOBRECALENTADOR_02/A_N_INT	1,516387E-03	-infinity	infinity	A3	1	m^2	0
+SOBRECALENTADOR_02/C_DOT_C	1,027684E+02	-infinity	infinity	A3	1	kW/C	0
+SOBRECALENTADOR_02/C_DOT_H	6,300197E+01	-infinity	infinity	A3	1	kW/C	0
+SOBRECALENTADOR_02/C_DOT_MIN	6,300197E+01	-infinity	infinity	A3	1	kW/C	0
+SOBRECALENTADOR_02/C_P_GASES	1,375357E+00	-infinity	infinity	A3	1	kJ/kg-C	0
+SOBRECALENTADOR_02/C_P_VAPOR	2,690636E+00	-infinity	infinity	A3	1	kJ/kg-C	0
+SOBRECALENTADOR_02/D	5,080000E-02	-infinity	infinity	A3	1	m	0
+SOBRECALENTADOR_02/D_INT	4,394000E-02	-infinity	infinity	A3	1	m	0
+SOBRECALENTADOR_02/DELTAP_EXT	3,792409E-01	-infinity	infinity	A3	1	kPa	0
+SOBRECALENTADOR_02/DELTAP_EXT_2	3,774083E+00	-infinity	infinity	A3	1	kPa	0
+SOBRECALENTADOR_02/DELTAP_INT	3,861293E+00	-infinity	infinity	A3	1	kPa	0
+SOBRECALENTADOR_02/DELTAP_INT_TOT	6,760630E+00	-infinity	infinity	A3	1	kPa	0
+SOBRECALENTADOR_02/DELTAT_M_L	6,689755E+02	-infinity	infinity	A3	1	C	0
+SOBRECALENTADOR_02/EPSILON_G	1,043219E-01	-infinity	infinity	A3	1		0
+SOBRECALENTADOR_02/EPSILON_G_2	1,054318E-01	-infinity	infinity	A3	1		0
+SOBRECALENTADOR_02/EPSILON_HX	3,255012E-01	-infinity	infinity	A3	1		0
+SOBRECALENTADOR_02/EPSILON_W	4,000000E-01	-infinity	infinity	A3	1		0
+SOBRECALENTADOR_02/F	2,093785E-02	-infinity	infinity	A3	1		0
+SOBRECALENTADOR_02/F_EXT	3,046189E-02	-infinity	infinity	A3	1		0
+SOBRECALENTADOR_02/F_HX	1,000000E+00	-infinity	infinity	A3	1		0
+SOBRECALENTADOR_02/G_DOT_GASES	4,583024E+01	-infinity	infinity	A3	1	kg/s	0
+SOBRECALENTADOR_02/G_DOT_V	3,611111E+01	-infinity	infinity	A3	1	kg/s	0
+SOBRECALENTADOR_02/G_DOT_V_U	2,865961E-01	-infinity	infinity	A3	1	kg/s	0
+SOBRECALENTADOR_02/H_BAR_C	1,468827E+02	-infinity	infinity	A0	1	W/m^2-K	0
+SOBRECALENTADOR_02/H_BAR_H	1,291326E+03	-infinity	infinity	A0	1	W/m^2-K	0
+SOBRECALENTADOR_02/H_BAR_R	1,792235E+01	-infinity	infinity	A0	1	W/m^2-K	0
+SOBRECALENTADOR_02/H_BAR_R_2	2,615149E+01	-infinity	infinity	A0	1	W/m^2-K	0
+SOBRECALENTADOR_02/H_BAR_T	1,291326E+03	-infinity	infinity	A0	1	W/m^2-K	0
+SOBRECALENTADOR_02/H_H_I	-1,336988E+03	-infinity	infinity	A0	1	kJ/kg	0
+SOBRECALENTADOR_02/H_H_O	-1,743877E+03	-infinity	infinity	A0	1	kJ/kg	0
+SOBRECALENTADOR_02/K_EG_BRUSCO	1,000000E+00	-infinity	infinity	A3	1		0
+SOBRECALENTADOR_02/K_EPSILON_G	6,379464E-01	-infinity	infinity	A3	1	1/m	0
+SOBRECALENTADOR_02/K_ING_BRUSCO	5,000000E-01	-infinity	infinity	A3	1		0
+SOBRECALENTADOR_02/K_L_180	3,000000E-01	-infinity	infinity	A3	1		0
+SOBRECALENTADOR_02/K_L_90	3,000000E-01	-infinity	infinity	A3	1		0
+SOBRECALENTADOR_02/L	5,100000E+00	-infinity	infinity	A3	1	m	0
+SOBRECALENTADOR_02/L_TOT	1,090000E+01	-infinity	infinity	A3	1	m	0
+SOBRECALENTADOR_02/MW_GASES	2,778456E+01	-infinity	infinity	A3	1	kg/kmol	0
+SOBRECALENTADOR_02/N_90	8,000000E+00	-infinity	infinity	A3	1		0
+SOBRECALENTADOR_02/N_EG_BRUSCO	1,000000E+00	-infinity	infinity	A3	1		0
+SOBRECALENTADOR_02/N_ING_BRUSCO	1,000000E+00	-infinity	infinity	A3	1		0
+SOBRECALENTADOR_02/N_L	1,800000E+01	-infinity	infinity	A3	1		0
+SOBRECALENTADOR_02/N_T	1,400000E+01	-infinity	infinity	A3	1		0
+SOBRECALENTADOR_02/NTU	4,424499E-01	0,000000E+00	infinity	A3	1		0
+SOBRECALENTADOR_02/NUSSELT_BAR_T	9,401402E+02	-infinity	infinity	A3	1		0
+SOBRECALENTADOR_02/P	1,013250E+02	-infinity	infinity	A0	1	kPa	0
+SOBRECALENTADOR_02/P_BAR_C	6,603380E+03	-infinity	infinity	A0	1	kPa	0
+SOBRECALENTADOR_02/P_C	8,951552E+00	-infinity	infinity	A0	1	kPa	0
+SOBRECALENTADOR_02/P_C_I	6,606761E+03	-infinity	infinity	A0	1	kPa	0
+SOBRECALENTADOR_02/P_C_O	6,600000E+03	-infinity	infinity	A0	1	kPa	0
+SOBRECALENTADOR_02/P_W	1,834653E+01	-infinity	infinity	A0	1	kPa	0
+SOBRECALENTADOR_02/Q_DOT	1,864784E+04	-infinity	infinity	A1	1	kW	0
+SOBRECALENTADOR_02/R_ENSUC	9,000000E-04	-infinity	infinity	A3	1	m^2-K/W	0
+SOBRECALENTADOR_02/RE	9,213960E+01	-infinity	infinity	A3	1		0
+SOBRECALENTADOR_02/RE_D_INT	3,475253E+05	0,000000E+00	infinity	A3	1		0
+SOBRECALENTADOR_02/RELROUGH	1,024124E-03	-infinity	infinity	A3	1		0
+SOBRECALENTADOR_02/S_EQ	1,953078E-01	-infinity	infinity	A3	1	m	0
+SOBRECALENTADOR_02/S_EQ_2	1,975592E-01	-infinity	infinity	A3	1	m	0
+SOBRECALENTADOR_02/S_L	1,080000E-01	-infinity	infinity	A3	1	m	0
+SOBRECALENTADOR_02/S_T	1,048000E-01	-infinity	infinity	A3	1	m	0
+SOBRECALENTADOR_02/T	3,430000E-03	-infinity	infinity	A1	1	m	0
+SOBRECALENTADOR_02/T_BAR_C	3,892725E+02	-infinity	infinity	A1	1	C	0
+SOBRECALENTADOR_02/T_BAR_H	1,059881E+03	-infinity	infinity	A1	1	C	0
+SOBRECALENTADOR_02/T_BAR_W	3,892725E+02	-infinity	infinity	A1	1	C	0
+SOBRECALENTADOR_02/T_C_I	2,985450E+02	-infinity	infinity	A1	1	C	0
+SOBRECALENTADOR_02/T_C_O	4,800000E+02	-infinity	infinity	A1	1	C	0
+SOBRECALENTADOR_02/T_H_I	1,207875E+03	-infinity	infinity	A1	1	C	0
+SOBRECALENTADOR_02/T_H_O	9,118872E+02	-infinity	infinity	A1	1	C	0
+SOBRECALENTADOR_02/U	1,271767E-01	-infinity	infinity	A3	1	kW/m^2-C	0
+SOBRECALENTADOR_02/U_INF	2,353616E+01	-infinity	infinity	A3	1	m/s	0
+SOBRECALENTADOR_02/U_INF_0	4,340849E+00	-infinity	infinity	A3	1	m/s	0
+SOBRECALENTADOR_02/U_INT	7,866903E+00	-infinity	infinity	A3	1	m/s	0
+SOBRECALENTADOR_02/U_REAL	3,689793E+01	-infinity	infinity	A3	1	m/s	0
+SOBRECALENTADOR_02/U_REAL_0	7,560719E+00	-infinity	infinity	A3	1	m/s	0
+SOBRECALENTADOR_02/V_DOT_N_GASES	1,330955E+05	-infinity	infinity	A3	1	m^3/h	0
+SOBRECALENTADOR_02/X_AR	1,204907E-02	-infinity	infinity	A3	1		0
+SOBRECALENTADOR_02/X_CO2	1,399360E-01	-infinity	infinity	A3	1		0
+SOBRECALENTADOR_02/X_H2O	1,174065E-01	-infinity	infinity	A3	1		0
+SOBRECALENTADOR_02/X_N2	7,108431E-01	-infinity	infinity	A3	1		0
+SOBRECALENTADOR_02/X_O2	1,976529E-02	-infinity	infinity	A3	1		0
+T_AGUA_ALIMENTACION	1,050000E+02	-infinity	infinity	A1	1	C	0
+T_AGUA_ATEMPERACION	1,050000E+02	-infinity	infinity	A1	1	C	0
+T_AIR	2,000000E+01	-infinity	infinity	A1	1	C	0
+T_C_I_2	2,985450E+02	0,000000E+00	infinity	A1	1	C	0
+T_C_O_3	3,442869E+02	0,000000E+00	infinity	A1	1	C	0
+T_C_O_5	1,852739E+02	0,000000E+00	infinity	A1	1	C	0
+T_DOMO	2,821333E+02	0,000000E+00	infinity	A1	1	C	0
+T_G[0]	1,250624E+03	0,000000E+00	infinity	A1	1	C	0
+T_G[1]	1,250624E+03	0,000000E+00	infinity	A1	1	C	0
+T_G[2]	1,207875E+03	0,000000E+00	infinity	A1	1	C	0
+T_G[3]	9,118872E+02	0,000000E+00	infinity	A1	1	C	0
+T_G[4]	7,826472E+02	0,000000E+00	infinity	A1	1	C	0
+T_G[5]	3,667218E+02	0,000000E+00	infinity	A1	1	C	0
+T_G[6]	1,447537E+02	0,000000E+00	infinity	A1	1	C	0
+T_G[7]	2,000000E+01	-infinity	infinity	A1	1	C	0
+T_H_O_1	1,207875E+03	0,000000E+00	infinity	A1	1	C	1
+T_H_O_2	9,118872E+02	-infinity	infinity	A1	1	C	1
+T_H_O_3	7,826472E+02	-infinity	infinity	A1	1	C	1
+T_H_O_4	3,667218E+02	-infinity	infinity	A1	1	C	1
+T_H_O_5	1,447537E+02	-infinity	infinity	A1	1	C	1
+T_H_O_6	2,000000E+01	-infinity	infinity	A1	1	C	1
+T_LLAMA	1,250624E+03	-infinity	infinity	A1	1	C	1
+T_PIEL_TUBO_HOGAR	2,921333E+02	-infinity	infinity	A1	1	C	0
+T_V[0]	2,821333E+02	-infinity	infinity	A1	1	C	0
+T_V[1]	2,821333E+02	-infinity	infinity	A1	1	C	0
+T_V[10]	1,050000E+02	-infinity	infinity	A1	1	C	0
+T_V[2]	2,821333E+02	-infinity	infinity	A1	1	C	0
+T_V[3]	4,800000E+02	-infinity	infinity	A1	1	C	0
+T_V[4]	2,985450E+02	-infinity	infinity	A1	1	C	0
+T_V[5]	3,442869E+02	-infinity	infinity	A1	1	C	0
+T_V[6]	2,821333E+02	-infinity	infinity	A1	1	C	0
+T_V[7]	2,821333E+02	-infinity	infinity	A1	1	C	0
+T_V[8]	2,821333E+02	-infinity	infinity	A1	1	C	0
+T_V[9]	1,852739E+02	-infinity	infinity	A1	1	C	0
+T_VAPOR	4,800000E+02	-infinity	infinity	A1	1	C	0
+TUBOS_PANTALLA/A	2,667276E+01	-infinity	infinity	A3	1	m^2	0
+TUBOS_PANTALLA/A_D	1,017017E+01	-infinity	infinity	A3	1	m^2	0
+TUBOS_PANTALLA/A_N	6,082294E+00	-infinity	infinity	A3	1	m^2	0
+TUBOS_PANTALLA/C_DOT_C	6,449944E+08	0,000000E+00	infinity	A3	1	kW/C	0
+TUBOS_PANTALLA/C_DOT_H	6,449944E+01	0,000000E+00	infinity	A3	1	kW/C	0
+TUBOS_PANTALLA/C_DOT_MIN	6,449944E+01	0,000000E+00	infinity	A3	1	kW/C	0
+TUBOS_PANTALLA/C_P_GASES	1,407368E+00	-infinity	infinity	A3	1	kJ/kg-C	0
+TUBOS_PANTALLA/D	5,080000E-02	-infinity	infinity	A3	1	m	0
+TUBOS_PANTALLA/D_INT	4,394000E-02	-infinity	infinity	A3	1	m	0
+TUBOS_PANTALLA/DELTAP_EXT	3,538624E-02	-infinity	infinity	A3	1	kPa	0
+TUBOS_PANTALLA/DELTAP_EXT_2	2,066965E-01	-infinity	infinity	A3	1	kPa	0
+TUBOS_PANTALLA/DELTAT_M_L	9,469554E+02	0,000000E+00	infinity	A3	1	C	0
+TUBOS_PANTALLA/EPSILON_G	1,033111E-01	-infinity	infinity	A3	1		0
+TUBOS_PANTALLA/EPSILON_G_2	1,058421E-01	-infinity	infinity	A3	1		0
+TUBOS_PANTALLA/EPSILON_HX	4,413917E-02	-infinity	infinity	A3	1		0
+TUBOS_PANTALLA/EPSILON_W	4,000000E-01	-infinity	infinity	A3	1		0
+TUBOS_PANTALLA/F_EXT	3,511654E-02	-infinity	infinity	A3	1		0
+TUBOS_PANTALLA/F_HX	1,000000E+00	-infinity	infinity	A3	1		0
+TUBOS_PANTALLA/G_DOT_GASES	4,583024E+01	-infinity	infinity	A3	1	kg/s	0
+TUBOS_PANTALLA/H_BAR_C	1,033685E+02	-infinity	infinity	A0	1	W/m^2-K	0
+TUBOS_PANTALLA/H_BAR_H	4,652000E+03	-infinity	infinity	A0	1	W/m^2-K	0
+TUBOS_PANTALLA/H_BAR_R	2,144365E+01	-infinity	infinity	A0	1	W/m^2-K	0
+TUBOS_PANTALLA/H_BAR_R_2	3,092133E+01	-infinity	infinity	A0	1	W/m^2-K	0
+TUBOS_PANTALLA/H_H_I	-1,276825E+03	-infinity	infinity	A0	1	kJ/kg	0
+TUBOS_PANTALLA/H_H_O	-1,336988E+03	-infinity	infinity	A0	1	kJ/kg	0
+TUBOS_PANTALLA/K_EPSILON_G	4,803939E-01	-infinity	infinity	A3	1	1/m	0
+TUBOS_PANTALLA/L	6,190000E+00	-infinity	infinity	A3	1	m	0
+TUBOS_PANTALLA/MW_GASES	2,778456E+01	-infinity	infinity	A3	1	kg/kmol	0
+TUBOS_PANTALLA/N_L	2,000000E+00	-infinity	infinity	A3	1		0
+TUBOS_PANTALLA/N_T	1,300000E+01	-infinity	infinity	A3	1		0
+TUBOS_PANTALLA/NTU	4,514295E-02	0,000000E+00	infinity	A3	1		0
+TUBOS_PANTALLA/P	1,013250E+02	-infinity	infinity	A0	1	kPa	0
+TUBOS_PANTALLA/P_C	8,951552E+00	-infinity	infinity	A0	1	kPa	0
+TUBOS_PANTALLA/P_W	1,834653E+01	-infinity	infinity	A0	1	kPa	0
+TUBOS_PANTALLA/Q_DOT	2,757246E+03	-infinity	infinity	A1	1	kW	0
+TUBOS_PANTALLA/R_ENSUC	9,000000E-04	-infinity	infinity	A3	1	m^2-K/W	0
+TUBOS_PANTALLA/RE	6,028378E+01	-infinity	infinity	A3	1		0
+TUBOS_PANTALLA/RELROUGH	1,024124E-03	-infinity	infinity	A3	1		0
+TUBOS_PANTALLA/S_EQ	2,604373E-01	-infinity	infinity	A3	1	m	0
+TUBOS_PANTALLA/S_EQ_2	2,688562E-01	-infinity	infinity	A3	1	m	0
+TUBOS_PANTALLA/S_L	1,400000E-01	-infinity	infinity	A3	1	m	0
+TUBOS_PANTALLA/S_T	1,048000E-01	-infinity	infinity	A3	1	m	0
+TUBOS_PANTALLA/T	3,430000E-03	-infinity	infinity	A1	1	m	0
+TUBOS_PANTALLA/T_BAR_H	1,229250E+03	0,000000E+00	infinity	A1	1	C	0
+TUBOS_PANTALLA/T_BAR_W	2,821333E+02	-infinity	infinity	A1	1	C	0
+TUBOS_PANTALLA/T_C_I	2,821333E+02	0,000000E+00	infinity	A1	1	C	0
+TUBOS_PANTALLA/T_C_O	2,821333E+02	0,000000E+00	infinity	A1	1	C	0
+TUBOS_PANTALLA/T_DOMO	2,821333E+02	0,000000E+00	infinity	A1	1	C	0
+TUBOS_PANTALLA/T_H_I	1,250624E+03	-infinity	infinity	A1	1	C	0
+TUBOS_PANTALLA/T_H_O	1,207875E+03	-infinity	infinity	A1	1	C	0
+TUBOS_PANTALLA/U	1,091636E-01	0,000000E+00	infinity	A3	1	kW/m^2-C	0
+TUBOS_PANTALLA/U_INF	2,027926E+01	-infinity	infinity	A3	1	m/s	0
+TUBOS_PANTALLA/U_INF_0	3,635240E+00	-infinity	infinity	A3	1	m/s	0
+TUBOS_PANTALLA/U_REAL	3,343319E+01	-infinity	infinity	A3	1	m/s	0
+TUBOS_PANTALLA/U_REAL_0	6,078465E+00	-infinity	infinity	A3	1	m/s	0
+TUBOS_PANTALLA/V_DOT_N_GASES	1,330955E+05	-infinity	infinity	A3	1	m^3/h	0
+TUBOS_PANTALLA/X_AR	1,204907E-02	-infinity	infinity	A3	1		0
+TUBOS_PANTALLA/X_CO2	1,399360E-01	-infinity	infinity	A3	1		0
+TUBOS_PANTALLA/X_H2O	1,174065E-01	-infinity	infinity	A3	1		0
+TUBOS_PANTALLA/X_N2	7,108431E-01	-infinity	infinity	A3	1		0
+TUBOS_PANTALLA/X_O2	1,976529E-02	-infinity	infinity	A3	1		0
+V_DOT_FUEL	1,108619E+04	-infinity	infinity	A3	1	m^3/h	1
+V_DOT_N_GASES	1,330955E+05	-infinity	infinity	A3	1	m^3/h	0
+X_AR	1,204907E-02	-infinity	infinity	A3	0		0
+X_CO2	1,399360E-01	-infinity	infinity	A3	0		0
+X_G[0]	-6,562654E-04	-infinity	infinity	A3	1	1/K	0
+X_G[1]	-6,562654E-04	-infinity	infinity	A3	1	1/K	0
+X_G[2]	-6,752079E-04	-infinity	infinity	A3	1	1/K	0
+X_G[3]	-8,438554E-04	-infinity	infinity	A3	1	1/K	0
+X_G[4]	-9,471516E-04	-infinity	infinity	A3	1	1/K	0
+X_G[5]	-1,562813E-03	-infinity	infinity	A3	1	1/K	0
+X_G[6]	-2,392896E-03	-infinity	infinity	A3	1	1/K	0
+X_G[7]	-3,411223E-03	-infinity	infinity	A3	1	1/K	0
+X_H2O	1,174065E-01	-infinity	infinity	A3	0		0
+X_N2	7,108431E-01	-infinity	infinity	A3	0		0
+X_O2	1,976529E-02	-infinity	infinity	A3	0		0
+X_V[0]	-1,800882E-03	-infinity	infinity	A3	1	1/K	0
+X_V[1]	-1,800882E-03	-infinity	infinity	A3	1	1/K	0
+X_V[10]	-2,644453E-03	-infinity	infinity	A3	1	1/K	0
+X_V[2]	-1,800882E-03	-infinity	infinity	A3	1	1/K	0
+X_V[3]	-1,327757E-03	-infinity	infinity	A3	1	1/K	0
+X_V[4]	-1,749185E-03	-infinity	infinity	A3	1	1/K	0
+X_V[5]	-1,619599E-03	-infinity	infinity	A3	1	1/K	0
+X_V[6]	-1,800882E-03	-infinity	infinity	A3	1	1/K	0
+X_V[7]	-1,800882E-03	-infinity	infinity	A3	1	1/K	0
+X_V[8]	-1,800882E-03	-infinity	infinity	A3	1	1/K	0
+X_V[9]	-2,181387E-03	-infinity	infinity	A3	1	1/K	0
+Y_CO2	8,834495E-02	-infinity	infinity	A3	0		0
+Y_H2O	1,810662E-01	-infinity	infinity	A3	0		0

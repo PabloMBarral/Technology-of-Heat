@@ -1,0 +1,185 @@
+Subprogram simp_hrsg_1p_hp(t_g; G_dot_g; x_g; V_dot_fuel; LHV_fuel; pinch; approach; blowdown; p_hp; t_hp; t_bfw; t_0; p_0; eta_transfer : G_dot_hp; G_dot_bd; eta_t; eta_ex; t_g; Q_dot_sh; Q_dot_ev; Q_dot_ec; t_g_graph; Q_g_graph)
+
+{usa funciones y procedimientos, no usa subprogram para la libreria}
+{ver qué me conviene a mi}
+
+
+{­$TEST
+Optional help text can be provided as a comment, as shown here}
+
+{La gestión de unidades la voy a tener que hacer por fuera del procedimiento, porque no puedo usar un if}
+
+{t_g en cualquier temperatura, la devolvemos en la unidad de ingreso}
+{G_dot_g en kg/s o lbm/s}
+{lhv va en MMBTU/m3S o kJ/m3S}
+{V_dot_fuel va en m3S/h}
+{pinch va en K o en R}
+{p va en psi o bar o kPa}
+{Q vuelve en kW o MMBTU/h}
+
+{Subprogram prueba(x_g[1..2]; TOT)
+	TOT = x_g[1] + x_g[2]
+	
+End
+ 
+x_g[1..2] = [1; 3]
+ 
+Call prueba(x_g[1..2]; TOT)}
+
+{puedo pasarle la composición de gases ideales que quiera, en realidad}
+
+
+{$UnitSystem SI[or ENG]  MASS[or MOLE]  DEG[or RAD]  KPA[or PA or MPA or BAR or PSIA or ATM] C[or F] K[or R] J[or KJ]}
+
+If (unitsystem('SI')=1) Then
+	L$ = 'm'	"L$ is the length units EES is set to"
+Endif
+ 
+If (unitsystem('ENG')=1) Then
+	L$ = 'ft'	"L$ is the length units EES is set to"
+Endif
+ 
+	t_m = convert(L$;mm) * average(S_T;S_L)
+
+if (UnitSystem('F')=1)  then T:=T+459.6
+
+if (UnitSystem('K')=1) then T:=T*1.8
+
+if (UnitSystem('C')=1) then T:=(T+273.15)*1.8
+
+
+
+
+$UnitSystem SI C bar kJ kg
+ 
+ 
+HR = 8970 [kJ/kWh]
+N_TG = 57 [MW]
+Q_dot_TG = HR * N_TG * convert(MW;kW) * convert(kJ/h;kW)
+eta_TG = N_TG * convert(MW;kW) / Q_dot_TG * convert(dim;%)
+ 
+Q_dot_perd_TG = Q_dot_TG - Q_dot_gh - N_TG * convert(MW;kW)
+ 
+ "!Composición típica de gases exhaustos de TG"
+ 
+x_gh_CO2 = 0,061 [dim]
+x_gh_H2O = 0,07768 [dim]
+x_gh_N2 = 0,7364 [dim]
+x_gh_O2 = 0,1126 [dim]
+x_gh_Ar = 1 - x_gh_CO2 - x_gh_H2O - x_gh_N2 - x_gh_O2
+ 
+X$ = 'CO2+H2O+N2+O2+Ar' : x_gh[1..5] = [x_gh_CO2; x_gh_H2O; x_gh_N2; x_gh_O2; x_gh_Ar]
+ 
+{G_dot_gh = 500 [tonne/h] * convert(tonne/h;kg/s)	{Caudal de gases de escape de turbina}}
+G_dot_gh = 136,6 [kg/s]	{Caudal de gases de escape de turbina}
+ 
+t_g = 565 [C]	{Temperatura de gases de escape de turbina}
+ 
+Duplicate j=0;6 
+Call idealgasmixtureprops(X$; t[j]; po#; x_gh[1..5]: {MW}; h[j]; s[j]; {mu}; {k})
+ 
+e_x[j] = h[j] - h[0] - converttemp(C;K;t[0]) * (s[j] - s[0])
+ 
+End
+ 
+"!Temperatura ambiente"
+ 
+t[0] = 25 [C]
+t[0] = t[6]
+ 
+"!Postcombustión"
+ 
+t[1] = t_g
+ 
+V_dot_GN = 100 [m^3/h] * convert(m^3/h;m^3/s)
+ 
+V_dot_GN * PCI# * convert(kcal;kJ) = G_dot_gh * (h[2] - h[1])
+ 
+"!HRSG"
+ 
+pinch = 10 [C] : approach = 5 [C]
+purga = 0,01
+ 
+min(t[4] - t_sat;t[5] - t_a) = pinch
+ 
+t_sat = t_sat(Steam;P=p_v)
+t_sat - t_a_sal_eco = approach
+ 
+G_dot_p + G_dot_v = G_dot_a
+G_dot_p = purga * G_dot_a
+ 
+"!Ciclo de vapor"
+ 
+p_v = 65 [bar] + po#
+t_v = 480 [C]
+t_a = 105 [C]
+ 
+h_p = enthalpy(Steam;P=p_p; x=0)
+p_p = p_v
+ 
+h_v = enthalpy(Steam;P=p_v; T=t_v)
+s_v = entropy(Steam;P=p_v; T=t_v)
+h_vs = enthalpy(Steam;P=p_v; x=1)
+ 
+h_a = enthalpy(Steam;P=p_a; T=t_a)
+s_a = entropy(Steam;P=p_a; T=t_a)
+h_a_sal_eco = enthalpy(Steam;P=p_a; T=t_a_sal_eco)
+p_a = p_v
+ 
+p_0 = po#
+t_0 = t[0]
+h_0 = enthalpy(Steam;P=p_0; T=t_0)
+s_0 = entropy(Steam;P=p_0; T=t_0) 
+e_x_v = (h_v - h_0) - converttemp(C;K;t_0) * (s_v - s_0)
+e_x_a = (h_a - h_0) - converttemp(C;K;t_0) * (s_a - s_0)
+ 
+"!Balances" 
+ 
+Q_dot_SH = G_dot_v * (h_v - h_vs)
+Q_dot_SH = G_dot_gh * (h[2] - h[3])
+ 
+Q_dot_EV = G_dot_v * h_vs + G_dot_p * h_p - h_a_sal_eco * G_dot_a
+Q_dot_EV = G_dot_gh * (h[3] - h[4])
+ 
+Q_dot_EC = G_dot_a * (h_a_sal_eco - h_a)
+Q_dot_EC = G_dot_gh * (h[4] - h[5])
+ 
+Q_dot_stack = G_dot_gh * (h[5] - h[6])	{Calor que se va por la chimenea. No es exactamente la del rendimiento, porque también se pierde por la purga un poco.}
+Q_dot_gh = G_dot_gh * (h[1] - h[6])	{Calor que traen los gases húmedos por tener la temperatura de escape de la turbina}
+ 
+Q_dot_PC = V_dot_GN * PCI# * convert(kcal;kJ)
+ 
+"!Rendimiento térmico" 
+eta_HRSG = (G_dot_v * (h_v - h_a)) / (Q_dot_PC + Q_dot_gh)
+ 		{Obtenido, sobre lo que pusimos.}
+ 
+ 
+eta_ex_HRSG = (G_dot_v * (e_x_v - e_x_a)) / (E_x_Q_dot_PC + E_x_Q_dot_gh)
+ 		{Obtenido, sobre lo que pusimos.}
+ 
+E_x_Q_dot_PC = Q_dot_PC
+E_x_Q_dot_gh = G_dot_gh * (e_x[1] - e_x[6])	{Calor que traen los gases húmedos por tener la temperatura de escape de la turbina}
+ 
+ 
+ 
+"!Dibujo"
+ 
+Q_dib[1] = 0 [MW]
+Q_dib[2] = 0 [MW]
+Q_dib[3] = Q_dot_SH * convert(kW;MW)
+Q_dib[4] = Q_dib[3] + Q_dot_EV * convert(kW;MW)
+Q_dib[5] = Q_dib[4] + Q_dot_EC * convert(kW;MW)
+Q_dib[6] = Q_dib[5] + Q_dot_stack * convert(kW;MW)
+ 
+t_v[2] = t_v
+t_v[3] = t_sat
+t_v[4] = t_sat
+t_a[4] = t_a_sal_eco
+t_a[5] = t_a
+
+
+
+
+
+
+End

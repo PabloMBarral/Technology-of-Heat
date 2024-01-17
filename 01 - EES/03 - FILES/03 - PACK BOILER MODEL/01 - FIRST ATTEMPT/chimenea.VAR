@@ -1,0 +1,16 @@
+//C:\Users\Barral Pablo\Documents\GitHub\Technology-of-Heat\01 - EES\03 - FILES\03 - PACK BOILER MODEL\Caldera MOLINOS - 35.EES
+CHIMENEA/C_DOT_H	5,092802E+01	-infinity	infinity	A3	1	kW/C	0
+CHIMENEA/C_P_GASES	1,110767E+00	-infinity	infinity	A3	1	kJ/kg-C	0
+CHIMENEA/G_DOT_GASES	4,583024E+01	-infinity	infinity	A3	1	kg/s	0
+CHIMENEA/H_H_I	-2,693840E+03	-infinity	infinity	A0	1	kJ/kg	0
+CHIMENEA/H_H_O	-2,832470E+03	-infinity	infinity	A0	1	kJ/kg	0
+CHIMENEA/MW_GASES	2,778456E+01	-infinity	infinity	A3	1	kg/kmol	0
+CHIMENEA/Q_DOT	6,353457E+03	-infinity	infinity	A1	1	kW	0
+CHIMENEA/T_BAR_H	8,237683E+01	-infinity	infinity	A1	1	C	0
+CHIMENEA/T_H_I	1,447537E+02	-infinity	infinity	A1	1	C	0
+CHIMENEA/T_H_O	2,000000E+01	-infinity	infinity	A1	1	C	0
+CHIMENEA/X_AR	1,204907E-02	-infinity	infinity	A3	1		0
+CHIMENEA/X_CO2	1,399360E-01	-infinity	infinity	A3	1		0
+CHIMENEA/X_H2O	1,174065E-01	-infinity	infinity	A3	1		0
+CHIMENEA/X_N2	7,108431E-01	-infinity	infinity	A3	1		0
+CHIMENEA/X_O2	1,976529E-02	-infinity	infinity	A3	1		0

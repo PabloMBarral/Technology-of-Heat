@@ -1,0 +1,8 @@
+//C:\Users\Barral Pablo\Documents\GitHub\Technology-of-Heat\01 - EES\03 - FILES\03 - PACK BOILER MODEL\Caldera MOLINOS - 35.EES
+C_P_GASES/C_P_GASES				A4	1	kJ/kg-C
+C_P_GASES/T				A4	1	C
+C_P_GASES/X_AR				A4	1	
+C_P_GASES/X_CO2				A4	1	
+C_P_GASES/X_H2O				A4	1	
+C_P_GASES/X_N2				A4	1	
+C_P_GASES/X_O2				A4	1	
