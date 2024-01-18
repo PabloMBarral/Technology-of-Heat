@@ -1,0 +1,68 @@
+Subprogram evap_tube_bundle(t_h_i; p_h_i; t_c_i; t_c_o : t_h_o; p_h_o; Q)
+ 
+    "Global variables"
+        
+       $COMMON N_g; x_g[1..N_g]; gases$; G_dot_g
+ 
+    "Geometry"
+    
+        L = 2,936 [m]
+  
+        N_T = 13 : S_T = 101,6 [mm] * convert(mm;m)
+ 
+        N_L = 72 : S_L = 90,5 [mm] * convert(mm;m)
+ 
+        OD = 50,8 [mm] * convert(mm;m)
+        t = 3,05 [mm] *convert(mm;m)
+        ID = OD - 2 * t
+ 
+        N_extra_tubes = 11
+ 
+        A_frontal = N_T * S_T * L
+ 
+        A_e = L * (N_extra_tubes + N_L * N_T) * pi * OD
+ 
+        A_i = L * (N_extra_tubes + N_L * N_T) * pi * ID
+ 
+    "Heat transfer"
+    
+        "Temperature difference"
+            
+         	p_bar_h = average(p_h_i; p_h_o)
+ 
+           	t_bar_c = average(t_c_i; t_c_o)
+            t_w = t_bar_c
+            
+            DELTAT_ml = lmtd(t_h_i; t_h_o; t_c_i; t_c_o; 'counterflow')
+ 
+        "External convection"
+ 
+            V_dot_0_h_i = G_dot_g * v_h_i
+        
+           	u_0_h_i =  V_dot_0_h_i / A_frontal
+ 
+            p_h_i * convert(bar;kPa) * v_h_i = R# / MW_h * converttemp(C;K;t_h_i)
+       
+            Call external_flow_inline_bank('Air'; t_h_i; t_h_o; t_w; p_bar_h; u_0_h_i; N_L; OD; S_T; S_L: h_ce; {deltap}; {Nusselt}; {Re})
+ 
+             
+        "Internal convection"
+ 
+            h_ci = 4000 [kcal/h-m^2-C] * convert(kcal/h-m^2-C;W/m^2-C)
+ 
+        1 / (U * A_e) = 1 / (h_ce * A_e ) + 1 / (h_ci * A_i)
+ 
+        Q = U * A_e * DELTAT_ml * convert(W;kW)
+ 
+        p_h_o = p_h_i
+ 
+ 
+        
+        "Thermal balance"
+ 
+            Call idealgasmixtureprops(gases$; t_h_i; p_h_i; x_g[1..N_g] : MW_h; h_h_i; {s}; {mu}; {k})
+            Call idealgasmixtureprops(gases$; t_h_o; p_h_o; x_g[1..N_g] : {MW_gh}; h_h_o; {s}; {mu}; {k})
+ 
+            Q = G_dot_g * (h_h_i - h_h_o)
+ 
+End
