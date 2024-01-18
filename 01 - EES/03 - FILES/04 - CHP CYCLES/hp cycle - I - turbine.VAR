@@ -1,0 +1,10 @@
+//C:\Users\Barral Pablo\Desktop\CHP - HPB&ST - III.EES
+TURBINE/ETA_ISO				A4	1	
+TURBINE/H_I				A4	1	kJ/kg
+TURBINE/H_O				A4	1	kJ/kg
+TURBINE/H_S_O				A4	1	kJ/kg
+TURBINE/P_I				A4	1	bar
+TURBINE/P_O				A4	1	bar
+TURBINE/S_I				A4	1	kJ/kg-K
+TURBINE/TURBINE				A4	1	
+TURBINE/W				A4	1	kJ/kg

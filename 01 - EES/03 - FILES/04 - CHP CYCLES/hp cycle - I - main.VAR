@@ -1,0 +1,245 @@
+//C:\Users\Barral Pablo\Desktop\CHP - HPB&ST - III.EES
+ATEMP_DEGREE_LP	1,000000E+01	-infinity	infinity	A3	1	C	0
+DELTAP_AD	0,000000E+00	-infinity	infinity	A3	1	bar	0
+DELTAP_AT_AGUA_LP	0,000000E+00	-infinity	infinity	A3	1	bar	0
+DELTAP_AT_VAPOR_LP	0,000000E+00	-infinity	infinity	A3	1	bar	0
+DELTAP_C	0,000000E+00	-infinity	infinity	A3	1	bar	0
+DELTAP_CEP	0,000000E+00	-infinity	infinity	A3	1	bar	0
+DELTAP_EC	0,000000E+00	-infinity	infinity	A3	1	bar	0
+DELTAP_SH	0,000000E+00	-infinity	infinity	A3	1	bar	0
+DESCRIP$[0]	Environment	-infinity	infinity	S0	1		0
+DESCRIP$[1]	HP Steam	-infinity	infinity	S0	1		0
+DESCRIP$[10]	Pumped DW	-infinity	infinity	S0	1		0
+DESCRIP$[11]	AT Water	-infinity	infinity	S0	1		0
+DESCRIP$[12]	Pumped AT Water	-infinity	infinity	S0	1		0
+DESCRIP$[13]	BFW	-infinity	infinity	S0	1		0
+DESCRIP$[14]	Pumped BFW	-infinity	infinity	S0	1		0
+DESCRIP$[15]	Blowdown	-infinity	infinity	S0	1		0
+DESCRIP$[16]	Wet steam	-infinity	infinity	S0	1		0
+DESCRIP$[17]	ST Condensate	-infinity	infinity	S0	1		0
+DESCRIP$[18]	Pumped ST Condensate	-infinity	infinity	S0	1		0
+DESCRIP$[19]	Flashed BD (steam)	-infinity	infinity	S0	1		0
+DESCRIP$[2]	ST Inlet	-infinity	infinity	S0	1		0
+DESCRIP$[20]	Flashed BD (condensate)	-infinity	infinity	S0	1		0
+DESCRIP$[3]	ST LP Extraction	-infinity	infinity	S0	1		0
+DESCRIP$[4]	Attemperated LP Steam	-infinity	infinity	S0	1		0
+DESCRIP$[5]	Process LP Steam	-infinity	infinity	S0	1		0
+DESCRIP$[6]	BFW Tk LP Steam	-infinity	infinity	S0	1		0
+DESCRIP$[7]	Condensate Tk	-infinity	infinity	S0	1		0
+DESCRIP$[8]	Pumped condensate	-infinity	infinity	S0	1		0
+DESCRIP$[9]	DW Tk	-infinity	infinity	S0	1		0
+E_X[0]	0,000000E+00	-infinity	infinity	A3	1	kJ/kg	0
+E_X[1]	1,572990E+03	-infinity	infinity	A3	1	kJ/kg	0
+E_X[10]	1,959498E-02	-infinity	infinity	A3	1	kJ/kg	0
+E_X[11]	4,902346E+01	-infinity	infinity	A3	1	kJ/kg	0
+E_X[12]	5,038580E+01	-infinity	infinity	A3	1	kJ/kg	0
+E_X[13]	4,902439E+01	-infinity	infinity	A3	1	kJ/kg	0
+E_X[14]	6,052940E+01	-infinity	infinity	A3	1	kJ/kg	0
+E_X[15]	4,434663E+02	-infinity	infinity	A3	1	kJ/kg	0
+E_X[16]	2,180558E+02	-infinity	infinity	A3	1	kJ/kg	0
+E_X[17]	6,339707E+00	-infinity	infinity	A3	1	kJ/kg	0
+E_X[18]	6,454459E+00	-infinity	infinity	A3	1	kJ/kg	0
+E_X[19]	5,828910E+02	-infinity	infinity	A3	1	kJ/kg	0
+E_X[2]	1,572990E+03	-infinity	infinity	A3	1	kJ/kg	0
+E_X[20]	4,902346E+01	-infinity	infinity	A3	1	kJ/kg	0
+E_X[3]	1,032699E+03	-infinity	infinity	A3	1	kJ/kg	0
+E_X[4]	9,276694E+02	-infinity	infinity	A3	1	kJ/kg	0
+E_X[5]	9,276694E+02	-infinity	infinity	A3	1	kJ/kg	0
+E_X[6]	9,276694E+02	-infinity	infinity	A3	1	kJ/kg	0
+E_X[7]	3,494397E+01	-infinity	infinity	A3	1	kJ/kg	0
+E_X[8]	3,496604E+01	-infinity	infinity	A3	1	kJ/kg	0
+E_X[9]	0,000000E+00	-infinity	infinity	A3	1	kJ/kg	0
+ETA_BOILER	9,000000E-01	-infinity	infinity	A3	1		0
+ETA_E_X	3,758322E-01	-infinity	infinity	A3	4		0
+ETA_ISO_B_AA	7,000000E-01	-infinity	infinity	A3	1		0
+ETA_ISO_B_AD	7,000000E-01	-infinity	infinity	A3	1		0
+ETA_ISO_B_AT	7,000000E-01	-infinity	infinity	A3	1		0
+ETA_ISO_B_C	7,000000E-01	-infinity	infinity	A3	1		0
+ETA_ISO_B_CEP	7,000000E-01	-infinity	infinity	A3	1		0
+ETA_ISO_T_HP	8,000000E-01	-infinity	infinity	A3	1		0
+ETA_ISO_T_LP	8,000000E-01	-infinity	infinity	A3	1		0
+ETA_T	6,874610E-01	-infinity	infinity	A3	4		0
+FLUID$	steam	-infinity	infinity	S0	1		0
+G_DOT_PROC_LP	2,500000E+01	-infinity	infinity	A3	1	kg/s	0
+G_DOT_V	3,761928E+01	-infinity	infinity	A3	1	kg/s	0
+H[0]	6,307683E+01	0,000000E+00	infinity	A0	1	kJ/kg	0
+H[1]	3,525917E+03	0,000000E+00	infinity	A0	1	kJ/kg	0
+H[10]	6,310482E+01	0,000000E+00	infinity	A0	1	kJ/kg	0
+H[11]	4,402747E+02	0,000000E+00	infinity	A0	1	kJ/kg	0
+H[12]	4,420406E+02	0,000000E+00	infinity	A0	1	kJ/kg	0
+H[13]	4,402747E+02	0,000000E+00	infinity	A0	1	kJ/kg	0
+H[14]	4,551746E+02	0,000000E+00	infinity	A0	1	kJ/kg	0
+H[15]	1,412211E+03	0,000000E+00	infinity	A0	1	kJ/kg	0
+H[16]	2,383847E+03	0,000000E+00	infinity	A0	1	kJ/kg	0
+H[17]	1,918044E+02	0,000000E+00	infinity	A0	1	kJ/kg	0
+H[18]	1,919618E+02	0,000000E+00	infinity	A0	1	kJ/kg	0
+H[19]	2,683411E+03	0,000000E+00	infinity	A0	1	kJ/kg	0
+H[2]	3,525917E+03	0,000000E+00	infinity	A0	1	kJ/kg	0
+H[20]	4,402747E+02	0,000000E+00	infinity	A0	1	kJ/kg	0
+H[3]	3,048398E+03	0,000000E+00	infinity	A0	1	kJ/kg	0
+H[4]	2,813947E+03	0,000000E+00	infinity	A0	1	kJ/kg	0
+H[5]	2,813947E+03	0,000000E+00	infinity	A0	1	kJ/kg	0
+H[6]	2,813947E+03	0,000000E+00	infinity	A0	1	kJ/kg	0
+H[7]	3,770635E+02	0,000000E+00	infinity	A0	1	kJ/kg	0
+H[8]	3,770925E+02	0,000000E+00	infinity	A0	1	kJ/kg	0
+H[9]	6,307683E+01	0,000000E+00	infinity	A0	1	kJ/kg	0
+M_DOT[1]	3,761928E+01	0,000000E+00	infinity	A3	1	kg/s	0
+M_DOT[10]	5,215344E+00	-infinity	infinity	A3	1	kg/s	0
+M_DOT[11]	2,475597E+00	-infinity	infinity	A3	1	kg/s	0
+M_DOT[12]	2,475597E+00	-infinity	infinity	A3	1	kg/s	0
+M_DOT[13]	3,799927E+01	-infinity	infinity	A3	1	kg/s	0
+M_DOT[14]	3,799927E+01	-infinity	infinity	A3	1	kg/s	0
+M_DOT[15]	3,799927E-01	-infinity	infinity	A3	1	kg/s	0
+M_DOT[16]	1,257402E+01	-infinity	infinity	A3	1	kg/s	0
+M_DOT[17]	1,257402E+01	-infinity	infinity	A3	1	kg/s	0
+M_DOT[18]	1,257402E+01	-infinity	infinity	A3	1	kg/s	0
+M_DOT[19]	1,646483E-01	-infinity	infinity	A3	1	kg/s	0
+M_DOT[2]	3,761928E+01	0,000000E+00	infinity	A3	1	kg/s	0
+M_DOT[20]	2,153444E-01	-infinity	infinity	A3	1	kg/s	0
+M_DOT[3]	2,504526E+01	0,000000E+00	infinity	A3	1	kg/s	0
+M_DOT[4]	2,752085E+01	0,000000E+00	infinity	A3	1	kg/s	0
+M_DOT[5]	2,500000E+01	0,000000E+00	infinity	A3	1	kg/s	0
+M_DOT[6]	2,520854E+00	0,000000E+00	infinity	A3	1	kg/s	0
+M_DOT[7]	2,000000E+01	-infinity	infinity	A3	1	kg/s	0
+M_DOT[8]	2,000000E+01	-infinity	infinity	A3	1	kg/s	0
+M_DOT[9]	5,215344E+00	-infinity	infinity	A3	1	kg/s	0
+P[0]	1,013250E+00	-infinity	infinity	A0	1	bar	0
+P[1]	1,010133E+02	-infinity	infinity	A0	1	bar	0
+P[10]	1,209025E+00	-infinity	infinity	A0	1	bar	0
+P[11]	1,209025E+00	-infinity	infinity	A0	1	bar	0
+P[12]	1,301325E+01	-infinity	infinity	A0	1	bar	0
+P[13]	1,220759E+00	-infinity	infinity	A0	1	bar	0
+P[14]	1,010133E+02	-infinity	infinity	A0	1	bar	0
+P[15]	1,010133E+02	-infinity	infinity	A0	1	bar	0
+P[16]	1,000000E-01	-infinity	infinity	A0	1	bar	0
+P[17]	1,183036E-01	-infinity	infinity	A0	1	bar	0
+P[18]	1,209025E+00	-infinity	infinity	A0	1	bar	0
+P[19]	1,209025E+00	-infinity	infinity	A0	1	bar	0
+P[2]	1,010133E+02	-infinity	infinity	A0	1	bar	0
+P[20]	1,209025E+00	-infinity	infinity	A0	1	bar	0
+P[3]	1,301325E+01	-infinity	infinity	A0	1	bar	0
+P[4]	1,301325E+01	-infinity	infinity	A0	1	bar	0
+P[5]	1,301325E+01	-infinity	infinity	A0	1	bar	0
+P[6]	1,301325E+01	-infinity	infinity	A0	1	bar	0
+P[7]	1,013250E+00	-infinity	infinity	A0	1	bar	0
+P[8]	1,209025E+00	-infinity	infinity	A0	1	bar	0
+P[9]	1,013250E+00	-infinity	infinity	A0	1	bar	0
+P_0	1,013250E+00	-infinity	infinity	A0	1	bar	0
+P_AA	1,010133E+02	-infinity	infinity	A0	1	bar	0
+P_AD	1,209025E+00	-infinity	infinity	A0	1	bar	0
+P_AT_LP	1,301325E+01	-infinity	infinity	A0	1	bar	0
+P_C	1,209025E+00	-infinity	infinity	A0	1	bar	0
+P_CEP	1,209025E+00	-infinity	infinity	A0	1	bar	0
+P_COND	1,000000E-01	-infinity	infinity	A0	1	bar	0
+P_D	1,010133E+02	-infinity	infinity	A0	1	bar	0
+P_HP	1,010133E+02	-infinity	infinity	A0	1	bar	0
+P_LP	1,301325E+01	-infinity	infinity	A0	1	bar	0
+P_ST_LP	1,301325E+01	-infinity	infinity	A0	1	bar	0
+P_TK_AA	1,209025E+00	-infinity	infinity	A0	1	bar	0
+P_TK_AD	1,013250E+00	-infinity	infinity	A0	1	bar	0
+P_TK_C	1,013250E+00	-infinity	infinity	A0	1	bar	0
+PUMP/ETA_ISO				A4	1	
+PUMP/H_I				A4	1	kJ/kg
+PUMP/H_O				A4	1	kJ/kg
+PUMP/H_S_O				A4	1	kJ/kg
+PUMP/P_I				A4	1	bar
+PUMP/P_O				A4	1	bar
+PUMP/PUMP				A4	1	
+PUMP/S_I				A4	1	kJ/kg-K
+PUMP/W				A4	1	kJ/kg
+PURGA	1,000000E+00	-infinity	infinity	A0	1	%	0
+RETORNO	8,000000E+01	-infinity	infinity	A3	1	%	0
+S[0]	2,244483E-01	-infinity	infinity	A3	1	kJ/kg-K	0
+S[1]	6,783014E+00	-infinity	infinity	A3	1	kJ/kg-K	0
+S[10]	2,244775E-01	-infinity	infinity	A3	1	kJ/kg-K	0
+S[11]	1,363350E+00	-infinity	infinity	A3	1	kJ/kg-K	0
+S[12]	1,364750E+00	-infinity	infinity	A3	1	kJ/kg-K	0
+S[13]	1,363347E+00	-infinity	infinity	A3	1	kJ/kg-K	0
+S[14]	1,375128E+00	-infinity	infinity	A3	1	kJ/kg-K	0
+S[15]	3,367491E+00	-infinity	infinity	A3	1	kJ/kg-K	0
+S[16]	7,521739E+00	-infinity	infinity	A3	1	kJ/kg-K	0
+S[17]	6,491850E-01	-infinity	infinity	A3	1	kJ/kg-K	0
+S[18]	6,493330E-01	-infinity	infinity	A3	1	kJ/kg-K	0
+S[19]	7,295222E+00	-infinity	infinity	A3	1	kJ/kg-K	0
+S[2]	6,783014E+00	-infinity	infinity	A3	1	kJ/kg-K	0
+S[20]	1,363350E+00	-infinity	infinity	A3	1	kJ/kg-K	0
+S[3]	7,000860E+00	-infinity	infinity	A3	1	kJ/kg-K	0
+S[4]	6,551712E+00	-infinity	infinity	A3	1	kJ/kg-K	0
+S[5]	6,551712E+00	-infinity	infinity	A3	1	kJ/kg-K	0
+S[6]	6,551712E+00	-infinity	infinity	A3	1	kJ/kg-K	0
+S[7]	1,192842E+00	-infinity	infinity	A3	1	kJ/kg-K	0
+S[8]	1,192866E+00	-infinity	infinity	A3	1	kJ/kg-K	0
+S[9]	2,244483E-01	-infinity	infinity	A3	1	kJ/kg-K	0
+T[0]	1,500000E+01	-infinity	infinity	A1	1	C	0
+T[1]	5,600000E+02	-infinity	infinity	A1	1	C	0
+T[10]	1,500221E+01	-infinity	infinity	A1	1	C	0
+T[11]	1,050000E+02	-infinity	infinity	A1	1	C	0
+T[12]	1,052118E+02	-infinity	infinity	A1	1	C	0
+T[13]	1,050000E+02	-infinity	infinity	A1	1	C	0
+T[14]	1,067862E+02	-infinity	infinity	A1	1	C	0
+T[15]	3,117393E+02	-infinity	infinity	A1	1	C	0
+T[16]	4,580558E+01	-infinity	infinity	A1	1	C	0
+T[17]	4,580558E+01	-infinity	infinity	A1	1	C	0
+T[18]	4,582048E+01	-infinity	infinity	A1	1	C	0
+T[19]	1,050000E+02	-infinity	infinity	A1	1	C	0
+T[2]	5,600000E+02	-infinity	infinity	A1	1	C	0
+T[20]	1,050000E+02	-infinity	infinity	A1	1	C	0
+T[3]	3,021929E+02	-infinity	infinity	A1	1	C	0
+T[4]	2,016514E+02	-infinity	infinity	A1	1	C	0
+T[5]	2,016514E+02	-infinity	infinity	A1	1	C	0
+T[6]	2,016514E+02	-infinity	infinity	A1	1	C	0
+T[7]	9,000000E+01	-infinity	infinity	A1	1	C	0
+T[8]	9,000329E+01	-infinity	infinity	A1	1	C	0
+T[9]	1,500000E+01	-infinity	infinity	A1	1	C	0
+T_0	1,500000E+01	-infinity	infinity	A1	1	C	0
+T_COND	4,580558E+01	-infinity	infinity	A1	1	C	0
+T_HP	5,600000E+02	-infinity	infinity	A1	1	C	0
+T_TK_AA	1,050000E+02	-infinity	infinity	A1	1	C	0
+T_TK_AD	1,500000E+01	-infinity	infinity	A1	1	C	0
+T_TK_C	9,000000E+01	-infinity	infinity	A1	1	C	0
+TURBINE/ETA_ISO				A4	1	
+TURBINE/H_I				A4	1	kJ/kg
+TURBINE/H_O				A4	1	kJ/kg
+TURBINE/H_S_O				A4	1	kJ/kg
+TURBINE/P_I				A4	1	bar
+TURBINE/P_O				A4	1	bar
+TURBINE/S_I				A4	1	kJ/kg-K
+TURBINE/TURBINE				A4	1	
+TURBINE/W				A4	1	kJ/kg
+V_DOT_GN	3,649639E+00	-infinity	infinity	A3	1	m^3/s	0
+W_B_AA	1,489984E+01	-infinity	infinity	A1	1	kJ/kg	0
+W_B_AD	2,799281E-02	-infinity	infinity	A1	1	kJ/kg	0
+W_B_AT	1,765862E+00	-infinity	infinity	A1	1	kJ/kg	0
+W_B_C	2,896897E-02	-infinity	infinity	A1	1	kJ/kg	0
+W_B_CEP	1,574129E-01	-infinity	infinity	A1	1	kJ/kg	0
+W_DOT_B_AA	5,661831E+02	-infinity	infinity	A1	1	kW	0
+W_DOT_B_AD	1,459922E-01	-infinity	infinity	A1	1	kW	0
+W_DOT_B_AT	4,371563E+00	-infinity	infinity	A1	1	kW	0
+W_DOT_B_C	5,793793E-01	-infinity	infinity	A1	1	kW	0
+W_DOT_B_CEP	1,979314E+00	-infinity	infinity	A1	1	kW	0
+W_DOT_T	2,632000E+04	-infinity	infinity	A1	1	kW	0
+W_DOT_T_HP	1,796392E+04	-infinity	infinity	A1	1	kW	0
+W_DOT_T_LP	8,356084E+03	-infinity	infinity	A1	1	kW	0
+W_T_HP	4,775189E+02	-infinity	infinity	A1	1	kJ/kg	0
+W_T_LP	6,645513E+02	-infinity	infinity	A1	1	kJ/kg	0
+X[0]	-1,000000E+02	-infinity	infinity	A3	1		0
+X[1]	1,000000E+02	-infinity	infinity	A3	1		0
+X[10]	-1,000000E+02	-infinity	infinity	A3	1		0
+X[11]	0,000000E+00	-infinity	infinity	A3	1		0
+X[12]	-1,000000E+02	-infinity	infinity	A3	1		0
+X[13]	-1,000000E+02	-infinity	infinity	A3	1		0
+X[14]	-1,000000E+02	-infinity	infinity	A3	1		0
+X[15]	0,000000E+00	-infinity	infinity	A3	1		0
+X[16]	9,163860E-01	-infinity	infinity	A3	1		0
+X[17]	-1,000000E+02	-infinity	infinity	A3	1		0
+X[18]	-1,000000E+02	-infinity	infinity	A3	1		0
+X[19]	1,000000E+00	-infinity	infinity	A3	1		0
+X[2]	1,000000E+02	-infinity	infinity	A3	1		0
+X[20]	0,000000E+00	-infinity	infinity	A3	1		0
+X[3]	1,000000E+02	-infinity	infinity	A3	1		0
+X[4]	1,000000E+02	-infinity	infinity	A3	1		0
+X[5]	1,000000E+02	-infinity	infinity	A3	1		0
+X[6]	1,000000E+02	-infinity	infinity	A3	1		0
+X[7]	-1,000000E+02	-infinity	infinity	A3	1		0
+X[8]	-1,000000E+02	-infinity	infinity	A3	1		0
+X[9]	-1,000000E+02	-infinity	infinity	A3	1		0

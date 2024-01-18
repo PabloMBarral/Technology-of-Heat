@@ -1,0 +1,10 @@
+//C:\Users\Barral Pablo\Desktop\CHP - HPB&ST - III.EES
+PUMP/ETA_ISO				A4	1	
+PUMP/H_I				A4	1	kJ/kg
+PUMP/H_O				A4	1	kJ/kg
+PUMP/H_S_O				A4	1	kJ/kg
+PUMP/P_I				A4	1	bar
+PUMP/P_O				A4	1	bar
+PUMP/PUMP				A4	1	
+PUMP/S_I				A4	1	kJ/kg-K
+PUMP/W				A4	1	kJ/kg
