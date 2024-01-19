@@ -1,0 +1,88 @@
+//C:\Users\Barral Pablo\Desktop\SUMMER.EES
+A_CAP	4,908731E+02	-infinity	infinity	A3	1	m^2	0
+A_DUCT	8,450000E-01	-infinity	infinity	A3	1	m^2	0
+A_DUCT_2	7,225000E-01	-infinity	infinity	A3	1	m^2	0
+A_PROY	4,908739E+02	-infinity	infinity	A3	1	m^2	0
+A_REM	1,472622E+03	-infinity	infinity	A3	1	m^2	0
+A_SPHERE	1,963495E+03	-infinity	infinity	A3	1	m^2	0
+A_SUELO	3,681554E+02	-infinity	infinity	A3	1	m^2	0
+ACH	3,052208E+00	-infinity	infinity	A3	1		0
+ALPHA	7,600000E-01	-infinity	infinity	A3	1		0
+C_F	3,215714E-03	-infinity	infinity	A3	1		0
+C_P_AIR	1,005101E+00	-infinity	infinity	A3	1	kJ/kg-K	0
+COND$	VERANO	-infinity	infinity	S0	1		0
+D	2,500000E+01	-infinity	infinity	A3	1	m	0
+D_SUELO	2,165064E+01	-infinity	infinity	A3	1	m	0
+DELTAP	3,432315E-01	-infinity	infinity	A3	1	kPa	0
+EPSILON_IR	8,500000E-01	-infinity	infinity	A3	1		0
+ETA	5,000000E-01	-infinity	infinity	A3	1		0
+F_VISTA	1,000000E+00	-infinity	infinity	A3	1		0
+FS	1,300000E+00	-infinity	infinity	A3	1		0
+G_AIR	6,671160E+00	-infinity	infinity	A3	1	kg/s	0
+H	6,250000E+00	-infinity	infinity	A0	1	m	0
+H_CONV_E_CASCARA	2,362234E+00	-infinity	infinity	A0	1	W/m^2-K	0
+H_CONV_E_LOSA	7,278906E+00	-infinity	infinity	A0	1	W/m^2-K	0
+H_CONV_I	2,500000E+00	-infinity	infinity	A0	1	W/m^2-K	0
+K_CASCARA	3,484960E-01	-infinity	infinity	A3	1	W/m^2-K	0
+K_GRP	2,533333E+00	-infinity	infinity	A3	1	W/m^2-K	0
+K_HA	1,166667E+01	-infinity	infinity	A3	1	W/m^2-K	0
+K_PUR	4,807692E-01	-infinity	infinity	A3	1	W/m^2-K	0
+LAMBDA_GRP	3,800000E-02	-infinity	infinity	A3	1	W/m-K	0
+LAMBDA_HA	1,400000E+00	-infinity	infinity	F3	1	W/m-K	0
+LAMBDA_PUR	2,500000E-02	-infinity	infinity	A3	1	W/m-K	0
+LIGHTS	0,000000E+00	-infinity	infinity	A3	1	kW/m^2	0
+N_VENT	4,017549E+00	-infinity	infinity	A3	4	kW	0
+NUSSELT_BAR_D	2,260456E+03	-infinity	infinity	A3	1		0
+NUSSELT_PLACA	6,008120E+03	-infinity	infinity	A3	1		0
+OMEGA_AIR	6,926078E+00	-infinity	infinity	A3	1	m/s	0
+OMEGA_AIR_2	8,100395E+00	-infinity	infinity	A3	1	m/s	0
+P_AMB	1,002700E+02	-infinity	infinity	A0	1	kPa	0
+PHI	1,047198E+00	-infinity	infinity	A0	1		0
+PHI_SOLAR	9,360000E+02	-infinity	infinity	A0	1	W/m^2	0
+Q_CONV_CASCARA	6,393638E+01	-infinity	infinity	A1	1	kW	0
+Q_CONV_LOSA	7,566640E+00	-infinity	infinity	A1	1	kW	0
+Q_DIFUSO_CASCARA	4,190257E+01	-infinity	infinity	A1	1	kW	0
+Q_DIFUSO_LOSA	1,047564E+01	-infinity	infinity	A1	1	kW	0
+Q_DIS	3,223505E+01	-infinity	infinity	A1	1	kW	0
+Q_ENF	4,492476E+01	-infinity	infinity	A1	4	kW	0
+Q_RAD_CASCARA	7,901060E+02	-infinity	infinity	A1	1	kW	0
+Q_RAD_LOSA	1,623210E+02	-infinity	infinity	A1	1	kW	0
+Q_SKY	4,682124E+02	-infinity	infinity	A1	1	kW	0
+Q_SOLAR	3,491880E+02	-infinity	infinity	A1	1	kW	0
+Q_SUELO	1,564739E+02	-infinity	infinity	A1	1	kW	0
+Q_TRANSF_CASCARA	5,260632E+00	-infinity	infinity	A1	1	kW	0
+Q_TRANSF_LOSA	-2,938170E+00	-infinity	infinity	A1	1	kW	0
+R	1,250000E+01	-infinity	infinity	A3	1	m	0
+R_CASCARA	2,869474E+00	-infinity	infinity	A3	1	m^2-K/W	0
+R_CONV_E_CASCARA	4,233282E-01	-infinity	infinity	A3	1	m^2-K/W	0
+R_CONV_E_LOSA	1,373833E-01	-infinity	infinity	A3	1	m^2-K/W	0
+R_CONV_I	4,000000E-01	-infinity	infinity	A3	1	m^2-K/W	0
+R_GRP	3,947368E-01	-infinity	infinity	A3	1	m^2-K/W	0
+R_HA	8,571429E-02	-infinity	infinity	A3	1	m^2-K/W	0
+R_PUR	2,080000E+00	-infinity	infinity	A3	1	m^2-K/W	0
+R_SUELO	1,082532E+01	-infinity	infinity	A3	1	m	0
+RE_D	4,831700E+06	0,000000E+00	infinity	A3	1		0
+RE_PLACA	4,150860E+06	-infinity	infinity	A3	1		0
+RHO_AIR	1,139875E+00	-infinity	infinity	A3	1	kg/m^3	0
+T_AMB	3,064500E+02	-infinity	infinity	A1	4	K	0
+T_AMB_INV	2,754500E+02	-infinity	infinity	A1	1	K	0
+T_AMB_VER	3,064500E+02	-infinity	infinity	A1	1	K	0
+T_BAR	3,156398E+02	-infinity	infinity	A1	1	K	0
+T_CASCARA	8,200000E-02	-infinity	infinity	A1	1	m	0
+T_GRP	1,500000E-02	-infinity	infinity	A1	1	m	0
+T_HA	1,200000E-01	-infinity	infinity	A1	1	m	0
+T_INTERIOR	3,131500E+02	-infinity	infinity	A1	4	K	0
+T_PUR	5,200000E-02	-infinity	infinity	A1	1	m	0
+T_SKY	2,850000E+02	-infinity	infinity	A1	1	K	0
+T_SUPERFICIE_CASCARA	3,248295E+02	-infinity	infinity	A1	1	K	0
+T_SUPERFICIE_LOSA	3,092736E+02	-infinity	infinity	A1	1	K	0
+TAU	1,868136E-02	-infinity	infinity	A1	1	Pa	0
+U_INF	3,200000E+00	-infinity	infinity	A3	1	m/s	0
+U_INF_INV	3,600000E+00	-infinity	infinity	A3	1	m/s	0
+U_INF_VER	3,200000E+00	-infinity	infinity	A3	1	m/s	0
+U_INT_CASCARA	3,058596E-01	-infinity	infinity	A3	1	W/m^2-K	0
+U_INT_HA	2,058824E+00	-infinity	infinity	A3	1	W/m^2-K	0
+V_AIR	5,852536E+00	-infinity	infinity	A3	4	m^3/s	0
+V_CAP	1,278317E+03	-infinity	infinity	A3	1	m^3	0
+V_REM	6,902914E+03	-infinity	infinity	A3	1	m^3	0
+V_SPHERE	8,181231E+03	-infinity	infinity	A3	1	m^3	0
