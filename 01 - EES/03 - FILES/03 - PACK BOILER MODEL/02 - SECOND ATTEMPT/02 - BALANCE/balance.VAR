@@ -1,0 +1,18 @@
+//C:\Users\Barral Pablo\Desktop\balance.EES
+ETA_CALD	9,200000E-01	-infinity	infinity	A3	1	dim	0
+G_DOT_GH	2,784443E+01	-infinity	infinity	A3	1	kg/s	0
+G_DOT_GN	1,417733E+00	-infinity	infinity	A3	1	kg/s	0
+G_DOT_V	2,222222E+01	-infinity	infinity	A3	1	kg/s	0
+GHF_RATIO	1,451784E+01	-infinity	infinity	A3	1	kg/m^3	0
+H_A	4,432205E+02	-infinity	infinity	A0	1	kJ/kg	0
+H_V	3,226559E+03	-infinity	infinity	A0	1	kJ/kg	0
+LHV_GN_VOL_ESTANDAR	8,372347E+03	-infinity	infinity	A3	1	kcal/m^3	0
+P_A	4,101325E+01	-infinity	infinity	A0	1	bar	0
+P_D	3,701325E+01	-infinity	infinity	A0	1	bar	0
+P_V	3,301325E+01	-infinity	infinity	A0	1	bar	0
+RHO_S	7,391933E-01	-infinity	infinity	A3	1	kg/m^3	0
+S_A	1,360125E+00	-infinity	infinity	A3	1	kJ/kg-K	0
+S_V	6,873534E+00	-infinity	infinity	A3	1	kJ/kg-K	0
+T_A	1,050000E+02	-infinity	infinity	A1	1	C	0
+T_V	4,000000E+02	-infinity	infinity	A1	1	C	0
+V_DOT_GN	1,917946E+00	-infinity	infinity	A3	4	m^3/s	0

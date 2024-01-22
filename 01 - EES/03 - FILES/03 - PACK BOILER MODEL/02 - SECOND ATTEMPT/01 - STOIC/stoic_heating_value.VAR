@@ -1,0 +1,20 @@
+//C:\Users\Barral Pablo\Desktop\stoic.ees
+HEATING_VALUE/HHV_BAR_GN	9,180394E+02	-infinity	infinity	A0	1	MJ/kmol	0
+HEATING_VALUE/HHV_C2H6	5,189600E+04	-infinity	infinity	A0	1	kJ/kg	0
+HEATING_VALUE/HHV_C3H8	5,032100E+04	-infinity	infinity	A0	1	kJ/kg	0
+HEATING_VALUE/HHV_C4H10	4,913200E+04	-infinity	infinity	A0	1	kJ/kg	0
+HEATING_VALUE/HHV_C5H12	4,863200E+04	-infinity	infinity	A0	1	kJ/kg	0
+HEATING_VALUE/HHV_CH4	5,551600E+04	-infinity	infinity	A0	1	kJ/kg	0
+HEATING_VALUE/HHV_GN	5,252590E+04	-infinity	infinity	A0	1	kJ/kg	0
+HEATING_VALUE/HHV_GN_VOL_ESTANDAR	9,273621E+03	-infinity	infinity	A0	1	kcal/m^3	0
+HEATING_VALUE/HHV_GN_VOL_NORMAL	9,782880E+03	-infinity	infinity	A0	1	kcal/m^3	0
+HEATING_VALUE/LHV_BAR_GN	8,288181E+02	-infinity	infinity	A3	1	MJ/kmol	0
+HEATING_VALUE/LHV_C2H6	4,750800E+04	-infinity	infinity	A3	1	kJ/kg	0
+HEATING_VALUE/LHV_C3H8	4,633000E+04	-infinity	infinity	A3	1	kJ/kg	0
+HEATING_VALUE/LHV_C4H10	4,534800E+04	-infinity	infinity	A3	1	kJ/kg	0
+HEATING_VALUE/LHV_C5H12	4,497400E+04	-infinity	infinity	A3	1	kJ/kg	0
+HEATING_VALUE/LHV_CH4	5,002300E+04	-infinity	infinity	A3	1	kJ/kg	0
+HEATING_VALUE/LHV_GN	4,742108E+04	-infinity	infinity	A3	1	kJ/kg	0
+HEATING_VALUE/LHV_GN_VOL_ESTANDAR	8,372347E+03	-infinity	infinity	A3	1	kcal/m^3	0
+HEATING_VALUE/LHV_GN_VOL_NORMAL	8,832113E+03	-infinity	infinity	A3	1	kcal/m^3	0
+HEATING_VALUE/MW_GN	1,747784E+01	-infinity	infinity	A3	1	kg/kmol	0

@@ -1,0 +1,51 @@
+$UnitSystem SI C bar kg kJ
+$TABSTOPS 1 2 3 4 5 cm
+
+
+"!General data"
+
+    {1187 - Old value. This data needs to be erased in future version.}
+    eta_cald = 92 [%] * convert(%;dim)
+    
+    {1187}
+    {epsilon = 89,6 [%] * convert(%;dim)}
+
+"!Superheated steam"
+
+    {1187 - Old value. This data needs to be erased in future version.}
+    G_dot_v = 80 [tonne/h] * convert(tonne/h;kg/s) 
+
+    p_v = 32 [bar] + po# 
+    t_v = 400 [C]
+    h_v = enthalpy(Steam;P=p_v;T=t_v)
+    s_v = entropy(Steam;P=p_v;T=t_v)
+
+
+    {1187}
+    {G_dot_v = 80 [tonne/h] * convert(tonne/h;kg/s) 
+
+    p_v = 32 [bar] + po# 
+    t_v = 380 [C]
+    h_v = enthalpy(Steam;P=p_v;T=t_v)
+    s_v = entropy(Steam;P=p_v;T=t_v)}
+
+"!Boiler feedwater"
+
+    p_d = p_v + 4 [bar]
+    p_a = p_d + 4 [bar]
+
+    t_a = 105 [C]
+    h_a = enthalpy(Steam;P=p_a;T=t_a)
+    s_a = entropy(Steam;P=p_a;T=t_a)
+
+"Flue gases & natural gas"
+
+    GHF_ratio = 14,517839479 [kg/m^3]
+    LHV_GN_vol_estandar = 8372,346849092 [kcal/m^3]
+    rho_s = 0,739193318 [kg/m^3]
+ 
+    V_dot_GN * LHV_GN_vol_estandar * convert(kcal/m^3;kJ/m^3) * eta_cald =  G_dot_v * (h_v - h_a)
+
+    G_dot_GN = V_dot_GN * rho_s
+    G_dot_GH = V_dot_GN * GHF_ratio
+

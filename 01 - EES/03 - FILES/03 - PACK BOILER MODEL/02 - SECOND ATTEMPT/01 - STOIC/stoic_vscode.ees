@@ -1,0 +1,153 @@
+$UnitSystem SI C bar kg kJ
+$TABSTOPS 1 2 3 4 5 cm
+
+Subprogram heating_value(MW_GN; LHV_GN_vol_estandar) 
+ 
+    $COMMON x_CH4; x_C2H6; x_C3H8; x_C4H10; x_C5H12; rho_s; rho_n
+    
+    LHV_GN = x_CH4 * LHV_CH4 + x_C2H6 * LHV_C2H6 + x_C3H8 * LHV_C3H8 + x_C4H10 * LHV_C4H10 + x_C5H12 * LHV_C5H12
+    HHV_GN = x_CH4 * HHV_CH4 + x_C2H6 * HHV_C2H6 + x_C3H8 * HHV_C3H8 + x_C4H10 * HHV_C4H10 + x_C5H12 * HHV_C5H12
+ 
+    LHV_bar_GN = LHV_GN * MW_GN * convert(kJ/kmol;MJ/kmol)
+    HHV_bar_GN = HHV_GN * MW_GN * convert(kJ/kmol;MJ/kmol)
+ 
+    LHV_GN_vol_estandar = LHV_GN * rho_s * convert(kJ/m^3;kcal/m^3)
+    HHV_GN_vol_estandar = HHV_GN * rho_s * convert(kJ/m^3;kcal/m^3)
+ 
+    LHV_GN_vol_normal = LHV_GN * rho_n * convert(kJ/m^3;kcal/m^3)
+    HHV_GN_vol_normal = HHV_GN * rho_n * convert(kJ/m^3;kcal/m^3)
+ 
+    LHV_CH4 = lowerheatingvalue(CH4) : HHV_CH4 = higherheatingvalue(CH4)
+    LHV_C2H6 = lowerheatingvalue(C2H6) : HHV_C2H6 = higherheatingvalue(C2H6)
+    LHV_C3H8 = lowerheatingvalue(C3H8) : HHV_C3H8 = higherheatingvalue(C3H8)
+    LHV_C4H10 = lowerheatingvalue(C4H10) : HHV_C4H10 = higherheatingvalue(C4H10)
+    LHV_C5H12 = lowerheatingvalue(C5H12) : HHV_C5H12 = higherheatingvalue(C5H12)
+ 
+End
+
+"!General data"
+
+    {1187 - Old value. This data needs to be erased in future version.}
+    epsilon = 15 [%] * convert(%;dim)
+    
+    {1187}
+    {epsilon = 20 [%] * convert(%;dim)}
+
+"!Natural gas"
+    
+    {1187}
+    y_CH4 = 92,47 [%] * convert(%;dim)
+    y_C2H6 = 3,50 [%] * convert(%;dim)
+    y_C3H8 = 0,98 [%] * convert(%;dim)
+    y_C4H10 = 0,56 [%] * convert(%;dim)
+    y_C5H12 = 0,06 [%] * convert(%;dim)
+    y_N2 = 1,75 [%] * convert(%;dim)
+ 
+    y_CO2 = 100 [%]  * convert(%;dim) - y_CH4 - y_C2H6 - y_C3H8 - y_C4H10 - y_C5H12 - y_N2
+ 
+    MW_CH4 = molarmass(CH4) : MW_C2H6 = molarmass(C2H6) : MW_C3H8 = molarmass(C3H8) : MW_C4H10 = molarmass(C4H10) : MW_C5H12 = molarmass(C5H12)
+    MW_N2 = molarmass(N2) : MW_CO2 = molarmass(CO2)
+ 
+    MW_GN = y_CH4 * MW_CH4 + y_C2H6 * MW_C2H6 + y_C3H8 * MW_C3H8 + y_C4H10 * MW_C4H10 + y_C5H12 * MW_C5H12 + y_N2 * MW_N2 + y_CO2 * MW_CO2
+
+    x_CH4 = y_CH4 * MW_CH4 / MW_GN
+    x_C2H6 = y_C2H6 * MW_C2H6 / MW_GN
+    x_C3H8 = y_C3H8 * MW_C3H8 / MW_GN
+    x_C4H10 = y_C4H10 * MW_C4H10 / MW_GN
+    x_C5H12 = y_C5H12 * MW_C5H12 / MW_GN
+    x_N2 = y_N2 * MW_N2 / MW_GN
+    x_CO2 = y_CO2 * MW_CO2 / MW_GN
+ 
+    check = x_CH4 + x_C2H6 + x_C3H8 + x_C4H10 + x_C5H12 + x_N2 + x_CO2
+
+"!Air"
+
+    y_a_N2 = 79 [%] * convert(%;dim) 
+    y_a_O2 = 100 [%] * convert(%;dim) - y_a_N2
+
+    MW_A = y_a_O2 * MW_O2 + y_a_N2 * MW_N2
+
+    x_a_N2 = y_a_N2 * MW_N2 / MW_A
+    x_a_O2 = y_a_O2 * MW_O2 / MW_A
+
+"!Thermodynamic ref"
+
+    p_n = po# : p_s = po#
+    T_n = converttemp(C;K;0 [C]) : T_s = converttemp(C;K;15 [C])
+
+    "Natural gas" 
+    
+    p_n * convert(bar;kPa) = rho_n * R# / MW_GN * T_n
+    p_s * convert(bar;kPa) = rho_s * R# / MW_GN * T_s
+
+    "Flue gases - wet basis"
+
+    p_n * convert(bar;kPa) = rho_gh_n * R# / MW_GH * T_n
+    p_s * convert(bar;kPa) = rho_gh_s * R# / MW_GH * T_s
+
+    "Air"
+    p_n * convert(bar;kPa) = rho_a_n * R# / MW_A * T_n
+    p_s * convert(bar;kPa) = rho_a_s * R# / MW_A * T_s
+
+"Reaction balance"
+ 
+    y_CH4 + 2 * y_C2H6 + 3 * y_C3H8 + 4 * y_C4H10 + 5 * y_C5H12 + y_CO2 = b_s
+    4 * y_CH4 + 6 * y_C2H6 + 8 * y_C3H8 + 10 * y_C4H10 + 12 * y_C5H12 = 2 * c_s
+    2 * y_CO2 + a_s * y_a_O2 * 2 = 2 * b_s + c_s
+    2 * y_N2 + a_s * y_a_N2 * 2 = 2 * d_s
+
+    a = (1 + epsilon) * a_s
+
+    y_CH4 + 2 * y_C2H6 + 3 * y_C3H8 + 4 * y_C4H10 + 5 * y_C5H12 + y_CO2 = b
+    4 * y_CH4 + 6 * y_C2H6 + 8 * y_C3H8 + 10 * y_C4H10 + 12 * y_C5H12 = 2 * c
+    2 * y_CO2 + a * y_a_O2 * 2 = 2 * b + c + 2 * e
+    2 * y_N2 + a * y_a_N2 * 2 = 2 * d
+
+"Molar fraction - flue gases" 
+
+    y_gh_CO2 = b / (b + c + d + e)
+    y_gh_H2O = c / (b + c + d + e)
+    y_gh_N2 = d / (b + c + d + e)
+    y_gh_O2 =  e / (b + c + d + e)
+
+    y_gs_CO2 = b / (b + d + e)
+    y_gs_N2 = d / (b + d + e)
+    y_gs_O2 =  e / (b + d + e)
+    
+    MW_O2 = molarmass(O2) : MW_H2O = molarmass(H2O)
+
+    MW_GH = y_gh_CO2 * MW_CO2 + y_gh_H2O * MW_H2O + y_gh_N2 * MW_N2 + y_gh_O2 * MW_O2
+    MW_GS = y_gs_CO2 * MW_CO2 + y_gs_N2 * MW_N2 + y_gs_O2 * MW_O2
+
+    x_gh_CO2 = y_gh_CO2 * MW_CO2 / MW_GH
+    x_gh_H2O = y_gh_H2O * MW_H2O / MW_GH
+    x_gh_N2 = y_gh_N2 * MW_N2 / MW_GH
+    x_gh_O2 = y_gh_O2 * MW_O2 / MW_GH
+ 
+"!Ratios"
+
+    AF_bar_ratio = a
+    AF_bar_ratio_esteq = a_s
+
+    GHF_bar_ratio = b + c + d + e
+    GHF_bar_ratio_esteq = b_s + c_s + d_s
+
+    GSF_bar_ratio = b + d + e
+    GSF_bar_ratio_esteq = b_s + d_s
+ 
+    GHF_ratio_vol = GHF_bar_ratio / MW_GN * rho_s
+    GHF_ratio_vol_esteq = GHF_bar_ratio_esteq / MW_GN * rho_s
+
+    GSF_ratio_vol = GSF_bar_ratio / MW_GN * rho_s
+    GSF_ratio_vol_esteq = GSF_bar_ratio_esteq / MW_GN * rho_s
+
+    AF_ratio_vol = AF_bar_ratio / MW_GN * rho_s
+    AF_ratio_vol_esteq = AF_bar_ratio_esteq / MW_GN * rho_s
+    AF_ratio_mass = AF_bar_ratio * MW_A / MW_GN 
+ 
+    GHF_ratio = GHF_ratio_vol * MW_GH
+    GSF_ratio = GSF_ratio_vol * MW_GS
+
+"!Heating value"
+
+    Call heating_value(MW_GN; LHV_GN_vol_estandar)
