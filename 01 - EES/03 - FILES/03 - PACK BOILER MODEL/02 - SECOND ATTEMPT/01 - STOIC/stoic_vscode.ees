@@ -28,22 +28,33 @@ End
 "!General data"
 
     {1187 - Old value. This data needs to be erased in future version.}
-    epsilon = 15 [%] * convert(%;dim)
+    {epsilon = 15 [%] * convert(%;dim)}
     
     {1187}
     {epsilon = 20 [%] * convert(%;dim)}
 
+    {1238}
+    epsilon = 17 [%] * convert(%;dim)
+
 "!Natural gas"
     
     {1187}
-    y_CH4 = 92,47 [%] * convert(%;dim)
+    {y_CH4 = 92,47 [%] * convert(%;dim)
     y_C2H6 = 3,50 [%] * convert(%;dim)
     y_C3H8 = 0,98 [%] * convert(%;dim)
     y_C4H10 = 0,56 [%] * convert(%;dim)
     y_C5H12 = 0,06 [%] * convert(%;dim)
-    y_N2 = 1,75 [%] * convert(%;dim)
- 
-    y_CO2 = 100 [%]  * convert(%;dim) - y_CH4 - y_C2H6 - y_C3H8 - y_C4H10 - y_C5H12 - y_N2
+    y_N2 = 1,75 [%] * convert(%;dim)}
+
+    {1238}
+    y_CH4 = 93,20 [%] * convert(%;dim)
+    y_C2H6 = 4,01 [%] * convert(%;dim)
+    y_C3H8 = 0,99 [%] * convert(%;dim)
+    y_C4H10 = 0,22 [%] * convert(%;dim)
+    y_C5H12 = 0,06 [%] * convert(%;dim)
+    y_N2 = 1,31 [%] * convert(%;dim)
+
+   y_CO2 = 100 [%]  * convert(%;dim) - y_CH4 - y_C2H6 - y_C3H8 - y_C4H10 - y_C5H12 - y_N2
  
     MW_CH4 = molarmass(CH4) : MW_C2H6 = molarmass(C2H6) : MW_C3H8 = molarmass(C3H8) : MW_C4H10 = molarmass(C4H10) : MW_C5H12 = molarmass(C5H12)
     MW_N2 = molarmass(N2) : MW_CO2 = molarmass(CO2)

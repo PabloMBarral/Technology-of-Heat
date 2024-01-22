@@ -1,0 +1,37 @@
+//C:\Users\Barral Pablo\Desktop\furnace.EES
+A_H	3,048000E+00	-infinity	infinity	A3	1	m	0
+A_TRANSF	2,017217E+02	-infinity	infinity	A3	1	m^2	0
+D_QUEM	1,068000E+00	-infinity	infinity	A3	1	m	0
+D_TUBE	5,080000E-02	-infinity	infinity	A3	1	m	0
+EPSILON_LLAMA	7,000000E-01	-infinity	infinity	A3	1		0
+G_DOT_A	2,642200E+01	-infinity	infinity	A3	1	kg/s	0
+G_DOT_GH	2,784000E+01	-infinity	infinity	A3	1	kg/s	0
+G_DOT_GN	1,418000E+00	-infinity	infinity	A3	1	kg/s	0
+H_H	6,190000E+00	-infinity	infinity	A0	1	m	0
+L_QUEM	2,800000E+00	-infinity	infinity	A3	1	m	0
+P_D	7,401325E+01	-infinity	infinity	A0	1	bar	0
+P_H	9,671000E+00	-infinity	infinity	A0	1	m	0
+P_TP	1,746000E+00	-infinity	infinity	A0	1	m	0
+Q_DOT_TRANSF	-2,849491E+04	-infinity	infinity	A1	1	kW	0
+Q``	3,617600E+06	-infinity	infinity	A1	1	W/m^2	0
+S_QUEM	3,886244E+00	-infinity	infinity	A3	1	m^2	0
+T_AD	2,099848E+03	-infinity	infinity	A1	1	K	0
+T_AD_C	1,826698E+03	-infinity	infinity	A1	1	C	0
+T_COMB_REFERENCE	2,500000E+01	-infinity	infinity	A1	1	C	0
+T_D	2,896263E+02	-infinity	infinity	A1	1	C	0
+T_LL	1,383807E+03	-infinity	infinity	A1	1	K	0
+T_LL_C	1,110657E+03	-infinity	infinity	A1	4	C	0
+T_PT	5,727763E+02	-infinity	infinity	A1	1	K	0
+X_A_N2	7,671000E-01	-infinity	infinity	A3	1	dim	0
+X_A_O2	2,329000E-01	-infinity	infinity	A3	1	dim	0
+X_C2H6	7,000000E-02	-infinity	infinity	A3	1	dim	0
+X_C3H8	2,534000E-02	-infinity	infinity	A3	1	dim	0
+X_C4H10	7,424000E-03	-infinity	infinity	A3	1	dim	0
+X_C5H12	2,513000E-03	-infinity	infinity	A3	1	dim	0
+X_CH4	8,680000E-01	-infinity	infinity	A3	1	dim	0
+X_CO2	5,366000E-03	-infinity	infinity	A3	1	dim	0
+X_GH_CO2	1,326000E-01	-infinity	infinity	A3	1	dim	0
+X_GH_H2O	1,048000E-01	-infinity	infinity	A3	1	dim	0
+X_GH_N2	7,304000E-01	-infinity	infinity	A3	1	dim	0
+X_GH_O2	3,218000E-02	-infinity	infinity	A3	1	dim	0
+X_N2	2,130000E-02	-infinity	infinity	A3	1	dim	0

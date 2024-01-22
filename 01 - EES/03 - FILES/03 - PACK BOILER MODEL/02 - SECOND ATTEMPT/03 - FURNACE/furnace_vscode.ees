@@ -1,0 +1,105 @@
+$UnitSystem SI C bar kg kJ
+$TABSTOPS 1 2 3 4 5 cm
+
+"!General data"
+
+    "Mass fractions - Air"
+    
+        x_a_N2=0,7671 [dim]
+        x_a_O2=0,2329 [dim]
+
+    "Mass fractions - Air"
+        
+        x_CH4=0,868 [dim]
+        x_C2H6=0,07 [dim]
+        x_C3H8=0,02534 [dim]
+        x_C4H10=0,007424 [dim]
+        x_C5H12=0,002513 [dim]
+        x_CO2=0,005366 [dim]
+        x_N2=0,0213 [dim]
+
+    "Mass fractions - Air"
+
+        x_gh_CO2=0,1326 [dim]
+        x_gh_H2O=0,1048 [dim]
+        x_gh_N2=0,7304 [dim]
+        x_gh_O2=0,03218 [dim]
+
+    "Mass flows"
+
+        G_dot_GH=27,84 [kg/s]
+        G_dot_GN=1,418 [kg/s]
+    
+        G_dot_a = G_dot_GH - G_dot_GN
+
+    "Drum pressure"
+
+        p_d = 73 [bar] + po#
+
+        t_d = t_sat(Steam;P=p_d)
+        T_pt = converttemp(C;K;t_d + 10 [C])
+
+"!Area"
+
+    D_quem = 1,068 [m] 
+    L_quem = 2,8 [m]
+
+    S_quem = L_quem * D_quem + pi * D_quem^2 / 4
+    {S_quem = pi * D_quem^2 / 4}
+
+    H_h = 6,190 [m] {height}
+    A_h = 3,048 [m] {width}
+    P_h = 9,671 [m] {length - in the flame direction}
+ 
+    P_tp = 1,746 [m] {screen tubes width}
+ 
+    A_transf = 2 * P_h * H_h + 2 * P_h * A_h + 2 * A_h * H_h - H_h * P_tp - S_quem {- A_manhole}
+ 
+    {A_manhole = 0,1594976498 [m^2]}
+
+    D_tube = 50,8 [mm] * convert(mm;m)
+ 
+"!Heat transfer"
+
+    epsilon_llama = 0,7
+ 
+    - Q_dot_transf = epsilon_llama * A_transf * sigma# * (T_ll^4 - T_pt^4) * convert(W;kW)
+ 
+    {- Q_dot_transf = epsilon_llama * A_transf * sigma# * (average(T_ad;T_ll)^4 - T_pt^4) * convert(W;kW)}
+
+    q`` = critical_heat_flux('Steam'; 'Cylnder'; D_tube; t_d) 
+
+"Heat balance"
+
+    t_comb_reference = 25 [C]
+    t_ll_C = converttemp(K;C;T_ll)
+
+    Q_dot_transf = G_dot_GH * (x_gh_CO2 * enthalpy(CO2;T=t_ll_C) &
+	+ x_gh_H2O * enthalpy(H2O;T=t_ll_C) &
+	+ x_gh_N2 * enthalpy(N2;T=t_ll_C) &
+	+ x_gh_O2 * enthalpy(O2;T=t_ll_C)) &
+	- G_dot_a * (x_a_N2 * enthalpy(N2;T=t_comb_reference) + x_a_O2 * enthalpy(O2;T=t_comb_reference)) &
+	- G_dot_gn * (x_CH4 * enthalpy(CH4;T=t_comb_reference) &
+	+ x_C2H6 * enthalpy(C2H6;T=t_comb_reference) &
+	+ x_C3H8 * enthalpy(C3H8;T=t_comb_reference) &
+	+ x_C4H10 * enthalpy(C4H10;T=t_comb_reference) &
+	+ x_C5H12 * enthalpy(C5H12;t=t_comb_reference) &
+	+ x_N2 * enthalpy(N2;t=t_comb_reference) &
+	+ x_CO2 * enthalpy(CO2;t=t_comb_reference))
+
+"Adiabatic flame temperature"
+
+    t_ad_C = converttemp(K;C;T_ad)
+
+    0 = G_dot_GH * (x_gh_CO2 * enthalpy(CO2;T=t_ad_C) &
+	    + x_gh_H2O * enthalpy(H2O;T=t_ad_C) &
+	    + x_gh_N2 * enthalpy(N2;T=t_ad_C) &
+	    + x_gh_O2 * enthalpy(O2;T=t_ad_C)) &
+	    - G_dot_a * (x_a_N2 * enthalpy(N2;T=t_comb_reference) + x_a_O2 * enthalpy(O2;T=t_comb_reference)) &
+	    - G_dot_gn * (x_CH4 * enthalpy(CH4;T=t_comb_reference) &
+	    + x_C2H6 * enthalpy(C2H6;T=t_comb_reference) &
+	    + x_C3H8 * enthalpy(C3H8;T=t_comb_reference) &
+	    + x_C4H10 * enthalpy(C4H10;T=t_comb_reference) &
+	    + x_C5H12 * enthalpy(C5H12;t=t_comb_reference) &
+	    + x_N2 * enthalpy(N2;t=t_comb_reference) &
+	    + x_CO2 * enthalpy(CO2;t=t_comb_reference))
