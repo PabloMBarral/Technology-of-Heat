@@ -1,0 +1,149 @@
+$UnitSystem SI C bar kJ kg
+ 
+$TABSTOPS 1 2 3 4 5 cm
+ 
+Subprogram economizer(t_h_i; p_h_i; t_c_i; p_c_i : t_h_o; p_h_o; t_c_o; p_c_o; Q)
+ 
+ 
+    "Global variables"
+        
+       $COMMON N_g; x_g[1..N_g]; gases$; G_dot_g; fluid$; G_dot_a{; p_h_i; p_c_i}
+ 
+    "Geometry"
+    
+        L = 3 [m]
+  
+        N_T = 6 : S_T = 101,6 [mm] * convert(mm;m)
+ 
+        N_L = 20 : S_L = 90,5 [mm] * convert(mm;m)
+ 
+        OD = 50,8 [mm] * convert(mm;m)
+        t = 3,05 [mm] *convert(mm;m)
+        ID = OD - 2 * t
+ 
+        A_frontal = N_T * S_T * L           {Perhaps A_0 is a better name?}
+ 
+        A_i = L * N_L * N_T * pi * ID
+ 
+        h_f = 19,1 [mm] * convert(mm;m)
+        t_f = 1,2 [mm] * convert(mm;m)
+ 
+        OD_f = OD + 2 * h_f
+ 
+        delta_f = 120 [1/m]
+ 
+        N_fins_per_tube = L * delta_f  
+ 
+        s_f = 1 / delta_f
+        s_f = a_f - t_f
+ 
+        A_f_single_fin = 2 * pi / 4 * (OD_f^2 - OD^2) {Neglecting fin tip.}
+        A_f_single_fin_per_tube = N_fins_per_tube * A_f_single_fin
+ 
+        A_e_per_tube = A_f_single_fin_per_tube + N_fins_per_tube * pi * OD * a_f
+ 
+        A_e_per_tube_0 = pi * OD * L
+ 
+        Ratio_A = A_e_per_tube / A_e_per_tube_0
+ 
+        A_e = A_e_per_tube * N_T * N_L	 
+ 
+    "Heat transfer"
+    
+        "Temperature difference"
+            
+         	p_bar_h = average(p_h_i; p_h_o)
+            p_bar_c = average(p_c_i; p_c_o)
+ 
+	t_bar_h = average(t_h_i; t_h_o)
+           	t_bar_c = average(t_c_i; t_c_o)
+           
+            DELTAT_ml = lmtd(t_h_i; t_h_o; t_c_i; t_c_o; 'counterflow')
+ 
+        "External convection"
+ 
+            V_dot_0_h_i = G_dot_g * v_h_i
+        
+           	u_0_h_i =  V_dot_0_h_i / A_frontal
+ 
+            p_h_i * convert(bar;kPa) * v_h_i = R# / MW_h * converttemp(C;K;t_h_i)
+            p_bar_h * convert(bar;kPa) * v_bar_h = R# / MW_h * converttemp(C;K;t_bar_h)
+            
+            u_s_h_i = u_0_h_i * (S_T * (a_f + t_f)) / (a_f * (S_T - OD) + t_f * (S_T - OD_f))
+ 
+            u_bar_s_h = u_s_h_i * v_h_i / v_bar_h
+ 
+            rho_bar_h = 1 / v_bar_h
+ 
+            Re_bar_d_h = OD * u_bar_s_h * rho_bar_h / mu_bar_h 
+ 
+            Nusselt_bar_d_h = 0,22 * Re_bar_d_h^0,6 * Ratio_A^(-0,15) * P_bar_r_h^(1/3) 
+ 
+            h_ce_m = Nusselt_bar_d_h * k_bar_h / OD
+            
+            "Fin efficiency"
+       
+                k_f = conductivity(Carbon_steel_AISI1010; T=25 [C])
+ 
+                eta_f_2 = eta_fin_annular_rect(t_f; OD / 2; OD_f / 2; h_ce_m; k_f)
+                phi = (OD_f / OD - 1) * (1 + 0,35 * ln(OD_f / OD))	
+                X = phi * OD / 2 * sqrt(2 * h_ce_m / (k_f * t_f))
+                eta_f = tanh(X) / X
+ 
+            {Tend to prefer h_c_e, but it's inherited from evap tube bundle. Same happens with h_ci. But it can be confusing when using enthalpies.}
+            
+            h_ce = h_ce_m * (1 - (1 - eta_f) * A_f_single_fin_per_tube / A_e_per_tube)
+ 
+	{h_ce = 73 [W/m^2-C]}
+ 
+        "Internal convection"
+ 
+            RelRough = 0,05 [mm] * convert(mm;m) / ID 
+ 
+            G_dot_a_u = G_dot_a / N_T
+ 
+            Call pipeflow(fluid$; t_bar_c; p_bar_c; G_dot_a_u; ID; L; RelRough : {h_T}; h_ci; {DELTAP}; {Nusselt_T}; {f}; {Re})
+ 
+	{h_ci = 27000 [W/m^2-C]}
+ 
+        "Conductivity"
+ 
+            k_steel = conductivity(Carbon_steel_AISI1010; T=25 [C])
+ 
+        1 / (U * A_e) = 1 / (h_ce * A_e ) + 1 / (h_ci * A_i) +  (OD - ID) / (2 * k_steel * A_i)
+ 
+        Q = U * A_e * DELTAT_ml * convert(W;kW)
+ 
+        p_h_o = p_h_i
+        p_c_o = p_c_i
+         
+        "Thermal balance"
+ 
+            Call idealgasmixtureprops(gases$; t_h_i; p_h_i; x_g[1..N_g] : MW_h; h_h_i; {s}; {mu}; {k})
+            Call idealgasmixtureprops(gases$; t_h_o; p_h_o; x_g[1..N_g] : {MW_gh}; h_h_o; {s}; {mu}; {k})
+            Call idealgasmixtureprops(gases$; t_bar_h; p_bar_h; x_g[1..N_g] : {MW_gh}; {h_h_o}; {s}; mu_bar_h; k_bar_h)
+ 
+            {This need correction, because gas composition could be different. Perhaps a list of names, and a concat fuction.}
+            c_p_bar_h = cp('CO2'; T=t_bar_h) * x_g[1] + cp('H2O'; T=t_bar_h) * x_g[2] + cp('N2'; T=t_bar_h) * x_g[3] + cp('O2'; t=t_bar_h) * x_g[4]
+ 
+            P_bar_r_h = c_p_bar_h * convert(kJ;J) * mu_bar_h / k_bar_h
+ 
+            h_c_i = enthalpy(fluid$; P=p_c_i; T=t_c_i)
+            h_c_o = enthalpy(fluid$; P=p_c_o; T=t_c_o)
+            
+            Q = G_dot_g * (h_h_i - h_h_o)
+            Q = G_dot_a * (h_c_o - h_c_i)
+End
+ 
+Call economizer(300 [C]; p_h_i; 105 [C]; p_c_i : t_h_o; p_h_o; t_c_o; p_c_o; Q)
+ 
+p_h_i = po#
+p_c_i = 73 [bar] + po#
+ 
+G_dot_g = 105307 [kg/h] * convert(kg/h;kg/s)
+gases$ = 'CO2+H2O+N2+O2'
+x_g[1..N_g] = [0,1301 [dim]; 0,1021 [dim]; 0,7309 [dim]; 1 - sum(x_g[j]; j=1; (N_g - 1))]
+N_g = 4
+ 
+G_dot_a = 100000 [kg/h] * convert(kg/h;kg/s)
+fluid$ = 'steam'

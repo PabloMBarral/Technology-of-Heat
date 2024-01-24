@@ -1,0 +1,37 @@
+$UnitSystem SI C bar kJ kg
+ 
+$TABSTOPS 1 2 3 4 5 cm
+ 
+Subprogram superheater_thermal_balance(t_h_i; p_h_i; p_h_o; p_c_i; t_c_o; p_c_o : t_h_o; Q)
+  
+    "Global variables"
+        
+       $COMMON N_g; x_g[1..N_g]; gases$; G_dot_g; fluid$; G_dot_a
+         
+        "Thermal balance"
+ 
+            Call idealgasmixtureprops(gases$; t_h_i; p_h_i; x_g[1..N_g] : {MW_h}; h_h_i; {s}; {mu}; {k})
+            Call idealgasmixtureprops(gases$; t_h_o; p_h_o; x_g[1..N_g] : {MW_gh}; h_h_o; {s}; {mu}; {k})
+ 
+            h_c_i = enthalpy(fluid$; P=p_c_i; x=1)
+            h_c_o = enthalpy(fluid$; P=p_c_o; T=t_c_o)
+            
+            Q = G_dot_g * (h_h_i - h_h_o)
+            Q = G_dot_a * (h_c_o - h_c_i)
+End
+ 
+Call superheater_thermal_balance(1000 [C]; p_h_i; p_h_o; p_c_i; t_c_o; p_c_o : t_h_o; Q)
+ 
+p_h_i = po#
+p_h_o = po# 
+p_c_i = 69 [bar] + po#
+p_c_o = 65 [bar] + po#
+t_c_o = 480 [C]
+ 
+G_dot_g = 105307 [kg/h] * convert(kg/h;kg/s)
+gases$ = 'CO2+H2O+N2+O2'
+x_g[1..N_g] = [0,1301 [dim]; 0,1021 [dim]; 0,7309 [dim]; 1 - sum(x_g[j]; j=1; (N_g - 1))]
+N_g = 4
+ 
+G_dot_a = 100000 [kg/h] * convert(kg/h;kg/s)
+fluid$ = 'steam'
