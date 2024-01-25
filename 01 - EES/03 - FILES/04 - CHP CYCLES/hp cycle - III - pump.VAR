@@ -1,0 +1,10 @@
+//C:\Users\Barral Pablo\Documents\GitHub\Technology-of-Heat\01 - EES\03 - FILES\04 - CHP CYCLES\hp cycle - III.EES
+PUMP/ETA_ISO				A4	1	
+PUMP/H_I				A4	1	kJ/kg
+PUMP/H_O				A4	1	kJ/kg
+PUMP/H_S_O				A4	1	kJ/kg
+PUMP/P_I				A4	1	bar
+PUMP/P_O				A4	1	bar
+PUMP/PUMP				A4	1	
+PUMP/S_I				A4	1	kJ/kg-K
+PUMP/W				A4	1	kJ/kg
