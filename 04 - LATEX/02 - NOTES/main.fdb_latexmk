@@ -1,8 +1,8 @@
 # Fdb version 3
-["pdflatex"] 1714841602 "/home/pablo/Documentos/GitHub/Technology-of-Heat/04 - LATEX/02 - NOTES/main.tex" "main.pdf" "main" 1714841603
+["pdflatex"] 1714872883 "/home/pablo/Documentos/GitHub/Technology-of-Heat/04 - LATEX/02 - NOTES/main.tex" "main.pdf" "main" 1714872885
   "/dev/null" 1713402982 0 d41d8cd98f00b204e9800998ecf8427e ""
   "/etc/texmf/web2c/texmf.cnf" 1714784370 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/pablo/Documentos/GitHub/Technology-of-Heat/04 - LATEX/02 - NOTES/main.tex" 1714782266 4402 f2d1ce18f374300bb54b47fc86d50b86 ""
+  "/home/pablo/Documentos/GitHub/Technology-of-Heat/04 - LATEX/02 - NOTES/main.tex" 1714872883 6937 6f4007d58720d57ce081307b4bc346b8 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecrm1000.tfm" 1136768653 3584 adb004a0c8e7c46ee66cad73671f37b4 ""
   "/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii" 1461363279 71627 94eb9990bed73c364d7f53f960cc8c5b ""
@@ -147,8 +147,8 @@
   "face.tex" 1714782266 1101 e42a0cc97a9599153532628d915f7600 ""
   "intro.tex" 1714782266 112 e5c7e78c56a10f6ea0f579019c2ec0d3 ""
   "linkedin_logo.png" 1714782266 8375 1b18d461ce75c75fdb4d7b6ec08b3e65 ""
-  "main.aux" 1714841603 1465 3e5992cdf73ae0e43a75ce3674edec33 "pdflatex"
-  "main.tex" 1714782266 4402 f2d1ce18f374300bb54b47fc86d50b86 ""
+  "main.aux" 1714872884 1465 3e5992cdf73ae0e43a75ce3674edec33 "pdflatex"
+  "main.tex" 1714872883 6937 6f4007d58720d57ce081307b4bc346b8 ""
   (generated)
   "main.aux"
   "main.log"

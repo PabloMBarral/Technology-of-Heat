@@ -55,6 +55,9 @@
 \end{document}
 
 
+
+
+
 1. Uso de tespy, en baja presion y en alta presion, tambien en EES
 2. ESCOA
 3. Grimision y zukauskas
@@ -79,9 +82,6 @@ cao
 el libro de heimo walter
 caldera paquete, poner como es el grafico
 
-
-
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 https://hal.science/hal-00699058/document
@@ -92,7 +92,6 @@ https://orcid.org/0000-0003-1125-4199
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\input{biblio}
 
 
 \begin{thebibliography}{999}
@@ -123,4 +122,146 @@ https://orcid.org/0000-0003-1125-4199
  \end{thebibliography}
 
 
- \usepackage{csquotes}
+\usepackage{csquotes}
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{bm}
+
+\usepackage{graphicx}
+
+\usepackage{authblk}
+
+%\usepackage{natbib}
+%\bibliographystyle{unsrt}
+\usepackage{makeidx}
+\usepackage[nottoc,notlot,notlof]{tocbibind}
+%\usepackage{color}
+%\usepackage{xcolor} % to access the named colour LightGray
+%\definecolor{LightGray}{gray}{0.9}
+\usepackage{ulem}
+
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{multicol}
+
+\usepackage[shortlabels]{enumitem}
+
+\usepackage[cache=false]{minted}
+\usemintedstyle{friendly}
+\renewcommand\listingscaption{Código}
+%\usepackage{listings}
+%\renewcommand{\lstlistingname}{Código}
+
+\usepackage{float}
+\usepackage{xparse}
+
+\usepackage{siunitx}
+\sisetup{group-minimum-digits=4}
+\usepackage{physics}
+\usepackage{tensor}
+%\usepackage{derivative}
+\usepackage[thinc]{esdiff}
+\usepackage{stackengine}
+\usepackage{mathtools}
+
+\usepackage[backref=page, colorlinks=true, citecolor=cyan, linkcolor=blue, urlcolor=blue]{hyperref}
+\usepackage[numbered]{bookmark}
+
+%\usepackage{verbatim}
+%\usepackage{attachfile}
+
+glossaries-extra
+fontspec
+komascript
+verse
+pdflandscape
+
+TexGyre fontspec
+glossaries
+
+tikz
+beamer
+
+tcolorbox
+
+tcblisting?
+ulem
+Don't use ulem without \usepackage[normalem]{ulem}
+
+microtype
+
+float
+
+tabularray
+booktabs
+
+Amsmath and its supplement math tools.
+
+biblaetex
+
+forest
+systeme for typesetting systems of linear equations and inequalities.
+
+
+
+multicol
+fixme
+
+auto multiple choice. 
+lineno
+
+ragged2e, bibtex, and natbib are my favorite packages. 
+They are part of what convinced me that learning LaTeX was wort
+
+
+
+\usepackage{textcomp}
+
+\usepackage{fancyhdr}
+
+\usepackage{import}
+
+\usepackage{lipsum}
+
+
+\usepackage{natbib}
+\bibliographystyle{unsrt}
+\usepackage{makeidx}
+\usepackage[nottoc,notlot,notlof]{tocbibind}
+\usepackage{color}
+\usepackage{ulem}
+
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{multirow}
+
+\usepackage[shortlabels]{enumitem}
+
+%\usepackage [framed, numbered, autolinebreaks]{mcode}
+\usepackage{float}
+
+\usepackage{xparse}
+%\usepackage{physics}
+\usepackage{siunitx}
+
+\usepackage{geometry}
+
+
+amssymb loads amsfonts. Instead of 
+amsmath I use mathtools, which loads 
+the former package. The latter one provides, 
+for example, right-aligned matrix environments. 
+babel is needed for other languages, while biblatex 
+is usually used for citations and bibliography. T
+he color package is called xcolor, and the graphics 
+package is called graphicx.
+
+I often use amsthm or ntheorem, which 
+
+thermodynamics package
+
+memoir class
