@@ -1,9 +1,8 @@
 # Fdb version 4
-["pdflatex"] 1714616781.63664 "c:/Users/Barral Pablo/Documents/GitHub/Technology-of-Heat/04 - LATEX/02 - NOTES/main.tex" "main.pdf" "main" 1714616786.22861 2
+["pdflatex"] 1714680227.16683 "c:/Users/Barral Pablo/Documents/GitHub/Technology-of-Heat/04 - LATEX/02 - NOTES/main.tex" "main.pdf" "main" 1714680241.88233 0
   "annex.tex" 1714614507 115 b414efc1e7f1d5d76ab4856969a02cce ""
-  "biblio.tex" 1714615989 301 b72dbbe96dd23b15169bbf99250d56d3 ""
   "c:/Users/Barral" 1634727833 82670 d28a7e835be6278e71b74563ec8a8086 ""
-  "c:/Users/Barral Pablo/Documents/GitHub/Technology-of-Heat/04 - LATEX/02 - NOTES/main.tex" 1714616777 4528 f2d1ce18f374300bb54b47fc86d50b86 ""
+  "c:/Users/Barral Pablo/Documents/GitHub/Technology-of-Heat/04 - LATEX/02 - NOTES/main.tex" 1714680219 4889 cc23ce923a46e1f92cb9c7c45b599e57 ""
   "c:/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc" 1704497095 2375 baa924870cfb487815765f9094cf3728 ""
   "c:/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc" 1704497095 2405 5dcf2c1b967ee25cc46c58cd52244aed ""
   "c:/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc" 1704497095 2840 216e6e45ad352e2456e1149f28885bee ""
@@ -156,9 +155,9 @@
   "face.tex" 1714615103 1124 e42a0cc97a9599153532628d915f7600 ""
   "intro.tex" 1714614455 119 e5c7e78c56a10f6ea0f579019c2ec0d3 ""
   "linkedin_logo.png" 1560207524 8375 b04392671366ca2b2bc6b51c8df93f31 ""
-  "main.aux" 1714616678 941 53d9c6b4847337355099a16b354f7b8e "pdflatex"
-  "main.brf" 1714616380 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "main.tex" 1714616777 4528 f2d1ce18f374300bb54b47fc86d50b86 ""
+  "main.aux" 1714680237 985 f28956580e2e824b5ceea567423f5449 "pdflatex"
+  "main.brf" 1714680236 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "main.tex" 1714680219 4889 cc23ce923a46e1f92cb9c7c45b599e57 ""
   (generated)
   "main.aux"
   "main.brf"
