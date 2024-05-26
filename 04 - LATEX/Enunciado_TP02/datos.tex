@@ -1,0 +1,142 @@
+\section{Datos}\label{sec:Datos}
+
+Las demandas térmicas y eléctricas de cada uno de los temas se encuentran en la tabla \ref{tab:Datos}.
+\begin{table}[ht]
+\centering
+% To place a caption above a table
+%\caption{\textit{Datos de los diferentes temas.}}
+\begin{tabular}[t]{llcccccc}
+% Table content
+\toprule
+&&&\multicolumn{5}{c}{\textbf{Tema}}\\
+&&&\textbf{1} & \textbf{2} & \textbf{3} &  \textbf{4} & \textbf{5}\\
+\midrule
+EE&&$\SI{}{MW(e)}$&$1,5$&$20$&$50$&$80$&$20$\\
+VAPOR&$p_v$&$\SI{}{bar(g)}$&$12$&$15$&$10$&$12$&$11$\\
+&$G_v$&$\SI{}{\frac{t}{h}}$&$4$&$120$&$150$&$150$&$10$\\
+&$p_v$&$\SI{}{bar(g)}$&&$7$&&&\\
+&$G_v$&$\SI{}{\frac{t}{h}}$&&$70$&&&\\
+CALOR&$Q$&$\SI{}{\frac{Mkcal}{h}}$&$4$&&$15$&&$30$\\
+&$t_Q$&$\SI{}{\celsius}$&$110$&&$130$&&$300$\\
+CONDENSADO&$p_{cond}$&$\SI{}{bar(g)}$&$3$&$4$&$5$&$4$&$3$\\
+&$t_{cond}$&$\SI{}{\celsius}$&$95$&$90$&$92$&$70$&$75$\\
+&$G_{cond}$&\% de $G_{v_{tot}}$&$40$&$60$&$50$&$70$&$65$\\
+\bottomrule
+\end{tabular}
+% Or to place a caption below a table
+\caption{\textit{Datos de los diferentes temas. }}
+\label{tab:Datos}
+\end{table}
+
+Además, tener en cuenta que:
+\begin{enumerate}
+    \item El vapor que se consume con fines de uso térmico en el proceso industrial es saturado.
+    \item La presión del condensado es de referencia. No tiene un impacto significativo en su entalpía y su verdadero valor depende de las condiciones del bombeo de trasvase, de la altura del tanque de destino y de la presión a la que este se encuentra. En caso de que la presión del tanque que reciba el condensado sea mayor, adecuar este valor.
+    \item El vapor que se produce en la situación de referencia\footnote{Situación sin integración.} se produce en una única caldera de baja presión, la cual quema gas natural.
+    \item El calor demandado por el proceso es en forma de gases calientes.
+    \item El PCI del gas natural considerado es de $\SI{8400}{\frac{kcal}{m^3N}}$.
+    \item Si se considera la instalación de una turbina de gas, debe consultarse el catálogo de un fabricante para obtener la potencia de la turbina, su rendimiento térmico, la temperatura de los gases de escape y su caudal.
+    \item El agua de alimentación a las calderas (mezcla del retorno de condensado con la reposición al ciclo) tiene que estar desaireada. Para esto, debe estar en un tanque con una temperatura mínima de $\SI{105}{\celsius}$, al cual se le debe inyectar vapor.
+    \item No considerar pérdidas de carga en las calderas.
+    \item Considerar un $1\%$ de purga si se usa agua desmineralizada en el ciclo, y $5\%$ si se usa agua ablandada.
+    \item En caso de que se considere instalar una caldera de recuperación, los valores de ``pinch point'' y de ``approach'' deben ser elegidos.
+    \item Las calderas convencionales queman con un exceso de aire del $15\%$.
+    \item Las alternativas deben trabajar en condición de ``autogeneración''. Esto es: se debe abastecer toda la demanda térmica, y no es conveniente la exportación de energía eléctrica.
+    \item Considerar como precio de la energía eléctrica $\SI{80}{\frac{USD}{MWh}}$ y del gas natural $\SI{160}{\frac{USD}{dam^3N}}$.\footnote{Tener en cuenta que estos valores son variables y dependientes de: las políticas energéticas, la localización geográfica, la coyuntura, los subsidios, si es un precio de compra o de venta, el tipo de mercado eléctrico, el acceso al combustible, etc.}
+    \item El rendimiento térmico de la caldera convencional que se adopte debe ser del $90\%$, el abastecimiento de energía eléctrica se hace con un rendimiento del $50\%$, el rendimiento isoentrópico de las turbinas de vapor es del $80\%$, el de las bombas del $70\%$.
+    \item Las condiciones del medio de referencia, para el cálculo de la exergía, son de $p_0=\SI{101}{kPa(a)}$ y $\SI{15}{\celsius}$.
+    \item Se puede adoptar un calor específico medio para los gases de escape de turbina, de caldera, o bien para el aire. Están disponible en el campus de la materia una herramienta para elegir el valor, con composiciones típicas de los gases de escape de turbina, de caldera y para el aire
+    \item Si se abastece de vapor al proceso con la extracción de vapor de una turbina, esta tiene que estar atemperada hasta $\SI{10}{\celsius}$ por encima de la temperatura de saturación a esa presión.
+\end{enumerate}
+
+
+
+
+
+
+%Hay que plantear tres situaciones: la de referencia y dos soluciones. Siempre en condición de autogeneración y que no es conveniente exportar (se permite únicamente hasta un 5 por ciento de lo que necesito consumir, en caso de necesidad, pero debe ser minimizado
+    
+    
+%    Darles un precio genérico de EE y GN, aclarando que esto es variable a lo largo del país, y en el tiempo, la coyuntura local y global, y las políticas.
+    
+    
+%        \item ver de dar un cp medio para los gases, utilizar de refrencia los cálculos que hice y que subi al campus. Anotar esto, y pedirles que o bien elijan de ahi, o bien elijan las fracciones molares que pongo, o bien elijan un valor promedio, lo que les parezca mejor.
+    
+    
+    
+    
+    %ver bien los temas. Tratar de que tengan problemas con la turbina de gas. Pensar lo que quería PAE.
+
+%Pensar la instalación cómo respondería ante un incremento futuro de la demanda de vapor y/o de energia eléctrica.
+
+%pensar bien las condiciones de borde. Poner autogeneracion, preguntar en qué cambiaría si pudiera exportar.
+
+%tratar de que no sea automatizado el asunto.
+%tratar de que tengan que poner fuego adicional
+
+%tratar de tener problemas que tengan más de una solucion, cosa de que puedan comparar. Distintas presiones de ciclo de vapor.
+
+
+%Consigna: eleginr los parametros del proceso.
+%hacer el pfd, los tres. Marcar claramente cuál es el límite de batería de la usina, y ´cómo
+
+%darles precios
+% calcular cuánto se ahorra de emitir el pais
+
+%rendimientos termicos, marginales, y exergeticos
+
+%conclusiones
+
+%tabla de eestados
+
+%considerar que el agua tiene que estar desaireada, y que el vapor tiene que estar atemperado.
+
+%pensar tmabien cinco temas.
+
+%tener uno grande tipo renova
+%uno tipo pae para TG
+%uno que tenga agua caliente y que sea chico
+%uno cantado para TG chica
+%verlos por relacion tn de vapor vs EE. Hacer grandes y chicos.
+%hacer que tengan consumo en dos presiones.
+
+%ahorro para la industria que instsala la cogeneracion
+%ahorro a nivel pais
+%algo de emisiones de CO2 a nivel pais, considerando rendimiento termico medio y todo gas natural.
+
+
+%dar datos de pinch y approach
+%hacer el balance térmico en la caldera de recuperacion
+
+%Consumo de Energía Eléctrica: 50 MW(e)
+%• Consumo de Energía Térmica: 150 Tn/h de vapor a 12 bar(g) y 15.000.000kcal/h
+%a 130°C.
+%• Retorno de Condensado: 50% a 95°C
+%• Rendimiento de la Caldera de Fuego Directo: 90%
+%• Rendimiento del Ciclo Combinado: 50%
+%• Rendimiento de la Turbina de Vapor: 80%
+%• Poder Calorífico Inferior del Gas Natural: 8400 kcal/Nm3
+%• Calor Específico de los Gases de Combustión: 0,24 kcal/K/kg
+
+
+
+%Estudios de posibilidades de cogeneración
+%1. 5 MW eléctricos, 4 tn/hr de vapor a 12 bar y 4000000 kcal/hr a 120ºC
+%Retorno de condensados: 40% a 95ºC
+%2. 20 MW e, 120 Tn/hr a 6 bar, 70 Tn/hr a 15 bar.
+%Retorno de condensados: 60% a 95ºC
+%3. 50 MW e, 150 Tn/hr a 10 bar y 15.000.000 kcal/hr a 130ºC
+%Retorno de condensados: 50% a 95ºC
+%4. 80 MWe, 150 t/h de vapor a 12 bar. 70% retorno condensados a 70ºC
+%5. 20 MW e, 10 Tn/hr a 10 bar y 30.000.000 kcal/hr a 300°C.
+%Sin retornos de condensados
+%Rendimientos de calderas: 90%
+%Rendimiento de ciclo combinado: 50% (en fábrica)
+%Rendimiento turbina de vapor, respecto de la evolución isoentrópica: 80%
+%Rendimiento de las turbinas de gas natural: buscar en tablas
+%Calcular para la situación de referencia el consumo de energía primaria (gas natural),
+%rendimiento térmico y rendimiento exergético de la planta y del conjunto planta y ciclo
+%combinado.
+%Proponer al menos dos soluciones de cogeneración y realizar un análisis de conveniencia
+%en base al cálculo en cada caso de rendimientos energéticos, exergéticos y marginales,
+%además del ahorro de combustible porcentual y absoluto. 

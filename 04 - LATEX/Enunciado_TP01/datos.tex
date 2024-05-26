@@ -1,0 +1,103 @@
+\newpage
+\section{Datos}\label{sec:Datos}
+La caldera en estudio es una de las indicadas en el cuadro \ref{tab:Datos}. El significado de cada variable está explicado en el cuadro \ref{tab:Referencias}. Los datos del combustible se encuentran en el cuadro \ref{tab:GN}.
+
+Se adoptan como condiciones del medio de referencia
+\begin{equation}
+    p_0=\SI{1.01325}{bar(a)}\quad t_0=\SI{15}{\celsius}
+\end{equation}
+
+Tanto el aire para la combustión como el gas natural se proveen al quemador (o a los quemadores, según la caldera) a las condiciones del medio de referencia.
+
+Las condiciones \textit{normales} se definen como
+\begin{equation}
+    p_N=p_0\quad t_0=\SI{0}{\celsius}
+\end{equation}
+
+Las condiciones \textit{estándar}, por su parte, se establecen para este trabajo como
+\begin{equation}
+    p_S=p_0\quad t_S=t_0
+\end{equation}
+
+Aproxima en todos los casos $p_0=p_N=p_S=\SI{1}{bar(a)}$.
+
+Finalmente, consideramos un aire técnicamente simplificado para los cálculos con la composición volumétrica o molar
+\begin{equation}
+    y_{\ce{ N2 }}=0,79\quad y_{\ce{ O2 }}=0,21
+\end{equation}
+
+\begin{table}[ht]
+\centering
+% To place a caption above a table
+%\caption{\textit{Datos de los diferentes temas.}}
+\begin{tabular}[t]{lcccccc}
+% Table content
+\toprule
+&&\multicolumn{5}{c}{\textbf{Código de caldera}}\\
+&&\textbf{1187} & \textbf{1145} & \textbf{1314} &  \textbf{1238} & \textbf{1159}\\
+\midrule
+$p_v$&$\SI{}{bar(g)}$&$32$&$65$&$69$&$42$&$40$\\
+$t_v$&$\SI{}{\celsius}$&$380$&$480$&$485$&$420$&$400$\\
+$G_v$&$\SI{}{bar(g)}$&$80$&$130$&$120$&$95$&$60$\\
+$\eta_t$&$\%$&$89.6$&$91.5$&$92.0$&$90.7$&$90.4$\\
+$\varepsilon$&$\%$&$20$&$15$&$13$&$17$&$18$\\
+$N_{pasos\,SH}$&&$1$&$3$&$3$&$2$&$2$\\
+$\varepsilon_{llama}$&$\%$&\multicolumn{5}{c}{$0.7$}\\
+$p_d$&$\SI{}{bar(g)}$&\multicolumn{5}{c}{$p_v + \SI{4}{bar(g)}$}\\
+$p_a$&$\SI{}{bar(g)}$&\multicolumn{5}{c}{$p_d + \SI{4}{bar(g)}$}\\
+$t_a$&$\SI{}{\celsius}$&\multicolumn{5}{c}{$105$}\\
+\bottomrule
+\end{tabular}
+% Or to place a caption below a table
+\caption{\textit{Datos de los diferentes temas.}}
+\label{tab:Datos}
+\end{table}
+
+\begin{table}[ht]
+\centering
+% To place a caption above a table
+%\caption{\textit{Datos de los diferentes temas.}}
+\begin{tabular}[t]{cl}
+% Table content
+\toprule
+$p_v$&Presión del vapor sobrecalentado generado.\\
+$t_v$&Temperatura del vapor sobrecalentado generado.\\
+$G_v$&Caudal másico de vapor generado.\\
+$\eta_t$&Rendimiento térmico informado por el fabricante.\\
+$\varepsilon$&Exceso de aire en la combustión.\\
+$N_{pasos\,SH}$&Número de pasos del sobrecalentador.\\
+$\varepsilon_{llama}$&Emisividad de la llama.\\
+$p_d$&Presión de vapor del domo de la caldera.\\
+$p_a$&Presión del agua de alimentación.\\
+$t_a$&Temperatura del agua de alimentación.\\
+\bottomrule
+\end{tabular}
+% Or to place a caption below a table
+\caption{\textit{Referencias.}}
+\label{tab:Referencias}
+\end{table}
+
+
+
+
+\begin{table}[ht]
+\centering
+\begin{tabular}[t]{lccccc}
+\toprule
+&\multicolumn{5}{c}{\textbf{Código de caldera}}\\
+&\textbf{1187} & \textbf{1145} & \textbf{1314} &  \textbf{1238} & \textbf{1159}\\
+\midrule
+Metano&$92,47\%$&$92,26\%$&$94,02\%$&$93,20\%$&$90,08\%$\\
+Etano&$3,50\%$&$2,97\%$&$2,10\%$&$4,01\%$&$4,73\%$\\
+Propano&$0,98\%$&$1,49\%$&$0,97\%$&$0,99\%$&$1,23\%$\\
+n-Butano&$0,56\%$&$0,31\%$&$0,18\%$&$0,22\%$&$0,24\%$\\
+n-Pentano&$0,06\%$&$0,06\%$&$0,06\%$&$0,06\%$&$0,06\%$\\
+Nitrógeno&$1,75\%$&$2,78\%$&$1,67\%$&$1,31\%$&$3,42\%$\\
+Dióxido de carbono&\multicolumn{5}{c}{Según balance}\\
+\bottomrule
+\end{tabular}
+\caption{\textit{Datos del combustible: composición volumétrica simplificada del gas natural.}}
+\label{tab:GN}
+\end{table}
+
+

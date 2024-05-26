@@ -1,0 +1,94 @@
+\documentclass[10pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{bm}
+
+\usepackage{graphicx}
+%\usepackage[draft]{graphicx}
+
+\usepackage{authblk}
+
+%\usepackage{natbib}
+%\bibliographystyle{unsrt}
+\usepackage{makeidx}
+\usepackage[nottoc,notlot,notlof]{tocbibind}
+%\usepackage{color}
+%\usepackage{xcolor} % to access the named colour LightGray
+%\definecolor{LightGray}{gray}{0.9}
+\usepackage{ulem}
+
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{multirow}
+
+\usepackage[shortlabels]{enumitem}
+
+%\usepackage [framed, numbered, autolinebreaks]{mcode}
+%\usepackage{matlab-prettifier}
+\usepackage[cache=false]{minted}
+\usemintedstyle{friendly}
+\renewcommand\listingscaption{Código}
+%\usepackage{listings}
+%\renewcommand{\lstlistingname}{Código}
+
+\usepackage{float}
+\usepackage{xparse}
+
+\usepackage{siunitx}
+\usepackage{physics}
+\usepackage{tensor}
+%\usepackage{derivative}
+\usepackage[thinc]{esdiff}
+\usepackage{stackengine}
+\usepackage{mathtools}
+\usepackage{accents}
+\usepackage[version=4]{mhchem}
+%\usepackage{pdfpages}
+
+
+\usepackage[backref=page, colorlinks=true, citecolor=cyan, linkcolor=blue, urlcolor=blue]{hyperref}
+
+%\usepackage{verbatim}
+
+
+    \makeatletter
+\def\@fnsymbol#1{\ensuremath{\ifcase#1\or \dagger\or \ddagger\or
+   \mathsection\or \mathparagraph\or \|\or **\or \dagger\dagger
+   \or \ddagger\ddagger \else\@ctrerr\fi}}
+    \makeatother
+
+\title{TP N°2: Diseño Conceptual de una Instalación de Cogeneración}
+\author{Ing. Pablo Barral\thanks{\hspace{0.1 em} \texttt{pbarral@fi.uba.ar}.}}
+\affil{67.33 Tecnología del Calor}
+\affil{Depto. de Ing. Mecánica - FIUBA}
+\date{\today \\Revisión 0}
+
+%Realizó: PMB - 18-05-2022
+%Mejoras:
+%1) .
+
+\newcommand{\g}[1]{\mathbf{\underline{g}}_#1}
+\renewcommand{\v}[1]{\mathbf{\underline{#1}}}
+\newcommand{\M}[1]{\mathbf{\underline{\underline{#1}}}}
+
+\newtheorem{theorem}{Proposición}[section]
+\newtheorem{corollary}{Corolario}[theorem]
+\newtheorem{lemma}[theorem]{Lema}
+
+\begin{document}
+\maketitle
+\tableofcontents
+\input{objetivo}
+\input{condiciones}
+\input{datos}
+\input{informacion_para_entregar}
+\end{document}
