@@ -1,241 +1,111 @@
-import pandas as pd
+# -----------------------------------------
+
 import os
-# import cirpy
-# import chemicals
+
 import numpy as np
+import pandas as pd
+# -----------------------------------------
 
-# General notes
-"""
-Std inputs are in the accompaning csv files, except por L_0, R, that is included in this script.
-This script is based on the 2016 version of the ISO 6976 standard. If a new version, this code needs actualization.
-"""
-# Data
 
-# Environment
+# -----------------------------------------
+'General notes'
+
+"""
+    Std inputs are in the accompaning csv files, except por L_0, R, which are included in this script.
+    This script is based on the 2016 version of the ISO 6976 standard. If a new version, this code needs updating.
+"""
+# -----------------------------------------
+
+
+# -----------------------------------------
+'Data'
+
+    # Environment
+
 t_0 = 15 # C
 p_0 = 101.325 # kPa(a)
 
-# Products & reactives temperature
+    # 3.11 Combustion reference conditions
+    #   Specified temperature , t1, and pressure, p1, at which the fuel is notionally burned. In calorific value calculations, products of combustion are at the same temperature than gas + oxygen.
+
 t_1 = 25 # C
 p_1 = 101.325 # kPa(a)
 
-# Metering point (used for volume-based parameters - i.e. normal condition, std condition)
+    # 3.12 Metering reference conditions
+    #   Specified temperature , t2, and pressure, p2, at which the volume of fuel to be burned is notionally determined. 
+    #   Note 1 to entry: There is no a priori reason for the metering reference conditions to be the same as the combustion reference conditions (see Figure 1) .
+
 t_2 = 15 # C
 p_2 = 101.325 # kPa(a)
+# -----------------------------------------
 
-# General
+
+# -----------------------------------------
+'File path'
+
 main_path = os.path.dirname(os.path.abspath(__file__))
+# -----------------------------------------
 
-# Molar fraction - Unser input
 
-Molar_fraction_path = os.path.join(main_path, 'Molar_fraction.csv')
+# -----------------------------------------
+'Load and process csv files'
 
-Molar_fraction = pd.read_csv(Molar_fraction_path, header=None, sep=';')
-
-Molar_fraction.columns = ['component', 'x_j']
-Molar_fraction['component'] = Molar_fraction['component'].str.replace('_', ',')
-
-x_j = Molar_fraction['x_j'].to_numpy()
-
-# Molar mass - Table 1
-
-Molar_mass_path = os.path.join(main_path, 'Molar_mass.csv')
-
-Molar_mass = pd.read_csv(Molar_mass_path, header=None, sep=';')
-
-Molar_mass.columns = ['component', 'M_j']
-Molar_mass['component'] = Molar_mass['component'].str.replace('_', ',')
-
-M_j = Molar_mass['M_j'].to_numpy()
-
-# Atomic index - Table 1
-
-Atomic_index_path = os.path.join(main_path, 'Atomic_index.csv')
-
-Atomic_index = pd.read_csv(Atomic_index_path, header=None, sep=';')
-
-Atomic_index.columns = ['component', 'a_j', 'b_j', 'c_j', 'd_j', 'e_j']
-Atomic_index['component'] = Atomic_index['component'].str.replace('_', ',')
-
-a_j = Atomic_index['a_j'].to_numpy()
-b_j = Atomic_index['b_j'].to_numpy()
-c_j = Atomic_index['c_j'].to_numpy()
-d_j = Atomic_index['d_j'].to_numpy()
-e_j = Atomic_index['e_j'].to_numpy()
-
-# Summation factors - Table 2
-
-Summation_factor_path = os.path.join(main_path, 'Summation_factor.csv')
-
-Summation_factor = pd.read_csv(Summation_factor_path, header=None, sep=';')
-
-Summation_factor.columns = ['component', 's_j_0', 's_j_15', 's_j_15_55', 's_j_20', 'u_s_j']
-Summation_factor['component'] = Summation_factor['component'].str.replace('_', ',')
-
-def s_j(t_2: float) -> np.ndarray:
+def load_and_process_csv(file_path: str, columns: list, sep: str=';', replace_char: str='_', new_char: str=',') -> tuple:
     """
-    Calculates the summation factor for a mixture of components at a specified temperature.
+    Load a CSV file, assign column names, and replace characters in the 'component' column.
 
-    Parameters
-    ----------
-    t_2 : float
-        The temperature at which the summation factor is to be calculated (in degrees Celsius).
+    Args:
+        file_path (str): Path to the CSV file.
+        columns (list): List of column names.
+        sep (str): Field separator in the CSV. A default value is ';'.
+        replace_char (str): Character to replace in the 'component' column. A default value is '_'.
+        new_char (str): New character to replace the old one in the 'component' column. A default value is ','.
 
-    Returns
-    -------
-    s_j : numpy.ndarray
-        The summation factor for the mixture of components at the specified temperature.
-
+    Returns:
+        tuple: Tuple of processed DataFrames and numpy arrays.
     """
-    if t_2 == 0:
-        return Summation_factor['s_j_0'].to_numpy()
-    elif t_2 == 15:
-        return Summation_factor['s_j_15'].to_numpy()
-    elif t_2 == 15.55:
-        return Summation_factor['s_j_15_55'].to_numpy()
-    elif t_2 == 20:
-        return Summation_factor['s_j_20'].to_numpy()
 
-# Gross calorific values
-"""Table 3. Missing values are set to zero, to facilitate coding."""
+    df = pd.read_csv(file_path, header=None, sep=sep)
+    df.columns = columns
+    df['component'] = df['component'].str.replace(replace_char, new_char)
+    
+    # Extract numpy arrays
+    arrays = {col: df[col].to_numpy() for col in columns[1:]}
+    
+    return df, arrays
 
-Gross_calorific_value_path = os.path.join(main_path, 'Gross_calorific_value.csv')
+# Define the corresponding files and columns
+files_and_columns = {
+    'molar_fraction.csv': ['component', 'x_j'],
+    'molar_mass.csv': ['component', 'M_j'],
+    'atomic_index.csv': ['component', 'a_j', 'b_j', 'c_j', 'd_j', 'e_j'],
+    'summation_factor.csv': ['component', 's_j_0', 's_j_15', 's_j_15_55', 's_j_20', 'u_s_j'],
+}
 
-Gross_calorific_value = pd.read_csv(Gross_calorific_value_path, header=None, sep=';')
+# File processing
+dataframes = {}
+arrays = {}
 
-Gross_calorific_value.columns = ['component', 'Hc_G_0_j_0', 'Hc_G_0_j_15', 'Hc_G_0_j_15_55', 'Hc_G_0_j_20', 'Hc_G_0_j_25', 'u_Hc_G_0_j']
-Gross_calorific_value['component'] = Gross_calorific_value['component'].str.replace('_', ',')
+for file, columns in files_and_columns.items():
+    file_path = os.path.join(main_path, file)
+    df, arr = load_and_process_csv(file_path, columns)
+    dataframes[file] = df
+    arrays[file] = arr
 
-def Hc_G_0_j(t_1: float) -> np.ndarray:
-    """
-    Calculates the gross calorific value of a mixture of components at a specified temperature.
+# Acessing arrays
+x_j = arrays['molar_fraction.csv']['x_j'] # Array. User input. csv file: component_j & x_j.
 
-    Parameters
-    ----------
-    t_1 : float
-        The temperature at which the gross calorific value is to be calculated (in degrees Celsius).
+M_j = arrays['molar_mass.csv']['M_j'] # Array. Molar mass. Table 1. csv file: component_j & M_j.
 
-    Returns
-    -------
-    Hc_G_0_j : numpy.ndarray
-        The gross calorific value of the mixture of components at the specified temperature (in kJ/kmol).
+a_j = arrays['atomic_index.csv']['a_j'] # Array. Atomic index (CHNOS). Table 1. csv file: component_j & a_j & b_j & c_j & d_j & e_j
+b_j = arrays['atomic_index.csv']['b_j'] # Array. Atomic index (CHNOS). Table 1. csv file: omponent_j & a_j & b_j & c_j & d_j & e_j
+c_j = arrays['atomic_index.csv']['c_j'] # Array. Atomic index (CHNOS). Table 1. csv file: component_j & a_j & b_j & c_j & d_j & e_j
+d_j = arrays['atomic_index.csv']['d_j'] # Array. Atomic index (CHNOS). Table 1. csv file: component_j & a_j & b_j & c_j & d_j & e_j
+e_j = arrays['atomic_index.csv']['e_j'] # Array. Atomic index (CHNOS). Table 1. csv file: component_j & a_j & b_j & c_j & d_j & e_j
 
-    """
-    if t_1 == 0:
-        return Gross_calorific_value['Hc_G_0_j_0'].to_numpy()
-    elif t_1 == 15:
-        return Gross_calorific_value['Hc_G_0_j_15'].to_numpy()
-    elif t_1 == 15.55:
-        return Gross_calorific_value['Hc_G_0_j_15_55'].to_numpy()
-    elif t_1 == 20:
-        return Gross_calorific_value['Hc_G_0_j_20'].to_numpy()
-    elif t_1 == 25:
-        return Gross_calorific_value['Hc_G_0_j_25'].to_numpy()
-
-
-def L_0_j(t_1:float) ->float:
-    """
-    Calculates the latent heat of vaporization of water at a specified temperature.
-
-    Parameters
-    ----------
-    t_1 : float
-        The temperature at which the latent heat of vaporization is to be calculated (in degrees Celsius).
-
-    Returns
-    -------
-    L_0_j : float
-        The latent heat of vaporization of water at the specified temperature (in kJ/kmol).
-
-    This piece of code will need maintenance if the standard changes.
-
-    """
-    if t_1 == 0:
-        return 45.064
-    elif t_1 == 15:
-        return 44.431
-    elif t_1 == 15.55:
-        return 44.408
-    elif t_1 == 20:
-        return 44.222
-    elif t_1 == 25:
-        return 44.013
-
-
-def V_0(p_2: float, t_2: float) -> float:
-    """
-    Calculates the volume of a ideal gas at a specified pressure and temperature.
-
-    Parameters
-    ----------
-    p_2 : float
-        The pressure of the ideal gas (in kPa(a)).
-    t_2 : float
-        The temperature of the ideal gas (in degrees Celsius).
-
-    Returns
-    -------
-    V_0 : float
-        The volume of the ideal gas at the specified pressure and temperature (in m³/kmol).
-
-    """
-    T_2 = t_2 + 273.15  # kelvin to celsius
-    R = 8.3144621  # kJ/kmol-K - universal gas constant
-    V = p_2 / (R * T_2)
-    return V
-
-
-
-# Tengo que completar un toque el csv de atomic index.
-
-
-
-
-# Calculation
-
-
-
-# Eq. 2
-def Hc_G_0(t_1, x_j)
-    Hc_G_0 = Hc_G_0_j(t_1) @ x_j     #kJ/kmol
-    return Hc_G_0
-
-# Eq. 3
-Hc_N_0 = Hc_G_0 - (x_j @ b_j) / 2 * L_0_j(t_1) #kJ/kmol
-
-# Eq. 4 & 5 & 6
-M = M_j @ x_j   # kg/kmol - eq. 5
-Hm_G_0 = Hc_G_0 / M # kJ/kg - eq. 4
-Hm_N_0 = Hc_N_0 / M # kJ/kg - eq. 6
-
-
-
-
-
-
-
-# cas = pd.DataFrame(Molar_mass.iloc[:, 0], columns=['component'])
-# cas['cas'] = cas['component'].apply(lambda x: cirpy.resolve(x, 'cas') if pd.notnull(x) else None)
-
-# perhaps we should generate a j file with the iso-index. Just in case.
-
-
-
-
-
-
-# p_2 es variable, y t_2 tambien, por lo que s deberia estar dentro de una funcion.
-
-# Z = 1 - p_2 / p_0 * (x * s)**2
-
-# Hc_G_0_tot = x * Hc_G_0
-#Simplemente sumo las fracciones molares. Podría incluso hacer algo cabeza y pisar el mismo valor, para no perder la nomenclatura?
-
-#Nuevamente, deberia hacerlo en funcion a la temperatura.
-
-
-
-
-# Draft
-# cas_2 = pd.DataFrame(Molar_mass.iloc[:, 0], columns=['component'])
-# cas_2['cas'] = cas['component'].apply(lambda x: chemicals.identifiers.CAS_from_any(x, autoload=False, cache=True) if pd.notnull(x) else None)
+s_j_0 = arrays['atomic_index.csv']['a_j'] # Array. Summation factors. Table 2. csv file: component_j & s_j_0 & s_j_15 & s_j_15_55 & s_j_20 & u_s_j
+s_j_15 = arrays['atomic_index.csv']['a_j'] # Array. Summation factors. Table 2. csv file: component_j & s_j_0 & s_j_15 & s_j_15_55 & s_j_20 & u_s_j
+s_j_15_55 = arrays['atomic_index.csv']['a_j'] # Array. Summation factors. Table 2. csv file: component_j & s_j_0 & s_j_15 & s_j_15_55 & s_j_20 & u_s_j
+s_j_20 = arrays['atomic_index.csv']['a_j'] # Array. Summation factors. Table 2. csv file: component_j & s_j_0 & s_j_15 & s_j_15_55 & s_j_20 & u_s_j
+u_s_j = arrays['atomic_index.csv']['a_j'] # Array. Summation factors. Table 2. csv file: component_j & s_j_0 & s_j_15 & s_j_15_55 & s_j_20 & u_s_j
+# -----------------------------------------
