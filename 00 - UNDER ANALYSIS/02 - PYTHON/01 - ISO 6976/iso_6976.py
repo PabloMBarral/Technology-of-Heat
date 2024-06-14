@@ -137,7 +137,5 @@ e_j = arrays['atomic_index.csv']['e_j'] # Array. Atomic index (CHNOS). Table 1. 
 # -----------------------------------------
 # Formula (1)
 
-Z = 1 - (p_2 / p_0) * (x_j * s_j)**2
+Z = 1 - (p_2 / p_0) * (x_j @ s_j)**2
 # -----------------------------------------
-print(Z)
-
