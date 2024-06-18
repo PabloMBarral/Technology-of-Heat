@@ -93,6 +93,7 @@ files_and_columns = {
     'molar_mass.csv': ['component', 'M_j'],
     'atomic_index.csv': ['component', 'a_j', 'b_j', 'c_j', 'd_j', 'e_j'],
     'summation_factor.csv': ['component', 's_j_0', 's_j_15', 's_j_15_55', 's_j_20', 'u_s_j'],
+    'gross_calorific_value.csv': ['component', 'Hc_0_G_j_0', 'Hc_0_G_j_15', 'Hc_0_G_j_15_55', 'Hc_0_G_j_20', 'Hc_0_G_j_25', 'u_Hc_j'],
 }
 
 # File processing
@@ -104,24 +105,52 @@ for file, columns in files_and_columns.items():
     df, arr = load_and_process_csv(file_path, columns)
     dataframes[file] = df
     arrays[file] = arr
+# -----------------------------------------
 
+
+# -----------------------------------------
 # Acessing arrays
 x_j = arrays['molar_fraction.csv']['x_j'] # Array. User input. csv file: component_j & x_j.
 
 if t_2 == 0:
-    s_j_0 = arrays['summation_factor.csv']['s_j_0'] # Array. Summation factors. Table 2. csv file: component_j & s_j_0 & s_j_15 & s_j_15_55 & s_j_20 & u_s_j.
-    s_j = s_j_0
+    s_j = arrays['summation_factor.csv']['s_j_0'] # Array. Summation factors. Table 2. csv file: component_j & s_j_0 & s_j_15 & s_j_15_55 & s_j_20 & u_s_j.
 elif t_2 == 15:
-    s_j_15 = arrays['summation_factor.csv']['s_j_15'] # Array. Summation factors. Table 2. csv file: component_j & s_j_0 & s_j_15 & s_j_15_55 & s_j_20 & u_s_j.
-    s_j = s_j_15
+    s_j = arrays['summation_factor.csv']['s_j_15'] # Array. Summation factors. Table 2. csv file: component_j & s_j_0 & s_j_15 & s_j_15_55 & s_j_20 & u_s_j.
 elif t_2 == 15.55:
-    s_j_15_55 = arrays['summation_factor.csv']['s_j_15_55'] # Array. Summation factors. Table 2. csv file: component_j & s_j_0 & s_j_15 & s_j_15_55 & s_j_20 & u_s_j.
-    s_j = s_j_15_55
+    s_j = arrays['summation_factor.csv']['s_j_15_55'] # Array. Summation factors. Table 2. csv file: component_j & s_j_0 & s_j_15 & s_j_15_55 & s_j_20 & u_s_j.
 elif t_2 == 20:
-    s_j_20 = arrays['summation_factor.csv']['s_j_20'] # Array. Summation factors. Table 2. csv file: component_j & s_j_0 & s_j_15 & s_j_15_55 & s_j_20 & u_s_j.
-    s_j = s_j_20
+    s_j = arrays['summation_factor.csv']['s_j_20'] # Array. Summation factors. Table 2. csv file: component_j & s_j_0 & s_j_15 & s_j_15_55 & s_j_20 & u_s_j.
 
 u_s_j = arrays['summation_factor.csv']['u_s_j'] # Array. Summation factors. Table 2. csv file: component_j & s_j_0 & s_j_15 & s_j_15_55 & s_j_20 & u_s_j.
+# -----------------------------------------
+
+
+# -----------------------------------------
+# Formula (1)
+
+Z = 1 - (p_2 / p_0) * (x_j @ s_j)**2
+# -----------------------------------------
+
+
+# -----------------------------------------
+if t_1 == 0:
+    Hc_0_G_j = arrays['gross_calorific_value.csv']['Hc_0_G_j_0'] # Array. Gross calorific values. Table 3. csv file: component_j & Hc_0_G_j_0 & Hc_0_G_j_15 & Hc_0_G_j_15_55 & Hc_0_G_j_20 & Hc_0_G_j_25 & u_Hc_j.
+elif t_1 == 15:
+    Hc_0_G_j = arrays['gross_calorific_value.csv']['Hc_0_Gj_15'] # Array. Gross calorific values. Table 3. csv file: component_j & Hc_0_G_j_0 & Hc_0_G_j_15 & Hc_0_G_j_15_55 & Hc_0_G_j_20 & Hc_0_G_j_25 & u_Hc_j.
+elif t_1 == 15.55:
+    Hc_0_G_j = arrays['gross_calorific_value.csv']['Hc_0_G_j_15_55'] #  Array. Gross calorific values. Table 3. csv file: component_j & Hc_0_G_j_0 & Hc_0_G_j_15 & Hc_0_G_j_15_55 & Hc_0_G_j_20 & Hc_0_G_j_25 & u_Hc_j.
+elif t_1 == 20:
+    Hc_0_G_j = arrays['gross_calorific_value.csv']['Hc_0_G_j_20'] # Array. Gross calorific values. Table 3. csv file: component_j & Hc_0_G_j_0 & Hc_0_G_j_15 & Hc_0_G_j_15_55 & Hc_0_G_j_20 & Hc_0_G_j_25 & u_Hc_j.
+elif t_1 == 25:
+    Hc_0_G_j = arrays['gross_calorific_value.csv']['Hc_0_G_j_25'] # Array. Gross calorific values. Table 3. csv file: component_j & Hc_0_G_j_0 & Hc_0_G_j_15 & Hc_0_G_j_15_55 & Hc_0_G_j_20 & Hc_0_G_j_25 & u_Hc_j.
+
+u_Hc = arrays['gross_calorific_value.csv']['u_Hc_j'] # Array. Gross calorific values. Table 3. csv file: component_j & Hc_0_G_j_0 & Hc_0_G_j_15 & Hc_0_G_j_15_55 & Hc_0_G_j_20 & Hc_0_G_j_25 & u_Hc_j.
+# -----------------------------------------
+# Formula (2)
+
+Hc_0_G = x_j @ Hc_0_G_j
+Hc_G = Hc_0_G
+# -----------------------------------------
 
 
 M_j = arrays['molar_mass.csv']['M_j'] # Array. Molar mass. Table 1. csv file: component_j & M_j.
@@ -134,8 +163,23 @@ e_j = arrays['atomic_index.csv']['e_j'] # Array. Atomic index (CHNOS). Table 1. 
 # -----------------------------------------
 
 
-# -----------------------------------------
-# Formula (1)
+print(Hc_G)
 
-Z = 1 - (p_2 / p_0) * (x_j @ s_j)**2
-# -----------------------------------------
+"agregar lo de kJ mol^-1 "
+
+"agregar los titulos de la tabla 3. Poner qué calculo en cada cosa."
+
+"Gross ca lorific va lues on a molar bas is for components of natura l gas in the idea l gas state at various combus tion reference temperatures"
+
+
+"""
+    Tab le 2 — Summation factors for components of natura l gas at various metering reference
+temperatures
+    """
+
+
+"""_summary_
+
+Table 1 — Molar mass and atom ic indices for components of natura l gas
+
+    """

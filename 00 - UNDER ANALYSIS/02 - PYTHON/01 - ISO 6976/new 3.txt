@@ -36,6 +36,9 @@ c_j = Atomic_index['c_j'].to_numpy()
 d_j = Atomic_index['d_j'].to_numpy()
 e_j = Atomic_index['e_j'].to_numpy()
 
+
+
+
 # Summation factors - Table 2
 
 Summation_factor_path = os.path.join(main_path, 'Summation_factor.csv')
@@ -44,6 +47,9 @@ Summation_factor = pd.read_csv(Summation_factor_path, header=None, sep=';')
 
 Summation_factor.columns = ['component', 's_j_0', 's_j_15', 's_j_15_55', 's_j_20', 'u_s_j']
 Summation_factor['component'] = Summation_factor['component'].str.replace('_', ',')
+
+
+
 
 def s_j(t_2: float) -> np.ndarray:
     """
@@ -68,6 +74,9 @@ def s_j(t_2: float) -> np.ndarray:
         return Summation_factor['s_j_15_55'].to_numpy()
     elif t_2 == 20:
         return Summation_factor['s_j_20'].to_numpy()
+
+
+
 
 # Gross calorific values
 """Table 3. Missing values are set to zero, to facilitate coding."""
@@ -106,6 +115,11 @@ def Hc_G_0_j(t_1: float) -> np.ndarray:
         return Gross_calorific_value['Hc_G_0_j_25'].to_numpy()
 
 
+
+
+
+
+
 def L_0_j(t_1:float) ->float:
     """
     Calculates the latent heat of vaporization of water at a specified temperature.
@@ -133,6 +147,9 @@ def L_0_j(t_1:float) ->float:
         return 44.222
     elif t_1 == 25:
         return 44.013
+
+
+
 
 
 def V_0(p_2: float, t_2: float) -> float:
@@ -173,8 +190,14 @@ def Hc_G_0(t_1, x_j):
     Hc_G_0 = Hc_G_0_j(t_1) @ x_j     #kJ/kmol
     return Hc_G_0
 
+
+
+
 # Eq. 3
 Hc_N_0 = Hc_G_0 - (x_j @ b_j) / 2 * L_0_j(t_1) #kJ/kmol
+
+
+
 
 # Eq. 4 & 5 & 6
 M = M_j @ x_j   # kg/kmol - eq. 5
