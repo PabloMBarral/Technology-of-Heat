@@ -22,14 +22,21 @@ import pandas as pd
     In particular, the formula will not provide a value for the compression factor of hydrogen , helium or neon, for which Z > 1, nor for any components, such as the higher hydrocarbons, that are not gaseous at the metering reference conditions. The user should consider the fitness-for-purpose of any such calculation before its use outside of the context of the script.
 """
 # -----------------------------------------
+# Temperature conversion
+
+def converttemp(t, base_in='C', base_out='K'):
+    if base_in=='C' and base_out=='K':
+        return t+273.15
+# -----------------------------------------
 
 
 # -----------------------------------------
-'Data'
+# Data
 
     # Environment
 
 t_0 = 15 # C
+T_0 = converttemp(base_in='C', base_out='K', t=t_0) # K
 p_0 = 101.325 # kPa(a)
 
     # 3.11 Combustion reference conditions
@@ -38,6 +45,7 @@ p_0 = 101.325 # kPa(a)
 
 
 t_1 = 25 # C
+T_1 = converttemp(base_in='C', base_out='K', t=t_1) # K
 p_1 = 101.325 # kPa(a)
 
     # 3.12 Metering reference conditions
@@ -49,19 +57,20 @@ p_1 = 101.325 # kPa(a)
 
 
 t_2 = 15 # C
+T_2 = converttemp(base_in='C', base_out='K', t=t_2) # K
 p_2 = 101.325 # kPa(a)
 # -----------------------------------------
 
 
 # -----------------------------------------
-'File path'
+# File path
 
 main_path = os.path.dirname(os.path.abspath(__file__))
 # -----------------------------------------
 
 
 # -----------------------------------------
-'Load and process csv files'
+#Load and process csv files
 
 def load_and_process_csv(file_path: str, columns: list, sep: str=';', replace_char: str='_', new_char: str=',') -> tuple:
     """
@@ -109,8 +118,18 @@ for file, columns in files_and_columns.items():
 
 
 # -----------------------------------------
-# Acessing arrays
+# User input - Mole fractions.
+# [dim]
+
 x_j = arrays['molar_fraction.csv']['x_j'] # Array. User input. csv file: component_j & x_j.
+# -----------------------------------------
+
+
+# -----------------------------------------
+# Table 2 — Summation factors for components of natural gas at various metering reference temperatures, and standard uncertainty.
+# [dim]
+# All values refer to a pressure p_0 = 101.325 kPa(a).
+
 
 if t_2 == 0:
     s_j = arrays['summation_factor.csv']['s_j_0'] # Array. Summation factors. Table 2. csv file: component_j & s_j_0 & s_j_15 & s_j_15_55 & s_j_20 & u_s_j.
@@ -126,13 +145,16 @@ u_s_j = arrays['summation_factor.csv']['u_s_j'] # Array. Summation factors. Tabl
 
 
 # -----------------------------------------
-# Formula (1)
+# Formula (1) - Compression factor.
 
-Z = 1 - (p_2 / p_0) * (x_j @ s_j)**2
+Z = 1 - (p_2 / p_0) * (x_j @ s_j)**2 # [dim]
 # -----------------------------------------
 
 
 # -----------------------------------------
+# Table 3 — Gross calorific values on a molar basis for components of natural gas in the ideal gas state at various combustion reference temperatures, and standard uncertainty.
+# [kJ/mol]
+
 if t_1 == 0:
     Hc_0_G_j = arrays['gross_calorific_value.csv']['Hc_0_G_j_0'] # Array. Gross calorific values. Table 3. csv file: component_j & Hc_0_G_j_0 & Hc_0_G_j_15 & Hc_0_G_j_15_55 & Hc_0_G_j_20 & Hc_0_G_j_25 & u_Hc_j.
 elif t_1 == 15:
@@ -146,12 +168,22 @@ elif t_1 == 25:
 
 u_Hc = arrays['gross_calorific_value.csv']['u_Hc_j'] # Array. Gross calorific values. Table 3. csv file: component_j & Hc_0_G_j_0 & Hc_0_G_j_15 & Hc_0_G_j_15_55 & Hc_0_G_j_20 & Hc_0_G_j_25 & u_Hc_j.
 # -----------------------------------------
-# Formula (2)
 
-Hc_0_G = x_j @ Hc_0_G_j
-Hc_G = Hc_0_G
+
+# -----------------------------------------
+# Formula (2) - Gross calorific value. Volume basis.
+# Ideal-gas gross calorific value: Hc_0_G
+# Real-gas gross calorific value: Hc_G
+
+Hc_0_G = x_j @ Hc_0_G_j # [kJ/mol]
+Hc_G = Hc_0_G           # [kJ/mol]
 # -----------------------------------------
 
+
+# -----------------------------------------
+# Table 1 — Molar mass and atomic indices for components of natural gas.
+# M_j [kg/kmol]
+# a_j, b_j, c_j, d_j, e_j [dim]
 
 M_j = arrays['molar_mass.csv']['M_j'] # Array. Molar mass. Table 1. csv file: component_j & M_j.
 
@@ -163,23 +195,77 @@ e_j = arrays['atomic_index.csv']['e_j'] # Array. Atomic index (CHNOS). Table 1. 
 # -----------------------------------------
 
 
-print(Hc_G)
+# -----------------------------------------
+# Table A.5 — Standard enthalpy of vaporization of water, and standard uncertainty.
+# [kJ/mol]
 
-"agregar lo de kJ mol^-1 "
+if t_1 == 0:
+    L_0_j = 45.064 # [kJ/mol]
+elif t_1 == 15:
+    L_0_j = 44.431 # [kJ/mol]
+elif t_1 == 15.55:
+    L_0_j = 44.408 # [kJ/mol]
+elif t_1 == 20:
+    L_0_j = 44.222 # [kJ/mol]
+elif t_1 == 25:
+    L_0_j = 44.013 # [kJ/mol]
 
-"agregar los titulos de la tabla 3. Poner qué calculo en cada cosa."
-
-"Gross ca lorific va lues on a molar bas is for components of natura l gas in the idea l gas state at various combus tion reference temperatures"
-
-
-"""
-    Tab le 2 — Summation factors for components of natura l gas at various metering reference
-temperatures
-    """
+u_L_0 = 0.004 # [kJ/mol]
+# -----------------------------------------
 
 
-"""_summary_
+# -----------------------------------------
+# Formula (3) - Net calorific value. Volume basis.
+# Ideal-gas net calorific value: Hc_0_N
+# Real-gas net calorific value: Hc_N
 
-Table 1 — Molar mass and atom ic indices for components of natura l gas
+Hc_0_N = Hc_0_G - (x_j @ b_j) / 2 * L_0_j #kJ/mol
+Hc_N = Hc_0_N           # [kJ/mol]
+# -----------------------------------------
 
-    """
+# -----------------------------------------
+# Formula (5) - Molar mass.
+
+M = M_j @ x_j # kg/kmol
+# -----------------------------------------
+
+
+# -----------------------------------------
+# Formula (4) - Gross calorific value. Mass basis.
+# Ideal-gas gross calorific value: Hm_0_G
+# Real-gas gross calorific value: Hm_G
+
+Hm_0_G = Hc_0_G / M # kJ/kg
+Hm_G = Hm_0_G       # kJ/kg
+# -----------------------------------------
+
+
+# -----------------------------------------
+# Formula (6) - Net calorific value. Mass basis.
+# Ideal-gas net calorific value: Hm_0_N
+# Real-gas net calorific value: Hm_N
+
+Hm_0_N = Hc_0_N / M # kJ/kg
+Hm_N = Hm_0_N       # kJ/kg
+# -----------------------------------------
+
+
+# -----------------------------------------
+# Table A.1 — Molar gas constant.
+# [kJ/kmol-K] or [J/mol-K]
+
+R = 8.3144621   # [kJ/kmol-K] or [J/mol-K]
+u_R = 0.0000075 # [kJ/kmol-K] or [J/mol-K]
+# -----------------------------------------
+
+
+# -----------------------------------------
+V_0 = R * T_2 / p_2 / 1000  # m³/mol
+V = Z * V_0                 # m³/mol               
+
+
+Hv_0_G = Hc_0_G / V_0 # kJ/m³
+Hv_0_N = Hc_0_N / V_0 # kJ/m³
+
+Hv_G = Hc_0_G / V # kJ/m³
+Hv_N = Hc_0_N / V # kJ/m³
