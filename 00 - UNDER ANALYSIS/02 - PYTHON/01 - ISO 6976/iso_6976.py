@@ -130,7 +130,6 @@ x_j = arrays['molar_fraction.csv']['x_j'] # Array. User input. csv file: compone
 # [dim]
 # All values refer to a pressure p_0 = 101.325 kPa(a).
 
-
 if t_2 == 0:
     s_j = arrays['summation_factor.csv']['s_j_0'] # Array. Summation factors. Table 2. csv file: component_j & s_j_0 & s_j_15 & s_j_15_55 & s_j_20 & u_s_j.
 elif t_2 == 15:
