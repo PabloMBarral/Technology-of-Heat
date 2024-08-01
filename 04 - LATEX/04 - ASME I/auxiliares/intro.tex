@@ -1,0 +1,81 @@
+\section{Introducción}
+
+La transferencia de calor entre la serpentina y la corriente de aire puede calcularse como
+
+     \begin{equation}
+          \dot{Q} = \frac{h_c \cdot A}{c_{p,m}}\cdot\left(h_{sat} - h_a \right)
+     \end{equation}
+
+Aquí, $h_{sat}$ es la entalpía del aire húmedo a la temperatura de la serpentina. Esta entalpía es saturada, porque el aire húmedo condensa al tocarla, se genera una película de condensado, por lo que el aire húmedo que está en contacto con esa película se satura. La situación es similar a una torre de enfriamiento.
+
+En este caso, la temperatura del metal es menor que la del punto de rocío del aire. Si ese no fuera el caso, entonces toda la serpentina sería de transferencia de calor sensible, pues no habría forma de que condense. Esta serpentina es la común.
+
+La condensación ocurre antes de que la temperatura promedio del aire húmedo llegue a la temperatura de rocío. Esto es porque el aire húmedo que toma contacto con el metal empieza a condensar mucho antes de que el aire que pasa lejos se enfríe por debajo de su punto de rocío. Hay, en este sentido, un gradiente perpendicular al flujo: gradiente de temperatura y de humedad absoulta.
+
+$h_a$ es la humedad del aire lejos de la serpentina.
+
+Estamos siguiendo las secciones 5.7 y 13.1 del libro de Mitchell. También, unas secciones (SM) aparte.
+
+% Mencionar el ADP y el bypass factor.
+% Mencionar la cuenta de una AHU, y hacer un análisis de la energía que se lleva el condensado.
+
+
+\begin{equation}
+     m^{\star}=\frac{\dot{m}_a \cdot c_s}{\dot{m}_w \cdot c_{p,w}}
+\end{equation}
+
+cs  es un calor específico efectivo.
+
+Es el cambio de la entalpía con respecto a la temperatura a lo largo de la línea de saturación.
+
+Se evalúa con las temperaturas de entrada y salida.
+
+\begin{equation}
+     c_s = \left(\frac{h_{w,sat,in}-h_{w,sat,out}}{T_{w,in}-T_{w,out}}\right)
+\end{equation}
+
+Tiene unidades de kJ por C y kg (de aire seco). Es la entalpía del aire húmedo, pero se expresa por unidad de masa de aire seco.
+
+Nos interesa ver la entalpía del aire saturado.
+
+m estrella es como un ratio de calores específicos.
+
+Aa es el área que está expuesta al aire.
+
+eta estrella cero es una eficiencia general para la transferencia de masa, y es un valor cercano a la eficiencia en la transferencia de calor.
+
+hc es el coeficiente convectivo
+
+cpm es el calor específico de la mezcla.
+
+\begin{equation}
+     U_0^{\ast}\cdot A_a = \frac{\frac{\eta_0^{\ast}\cdot h_c \cdot A_a}{c_{p,m}}}{1+\frac{c_s\cdot \eta^{\ast}_0 \cdot h_c \cdot A_a}{c_{p,m}\cdot U_w \cdot A_w}}
+\end{equation}
+
+
+\begin{equation}
+     {Ntu}^{\ast}=\frac{U_0^{\ast}\cdot A_a}{\dot{m}_a}
+\end{equation}
+
+Estaría bueno ver las unidades de lo que estoy escribiendo. Especialmente lo de U asterisco.
+
+\begin{equation}
+     \dot{Q}=\dot{\varepsilon}\cdot\dot{m}_a\left(h_{a,in}-h_{w,sat,in}\right)
+\end{equation}
+
+El calor, en lugar de hacerlo en función de la temperatura, lo hacemos en función a la entalpía.
+
+Estamos asumiendo que vamos a enfriar, porque hay condensación. Por lo que la entalpía del aire de entrada es mayor a la del agua de enfriamiento.
+
+Si no fuera agua, si fuera refrigerante, el análisis sería similar.
+
+El máximo calor sería cuando el aire esté a la temperatura de entrada del agua.
+
+\begin{equation}
+     \varepsilon^{\ast}=\frac{\left(h_{a,in}-h_{a,out}\right)}{\left( h_{a,in}-h_{w,sat,in}\right)}
+\end{equation}
+
+\begin{equation}
+     \dot{Q}=\dot{m}_w \cdot c_{p,w} \cdot \left(T_{w,out}-T_{w,in}\right)
+\end{equation}
+

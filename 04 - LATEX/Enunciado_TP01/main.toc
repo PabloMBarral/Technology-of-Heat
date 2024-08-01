@@ -1,0 +1,8 @@
+\babel@toc {spanish}{}\relax 
+\contentsline {section}{\numberline {1}Objetivo}{1}{section.1}%
+\contentsline {section}{\numberline {2}Condiciones}{1}{section.2}%
+\contentsline {section}{\numberline {3}Datos}{2}{section.3}%
+\contentsline {section}{\numberline {4}Información para entregar}{3}{section.4}%
+\contentsline {paragraph}{Archivos de cálculo:}{4}{section*.2}%
+\contentsline {paragraph}{Unidades:}{4}{section*.3}%
+\contentsline {paragraph}{Presentación de la información:}{5}{section*.4}%
