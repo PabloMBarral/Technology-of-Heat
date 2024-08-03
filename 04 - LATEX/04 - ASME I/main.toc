@@ -5,18 +5,18 @@
 \contentsline {subsection}{\numberline {1.3}limites de jurisdiccion}{1}{subsection.1.3}%
 \contentsline {section}{\numberline {2}Diseño}{2}{section.2}%
 \contentsline {subsection}{\numberline {2.1}Componentes cilíndricos bajo presión exterior}{2}{subsection.2.1}%
-\contentsline {subsubsection}{\numberline {2.1.1}Relación con los esfuerzos teóricos}{3}{subsubsection.2.1.1}%
-\contentsline {paragraph}{Nota importante:}{4}{section*.1}%
-\contentsline {subsubsection}{\numberline {2.1.2}Ejemplo de cálculo}{4}{subsubsection.2.1.2}%
-\contentsline {subsection}{\numberline {2.2}Material}{4}{subsection.2.2}%
-\contentsline {subsection}{\numberline {2.3}MAWP}{5}{subsection.2.3}%
-\contentsline {subsection}{\numberline {2.4}Temperatura de diseño}{5}{subsection.2.4}%
-\contentsline {subsection}{\numberline {2.5}Tensión admisible}{5}{subsection.2.5}%
-\contentsline {subsection}{\numberline {2.6}Eficiencia}{5}{subsection.2.6}%
-\contentsline {subsection}{\numberline {2.7}Coeficiente de temperatura}{5}{subsection.2.7}%
-\contentsline {section}{\numberline {3}Ligamentos}{6}{section.3}%
-\contentsline {section}{\numberline {4}Derivaciones y compensaciones}{7}{section.4}%
-\contentsline {section}{\numberline {5}Válvulas de seguridad}{8}{section.5}%
-\contentsline {section}{\numberline {6}Comentarios finales y conclusiones}{9}{section.6}%
-\contentsline {section}{\numberline {7}Anexo}{10}{section.7}%
-\contentsline {subsection}{\numberline {7.1}Incluir Archivo Binario}{10}{subsection.7.1}%
+\contentsline {subsubsection}{\numberline {2.1.1}Relación con los esfuerzos teóricos}{5}{subsubsection.2.1.1}%
+\contentsline {paragraph}{Nota importante:}{6}{section*.1}%
+\contentsline {subsubsection}{\numberline {2.1.2}Ejemplo de cálculo}{6}{subsubsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.2}Material}{7}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}MAWP}{8}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Temperatura de diseño}{8}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.5}Tensión admisible}{8}{subsection.2.5}%
+\contentsline {subsection}{\numberline {2.6}Eficiencia}{8}{subsection.2.6}%
+\contentsline {subsection}{\numberline {2.7}Coeficiente de temperatura}{8}{subsection.2.7}%
+\contentsline {section}{\numberline {3}Ligamentos}{9}{section.3}%
+\contentsline {section}{\numberline {4}Derivaciones y compensaciones}{10}{section.4}%
+\contentsline {section}{\numberline {5}Válvulas de seguridad}{11}{section.5}%
+\contentsline {section}{\numberline {6}Comentarios finales y conclusiones}{12}{section.6}%
+\contentsline {section}{\numberline {7}Anexo}{13}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Incluir Archivo Binario}{13}{subsection.7.1}%
