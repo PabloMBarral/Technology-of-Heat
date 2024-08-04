@@ -5,7 +5,7 @@
 El código indica, en el apartado \textbf{PG-27.2.2}, la expresión que debe utilizarse para determinar el espesor mínimo requerido para los caños (\textit{piping}), los domos (\textit{drums}), las envueltas (\textit{shells}) y los colectores (\textit{headers}).
 
 \begin{equation}
-     t = \frac{P \cdot D}{2 \cdot S \cdot E + 2 \cdot y \cdot P} + C
+     t = \frac{P \cdot D}{\num{2} \cdot S \cdot E + \num{2} \cdot y \cdot P} + C
      \label{eq:min_req_thickness_od}
 \end{equation}
 
@@ -13,7 +13,7 @@ Aquí:
 \begin{itemize}
      \item $\mathbf{D}$ es el diametro \underline{exterior} del componente cilíndrico. Una denominación alternativa es $\mathbf{OD}$ (\textit{outside diameter}). 
      
-     El diámetro que debe utilizarse es el real, no el nominal. La unidad en que debe expresarse en la ecuación \ref{eq:min_req_thickness_od} es $\SI{}{mm}$.
+     El diámetro que debe utilizarse es el real, no el nominal. La unidad en que debe expresarse en la ecuación \ref{eq:min_req_thickness_od} es $\si{mm}$.
      
      Por ejemplo, para un caño de $\text{NPS}=\SI{10}{in}$ (\textit{nominal pipe size}), el diámetro nominal es $\text{DN}=\SI{250}{mm}$ mientras que el diámetro exterior es $\text{OD}=\SI{273.1}{mm}$. En este ejemplo, este último es el que debe utilizarse.
 
@@ -21,11 +21,11 @@ Aquí:
 
      \item $\mathbf{P}$ es la máxima presión admisible de trabajo (\textit{MAWP} o \textit{maximum allowable working pressure}). La presión que debe utilizarse, \underline{interna} en este caso, es la \underline{manométrica} o relativa al ambiente, ya que el esfuerzo sobre la pared del componente se genera a partir de la diferencia de fuerzas entre las originadas por la presión absoluta interior y la exterior (la atmosférica).
      
-     Su definición se encuentra en el apartado \textbf{PG-21}. La unidad en que debe expresarse en la ecuación \ref{eq:min_req_thickness_od} es $\SI{}{MPa(g)}$.   
+     Su definición se encuentra en el apartado \textbf{PG-21}. La unidad en que debe expresarse en la ecuación \ref{eq:min_req_thickness_od} es $\si{MPa(g)}$.   
 
      \item $\mathbf{S}$ es la máxima tensión admisible a la tempreatura de diseño del metal. En el apartado \textbf{PG-23} se indica que este valor máximo de tensión admisible puede encontrarse en la \textbf{sección II, parte D, subparte 1, tablas 1A y 1B} del \textbf{BPVC}.
      
-     La unidad en que debe expresarse en la ecuación \ref{eq:min_req_thickness_od} es $\SI{}{MPa}$.
+     La unidad en que debe expresarse en la ecuación \ref{eq:min_req_thickness_od} es $\si{MPa}$.
 
      Más detalles pueden encontarse en el apartado \textbf{PG-27.4.2}.
 
@@ -48,14 +48,14 @@ El código indica, en el mismo apartado, la expresión que debe utilizarse para 
 La ecuación \ref{eq:min_req_thickness_od} puede relacionarse con la expresión de cálculo de la tensión en la dirección circunferencial $\sigma_{\theta}$ (\textit{hoop or circumferential stress}), a veces llamada tensión tangencial, para un cilindro de pared delgada sometido a una presión interior manométrica o relativa al ambiente:
 
 \begin{equation}
-     \sigma_{\theta}=\frac{P \cdot d}{2 \cdot t}
+     \sigma_{\theta}=\frac{P \cdot d}{\num{2} \cdot t}
      \label{eq:thin_wall_cylinder_int_pressure_01}
 \end{equation}
 
 Reagrupando,
 
 \begin{equation}
-     t=\frac{P \cdot d}{2 \cdot \sigma_{\theta}}
+     t=\frac{P \cdot d}{\num{2} \cdot \sigma_{\theta}}
      \label{eq:thin_wall_cylinder_int_pressure_02}
 \end{equation}
 
@@ -78,7 +78,7 @@ Un recipiente puede considerarse de pared delgada si el diámetro es, al menos, 
 La tensión en la dirección longitudinal $\sigma_L$ (\textit{longitudinal stress}), en el caso de que el cilindro tenga tapas, se calcula como
 
 \begin{equation}
-     \sigma_L=\frac{P \cdot d}{4 \cdot t}
+     \sigma_L=\frac{P \cdot d}{\num{4} \cdot t}
      \label{eq:thin_wall_cylinder_int_pressure_03}
 \end{equation}
 
@@ -90,14 +90,17 @@ Para un recipiente de pared delgada, la tensión en la dirección radial $\sigma
 
 \subsubsection{Ejemplo de cálculo}
 
-Supongamos que se quiere dimensionar el espesor del domo de una caldera acuotubular. Consideremos una $\text{MAWP}=\SI{75}{bar(g)}$, una temperatura de diseño $T=\SI{290}{\celsius}$, que el diámetro exterior es $D=\SI{69,5}{in}=\SI{1765.3}{mm}$ que el material es SA-516 Gr. 70 y, únicamente para los fines de este ejemplo, que el domo no posee costuras de soldadura.
+Supongamos que se quiere dimensionar el espesor del domo de una caldera acuotubular. Consideremos una $\text{MAWP}=\SI{75}{bar(g)}$, una temperatura de diseño $T=\SI{290}{\celsius}$, que el diámetro exterior es $D=\SI{69,5}{in}=\SI{1765.3}{mm}$ que el material es SA-516 Gr. \num{70} y, únicamente para los fines de este ejemplo, que el domo no posee costuras de soldadura.
 
 Determinando la eficiencia, el coeficiente de temperatura, la máxima tensión admisible a la temperatura de diseño del metal y considerando que no debe adicionarse el margen $C$, al reemplazar en \ref{eq:min_req_thickness_od}, resulta
 
 \begin{gather*}
-     t=\frac{\SI{7,5}{MPa(g)}\cdot\SI{1765,3}{mm}}{2\cdot\SI{137,6}{MPa}\cdot 1,0+2\cdot 0,4\cdot \SI{7,5}{MPa(g)}}\\
+     t=\frac{\SI{7,5}{MPa(g)}\cdot\SI{1765,3}{mm}}{2\cdot\SI{137,6}{MPa}\cdot \num{1,0}+\num{2}\cdot \num{0,4}\cdot \SI{7,5}{MPa(g)}}\\
      \boxed{t=\SI{47,08}{mm}}
 \end{gather*}
+
+
+% Luego hacer la cuenta considerando la eficiencia.
 
 \subsection{Material}
 
@@ -109,6 +112,15 @@ Acá quiero mostrar:
      \item Para el ejemplo, dar las características del acero que utilizo. Sus valores de resistencia mecánica, las notas que lo rigen, el gráfico que hice, el valor de resistencia mecánica. ASME Parte 2
      \item Los apéndices no mandatorios del código ASME II sobre grafitización.
      \item La composición y el estándar ASTM que me rige. Esta en ASME II Parte A.
+     \item Valor máximo de temperatura debe respetarse, a pesar de que esté listadas más temperaturas.
+     \item En nota general de tabla IA me permite interpolar.
+     \item STATEMENT OF POLICY ON INFORMATION PROVIDED IN THE STRESS TABLES. Acá figura esto del limite de temperatura, que no debe superarse. Ponerlo como nota al pie, o algo ais.
+     \item Marcar que el código ya nos da los coeficientes de seguridad. Comparar la tensión que usamos contra el valor informado de fluecnia y de resistencia mecánica.
+     \item Dar las características completas del material. Mencionar que está incorporado el estándar ASTM.
+     \item El estándar ASTM está asociado a la forma en la que el material es comercializado (si es en chapa o barras, por ejemplo).
+     \item Cada estándar tiene grados, que se relacionan con la resitencia.
+     \item Creo que el código permite interpolar pero con la misma cantidad de decimales que el valor más chico, por lo que acá si no tengo decimales redondeo a 138. Hacer la cuenta con 138.
+     \item 
 \end{enumerate}
 
 \begin{figure}[ht]
@@ -122,23 +134,47 @@ Acá quiero mostrar:
      \centering
      \begin{tabular}{cc}
          \hline
-         Columna 1 & Columna 2 \\
+         $\mathbf{T \left[\si{\celsius}\right]}$ & $\mathbf{S \left[\si{MPa}\right]}$ \\
          \hline
-         Fila 1, Col 1 & Fila 1, Col 2 \\
+         $\num{40}$ & $\num{138}$ \\
          \hline
-         Fila 2, Col 1 & Fila 2, Col 2 \\
+         $\num{65}$ & $\num{138}$ \\
          \hline
-         Fila 3, Col 1 & Fila 3, Col 2 \\
+         $\num{100}$ & $\num{138}$ \\
          \hline
-         Fila 4, Col 1 & Fila 4, Col 2 \\
+         $\num{125}$ & $\num{138}$ \\
          \hline
-         Fila 5, Col 1 & Fila 5, Col 2 \\
+         $\num{150}$ & $\num{138}$ \\
          \hline
-         Fila 6, Col 1 & Fila 6, Col 2 \\
+         $\num{200}$ & $\num{138}$ \\
+         \hline
+         $\num{250}$ & $\num{138}$ \\
+         \hline
+         $\num{300}$ & $\num{136}$ \\
+         \hline
+         $\num{325}$ & $\num{132}$ \\
+         \hline
+         $\num{350}$ & $\num{128}$ \\
+         \hline
+         $\num{375}$ & $\num{123}$ \\
+         \hline
+         $\num{400}$ & $\num{101}$ \\
+         \hline
+         $\num{425}$ & $\num{83.8}$ \\
+         \hline
+         $\num{450}$ & $\num{67.1}$ \\
+         \hline
+         $\num{475}$ & $\num{51.0}$ \\
+         \hline
+         $\num{500}$ & $\num{33.6}$ \\
+         \hline
+         $\num{525}$ & $\num{21.3}$ \\
+         \hline
+         $\num{550}$ & $\num{12.9}$ \\
          \hline
      \end{tabular}
-     \caption{Ejemplo de tabla con dos columnas y seis filas}
-     \label{tabla:ejemplo}
+     \caption{Poner qué es. De dónde la extraigo. Poner el limite de uso que figura, para usos según codigo asme I.}
+     \label{tb:SA_516_70_S_value}
  \end{table}
 
 \subsection{MAWP}

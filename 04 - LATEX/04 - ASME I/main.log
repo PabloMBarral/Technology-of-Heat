@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.1.5)  2 AUG 2024 23:22
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.1.5)  4 AUG 2024 00:16
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -505,21 +505,232 @@ Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 59.
 Package hyperref Info: Option `bookmarksopen' set `true' on input line 59.
 runsystem(for ^%i in (pygmentize.exe pygmentize.bat pygmentize.cmd) do set > main.aex <nul: /p x=^%~$PATH:i>> main.aex)...executed.
 
+runsystem(del main.aex)...executed.
 
-c:/Users/Barral Pablo/Documents/GitHub/Technology-of-Heat/04 - LATEX/04 - ASME I/main.tex:62: Emergency stop.
-<read 4> 
-         
-l.62 \begin{document}
-                     ^^M
-*** (cannot \read from terminal in nonstop modes)
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 62.
+ (c:/texlive/2023/texmf-dist/tex/latex/lm/t1lmr.fd
+File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+) (c:/texlive/2023/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2023-11-09 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count348
+\l__pdf_internal_box=\box75
+) (./main.aux
+LaTeX Info: Redefining \. on input line 14.
+LaTeX Info: Redefining \% on input line 14.
+)
+\openout1 = `main.aux'.
 
- 
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Info: Redefining \. on input line 62.
+LaTeX Info: Redefining \% on input line 62.
+LaTeX Info: Redefining \microtypecontext on input line 62.
+Package microtype Info: Applying patch `item' on input line 62.
+Package microtype Info: Applying patch `toc' on input line 62.
+Package microtype Info: Applying patch `eqnum' on input line 62.
+Package microtype Info: Applying patch `footnote' on input line 62.
+Package microtype Info: Applying patch `verbatim' on input line 62.
+Package microtype Info: Generating PDF output.
+Package microtype Info: Character protrusion enabled (level 2).
+Package microtype Info: Using default protrusion set `alltext'.
+Package microtype Info: Automatic font expansion enabled (level 2),
+(microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
+Package microtype Info: Using default expansion set `alltext-nott'.
+LaTeX Info: Redefining \showhyphens on input line 62.
+Package microtype Info: No adjustment of tracking.
+Package microtype Info: No adjustment of interword spacing.
+Package microtype Info: No adjustment of character kerning.
+ (c:/texlive/2023/texmf-dist/tex/latex/microtype/mt-cmr.cfg
+File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (RS)
+) (c:/texlive/2023/texmf-dist/tex/latex/translations/translations-basic-dictionary-spanish.trsl
+File: translations-basic-dictionary-spanish.trsl (spanish translation file `translations-basic-dictionary')
+)
+Package translations Info: loading dictionary `translations-basic-dictionary' for `spanish'. on input line 62.
+ (c:/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count349
+\scratchdimen=\dimen183
+\scratchbox=\box76
+\nofMPsegments=\count350
+\nofMParguments=\count351
+\everyMPshowfont=\toks34
+\MPscratchCnt=\count352
+\MPscratchDim=\dimen184
+\MPnumerator=\count353
+\makeMPintoPDFobject=\count354
+\everyMPtoPDFconversion=\toks35
+) (c:/texlive/2023/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
+ (c:/texlive/2023/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
+))
+Package hyperref Info: Link coloring ON on input line 62.
+ (./face.tex
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 2.
+ (c:/texlive/2023/texmf-dist/tex/latex/lm/ot1lmr.fd
+File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 2.
+ (c:/texlive/2023/texmf-dist/tex/latex/lm/omllmm.fd
+File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 2.
+ (c:/texlive/2023/texmf-dist/tex/latex/lm/omslmsy.fd
+File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 2.
+ (c:/texlive/2023/texmf-dist/tex/latex/lm/omxlmex.fd
+File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <12> on input line 2.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <8> on input line 2.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6> on input line 2.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 2.
+ (c:/texlive/2023/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+) (c:/texlive/2023/texmf-dist/tex/latex/microtype/mt-msa.cfg
+File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 2.
+ (c:/texlive/2023/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) (c:/texlive/2023/texmf-dist/tex/latex/microtype/mt-msb.cfg
+File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
+)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 2.
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 2.
+ (c:/texlive/2023/texmf-dist/tex/latex/lm/t1lmtt.fd
+File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `lmtt' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+<linkedin_logo.png, id=6, 152.9715pt x 130.086pt>
+File: linkedin_logo.png Graphic file (type png)
+<use linkedin_logo.png>
+Package pdftex.def Info: linkedin_logo.png  used on input line 2.
+(pdftex.def)             Requested size: 7.49496pt x 6.375pt.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 15.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 15.
+
+Overfull \hbox (4.13332pt too wide) in paragraph at lines 15--16
+[][] 
+ []
+
+) (./intro.tex [1
+
+{c:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{c:/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{c:/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc} <./linkedin_logo.png>]
+<b_w_boiler_01.png, id=27, 453.19313pt x 362.85562pt>
+File: b_w_boiler_01.png Graphic file (type png)
+<use b_w_boiler_01.png>
+Package pdftex.def Info: b_w_boiler_01.png  used on input line 59.
+(pdftex.def)             Requested size: 271.91797pt x 217.71504pt.
+<b_w_boiler_02.png, id=28, 1365.1pt x 549.05125pt>
+File: b_w_boiler_02.png Graphic file (type png)
+<use b_w_boiler_02.png>
+Package pdftex.def Info: b_w_boiler_02.png  used on input line 65.
+(pdftex.def)             Requested size: 273.01517pt x 109.8083pt.
+<b_w_boiler_03.png, id=29, 587.19376pt x 384.6872pt>
+File: b_w_boiler_03.png Graphic file (type png)
+<use b_w_boiler_03.png>
+Package pdftex.def Info: b_w_boiler_03.png  used on input line 71.
+(pdftex.def)             Requested size: 352.31897pt x 230.81409pt.
+<b_w_boiler_04.jpg, id=30, 1027.84pt x 770.88pt>
+File: b_w_boiler_04.jpg Graphic file (type jpg)
+<use b_w_boiler_04.jpg>
+Package pdftex.def Info: b_w_boiler_04.jpg  used on input line 78.
+(pdftex.def)             Requested size: 411.12872pt x 308.34654pt.
+<drum_internals_01.png, id=31, 317.68687pt x 362.10281pt>
+File: drum_internals_01.png Graphic file (type png)
+<use drum_internals_01.png>
+Package pdftex.def Info: drum_internals_01.png  used on input line 84.
+(pdftex.def)             Requested size: 190.61359pt x 217.26335pt.
+<drum_internals_02.png, id=32, 304.88907pt x 364.36125pt>
+File: drum_internals_02.png Graphic file (type png)
+<use drum_internals_02.png>
+Package pdftex.def Info: drum_internals_02.png  used on input line 90.
+(pdftex.def)             Requested size: 182.93484pt x 218.61842pt.
+<PG-58.2-1.png, id=33, 371.88937pt x 475.02469pt>
+File: PG-58.2-1.png Graphic file (type png)
+<use PG-58.2-1.png>
+Package pdftex.def Info: PG-58.2-1.png  used on input line 96.
+(pdftex.def)             Requested size: 223.13533pt x 285.017pt.
+) (./design.tex [2 <./b_w_boiler_01.png> <./b_w_boiler_02.png (PNG copy)>] [3{c:/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{c:/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc} <./b_w_boiler_03.png>] [4 <./b_w_boiler_04.jpg>] [5 <./drum_internals_01.png>]
+<thin_wall_cylinder_int_pressure_01.png, id=78, 503.8825pt x 276.03125pt>
+File: thin_wall_cylinder_int_pressure_01.png Graphic file (type png)
+<use thin_wall_cylinder_int_pressure_01.png>
+Package pdftex.def Info: thin_wall_cylinder_int_pressure_01.png  used on input line 67.
+(pdftex.def)             Requested size: 302.33183pt x 165.62001pt.
+<thin_wall_cylinder_int_pressure_02.jpeg, id=79, 283.0575pt x 89.33376pt>
+File: thin_wall_cylinder_int_pressure_02.jpeg Graphic file (type jpg)
+<use thin_wall_cylinder_int_pressure_02.jpeg>
+Package pdftex.def Info: thin_wall_cylinder_int_pressure_02.jpeg  used on input line 73.
+(pdftex.def)             Requested size: 226.44629pt x 71.46709pt.
+ [6 <./drum_internals_02.png>] [7 <./PG-58.2-1.png>] [8 <./thin_wall_cylinder_int_pressure_01.png> <./thin_wall_cylinder_int_pressure_02.jpeg>]
+<mat_prop_example_01.png, id=120, 495.35063pt x 328.97906pt>
+File: mat_prop_example_01.png Graphic file (type png)
+<use mat_prop_example_01.png>
+Package pdftex.def Info: mat_prop_example_01.png  used on input line 127.
+(pdftex.def)             Requested size: 297.21268pt x 197.38895pt.
+) (./sections.tex [9 <./mat_prop_example_01.png>] [10] [11] [12]) (./annex.tex [13]<<ejemplo.EES>><<graph.EES>>) [14] (./main.toc
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+)
+\tf@toc=\write5
+\openout5 = `main.toc'.
+
+ [15] (./main.brf)
+\tf@brf=\write6
+\openout6 = `main.brf'.
+
+ [16] (./main.aux
+LaTeX Info: Redefining \. on input line 14.
+LaTeX Info: Redefining \% on input line 14.
+)
+ ***********
+LaTeX2e <2023-11-01>
+L3 programming layer <2023-12-11>
+ ***********
+Package rerunfilecheck Info: File `main.brf' has not changed.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+ ) 
 Here is how much of TeX's memory you used:
- 19842 strings out of 474174
- 378577 string characters out of 5749678
- 1924460 words of memory out of 5000000
- 41952 multiletter control sequences out of 15000+600000
- 558832 words of font info for 37 fonts, out of 8000000 for 9000
+ 21724 strings out of 474174
+ 420857 string characters out of 5749678
+ 1936460 words of memory out of 5000000
+ 43473 multiletter control sequences out of 15000+600000
+ 642618 words of font info for 166 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 90i,0n,93p,358b,397s stack positions out of 10000i,1000n,20000p,200000b,200000s
-c:/Users/Barral Pablo/Documents/GitHub/Technology-of-Heat/04 - LATEX/04 - ASME I/main.tex:62:  ==> Fatal error occurred, no output PDF file produced!
+ 90i,14n,93p,1178b,1132s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/texlive/2023/texmf-dist/fonts/type1/public/lm/lmbx10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/lm/lmbx9.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/lm/lmmi10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/lm/lmmi7.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr17.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr9.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/lm/lmri10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/lm/lmsy6.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/lm/lmsy7.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/lm/lmsy8.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/lm/lmtt8.pfb>
+Output written on main.pdf (16 pages, 1828062 bytes).
+PDF statistics:
+ 366 PDF objects out of 1000 (max. 8388607)
+ 288 compressed objects within 3 object streams
+ 76 named destinations out of 1000 (max. 500000)
+ 47852 words of extra memory for PDF output out of 51595 (max. 10000000)
+
