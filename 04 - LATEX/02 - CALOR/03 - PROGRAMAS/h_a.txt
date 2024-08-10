@@ -1,0 +1,7 @@
+Function h_a(F$;T;x_a[1..5])
+p=1,01325 [bar]	{Se pone este valor cualquiera porque para la entalpía no lo necesitamos.}
+CALL Idealgasmixtureprops(F$;T;P;x_a[1..5]:{MW}; h; {s}; {mu}; {k})
+
+h_a:=h
+
+End

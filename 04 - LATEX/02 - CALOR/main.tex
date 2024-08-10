@@ -1,0 +1,345 @@
+\documentclass[10pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+
+\usepackage{authblk}
+
+\usepackage[cache=false]{minted}
+\usemintedstyle{friendly}
+\renewcommand\listingscaption{Código}
+
+\usepackage{siunitx}
+\usepackage[shortlabels]{enumitem}
+
+
+\usepackage{graphicx}
+\graphicspath{{01 - IMAGES/}}
+
+\usepackage[backref=page, colorlinks=true, citecolor=cyan, linkcolor=blue, urlcolor=blue]{hyperref}
+\usepackage[numbered]{bookmark}
+
+\usepackage[unicode]{attachfile}
+
+
+%%% No tocar, generado automáticamente %%%
+\makeatletter
+\def\@fnsymbol#1{\ensuremath{\ifcase#1\or \dagger\or \ddagger\or
+   \mathsection\or \mathparagraph\or \|\or **\or \dagger\dagger
+   \or \ddagger\ddagger \else\@ctrerr\fi}}
+\makeatother
+%%%
+     \title{Introducción al comportamiento térmico de una caldera de recuperación}
+     \author{Ing. Pablo Barral\thanks{Departamento de Ing. Mecánica, Universidad de Buenos Aires; 
+     \href{mailto:pbarral@fi.uba.ar}{\texttt{pbarral@fi.uba.ar}};
+     \raisebox{0.25ex}{\href{https://www.linkedin.com/in/pablo-barral}{\includegraphics[height=0.75em]{linkedin_logo.png}}}}
+     }
+     \affil{Tecnología del Calor}
+     \date{\today}
+
+     
+     \hypersetup{
+          pdfpagemode=UseOutlines,
+          pdftitle={Título del Documento},
+          pdfauthor={Ing. Pablo Barral},
+          pdfsubject={Asunto del Documento},
+          pdfkeywords={keyword1, keyword2, keyword3},
+          pdfcreator={LaTeX with hyperref},
+          pdfproducer={pdfLaTeX}
+          pdfstartview=Fit,
+          bookmarksnumbered=true,
+          bookmarksopen=true,
+          bookmarksopenlevel=1,
+     }
+
+
+\begin{document}
+     
+     \input{02 - PARTS/face.tex}
+     %\input{intro.tex}
+     %\input{design.tex}
+     %\input{sections.tex}
+     %\input{annex.tex}
+     %\newpage
+     %\tableofcontents
+     %\newpage
+     %\begin{thebibliography}{9}
+     %     \bibitem{BPVC.I-2023}
+     %     ASME (2023), \emph{Boiler and Pressure Vessel Code (An International Code) - Section I ``Rules for Construction of Power Boilers''}, ASME.
+     %     \bibitem{BPVC.II.A-2023}
+     %     ASME (2023), \emph{Boiler and Pressure Vessel Code (An International Code) - Section II ``Materials'' - Part A "Ferrous Material Specifications" - Volume 1 \& 2}, ASME.
+     %     \bibitem{BPVC.II.D.M-2023}
+     %     ASME (2023), \emph{Boiler and Pressure Vessel Code (An International Code) - Section II ``Materials'' - Part D "Properties (Metric)"}, ASME.
+     %     \bibitem{BPVC.VIII.1-2023}
+     %     ASME (2023), \emph{Boiler and Pressure Vessel Code (An International Code) - Section VII ``Rules for Construction of Pressure Vessels'' - Division 1}, ASME.
+     %     \bibitem{MacKay_Pillow}
+     %     MacKay, J. \& Pillow, J. (2011), \emph{Power Boilers - A guide to Section I of the ASME Boiler and Pressure Vessel Code}, 2nd ed., ASME Press.
+     %     \bibitem{Rao}
+     %     Rao, K. R. (ed.) (2018) \emph{Companion Guide to the ASME Boiler and Pressure Vessel Codes - Vol. 1}, 5th ed., ASME Press.     
+     %\end{thebibliography}
+
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     %\input{annex}
+     %     \bibitem{lamport94}
+     %     Leslie Lamport (1994) \emph{\LaTeX: a document preparation system}, Addison
+     %     Wesley, Massachusetts, 2nd ed.
+1. Uso de tespy, en baja presion y en alta presion, tambien en EES
+2. ESCOA
+3. Grimision y zukauskas
+4. Balance HRSG, con ganapathy
+5. Instalaciones de cogeneracion
+6. estequiometria
+7. calculo de un sobrecalentador, taler
+8. calcular un economizador
+9. calculo de un desaireador
+10. calculo de una perdida de carga
+11. metodo de spencer cotton y cannon
+12. balance exergetico en una combustion
+13. balance exergetico en un ciclo de baja potencia.
+14. lo de las fuentes y el aprovechamiento de la exergia
+
+todo lo que haga en EES; hacerlo como procedimiento
+
+hacer chunks de codigo
+ver estteem, libro en aleman, ganapathy
+el loco de linkedin
+cao
+el libro de heimo walter
+caldera paquete, poner como es el grafico
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+https://hal.science/hal-00699058/document
+
+https://orcid.org/0000-0003-1125-4199
+
+\orcidA{} is used to insert the ORCID icon. Make sure you have \usepackage{academicons} in your preamble to use \orcidA{}.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\begin{thebibliography}{999}
+     % Aquí va tu bibliografía
+     \bibitem[Author1(year)]{ref-journal}
+     Author~1, T. The title of the cited article. {\em Journal Abbreviation} {\bf 2008}, {\em 10}, 142--149.
+     % Reference 2
+     \bibitem[Author2(year)]{ref-book1}
+     Author~2, L. The title of the cited contribution. In {\em The Book Title}; Editor1, F., Editor2, A., Eds.; Publishing House: City, Country, 2007; pp. 32--58.
+     % Reference 3
+     \bibitem[Author3(year)]{ref-book2}
+     Author 1, A.; Author 2, B. \textit{Book Title}, 3rd ed.; Publisher: Publisher Location, Country, 2008; pp. 154--196.
+     % Reference 4
+     \bibitem[Author4(year)]{ref-unpublish}
+     Author 1, A.B.; Author 2, C. Title of Unpublished Work. \textit{Abbreviated Journal Name} stage of publication (under review; accepted; in~press).
+     % Reference 5
+     \bibitem[Author5(year)]{ref-communication}
+     Author 1, A.B. (University, City, State, Country); Author 2, C. (Institute, City, State, Country). Personal communication, 2012.
+     % Reference 6
+     \bibitem[Author6(year)]{ref-proceeding}
+     Author 1, A.B.; Author 2, C.D.; Author 3, E.F. Title of Presentation. In Title of the Collected Work (if available), Proceedings of the Name of the Conference, Location of Conference, Country, Date of Conference; Editor 1, Editor 2, Eds. (if available); Publisher: City, Country, Year (if available); Abstract Number (optional), Pagination (optional).
+     % Reference 7
+     \bibitem[Author7(year)]{ref-thesis}
+     Author 1, A.B. Title of Thesis. Level of Thesis, Degree-Granting University, Location of University, Date of Completion.
+     % Reference 8
+     \bibitem[Author8(year)]{ref-url}
+     Title of Site. Available online: URL (accessed on Day Month Year).
+ \end{thebibliography}
+
+
+\usepackage{csquotes}
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{bm}
+
+\usepackage{graphicx}
+
+\usepackage{authblk}
+
+%\usepackage{natbib}
+%\bibliographystyle{unsrt}
+\usepackage{makeidx}
+\usepackage[nottoc,notlot,notlof]{tocbibind}
+%\usepackage{color}
+%\usepackage{xcolor} % to access the named colour LightGray
+%\definecolor{LightGray}{gray}{0.9}
+\usepackage{ulem}
+
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{multicol}
+
+\usepackage[shortlabels]{enumitem}
+
+\usepackage[cache=false]{minted}
+\usemintedstyle{friendly}
+\renewcommand\listingscaption{Código}
+%\usepackage{listings}
+%\renewcommand{\lstlistingname}{Código}
+
+\usepackage{float}
+\usepackage{xparse}
+
+\usepackage{siunitx}
+\sisetup{group-minimum-digits=4}
+\usepackage{physics}
+\usepackage{tensor}
+%\usepackage{derivative}
+\usepackage[thinc]{esdiff}
+\usepackage{stackengine}
+\usepackage{mathtools}
+
+\usepackage[backref=page, colorlinks=true, citecolor=cyan, linkcolor=blue, urlcolor=blue]{hyperref}
+\usepackage[numbered]{bookmark}
+
+%\usepackage{verbatim}
+%\usepackage{attachfile}
+
+glossaries-extra
+fontspec
+komascript
+verse
+pdflandscape
+
+TexGyre fontspec
+glossaries
+
+tikz
+beamer
+
+tcolorbox
+
+tcblisting?
+ulem
+Don't use ulem without \usepackage[normalem]{ulem}
+
+microtype
+
+float
+
+tabularray
+booktabs
+
+Amsmath and its supplement math tools.
+
+biblaetex
+
+forest
+systeme for typesetting systems of linear equations and inequalities.
+
+
+
+multicol
+fixme
+
+auto multiple choice. 
+lineno
+
+ragged2e, bibtex, and natbib are my favorite packages. 
+They are part of what convinced me that learning LaTeX was wort
+
+
+
+\usepackage{textcomp}
+
+\usepackage{fancyhdr}
+
+\usepackage{import}
+
+\usepackage{lipsum}
+
+
+\usepackage{natbib}
+\bibliographystyle{unsrt}
+\usepackage{makeidx}
+\usepackage[nottoc,notlot,notlof]{tocbibind}
+\usepackage{color}
+\usepackage{ulem}
+
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{multirow}
+
+\usepackage[shortlabels]{enumitem}
+
+%\usepackage [framed, numbered, autolinebreaks]{mcode}
+\usepackage{float}
+
+\usepackage{xparse}
+%\usepackage{physics}
+\usepackage{siunitx}
+
+\usepackage{geometry}
+
+
+amssymb loads amsfonts. Instead of 
+amsmath I use mathtools, which loads 
+the former package. The latter one provides, 
+for example, right-aligned matrix environments. 
+babel is needed for other languages, while biblatex 
+is usually used for citations and bibliography. T
+he color package is called xcolor, and the graphics 
+package is called graphicx.
+
+I often use amsthm or ntheorem, which 
+
+thermodynamics package
+
+memoir class
