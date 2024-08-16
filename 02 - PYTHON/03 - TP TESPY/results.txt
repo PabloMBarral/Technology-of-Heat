@@ -1,41 +1,41 @@
-denomination                                         p    p_unit  T      T_unit  h       h_unit   s    s_unit    x      m       m_unit
-                               extraction st outlet 13.00 bar    264.958 C      2965.832 kJ / kg 6.853 kJ / kgK -1.000  180.000 t / h 
-                            Steam from TV to attemp 13.00 bar    264.958 C      2965.832 kJ / kg 6.853 kJ / kgK -1.000  130.000 t / h 
-                                   cond st cv inlet 13.00 bar    264.958 C      2965.832 kJ / kg 6.853 kJ / kgK -1.000   50.000 t / h 
-                                      cond st inlet 11.05 bar    261.960 C      2965.832 kJ / kg 6.925 kJ / kgK -1.000   50.000 t / h 
-                                    condenser inlet  0.08 bar     41.509 C      2246.358 kJ / kg 7.179 kJ / kgK  0.863   50.000 t / h 
-                                   condenser outlet  0.08 bar     41.509 C       173.840 kJ / kg 0.592 kJ / kgK  0.000   50.000 t / h 
-                                    cond pump inlet  0.08 bar     41.509 C       173.840 kJ / kg 0.592 kJ / kgK  0.000   41.068 t / h 
-                                     att pump inlet  0.08 bar     41.509 C       173.840 kJ / kg 0.592 kJ / kgK  0.000    8.932 t / h 
-                                    att pump outlet 13.00 bar     41.681 C       175.701 kJ / kg 0.594 kJ / kgK -1.000    8.932 t / h 
-                                      process steam 13.00 bar    191.605 C      2786.457 kJ / kg 6.494 kJ / kgK  1.000  138.932 t / h 
-                                   cond pump outlet  2.00 bar     41.534 C       174.116 kJ / kg 0.593 kJ / kgK -1.000   41.068 t / h 
-                     Condensate return from process  2.00 bar     70.000 C       293.203 kJ / kg 0.955 kJ / kgK -1.000  127.000 t / h 
-    Condensate going to merge with water reposition  2.00 bar     63.052 C       264.104 kJ / kg 0.869 kJ / kgK -1.000  168.068 t / h 
-                                   Water reposition  2.00 bar     14.000 C        58.983 kJ / kg 0.210 kJ / kgK -1.000   40.000 t / h 
-               Water mixture feed to heat exchanger  2.00 bar     53.627 C       224.670 kJ / kg 0.750 kJ / kgK -1.000  208.068 t / h 
-                        heated water feed to LPDRUM  1.80 bar    106.911 C       448.388 kJ / kg 1.385 kJ / kgK -1.000  208.068 t / h 
-                       Cooled water feed to HP pump  1.62 bar     55.410 C       232.096 kJ / kg 0.773 kJ / kgK -1.000  180.000 t / h 
-                         pressurized water to HPEC1 66.00 bar     55.837 C       239.345 kJ / kg 0.775 kJ / kgK -1.000  180.000 t / h 
-                  pressurized water to sg condenser 66.00 bar     55.837 C       239.345 kJ / kg 0.775 kJ / kgK -1.000   90.000 t / h 
-                         pressurized water to HPEC1 66.00 bar     55.837 C       239.345 kJ / kg 0.775 kJ / kgK -1.000   90.000 t / h 
-                         pressurized water to HPEC2 66.00 bar    142.335 C       603.185 kJ / kg 1.757 kJ / kgK -1.000   90.000 t / h 
-            outlet of HPEC2 to merge with cold flow 66.00 bar    205.875 C       880.678 kJ / kg 2.378 kJ / kgK -1.000   90.000 t / h 
-           outlet of merge to sweet water condenser 66.00 bar    132.197 C       560.012 kJ / kg 1.652 kJ / kgK -1.000  180.000 t / h 
-           outlet of sweet water condenser to HPEC3 66.00 bar    208.710 C       893.451 kJ / kg 2.405 kJ / kgK -1.000  180.000 t / h 
-                         outlet of HPEC3 to HP drum 66.00 bar    231.875 C       999.686 kJ / kg 2.620 kJ / kgK -1.000  180.000 t / h 
-         saturated liquid outlet of HPDRUM to HPEV1 66.00 bar    281.875 C      1246.723 kJ / kg 3.086 kJ / kgK  0.000 4180.911 t / h 
-          saturated steam outlet of HPEV1 to HPDRUM 66.00 bar    281.875 C      1323.270 kJ / kg 3.224 kJ / kgK  0.050 4180.911 t / h 
-                   saturated steam outlet of HPDRUM 66.00 bar    281.875 C      2777.667 kJ / kg 5.844 kJ / kgK  1.000  180.000 t / h 
-                      saturated steam inlet to HPS1 66.00 bar    281.875 C      2777.667 kJ / kg 5.844 kJ / kgK  1.000  150.000 t / h 
-                     Steam outlet of HPS1 to attemp 66.00 bar    354.143 C      3040.155 kJ / kg 6.291 kJ / kgK -1.000  150.000 t / h 
-Steam derivation of HPDRUM to sweet water condenser 66.00 bar    281.875 C      2777.667 kJ / kg 5.844 kJ / kgK  1.000   30.000 t / h 
-             Sweet water condenser outlet to attemp 66.00 bar    182.539 C       777.041 kJ / kg 2.156 kJ / kgK -1.000   30.000 t / h 
-                              Attemp outlet to HPS2 66.00 bar    281.875 C      2662.967 kJ / kg 5.637 kJ / kgK  0.925  180.000 t / h 
-                 Superheated steam to steam turbine 66.00 bar    480.000 C      3367.754 kJ / kg 6.768 kJ / kgK -1.000  180.000 t / h 
-         Saturated liquid outlet of LPDRUM to LPEV1  1.80 bar    116.911 C       490.699 kJ / kg 1.494 kJ / kgK  0.000 3707.717 t / h 
-                                       LPDRUM waste  1.80 bar    116.911 C       490.699 kJ / kg 1.494 kJ / kgK  0.000   28.068 t / h 
-                    Saturated liquid inlet to LPEV1  1.80 bar    116.911 C       490.699 kJ / kg 1.494 kJ / kgK  0.000 3679.649 t / h 
-                    Saturated steam inlet to LPDRUM  1.80 bar    116.911 C       601.235 kJ / kg 1.778 kJ / kgK  0.050 3679.649 t / h 
-         Saturated steam outlet of LPDRUM to HE aux  1.80 bar    116.911 C      2701.406 kJ / kg 7.162 kJ / kgK  1.000  180.000 t / h 
-             Saturated steam outlet of HE aux to HE  1.80 bar    116.911 C       490.699 kJ / kg 1.494 kJ / kgK  0.000  180.000 t / h 
+denomination                                         p     p_unit  T      T_unit  h       h_unit   s    s_unit    x      m       m_unit
+                               extraction st outlet 13.000 bar    264.958 C      2965.832 kJ / kg 6.853 kJ / kgK -1.000  180.000 t / h 
+                            Steam from TV to attemp 13.000 bar    264.958 C      2965.832 kJ / kg 6.853 kJ / kgK -1.000  130.000 t / h 
+                                   cond st cv inlet 13.000 bar    264.958 C      2965.832 kJ / kg 6.853 kJ / kgK -1.000   50.000 t / h 
+                                      cond st inlet 11.050 bar    261.960 C      2965.832 kJ / kg 6.925 kJ / kgK -1.000   50.000 t / h 
+                                    condenser inlet  0.096 bar     45.000 C      2266.184 kJ / kg 7.169 kJ / kgK  0.868   50.000 t / h 
+                                   condenser outlet  0.096 bar     45.000 C       188.435 kJ / kg 0.639 kJ / kgK  0.000   50.000 t / h 
+                                    cond pump inlet  0.096 bar     45.000 C       188.435 kJ / kg 0.639 kJ / kgK  0.000   42.472 t / h 
+                                     att pump inlet  0.096 bar     45.000 C       188.435 kJ / kg 0.639 kJ / kgK  0.000    7.528 t / h 
+                                    att pump outlet 13.000 bar     45.176 C       190.296 kJ / kg 0.640 kJ / kgK -1.000    7.528 t / h 
+                                      process steam 13.000 bar    201.605 C      2813.909 kJ / kg 6.552 kJ / kgK -1.000  137.528 t / h 
+                                   cond pump outlet  4.000 bar     45.053 C       188.998 kJ / kg 0.639 kJ / kgK -1.000   42.472 t / h 
+                     Condensate return from process  4.000 bar     70.000 C       293.367 kJ / kg 0.955 kJ / kgK -1.000   96.269 t / h 
+    Condensate going to merge with water reposition  4.000 bar     62.370 C       261.417 kJ / kg 0.861 kJ / kgK -1.000  138.742 t / h 
+                                       Water makeup  4.000 bar     25.000 C       105.197 kJ / kg 0.367 kJ / kgK -1.000   40.000 t / h 
+               Water mixture feed to heat exchanger  4.000 bar     54.013 C       226.457 kJ / kg 0.755 kJ / kgK -1.000  178.742 t / h 
+                        heated water feed to LPDRUM  3.600 bar    129.849 C       545.802 kJ / kg 1.633 kJ / kgK -1.000  178.742 t / h 
+                       Cooled water feed to HP pump  3.240 bar     50.017 C       209.681 kJ / kg 0.704 kJ / kgK -1.000  150.674 t / h 
+                         pressurized water to HPEC1 66.000 bar     50.894 C       218.743 kJ / kg 0.712 kJ / kgK -1.000  150.674 t / h 
+                  pressurized water to sg condenser 66.000 bar     50.894 C       218.743 kJ / kg 0.712 kJ / kgK -1.000   90.000 t / h 
+                         pressurized water to HPEC1 66.000 bar     50.894 C       218.743 kJ / kg 0.712 kJ / kgK -1.000   60.674 t / h 
+                         pressurized water to HPEC2 66.000 bar    142.335 C       603.185 kJ / kg 1.757 kJ / kgK -1.000   60.674 t / h 
+            outlet of HPEC2 to merge with cold flow 66.000 bar    205.875 C       880.678 kJ / kg 2.378 kJ / kgK -1.000   60.674 t / h 
+           outlet of merge to sweet water condenser 66.000 bar    114.547 C       485.293 kJ / kg 1.463 kJ / kgK -1.000  150.674 t / h 
+           outlet of sweet water condenser to HPEC3 66.000 bar    206.531 C       883.632 kJ / kg 2.384 kJ / kgK -1.000  150.674 t / h 
+                         outlet of HPEC3 to HP drum 66.000 bar    231.875 C       999.686 kJ / kg 2.620 kJ / kgK -1.000  150.674 t / h 
+         saturated liquid outlet of HPDRUM to HPEV1 66.000 bar    281.875 C      1246.723 kJ / kg 3.086 kJ / kgK  0.000 3499.736 t / h 
+          saturated steam outlet of HPEV1 to HPDRUM 66.000 bar    281.875 C      1323.270 kJ / kg 3.224 kJ / kgK  0.050 3499.736 t / h 
+                   saturated steam outlet of HPDRUM 66.000 bar    281.875 C      2777.667 kJ / kg 5.844 kJ / kgK  1.000  150.674 t / h 
+                      saturated steam inlet to HPS1 66.000 bar    281.875 C      2777.667 kJ / kg 5.844 kJ / kgK  1.000  150.000 t / h 
+                     Steam outlet of HPS1 to attemp 66.000 bar    354.143 C      3040.155 kJ / kg 6.291 kJ / kgK -1.000  150.000 t / h 
+Steam derivation of HPDRUM to sweet water condenser 66.000 bar    281.875 C      2777.667 kJ / kg 5.844 kJ / kgK  1.000    0.674 t / h 
+             Sweet water condenser outlet to attemp 66.000 bar      0.110 C         7.110 kJ / kg 0.002 kJ / kgK -1.000    0.674 t / h 
+                              Attemp outlet to HPS2 66.000 bar    281.875 C      2640.643 kJ / kg 5.597 kJ / kgK  0.910  150.674 t / h 
+                 Superheated steam to steam turbine 66.000 bar    480.000 C      3367.754 kJ / kg 6.768 kJ / kgK -1.000  150.674 t / h 
+         Saturated liquid outlet of LPDRUM to LPEV1  3.600 bar    139.849 C       588.515 kJ / kg 1.738 kJ / kgK  0.000 3112.735 t / h 
+                                       LPDRUM waste  3.600 bar    139.849 C       588.515 kJ / kg 1.738 kJ / kgK  0.000   28.068 t / h 
+                    Saturated liquid inlet to LPEV1  3.600 bar    139.849 C       588.515 kJ / kg 1.738 kJ / kgK  0.000 3084.667 t / h 
+                    Saturated steam inlet to LPDRUM  3.600 bar    139.849 C       695.752 kJ / kg 1.997 kJ / kgK  0.050 3084.667 t / h 
+         Saturated steam outlet of LPDRUM to HE aux  3.600 bar    139.849 C      2733.248 kJ / kg 6.931 kJ / kgK  1.000  150.674 t / h 
+             Saturated steam outlet of HE aux to HE  3.600 bar    139.849 C       588.515 kJ / kg 1.738 kJ / kgK  0.000  150.674 t / h 

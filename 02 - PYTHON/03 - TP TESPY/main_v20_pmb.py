@@ -19,11 +19,49 @@ Comentarios generales:
     16. Quizás haya que renombrar al bus powergen, porque no queda claro qué es.
     17. Está raro el tema de los caudales: la reposición no debería ser un dato. Esto conviene que lo revisemos.
     18. En la mezcla de condensados (proceso y TV) estamos indicando una sola presión. Esto debe ser por el componente "merge". En caso de que así sea, no hay problemas, pero indiquémoslo. Esta presión se destruye en el tanque de mezcla. Veamos si le podemos indicar al tanque que su succión está a presión atmosférica.
+    19. Cambié la composición y ajusté los parámetros de los gases húmedos. La presión no era correcta.
+    20. Merge acepta varias entradas. Deberíamos poner un único merge en el tanque. Los otros están bien. Eventualmente, o podemos poner que las bombas de condensado, agua demi y condensado de proceso presurizan a una x presión y luego ponemos una bomba, o si no, sabiendo que subestimamos la potencia de esas bombas, hacemos que bombeen a presión atmosférica. Y la que luego presuriza al nivel del domo de baja presión es la bomba a pie del tanque de mezcla.
+    21. La pérdida de carga en la HRSG totaliza unos 20 mbar, aprox. Es bastante poco. Es una valor que le especificas al calderista. No haríamos mal en desestimar la variación, ya que para los gases ideales como el modelo que usa tespy, la entalpía no depende de la presión. Sí tendríamos alguna variación en la exergía, pero mínima.
+    22. Capaz que por una cuestión de claridad, movería la parte de análisis exergético para el final. Pero tenemos que verlo.
+    23. El domo de baja presión no se purga. Los sólidos se van con el agua que va para el domo de alta presión. Ese sí se purga, porque no tiene ninguna salida de líquido.
+    24. El estado 41 no lo encontré en el plano, no entendí bien cuál es.
 
 Agregué comentarios, separé el código en secciones. Traté de poner espacios entre signos/variables para incrementar la legibilidad.
 
 PMB - 2024-08-09
 """
+# ***************************
+
+# Sección -01: Preámbulo
+
+def export(__file__, results):
+    """
+    Esta función exporta los resultados de la simulación a un archivo de texto, almacenado en el mismo directorio que el script de Python.
+
+    Parámetros:
+    __file__ (str): El nombre del archivo que se está ejecutando.
+    results (DataFrame): Un dataframe que contiene los resultados de la simulación.
+
+    Retorna:
+    Ninguno
+    """
+    # Se importa el módulo 'os' para trabajar con rutas de archivos y directorios.
+    import os
+
+    # Se obtiene la ruta completa del directorio donde está guardado el archivo Python.
+    path = os.path.dirname(os.path.abspath(__file__))
+
+    # Se crea la ruta completa del archivo de texto 'results.txt'.
+    text_file = os.path.join(path, 'results.txt')
+
+    # Se formatean los datos del DataFrame como una cadena de texto.
+    # 'index=False' significa que no se incluye la columna de índices.
+    # 'justify='left'' indica que el texto se alinea a la izquierda.
+    formatted_text = results.to_string(index=False, justify='left')
+
+    # Se abre el archivo 'results.txt' en modo de escritura ('w') y escribir los datos formateados
+    with open(text_file, 'w') as file:
+        file.write(formatted_text)
 
 # ***************************
 
@@ -104,14 +142,13 @@ sg_pump = Pump('steam generator pump', eta_s=0.7)
 cond_st_cv = Valve('cond st cv', pr=0.85)
 
 water_inlet_1 = Source('Process condensate return')
-water_inlet_2 = Source('Water reposition')
+water_inlet_2 = Source('Water makeup')
 water_inlet_3 = Source('Water from boiler to HE')
 turbine_exhaust = Source('Hot gases source')
 
 wst = Sink('LPDRUM saturated liquid waste')
 process_steam = Sink('process IP steam')
 gases_outlet = Sink('hot gases outlet')
-
 
 sp_1 = Splitter('st inner splitter')
 sp_2 = Splitter('condensate header')
@@ -148,7 +185,6 @@ HPDRUM = Drum('HP Drum')
 condenser = SimpleHeatExchanger('condenser', pr=1)
 HE_cond = HeatExchanger('sweet water condenser', Q=16672000, pr1=1, pr2=1)
 
-
 # Se añaden los flujos de potencia eléctrica al bus general de la planta ("powergen").
 # "char" representa la curva característica del rendimiento eléctrico del componente ("comp").
 # "base" indica la componente base. Por ejemplo, que las ruedas de alta presión de la turbina sean "base" significa que la potencia surge de este componente (en forma mecánica) y se suma al bus, luego de aplicarle un rendimiento dado por "char".
@@ -161,10 +197,10 @@ powergen.add_comps(
                     {"comp": sg_pump, "char": 0.97, "base": "bus"},
                     )
 
-
 # ***************************
 
 # Sección 04: Especificación de conexiones
+# Parte A: Lado agua-vapor
 
 from tespy.connections import (Connection, Ref)
 
@@ -249,10 +285,10 @@ c[11].set_attr(p=4)
 names[11] = 'cond pump outlet'
 
 # Retorno de condensado del proceso industrial - entrada a la cañería de condensado (la que acomete al tanque de mezla).
-retorno_de_condensado = 0.7 # dim # esta variable podría reposicionarse en un preámbulo, junto con los datos puestos para los estados.
-temperatura_de_retorno_de_condensado = 70 # C
+retorno_condensado = 0.7 # dim # esta variable podría reposicionarse en un preámbulo, junto con los datos puestos para los estados.
+temperatura_retorno_condensado = 70 # C
 c[12] = Connection(water_inlet_1, 'out1', me_2, 'in2', label='13')
-c[12].set_attr(T=temperatura_de_retorno_de_condensado , m=Ref(c[10], retorno_de_condensado, 0), fluid={'water': 1})
+c[12].set_attr(T=temperatura_retorno_condensado , m=Ref(c[10], retorno_condensado, 0), fluid={'water': 1})
 names[12] = 'Condensate return from process'
 
 # Salida de la cañería de condensado - entrada al tanque de mezcla.
@@ -275,18 +311,15 @@ c[15] = Connection(me_3,'out1',HE,'in2', label='16')
 names[15] = 'Water mixture feed to heat exchanger'
 
 # Salida del intercdambiador de calor de placas - Entrada al domo de baja presión.
-# mmmmm. Yo diría que veamos los datos. 10 grados por debajo de la saturación me parece demasiado. Trataría de especificar el aumento de temperatura de la corriente.
+# mmmmm. Yo diría que veamos los datos. 10 grados por debajo de la saturación me parece demasiado. Trataría de especificar el aumento de temperatura de la corriente. Ahí vi en la documentación que indica los TTD. Quizás podamos especificar eso.
 c[16] = Connection(HE,'out2',LPDRUM,'in1',label='17')
 c[16].set_attr(Td_bp=-10)
 names[16] = 'heated water feed to LPDRUM'
-
-
 
 # number of states
 c[17] = Connection(HE,'out1',sg_pump,'in1',label='18')
 c[17].set_attr()
 names[17] = 'Cooled water feed to HP pump'
-
 
 # number of states
 c[18] = Connection(sg_pump, 'out1', sp_3,'in1', label='19')
@@ -298,18 +331,14 @@ c[19] = Connection(sp_3, 'out1', me_4, 'in2', label='20')
 c[19].set_attr(m=90) 
 names[19] = 'pressurized water to sg condenser'
 
-
 # number of states
 c[20] = Connection(sp_3, 'out2', HPEC1, 'in2', label='21')
-c[20].set_attr()
 names[20] = 'pressurized water to HPEC1'
-
 
 # number of states
 c[21] = Connection(HPEC1, 'out2', HPEC2, 'in2', label='22')
 c[21].set_attr(Td_bp=-139.54)
 names[21] = 'pressurized water to HPEC2'
-
 
 # number of states
 c[22] = Connection(HPEC2, 'out2', me_4, 'in1', label='23')
@@ -341,7 +370,6 @@ names[27] = 'saturated steam outlet of HPEV1 to HPDRUM'
 c[28] = Connection(HPDRUM, 'out2', sp_4 , 'in1', label='29')
 names[28] = 'saturated steam outlet of HPDRUM' 
 
-
 # number of states
 c[29] = Connection(sp_4, 'out1', HPS1, 'in2', label='30')
 c[29].set_attr(m=150)
@@ -365,12 +393,9 @@ names[33] = 'Attemp outlet to HPS2'
 
 # number of states
 c[34] = Connection(HPS2, 'out2', cc, 'in1', label='35')
-c[34].set_attr(T=480)
+temperatura_vapor_sobrecalentado = 480 # C
+c[34].set_attr(T=temperatura_vapor_sobrecalentado)
 names[34] = 'Superheated steam to steam turbine'
-
-
-
-
 
 # number of states
 c[35] = Connection(LPDRUM,'out1', bd,'in1', label='36')
@@ -378,6 +403,7 @@ names[35] = 'Saturated liquid outlet of LPDRUM to LPEV1'
 
 # number of states
 c[36] = Connection(bd, 'out1', wst, 'in1', label='37')
+# esta se tiene que poder poner con Ref.
 c[36].set_attr(m=28.068)
 names[36] = 'LPDRUM waste'
 
@@ -399,69 +425,81 @@ c[40] = Connection(HE_aux, 'out1', HE, 'in1', label='41')
 c[40].set_attr(x=0)
 names[40] = 'Saturated steam outlet of HE aux to HE'
 
-# number of states
-c[41] = Connection(turbine_exhaust, 'out1', HPS2, 'in1', label='42') 
-c[41].set_attr(m=936,T=570,p=0.3, fluid={'Air': 1})
+# Parte B: Lado gases de escape de turbina de gas
+
+# Salida de turbina de gas - entrada a la segunda etapa del sobrecalentador de alta presión.
+# Se indican las fracciones másicas de los gases exhaustos provenientes de la turbina de gas, así como su caudal, presión y temperatura.
+c[41] = Connection(turbine_exhaust, 'out1', HPS2, 'in1', label='42')
+x_gh_CO2 = 0.061 # dim
+x_gh_H2O = 0.07768 # dim
+x_gh_N2 = 0.7364 # dim
+x_gh_O2 = 0.1126 # dim
+x_gh_Ar = 1 - x_gh_CO2 - x_gh_H2O - x_gh_N2 - x_gh_O2
+T_gh = 570 # C
+G_gh = 936 # t/h
+p_gh = 1.01325 # bar(a)
+c[41].set_attr(
+                m=G_gh,
+                T=T_gh,
+                p=p_gh, 
+                fluid={'O2': x_gh_O2, 'N2': x_gh_N2, 'CO2': x_gh_CO2, 'water': x_gh_H2O, 'Ar': x_gh_Ar}
+                )
 names[41] = 'Hot gases input to HPS2'
 
-# number of states
-c[42] = Connection(HPS2, 'out1',HPS1, 'in1', label='43') 
+# Salida de la segunda etapa del sobrecalentador de alta presión - entrada a la primera etapa del sobrecalentador de alta presión.
+c[42] = Connection(HPS2, 'out1', HPS1, 'in1', label='43') 
 names[42] = 'Hot gases input to HPS1'
 
-# number of states
-c[43]=Connection(HPS1, 'out1', HPEV1_gases, 'in1', label='44')
+# Salida de la primera etapa del sobrecalentador - entrada al evaporador de alta presión.
+c[43] = Connection(HPS1, 'out1', HPEV1_gases, 'in1', label='44')
 names[43] = 'Hot gases input to HPEV1'
 
-# number of states
-c[44]=Connection(HPEV1_gases, 'out1', HPEC3, 'in1', label='45')
+# Salida del evaporador - entrada a la tercera etapa del economizador de alta presión.
+c[44] = Connection(HPEV1_gases, 'out1', HPEC3, 'in1', label='45')
 names[44] = 'Hot gases input to HPEC3'
 
-# number of states
-c[45]=Connection(HPEC3, 'out1', HPEC2, 'in1', label='46')
+# Salida de la tercera etapa del economizador de alta presión - entrada a la segunda etapa del economizador de alta presión.
+c[45] = Connection(HPEC3, 'out1', HPEC2, 'in1', label='46')
 names[45] = 'Hot gases input to HPEC2'
 
-# number of states
+# Salida de la segunda etapa del economizador de alta presión - entrada al evaporador de baja presión.
 c[46] = Connection(HPEC2, 'out1', LPEV1_gases , 'in1', label='47')
 names[46] = 'Hot gases input to LPEV1'
 
-# number of states
+# Salida del evaporador de baja presión - entrada a la primera etapa del economizador de alta presión.
 c[47] = Connection(LPEV1_gases, 'out1', HPEC1 , 'in1', label='48')
 names[47] = 'Hot gases input to HPEC1'
 
-# number of states
+# Salida de la primera etapa del economizador de alta presión - entrada a la chimenea (sumidero de los gases exhaustos).
 c[48] = Connection(HPEC1, 'out1', gases_outlet , 'in1', label='49')
 names[48] = 'Hot gases outlet'
 
+# ***************************
 
-
-
-
-
-
-'Analisis exergetico'
-
-
+# Sección 05: Análisis exergético
 
 power = Bus('total output power')
+
+"Esto no entiendo cómo se relaciona con el otro bus que figura más arriba, porque aparecen los 'char' dos veces."
+
 power.add_comps(
     {'comp': st_ext, 'char': 0.9, 'base': 'component'},
     {'comp': st_cond, 'char': 0.9, 'base': 'component'},
     {'comp': att_pump, 'char': 0.7, 'base': 'bus'},
     {'comp': cond_pump, 'char': 0.7, 'base': 'bus'},
     {'comp': sg_pump, 'char': 0.9, 'base': 'bus'},
-    {'comp': process_steam,'base': 'bus'})
+    {'comp': process_steam, 'base': 'bus'})
 
 heat_input_bus = Bus('heat input')
 heat_input_bus.add_comps(
-                        {'comp':turbine_exhaust},
-                        {'comp':gases_outlet}
+                        {'comp': turbine_exhaust},
+                        {'comp': gases_outlet}
                         )
-
 
 exergy_loss_bus = Bus('exergy loss')
 exergy_loss_bus.add_comps(
-                        {'comp': wst,'base': 'bus'},
-                        {'comp': condenser,'base': 'bus'}
+                        {'comp': wst, 'base': 'bus'},
+                        {'comp': condenser, 'base': 'bus'}
                         )
 
 my_plant.add_busses(power, heat_input_bus, exergy_loss_bus)
@@ -470,28 +508,30 @@ ean = ExergyAnalysis(my_plant, E_P=[power], E_F=[heat_input_bus], E_L=[exergy_lo
 
 ean.analyse(pamb=pamb, Tamb=Tamb)
 
+# ***************************
 
+# Sección 06: Resolución del sistema
 
-
-
+# Incorporación de conexiones al objeto "Network" (la cual representa la red que conforma la planta). Una vez hecho esto, la variable "my_plant" ya contiene la red.
 for j in range(0,N):
-    if c[j] is not None:
-        my_plant.add_conns(c[j])
+    my_plant.add_conns(c[j])
 
-
-
+# Resolución para el modo de diseño ("design") del proceso. Impresión de resultados.
 my_plant.solve(mode='design')
 my_plant.print_results()
+
+# ***************************
+
+# Sección 07: Postprocesado
+
 bus_results = my_plant.results['electrical power output']
-
-
-
-# Postprocessing:
-
 df_results_for_conns = my_plant.results['Connection']
 
+# Se añade una nueva columna al DataFrame 'df_results_for_conns' llamada 'denomination'.
+# Esta columna contiene los valores de la lista 'names'.
 df_results_for_conns['denomination'] = names
 
+# Se crea un nuevo DataFrame 'results' que contiene solo las columnas seleccionadas. El objetivo es contar con una visualización más cómoda que la que presenta la librería por default.
 results = df_results_for_conns[['denomination',
                                 'p','p_unit',
                                 'T','T_unit',
@@ -500,7 +540,10 @@ results = df_results_for_conns[['denomination',
                                 'x',
                                 'm','m_unit']]
 
+# Se Define el índice a partir del cual se encuentran los gases. Es decir, a partir del estado 42 (python es cero-indentado).
 start_index_for_gases = 41
+
+# Se crea un DataFrame 'results_gases' que contiene sólo las filas correspondientes a los gases y las columnas seleccionadas (sin la columna 'x').
 results_gases = results[start_index_for_gases:]
 results_gases = results_gases[['denomination',
                                 'p','p_unit',
@@ -508,15 +551,21 @@ results_gases = results_gases[['denomination',
                                 'h','h_unit',
                                 's','s_unit',
                                 'm','m_unit']]
+
+# Se actualiza el DataFrame 'results' para que solo contenga las filas antes de los gases.
 results = results[0:start_index_for_gases]
 
+# Se Elimina la primera fila del DataFrame 'results'.
 results = results.drop(results.index[0])
+
+# Se redondean todos los valores numéricos en el DataFrame 'results' a 3 decimales.
 results = results.round(3)
 
 ean.print_results()
 
-# Exportation:
-        
-# export(__file__, results)
+# ***************************
 
+# Sección 08: Exportación de resultados
 
+# Para exportar los resultados a un archivo determinado, se utiliza la función declara en el inicio del script.       
+export(__file__, results)
