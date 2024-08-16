@@ -100,7 +100,11 @@ Determinando la eficiencia, el coeficiente de temperatura, la máxima tensión a
 \end{gather*}
 
 
-% Luego hacer la cuenta considerando la eficiencia.
+
+
+% Luego hacer la cuenta considerando la eficiencia debida a los ligamentos, para ver cuánto crece.
+
+
 
 \subsection{Material}
 
@@ -179,7 +183,55 @@ Acá quiero mostrar:
 
 \subsection{MAWP}
 
+El código define, en el apartado \textbf{PG-21}, a la presión máxima admisible de trabajo ($\mathbf{MAWP}$, \textit{maximum allowable working pressure}) como la presión determinada al emplear los valores admisibles de tensión (\textit{allowable stress values}), las reglas de diseño y las dimensiones que se designan en la sección de diseño (apartados \textbf{PG-16} a \textbf{PG-31} inclusive).
+
+A continuación, el código brinda algunas precisiones. En el apartado \textbf{PG-21}, indica
+
+\begin{quote}
+     \itshape
+     \small
+     Ninguna caldera (excepto algún caso particularísimo) debe operarse a una presión superior que la presión máxima admisible de trabajo (u operación), excepto cuando la o las válvulas de alivio de presión están descargando. En ese momento, la $\mathbf{MAWP}$ no debe superarse en más de un 6\%. 
+\end{quote}
+
+Esto impone un requerimiento para el o los dispositivos de alivio de presión, aunque no alcanza a definirlos completamente.
+
+En el apartado \textbf{PG-22}, indica
+
+\begin{quote}
+     \itshape
+     \small
+     Se espera que las condiciones máximas sostenidas esperadas de presión y temperatura se seleccionen con un margen suficiente por encima de cualquier condición de operación esperada (no necesariamente continua) para permitir el funcionamiento satisfactorio de la caldera sin que se activen los dispositivos de protección contra sobrepresión.
+\end{quote}
+
+Esto es importante: no es una práctica avalada por el código depender en algún caso esperado de el o los dispositivos de alivio de presión. Estos dispositivos se reservan para casos imprevisibles (por ejemplo, alguna rotura\footnote{La interpreción acerca de si una posible rotura es un evento previsible o previsto o no, o si debiera así considerarse escapa del alcance de este apunte introductorio. Para ahondar en esto, se debe recurrir a la bibliografía especializada.}) o imprevistos.
+
+Reiteramos, porque es importante: cualquier evento esperado de aumento de presión o temperatura debe poder tomarse con las reglas de diseño, por más que este aumento sea transitorio. El o los dispositivos de alivio de presión cumplen una función de seguridad y deben utilizarse en lo que podríamos denominar una emergencia (aunque esta no es una denominación que el código utilice). Vale decir que no necesariamente los dispositivos de alivio de presión resisten un accionamiento sin sufrir modificaciones permanentes que resulten en una merma de su performance. Siempre debe consultarse el manual del fabricante, y seguir al pie de la letra el cronograma de mantenimiento.
+
+Finalmente, como conclusión podemos decir que el código en ningún lugar define cuál debe ser el margen entre cualquier condición operación esperable (incluyendo el arranque y la parada, todos lo grados de carga sostenidos y los transitorios de cambio entre uno y otro) y la presión que debe utilizarse para el cálculo, la $\mathbf{MAWP}$ (la máxima admisible de operación o trabajo). La elección de este margen es una responsabilidad del fabricante, y debe elegirse de manera acorde a la certidumbre que se tenga con el cálculo y a su validación empírica.
+
+\subsubsection{Comentarios adicionales}
+
+\begin{itemize}
+     \item la presión hidrostática debe tenerse en cuenta donde aplique. Por ejemplo, en el domo inferior de una caldera, especialmente las de mucha altura.
+     \item El aparatado de diseño del codigo no afronta otro tipo de cargas (por ejemplo, entre otros, las que surgieran de una restricción al movimiento generado por la dilatacion termica de los materiales, o bien algún efecto producido por la exposición del compomente sometido a presión a un evento sísmico). El código indica que estos efectos deben tenerse en cuenta.
+     \item En el apartado 16.1 el codigo indica que las reglas de esta seccion no cubren todos los posibles detalles de diseño y, para los casos en donde una regla no es provista, el fabricante debe ofrecer la inspector (quien es el que revisa que el diseño eeste de acuerdo con el codigo) el detalle de diseño que pruebe que el diseño es tan seguro como lo es el diseño segun el codigo. Esto puede hacerse por métodos analíticos, utilizando otros codigos de diseño o mediante una validacion empirica. 
+\end{itemize}
+
+
 \subsection{Temperatura de diseño}
+
+PG-27.4.2
+The temperature of the metal to be used
+in selecting the S value for tubes shall not be less than the
+maximum expected mean wall temperature, i.e., the sum
+of the outside and inside tube surface temperatures
+divided by 2. For tubes that do not absorb heat, the
+metal temperature may be taken as the temperature of
+the fluid within the tube but not less than the saturation
+temperature.
+
+Para un domo que esta aisado, ojo. Tener en cuenta la aislacion. O para sobrecalentadores, que tenemos temperaturas muy distintas en ambas caras (lado gases, que pueden estar a 900°C, por ejemplo, y lado vapor, que puede estar a un máximo de 500°C, por ejemplo)
+
 
 \subsection{Tensión admisible}
 
@@ -225,9 +277,3 @@ Acá quiero mostrar:
 %Lo mismo sobre los casquetes, para no marearme yo y no marear a los estudianbtes.
 
 %Sí poner lo de la grafitizacion.
-
-
-
-
-
-
