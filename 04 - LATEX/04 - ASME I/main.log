@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.1.5)  16 AUG 2024 14:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.1.5)  21 AUG 2024 22:26
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -700,21 +700,32 @@ Package pdftex.def Info: mat_prop_example_01.png  used on input line 131.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <9> on input line 193.
  [10]
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 233.
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 235.
  (c:/texlive/2023/texmf-dist/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) [11{c:/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}]) (./sections.tex [12] [13] [14] [15]) (./annex.tex [16]<<ejemplo.EES>><<graph.EES>>) [17] (./main.toc
+) [11{c:/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}]) (./sections.tex [12] [13] [14] [15]
+<spring_loaded_safety_valve_01.png, id=190, 962.09438pt x 758.835pt>
+File: spring_loaded_safety_valve_01.png Graphic file (type png)
+<use spring_loaded_safety_valve_01.png>
+Package pdftex.def Info: spring_loaded_safety_valve_01.png  used on input line 222.
+(pdftex.def)             Requested size: 192.41547pt x 151.76431pt.
+<two_psv_firetube_boiler.jpg, id=191, 1724.4425pt x 999.735pt>
+File: two_psv_firetube_boiler.jpg Graphic file (type jpg)
+<use two_psv_firetube_boiler.jpg>
+Package pdftex.def Info: two_psv_firetube_boiler.jpg  used on input line 228.
+(pdftex.def)             Requested size: 344.88239pt x 199.94345pt.
+ [16 <./spring_loaded_safety_valve_01.png>]) (./annex.tex [17 <./two_psv_firetube_boiler.jpg>]<<ejemplo.EES>><<graph.EES>>) [18] (./main.toc
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 )
 \tf@toc=\write5
 \openout5 = `main.toc'.
 
- [18] (./main.brf)
+ [19] (./main.brf)
 \tf@brf=\write6
 \openout6 = `main.brf'.
 
- [19] (./main.aux
+ [20] (./main.aux
 LaTeX Info: Redefining \. on input line 12.
 LaTeX Info: Redefining \% on input line 12.
 )
@@ -723,21 +734,21 @@ LaTeX2e <2023-11-01>
 L3 programming layer <2023-12-11>
  ***********
 Package rerunfilecheck Info: File `main.brf' has not changed.
-(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+(rerunfilecheck)             Checksum: 429D88CA0EB6D1115B511E9CA418C2D0;48.
  ) 
 Here is how much of TeX's memory you used:
- 21834 strings out of 474174
- 422675 string characters out of 5749678
+ 21903 strings out of 474174
+ 423843 string characters out of 5749678
  1937460 words of memory out of 5000000
- 43526 multiletter control sequences out of 15000+600000
- 661912 words of font info for 196 fonts, out of 8000000 for 9000
+ 43549 multiletter control sequences out of 15000+600000
+ 670869 words of font info for 216 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  90i,14n,93p,1178b,1128s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/texlive/2023/texmf-dist/fonts/type1/public/lm/lmbx10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/lm/lmbx9.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/lm/lmmi10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/lm/lmmi7.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr17.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr6.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr7.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr9.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/lm/lmri10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/lm/lmri9.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/lm/lmsy6.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/lm/lmsy7.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/lm/lmsy8.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/lm/lmtt8.pfb>
-Output written on main.pdf (19 pages, 1895954 bytes).
+<c:/texlive/2023/texmf-dist/fonts/type1/public/lm/lmbx10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/lm/lmbx8.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/lm/lmbx9.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/lm/lmmi10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/lm/lmmi7.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr17.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr6.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr7.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr9.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/lm/lmri10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/lm/lmri8.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/lm/lmri9.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/lm/lmsy6.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/lm/lmsy7.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/lm/lmsy8.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/lm/lmtt8.pfb>
+Output written on main.pdf (20 pages, 2732892 bytes).
 PDF statistics:
- 410 PDF objects out of 1000 (max. 8388607)
- 320 compressed objects within 4 object streams
- 81 named destinations out of 1000 (max. 500000)
- 60148 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 447 PDF objects out of 1000 (max. 8388607)
+ 348 compressed objects within 4 object streams
+ 89 named destinations out of 1000 (max. 500000)
+ 64262 words of extra memory for PDF output out of 74296 (max. 10000000)
 

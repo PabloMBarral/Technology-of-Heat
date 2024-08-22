@@ -374,6 +374,18 @@ INPUT c:/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc
 INPUT ./sections.tex
 INPUT ./sections.tex
 INPUT sections.tex
+INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/lm/ec-lmri8.tfm
+INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/lm/ec-lmbx8.tfm
+INPUT ./spring_loaded_safety_valve_01.png
+INPUT ./spring_loaded_safety_valve_01.png
+INPUT ./spring_loaded_safety_valve_01.png
+INPUT ./spring_loaded_safety_valve_01.png
+INPUT ./spring_loaded_safety_valve_01.png
+INPUT ./two_psv_firetube_boiler.jpg
+INPUT ./two_psv_firetube_boiler.jpg
+INPUT ./two_psv_firetube_boiler.jpg
+INPUT ./two_psv_firetube_boiler.jpg
+INPUT ./two_psv_firetube_boiler.jpg
 INPUT ./annex.tex
 INPUT ./annex.tex
 INPUT annex.tex
@@ -394,6 +406,7 @@ INPUT ./main.brf
 INPUT ./main.brf
 INPUT c:/texlive/2023/texmf-dist/fonts/type1/public/lm/lmbx10.pfb
 INPUT c:/texlive/2023/texmf-dist/fonts/type1/public/lm/lmbx12.pfb
+INPUT c:/texlive/2023/texmf-dist/fonts/type1/public/lm/lmbx8.pfb
 INPUT c:/texlive/2023/texmf-dist/fonts/type1/public/lm/lmbx9.pfb
 INPUT c:/texlive/2023/texmf-dist/fonts/type1/public/lm/lmmi10.pfb
 INPUT c:/texlive/2023/texmf-dist/fonts/type1/public/lm/lmmi7.pfb
@@ -405,6 +418,7 @@ INPUT c:/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr7.pfb
 INPUT c:/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr8.pfb
 INPUT c:/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr9.pfb
 INPUT c:/texlive/2023/texmf-dist/fonts/type1/public/lm/lmri10.pfb
+INPUT c:/texlive/2023/texmf-dist/fonts/type1/public/lm/lmri8.pfb
 INPUT c:/texlive/2023/texmf-dist/fonts/type1/public/lm/lmri9.pfb
 INPUT c:/texlive/2023/texmf-dist/fonts/type1/public/lm/lmsy10.pfb
 INPUT c:/texlive/2023/texmf-dist/fonts/type1/public/lm/lmsy6.pfb
