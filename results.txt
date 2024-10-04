@@ -1,0 +1,42 @@
+denomination                                         p   p_unit  T   T_unit  h   h_unit  s   s_unit  x   m   m_unit
+                               extraction st outlet NaN NaN     NaN NaN     NaN NaN     NaN NaN     NaN NaN NaN    
+                            Steam from TV to attemp NaN NaN     NaN NaN     NaN NaN     NaN NaN     NaN NaN NaN    
+                                   cond st cv inlet NaN NaN     NaN NaN     NaN NaN     NaN NaN     NaN NaN NaN    
+                                      cond st inlet NaN NaN     NaN NaN     NaN NaN     NaN NaN     NaN NaN NaN    
+                                    condenser inlet NaN NaN     NaN NaN     NaN NaN     NaN NaN     NaN NaN NaN    
+                                   condenser outlet NaN NaN     NaN NaN     NaN NaN     NaN NaN     NaN NaN NaN    
+                                    cond pump inlet NaN NaN     NaN NaN     NaN NaN     NaN NaN     NaN NaN NaN    
+                                     att pump inlet NaN NaN     NaN NaN     NaN NaN     NaN NaN     NaN NaN NaN    
+                                    att pump outlet NaN NaN     NaN NaN     NaN NaN     NaN NaN     NaN NaN NaN    
+                                      process steam NaN NaN     NaN NaN     NaN NaN     NaN NaN     NaN NaN NaN    
+                                   cond pump outlet NaN NaN     NaN NaN     NaN NaN     NaN NaN     NaN NaN NaN    
+                     Condensate return from process NaN NaN     NaN NaN     NaN NaN     NaN NaN     NaN NaN NaN    
+                                       Water makeup NaN NaN     NaN NaN     NaN NaN     NaN NaN     NaN NaN NaN    
+            Water mixture feed to low pressure pump NaN NaN     NaN NaN     NaN NaN     NaN NaN     NaN NaN NaN    
+               Water mixture feed to heat exchanger NaN NaN     NaN NaN     NaN NaN     NaN NaN     NaN NaN NaN    
+                        heated water feed to LPDRUM NaN NaN     NaN NaN     NaN NaN     NaN NaN     NaN NaN NaN    
+                       Cooled water feed to HP pump NaN NaN     NaN NaN     NaN NaN     NaN NaN     NaN NaN NaN    
+                         pressurized water to HPEC1 NaN NaN     NaN NaN     NaN NaN     NaN NaN     NaN NaN NaN    
+                  pressurized water to sg condenser NaN NaN     NaN NaN     NaN NaN     NaN NaN     NaN NaN NaN    
+                         pressurized water to HPEC1 NaN NaN     NaN NaN     NaN NaN     NaN NaN     NaN NaN NaN    
+                         pressurized water to HPEC2 NaN NaN     NaN NaN     NaN NaN     NaN NaN     NaN NaN NaN    
+            outlet of HPEC2 to merge with cold flow NaN NaN     NaN NaN     NaN NaN     NaN NaN     NaN NaN NaN    
+           outlet of merge to sweet water condenser NaN NaN     NaN NaN     NaN NaN     NaN NaN     NaN NaN NaN    
+           outlet of sweet water condenser to HPEC3 NaN NaN     NaN NaN     NaN NaN     NaN NaN     NaN NaN NaN    
+                         outlet of HPEC3 to HP drum NaN NaN     NaN NaN     NaN NaN     NaN NaN     NaN NaN NaN    
+      saturated liquid outlet of HPDRUM to Splitter NaN NaN     NaN NaN     NaN NaN     NaN NaN     NaN NaN NaN    
+         saturated liquid outlet of HPDRUM to HPEV1 NaN NaN     NaN NaN     NaN NaN     NaN NaN     NaN NaN NaN    
+         saturated liquid outlet of HPDRUM to waste NaN NaN     NaN NaN     NaN NaN     NaN NaN     NaN NaN NaN    
+          saturated steam outlet of HPEV1 to HPDRUM NaN NaN     NaN NaN     NaN NaN     NaN NaN     NaN NaN NaN    
+                   saturated steam outlet of HPDRUM NaN NaN     NaN NaN     NaN NaN     NaN NaN     NaN NaN NaN    
+                      saturated steam inlet to HPS1 NaN NaN     NaN NaN     NaN NaN     NaN NaN     NaN NaN NaN    
+                     Steam outlet of HPS1 to attemp NaN NaN     NaN NaN     NaN NaN     NaN NaN     NaN NaN NaN    
+Steam derivation of HPDRUM to sweet water condenser NaN NaN     NaN NaN     NaN NaN     NaN NaN     NaN NaN NaN    
+             Sweet water condenser outlet to attemp NaN NaN     NaN NaN     NaN NaN     NaN NaN     NaN NaN NaN    
+                              Attemp outlet to HPS2 NaN NaN     NaN NaN     NaN NaN     NaN NaN     NaN NaN NaN    
+                 Superheated steam to steam turbine NaN NaN     NaN NaN     NaN NaN     NaN NaN     NaN NaN NaN    
+         Saturated liquid outlet of LPDRUM to LPEV1 NaN NaN     NaN NaN     NaN NaN     NaN NaN     NaN NaN NaN    
+               LPDRUM saturated liquid outlet to HE NaN NaN     NaN NaN     NaN NaN     NaN NaN     NaN NaN NaN    
+                    Saturated liquid inlet to LPEV1 NaN NaN     NaN NaN     NaN NaN     NaN NaN     NaN NaN NaN    
+                    Saturated steam inlet to LPDRUM NaN NaN     NaN NaN     NaN NaN     NaN NaN     NaN NaN NaN    
+                     Saturated steam outlet to vent NaN NaN     NaN NaN     NaN NaN     NaN NaN     NaN NaN NaN    
