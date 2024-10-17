@@ -1,42 +1,42 @@
-denomination                                         p     p_unit  T      T_unit  h       h_unit   s    s_unit    x      m       m_unit
-                               extraction st outlet 13.000 bar    264.958 C      2965.832 kJ / kg 6.853 kJ / kgK -1.000  180.000 t / h 
-                            Steam from TV to attemp 13.000 bar    264.958 C      2965.832 kJ / kg 6.853 kJ / kgK -1.000  130.000 t / h 
-                                   cond st cv inlet 13.000 bar    264.958 C      2965.832 kJ / kg 6.853 kJ / kgK -1.000   50.000 t / h 
-                                      cond st inlet 11.050 bar    261.960 C      2965.832 kJ / kg 6.925 kJ / kgK -1.000   50.000 t / h 
-                                    condenser inlet  0.096 bar     45.000 C      2266.184 kJ / kg 7.169 kJ / kgK  0.868   50.000 t / h 
-                                   condenser outlet  0.096 bar     45.000 C       188.435 kJ / kg 0.639 kJ / kgK  0.000   50.000 t / h 
-                                    cond pump inlet  0.096 bar     45.000 C       188.435 kJ / kg 0.639 kJ / kgK  0.000   42.472 t / h 
-                                     att pump inlet  0.096 bar     45.000 C       188.435 kJ / kg 0.639 kJ / kgK  0.000    7.528 t / h 
-                                    att pump outlet 13.000 bar     45.176 C       190.296 kJ / kg 0.640 kJ / kgK -1.000    7.528 t / h 
-                                      process steam 13.000 bar    201.605 C      2813.909 kJ / kg 6.552 kJ / kgK -1.000  137.528 t / h 
-                                   cond pump outlet  2.000 bar     45.026 C       188.709 kJ / kg 0.639 kJ / kgK -1.000   42.472 t / h 
-                     Condensate return from process  2.000 bar     70.000 C       293.203 kJ / kg 0.955 kJ / kgK -1.000   96.269 t / h 
-                                       Water makeup  2.000 bar     25.000 C       105.011 kJ / kg 0.367 kJ / kgK -1.000   40.000 t / h 
-            Water mixture feed to low pressure pump  2.000 bar     54.007 C       226.259 kJ / kg 0.755 kJ / kgK -1.000  178.742 t / h 
-               Water mixture feed to heat exchanger  4.000 bar     54.035 C       226.549 kJ / kg 0.756 kJ / kgK -1.000  178.742 t / h 
-                        heated water feed to LPDRUM  3.600 bar    129.849 C       545.802 kJ / kg 1.633 kJ / kgK -1.000  178.742 t / h 
-                       Cooled water feed to HP pump  3.240 bar     63.941 C       267.932 kJ / kg 0.880 kJ / kgK -1.000  178.000 t / h 
-                         pressurized water to HPEC1 66.000 bar     64.879 C       277.057 kJ / kg 0.888 kJ / kgK -1.000  178.000 t / h 
-                  pressurized water to sg condenser 66.000 bar     64.879 C       277.057 kJ / kg 0.888 kJ / kgK -1.000   90.000 t / h 
-                         pressurized water to HPEC1 66.000 bar     64.879 C       277.057 kJ / kg 0.888 kJ / kgK -1.000   88.000 t / h 
-                         pressurized water to HPEC2 66.000 bar    142.335 C       603.185 kJ / kg 1.757 kJ / kgK -1.000   88.000 t / h 
-            outlet of HPEC2 to merge with cold flow 66.000 bar    205.875 C       880.678 kJ / kg 2.378 kJ / kgK -1.000   88.000 t / h 
-           outlet of merge to sweet water condenser 66.000 bar    135.834 C       575.476 kJ / kg 1.690 kJ / kgK -1.000  178.000 t / h 
-           outlet of sweet water condenser to HPEC3 66.000 bar    212.955 C       912.663 kJ / kg 2.444 kJ / kgK -1.000  178.000 t / h 
-                         outlet of HPEC3 to HP drum 66.000 bar    231.875 C       999.686 kJ / kg 2.620 kJ / kgK -1.000  178.000 t / h 
-      saturated liquid outlet of HPDRUM to Splitter 66.000 bar    281.875 C      1246.723 kJ / kg 3.086 kJ / kgK  0.000 4133.502 t / h 
-         saturated liquid outlet of HPDRUM to HPEV1 66.000 bar    281.875 C      1246.723 kJ / kg 3.086 kJ / kgK  0.000 4133.452 t / h 
-         saturated liquid outlet of HPDRUM to waste 66.000 bar    281.875 C      1246.723 kJ / kg 3.086 kJ / kgK  0.000    0.050 t / h 
-          saturated steam outlet of HPEV1 to HPDRUM 66.000 bar    281.875 C      1323.270 kJ / kg 3.224 kJ / kgK  0.050 4133.452 t / h 
-                   saturated steam outlet of HPDRUM 66.000 bar    281.875 C      2777.667 kJ / kg 5.844 kJ / kgK  1.000  177.950 t / h 
-                      saturated steam inlet to HPS1 66.000 bar    281.875 C      2777.667 kJ / kg 5.844 kJ / kgK  1.000  150.000 t / h 
-                     Steam outlet of HPS1 to attemp 66.000 bar    354.143 C      3040.155 kJ / kg 6.291 kJ / kgK -1.000  150.000 t / h 
-Steam derivation of HPDRUM to sweet water condenser 66.000 bar    281.875 C      2777.667 kJ / kg 5.844 kJ / kgK  1.000   27.950 t / h 
-             Sweet water condenser outlet to attemp 66.000 bar    148.672 C       630.290 kJ / kg 1.822 kJ / kgK -1.000   27.950 t / h 
-                              Attemp outlet to HPS2 66.000 bar    281.875 C      2661.646 kJ / kg 5.635 kJ / kgK  0.924  177.950 t / h 
-                 Superheated steam to steam turbine 66.000 bar    480.000 C      3367.754 kJ / kg 6.768 kJ / kgK -1.000  177.950 t / h 
-         Saturated liquid outlet of LPDRUM to LPEV1  3.600 bar    139.849 C       588.515 kJ / kg 1.738 kJ / kgK  0.000  264.027 t / h 
-               LPDRUM saturated liquid outlet to HE  3.600 bar    139.849 C       588.515 kJ / kg 1.738 kJ / kgK  0.000  178.000 t / h 
-                    Saturated liquid inlet to LPEV1  3.600 bar    139.849 C       588.515 kJ / kg 1.738 kJ / kgK  0.000   86.027 t / h 
-                    Saturated steam inlet to LPDRUM  3.600 bar    139.849 C       695.752 kJ / kg 1.997 kJ / kgK  0.050   86.027 t / h 
-                     Saturated steam outlet to vent  3.600 bar    139.849 C      2733.248 kJ / kg 6.931 kJ / kgK  1.000    0.742 t / h 
+denomination                                         p   p_unit  T   T_unit  h   h_unit  s   s_unit  x   m   m_unit
+                               extraction st outlet NaN NaN     NaN NaN     NaN NaN     NaN NaN     NaN NaN NaN    
+                            Steam from TV to attemp NaN NaN     NaN NaN     NaN NaN     NaN NaN     NaN NaN NaN    
+                                   cond st cv inlet NaN NaN     NaN NaN     NaN NaN     NaN NaN     NaN NaN NaN    
+                                      cond st inlet NaN NaN     NaN NaN     NaN NaN     NaN NaN     NaN NaN NaN    
+                                    condenser inlet NaN NaN     NaN NaN     NaN NaN     NaN NaN     NaN NaN NaN    
+                                   condenser outlet NaN NaN     NaN NaN     NaN NaN     NaN NaN     NaN NaN NaN    
+                                    cond pump inlet NaN NaN     NaN NaN     NaN NaN     NaN NaN     NaN NaN NaN    
+                                     att pump inlet NaN NaN     NaN NaN     NaN NaN     NaN NaN     NaN NaN NaN    
+                                    att pump outlet NaN NaN     NaN NaN     NaN NaN     NaN NaN     NaN NaN NaN    
+                                      process steam NaN NaN     NaN NaN     NaN NaN     NaN NaN     NaN NaN NaN    
+                                   cond pump outlet NaN NaN     NaN NaN     NaN NaN     NaN NaN     NaN NaN NaN    
+                     Condensate return from process NaN NaN     NaN NaN     NaN NaN     NaN NaN     NaN NaN NaN    
+                                       Water makeup NaN NaN     NaN NaN     NaN NaN     NaN NaN     NaN NaN NaN    
+            Water mixture feed to low pressure pump NaN NaN     NaN NaN     NaN NaN     NaN NaN     NaN NaN NaN    
+               Water mixture feed to heat exchanger NaN NaN     NaN NaN     NaN NaN     NaN NaN     NaN NaN NaN    
+                        heated water feed to LPDRUM NaN NaN     NaN NaN     NaN NaN     NaN NaN     NaN NaN NaN    
+                       Cooled water feed to HP pump NaN NaN     NaN NaN     NaN NaN     NaN NaN     NaN NaN NaN    
+                         pressurized water to HPEC1 NaN NaN     NaN NaN     NaN NaN     NaN NaN     NaN NaN NaN    
+                  pressurized water to sg condenser NaN NaN     NaN NaN     NaN NaN     NaN NaN     NaN NaN NaN    
+                         pressurized water to HPEC1 NaN NaN     NaN NaN     NaN NaN     NaN NaN     NaN NaN NaN    
+                         pressurized water to HPEC2 NaN NaN     NaN NaN     NaN NaN     NaN NaN     NaN NaN NaN    
+            outlet of HPEC2 to merge with cold flow NaN NaN     NaN NaN     NaN NaN     NaN NaN     NaN NaN NaN    
+           outlet of merge to sweet water condenser NaN NaN     NaN NaN     NaN NaN     NaN NaN     NaN NaN NaN    
+           outlet of sweet water condenser to HPEC3 NaN NaN     NaN NaN     NaN NaN     NaN NaN     NaN NaN NaN    
+                         outlet of HPEC3 to HP drum NaN NaN     NaN NaN     NaN NaN     NaN NaN     NaN NaN NaN    
+      saturated liquid outlet of HPDRUM to Splitter NaN NaN     NaN NaN     NaN NaN     NaN NaN     NaN NaN NaN    
+         saturated liquid outlet of HPDRUM to HPEV1 NaN NaN     NaN NaN     NaN NaN     NaN NaN     NaN NaN NaN    
+         saturated liquid outlet of HPDRUM to waste NaN NaN     NaN NaN     NaN NaN     NaN NaN     NaN NaN NaN    
+          saturated steam outlet of HPEV1 to HPDRUM NaN NaN     NaN NaN     NaN NaN     NaN NaN     NaN NaN NaN    
+                   saturated steam outlet of HPDRUM NaN NaN     NaN NaN     NaN NaN     NaN NaN     NaN NaN NaN    
+                      saturated steam inlet to HPS1 NaN NaN     NaN NaN     NaN NaN     NaN NaN     NaN NaN NaN    
+                     Steam outlet of HPS1 to attemp NaN NaN     NaN NaN     NaN NaN     NaN NaN     NaN NaN NaN    
+Steam derivation of HPDRUM to sweet water condenser NaN NaN     NaN NaN     NaN NaN     NaN NaN     NaN NaN NaN    
+             Sweet water condenser outlet to attemp NaN NaN     NaN NaN     NaN NaN     NaN NaN     NaN NaN NaN    
+                              Attemp outlet to HPS2 NaN NaN     NaN NaN     NaN NaN     NaN NaN     NaN NaN NaN    
+                 Superheated steam to steam turbine NaN NaN     NaN NaN     NaN NaN     NaN NaN     NaN NaN NaN    
+         Saturated liquid outlet of LPDRUM to LPEV1 NaN NaN     NaN NaN     NaN NaN     NaN NaN     NaN NaN NaN    
+               LPDRUM saturated liquid outlet to HE NaN NaN     NaN NaN     NaN NaN     NaN NaN     NaN NaN NaN    
+                    Saturated liquid inlet to LPEV1 NaN NaN     NaN NaN     NaN NaN     NaN NaN     NaN NaN NaN    
+                    Saturated steam inlet to LPDRUM NaN NaN     NaN NaN     NaN NaN     NaN NaN     NaN NaN NaN    
+                     Saturated steam outlet to vent NaN NaN     NaN NaN     NaN NaN     NaN NaN     NaN NaN NaN    

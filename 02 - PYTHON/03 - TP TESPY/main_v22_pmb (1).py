@@ -165,11 +165,14 @@ me_3 = Merge('Water from reposition & condensate mixture', num_in=3)
 me_4 = Merge('merge at the inlet of sweet water condenser in SG')
 me_5 = Merge('attemp HPS2')
 
-HE_aux = SimpleHeatExchanger('HE aux', pr=1)
+# HE_aux = SimpleHeatExchanger('HE aux', pr=1)
 HE = HeatExchanger('heat exchanger', pr1=0.9, pr2=0.9)
 
-LPEV1 = SimpleHeatExchanger('LPEV1')
-LPEV1_gases = SimpleHeatExchanger('LPEV1_gases', Q=-5550000, pr=1)
+# LPEV1 = SimpleHeatExchanger('LPEV1')
+# LPEV1_gases = SimpleHeatExchanger('LPEV1_gases', Q=-5550000, pr=1)
+LPEV1 = HeatExchanger('LPEV1', pr2=1)
+
+
 
 LPDRUM = Drum('LP Drum')
 
@@ -177,8 +180,10 @@ HPEC1 = HeatExchanger('HPEC1', pr1=1, pr2=1)
 HPEC2 = HeatExchanger('HPEC2',pr1=1)
 HPEC3 = HeatExchanger('HPEC3',pr1=1, pr2=1)
 
-HPEV1 = SimpleHeatExchanger('HPEV1')
-HPEV1_gases = SimpleHeatExchanger('HPEV1_gases',Q=-3850000, pr=1)
+# HPEV1 = SimpleHeatExchanger('HPEV1')
+# HPEV1_gases = SimpleHeatExchanger('HPEV1_gases',Q=-3850000, pr=1)
+HPEV1 = HeatExchanger('HPEV1', pr2=1)
+
 
 HPS1 = HeatExchanger('HPS1', Q=-10937000, pr1=1)
 HPS2 = HeatExchanger('HPS2', pr1=1, pr2=1)
@@ -465,11 +470,11 @@ c[43] = Connection(HPS2, 'out1', HPS1, 'in1', label='44')
 names[43] = 'Hot gases input to HPS1'
 
 # Salida de la primera etapa del sobrecalentador - entrada al evaporador de alta presión.
-c[44] = Connection(HPS1, 'out1', HPEV1, 'in1', label='45')
+c[44] = Connection(HPS1, 'out1', HPEV1, 'in2', label='45')
 names[44] = 'Hot gases input to HPEV1'
 
 # Salida del evaporador - entrada a la tercera etapa del economizador de alta presión.
-c[45] = Connection(HPEV1, 'out1', HPEC3, 'in1', label='46')
+c[45] = Connection(HPEV1, 'out2', HPEC3, 'in1', label='46')
 names[45] = 'Hot gases input to HPEC3'
 
 # Salida de la tercera etapa del economizador de alta presión - entrada a la segunda etapa del economizador de alta presión.
@@ -477,11 +482,11 @@ c[46] = Connection(HPEC3, 'out1', HPEC2, 'in1', label='47')
 names[46] = 'Hot gases input to HPEC2'
 
 # Salida de la segunda etapa del economizador de alta presión - entrada al evaporador de baja presión.
-c[47] = Connection(HPEC2, 'out1', LPEV1 , 'in1', label='48')
+c[47] = Connection(HPEC2, 'out1', LPEV1 , 'in2', label='48')
 names[47] = 'Hot gases input to LPEV1'
 
 # Salida del evaporador de baja presión - entrada a la primera etapa del economizador de alta presión.
-c[48] = Connection(LPEV1, 'out1', HPEC1 , 'in1', label='49')
+c[48] = Connection(LPEV1, 'out2', HPEC1 , 'in1', label='49')
 names[48] = 'Hot gases input to HPEC1'
 
 # Salida de la primera etapa del economizador de alta presión - entrada a la chimenea (sumidero de los gases exhaustos).
