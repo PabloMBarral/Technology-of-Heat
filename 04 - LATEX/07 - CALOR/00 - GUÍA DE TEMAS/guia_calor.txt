@@ -1,0 +1,38 @@
+1. Apunte con cómo se comporta la HRSG, cómo hacer un balance.
+2. Apunte con el uso industrial del vapor, cómo son los ciclos.
+3. Apunte con lo que quiero decir de exergía y de cogeneración.
+4. Armar un apunte diciento
+
+Introducción al curso (por ejemplo, lo de planificación de sistemas de almacenamiento)
+Exergía y repaso de termodinámica
+Cogeneración I: Introducción y planteo
+Cogeneración II: ciclos y balance en una HRSG.
+Cogeneración III: Cálculo de ahorros
+Cogeneración IV: potencial, beneficios, limitantes, conclusiones
+
+Caldera: acuotubular
+Caldera: humotubular
+Caldera: de recuperación
+Calderas: colgantes
+Calderas: auxiliares (calentadores de aire, precipitadores, filtros de manga, quemadores, cenizas)
+
+Enunciado TP1
+Enunciado TP2
+Bibliografía y recursos (por ejemplo, canal de YT)
+Examen final
+
+Ciclo de Rankine
+Ciclo de Joule Brayton y Ciclo Combinado.
+
+Tiene que ser completo y marcado con ejemplos lo que digo
+por ejemplo, crisis de ebullicion,
+calculos del TP1
+
+No me importa si se repite con otras materias, para sacar hay tiempo
+
+Empezar a escribir por lo que es propio de calor
+
+Si no tengo imagenes, armarlas yo
+
+Primero apunte, luego ppt
+

@@ -131,7 +131,7 @@ def L_0_j(t_1:float) ->float:
 
     Returns
     -------
-    L_0_j : float
+    t: float
         The latent heat of vaporization of water at the specified temperature (in kJ/kmol).
 
     This piece of code will need maintenance if the standard changes.
