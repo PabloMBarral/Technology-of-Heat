@@ -1,0 +1,27 @@
+$LoadLibrary
+$UnitSystem SI C kPa mass kJ
+$Tabstops 1 2 3 4 5 cm
+$Keyboard EU
+F$ = 'N2+O2+Ar+CO2'
+t = 20 [C]
+p = 101,3 [kPa]
+N = 4
+y[1..N] = [0,7810; 0,2095; 0,0092; 0,0003]
+ 
+Call extended_ideal_gas_mix_props(F$; T; p; y[1..N] : MW; R_p; c_p; c_v; kappa; h; s; u; v; rho; mu; nu; k; Pr; alpha; a; x[1..N])
+ 
+Call idealgasmixtureprops(F$;T;P;x[1..N]:MW_2; h_2; s_2; mu_2; k_2)
+ 
+c_p_3=cp(Air;T=T)
+c_v_3=cv(Air;T=T)
+v_3 = volume(Air;P=p;T=t)
+a_3=soundspeed(Air;T=T)
+MW_3 = molarmass('Air')
+Pr_3=prandtl(Air;T=T)
+nu_3=kinematicviscosity(Air;T=T;P=P)
+mu_3=viscosity(Air;T=T)
+kappa_3=isentropicexponent(Air;T=T)
+rho_3 = density(Air;P=p;T=t)
+alpha_3=thermaldiffusivity(Air;T=T;P=P)
+k_3=conductivity(Air;T=T)
+s_3 = entropy(Air;P=p;T=t)

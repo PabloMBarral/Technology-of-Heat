@@ -1,0 +1,231 @@
+Procedure extended_ideal_gas_mix_props(F$; T; p; y[1..100] : MW; R_p; c_p; c_v; kappa; h; s; u; v; rho; mu; nu; k; Pr; alpha; a; x[1..100])
+ 
+{
+===============================================================================
+    CALCULATION OF THERMAL AND TRANSPORT PROPERTIES FOR IDEAL GAS MIXTURES
+ 
+INPUTS:
+ 
+    F$: String with composition, with + signs interlacated. For example: 'CO2+H2O'.nents Fracciones molares, con independencia del sistema de unidades usado.
+    T: Temperature. [C or K, if SI units are used]. [F or R, if English units are used].
+    p: Pressure. [Pa, kPa, MPa, bar, if SI units are used]. [psia, atm, if English units are used].
+    y[1..100]: Molar fractions of the components. [dim]. It must match the F$ order. Any length, with a maximum of 100 components.
+ 
+OUTPUTS:
+ 
+    MW: Molar mass of the mixture. [kg/kmol, if SI units are used]. [lb_m/lbmol, if English units are used].
+    R_p: Specific gas constant of the mixture. 	[kJ/kg-K, if SI units are used]. [Btu/lb_m-R, if English units are used].
+    c_p: Specific heat at constant pressure. [J/kg-C or J/kg-K or J/kmol-C or J/kmol-K or kJ/kg-C or kJ/kg-K or kJ/kmol-C or kJ/kmol-K, if SI units are used]. [Btu/lb_m-F or Btu/lb_m-R or Btu/lbmol-F or Btu/lbmol-R, if English units are used].
+    c_v: Specific heat at constant volume. [J/kg-C or J/kg-K or J/kmol-C or J/kmol-K or kJ/kg-C or kJ/kg-K or kJ/kmol-C or kJ/kmol-K, if SI units are used]. [Btu/lb_m-F or Btu/lb_m-R or Btu/lbmol-F or Btu/lbmol-R, if English units are used].
+    kappa: Ratio of specific heats. [dim].
+    h: Specific enthalpy of the mixture. [J/kg or J/kmol or kJ/kg or kJ/kmol, if SI units are used]. [Btu/lb_m or Btu/lbmol, if English units are used].
+    s: Specific entropy of the mixture. [J/kg-K or J/kmol-K or kJ/kg-K or kJ/kmol-K, if SI units are used]. [Btu/lb_m-R or Btu/lbmol-R, if English units are used].
+    u: Specific internal energy of the mixture. [J/kg or J/kmol or kJ/kg or kJ/kmol, if SI units are used]. [Btu/lb_m or Btu/lbmol, if English units are used].
+    v: Specific volume of the mixture. [m^3/kg or m^3/kmol, if SI units are used]. [ft^3/lb_m or ft^3/lbmol, if English units are used].
+    rho: Density of the mixture. [kg/m^3 or kmol/m^3, if SI units are used]. [lb_m/ft^3 or lbmol/ft^3, if English units are used].
+    mu: Viscosity of the mixture. [kg/m-s, if SI units are used]. [lb_m/ft-hr, if English units are used].
+    nu: Kinematic viscosity of the mixture. [m^s2/s, if SI units are used]. [ft^2/hr, if English units are used].
+    k: Thermal conductivity of the mixture. [W/m-K or W/m-C, if SI units are used]. [Btu/hr-ft-F or Btu/hr-ft-R, if English units are used].
+    Pr: Prandtl number of the mixture. [dim].
+    alpha: Thermal diffusivity of the mixture. [m^s2/s, if SI units are used]. [ft^2/hr, if English units are used].
+    a: Speed of sound in the mixture. [m/s, if SI units are used]. [ft/s, if English units are used].
+    x[1..100]: Mass fractions of the components. [dim].
+ 
+2025-08-01: Initial version. PMB - pbarral@fi.uba.ar
+Developed for EES, from an original version from Sanford Klein. Credits should be given to him.
+Unofficial version. Use it under your own responsibility.
+===============================================================================
+ 
+}
+ 
+T$ = unitsystem$('Temperature')
+P$ = unitsystem$('Pressure')
+h$ = unitsystem$('Energy')
+u$ = unitsystem$('Energy')
+s$ = unitsystem$('Entropy')
+mu$ = unitsystem$('Viscosity')
+V$ = unitsystem$('Volume')
+a$ = unitsystem$('SoundSpeed')
+c$ = h$||'-'||T$ 
+ 
+MW$ = 'kg/kmol' : If (unitsystem('Eng') = true#) Then MW$ = 'lb_m/lbmol'
+ 
+If (unitsystem('Eng') = true#) Then
+	k$ = copy$(unitsystem$('Conductivity'); 1; 9)||'-'||T$
+Else
+	k$ = copy$(unitsystem$('Conductivity'); 1; 3)||'-'||T$
+Endif
+ 
+If (unitsystem('Eng') = true#) Then
+	nu$ = 'ft^2/hr'
+	alpha$ = nu$
+Else
+	nu$ = 'm^2/s'
+	alpha$ = nu$
+Endif
+ 
+If (unitsystem('Eng') = true#) Then
+	Rp$ = 'Btu/lb_m-R'
+Else
+	Rp$ = 'kJ/kg-K'
+Endif
+ 
+If (unitsystem('Mass') = true#) Then 
+	If (unitsystem('Eng') = true#) Then
+		rho$ = 'lb_m/ft^3'
+	Else
+		rho$ = 'kg/m^3'
+	Endif
+Else
+	If (unitsystem('Eng') = true#) Then
+		rho$ = 'lbmol/ft^3'
+	Else
+		rho$ = 'kmol/m^3'
+	Endif
+Endif
+ 
+F$ = trim$(F$) // Eliminates empty spaces.
+ 
+ict = 0 
+SF = 0
+Repeat	// Until F$ is empty.
+	r = stringpos('+'; F$) // Searches for the first '+' position.
+	If (r>0) Then // If a r found, initiates this loop.
+		ict = ict + 1
+		G$[ict] = Copy$(F$; 1; r-1) // Reads the first substance name. For example, 'CO2+H2O', r=4.
+		F$ = trim$(copy$(F$; r+1; stringlen(F$))) // Keeps the rest of the string, and eliminates empty spaces.
+	Else // r=0 means that no '+' was found. I.e., only one component is present.
+		If (stringlen(F$) > 0) Then 
+			ict = ict + 1
+			G$[ict] = F$
+			F$ = ''
+		Endif
+	Endif
+	
+	MW[ict] = Molarmass(G$[ict])
+	mu[ict] = Viscosity(G$[icT]; T=T)
+	k[ict] = ConductiviTy(G$[ict];T=T)
+ 
+	SF = SF + y[ict] // Sums the molar fractions for checking purpose.
+ 
+Until (stringlen(F$) = 0)
+ 
+If (SF < 0,999) or (SF > 1,001) Then Call error('The sum of of mass or mole fractions is not equal to 1,0.  The sum is XXXF3';SF) 
+ 
+N = ict
+ 
+MW = 0
+i = 0
+Repeat
+ 	i = i + 1
+ 	MW = MW + y[i] * MW[i]
+Until (i >= N)
+ 
+R_p = R# / MW
+ 
+i = 0
+Repeat
+  	i = i + 1
+  	x[i] = (y[i] * MW[i]) / MW
+Until (i >= N)
+ 
+i = 0
+h = 0
+s = 0
+u = 0
+v = 0
+c_p = 0
+c_v = 0
+Repeat
+	i = i + 1
+	If (unitsystem('Mass') = true#) Then
+		h = h + x[i] * enThalpy(G$[i]; T=T)
+		u = u + x[i] * inTenergy(G$[i]; T=T)
+		c_p = c_p + x[i] * cp(G$[i]; T=T)
+		c_v = c_v + x[i] * cv(G$[i]; T=T)
+ 	Else
+		h = h + y[i] * enThalpy(G$[i]; T=T)
+		u = u + y[i] * inTenergy(G$[i]; T=T)
+		c_p = c_p + y[i] * cp(G$[i]; T=T)
+		c_v = c_v + y[i] * cv(G$[i]; T=T)
+	Endif
+ 
+	If (y[i]>0) Then 
+		If (unitsystem('Mass') = true#) Then
+			s = s + x[i] * enTropy(G$[i]; T=T; p = y[i] * p)
+		Else
+			s = s + y[i] * enTropy(G$[i]; T=T; p = y[i] * p)
+		Endif
+	Endif
+Until (i>=N)
+ 
+ 
+If (unitsystem('Mass') = true#) Then 
+	If (unitsystem('Eng') = true#) Then
+		v = R_p * converttemp(T$;R;T) / (convert(P$;psi) * p)
+	Else
+		v = R_p * converttemp(T$;K;T) / (convert(P$;kpa) * p)
+	Endif
+ Else
+	If (unitsystem('Eng') = true#) Then
+		v = R# * converttemp(T$;R;T) / (convert(P$;psi) * p)
+	Else
+		v = R# * converttemp(T$;K;T) / (convert(P$;kpa) * p)
+	Endif
+Endif
+ 
+rho = 1 / v 
+kappa = c_p / c_v 
+ 
+i=0
+Repeat
+	i = i + 1
+	Duplicate j=1;N
+		phi[i; j] = (1 + sqrt(mu[i] / mu[j]) * (MW[j] / MW[i])^0,25)^2 / Sqrt(8 * (1 + MW[i] / MW[j])) // Wilke's method for viscosity, Mason&Saxena method for conductivity.
+	End
+Until (i>=N)
+ 
+mu=0
+k=0
+i=0
+Repeat
+	i = i + 1
+	j = 0
+	A[i] = 0
+	Repeat
+		j = j+1
+		A[i] = A[i] + y[j] * phi[i; j]
+	Until (j>=N)
+	mu = mu + y[i] * mu[i] / A[i]
+	k = k + y[i] * k[i] / A[i]
+Until (i>=N)
+ 
+If (unitsystem('Mass') = true#) Then 
+	nu = mu / rho
+Else
+	nu = mu / (rho * MW)
+Endif
+ 
+If (unitsystem('Eng') = true#) Then 
+	If (unitsystem('Mass') = true#) Then 
+		alpha = k * convert(k$;Btu/hr-ft-F) / (rho * c_p * convert(c$;Btu/lb_m-F)) 
+	Else
+		alpha = k * convert(k$;Btu/hr-ft-F) / (rho * c_p * convert(c$;Btu/lbmol-F)) 
+	Endif
+Else
+	If (unitsystem('Mass') = true#) Then 
+		alpha = k * convert(k$;kW/m-C) / (rho * c_p * convert(c$;kJ/kg-C)) 
+	Else
+		alpha = k * convert(k$;kW/m-C) / (rho * c_p * convert(c$;kJ/kmol-C)) 
+	Endif
+Endif
+ 
+Pr = nu / alpha 
+ 
+If (unitsystem('Eng') = true#) Then 
+	a = sqrt(kappa * R_p *convertTemp(T$; R; T))
+Else
+	a = sqrt(kappa * R_p * convert(kJ;J) * converttemp(T$; K; T))
+Endif 
+ 
+End
